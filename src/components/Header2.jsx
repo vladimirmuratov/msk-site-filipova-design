@@ -1,4 +1,5 @@
 import {Box, Typography} from '@mui/material'
+import Link from 'next/link'
 
 export const Header2 = () => {
     return (
@@ -13,7 +14,7 @@ export const Header2 = () => {
                 gap: '10px'
             }}
         >
-            <Box>
+            <Link href='/'>
                 <Box>
                     <Box
                         component="img"
@@ -35,7 +36,7 @@ export const Header2 = () => {
                         }}
                     />
                 </Box>
-            </Box>
+            </Link>
 
             <Box
             sx={{

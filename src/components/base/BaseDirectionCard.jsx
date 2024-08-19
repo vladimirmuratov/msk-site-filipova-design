@@ -1,13 +1,15 @@
 import {Box, Typography} from '@mui/material'
 
-export const BaseDirectionCard = ({label, img}) => {
+export const BaseDirectionCard = ({label, img, path, router}) => {
     return (
         <Box
+            onClick={() => router.push(path)}
             sx={{
                 display: 'flex',
                 flexDirection: 'column',
                 border: '1px solid var(--black)',
-                borderRadius: '5px'
+                borderRadius: '5px',
+                cursor: 'pointer'
             }}
         >
             <Box

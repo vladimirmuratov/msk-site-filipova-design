@@ -161,15 +161,15 @@ export const partners = [
 ]
 
 export const directions = [
-    {id: 1, label: 'Хирургия', img: '/images/directions/1.png'},
-    {id: 2, label: 'Травматология и ортопедия', img: '/images/directions/2.png'},
-    {id: 3, label: 'Гинекология', img: '/images/directions/3.png'},
-    {id: 1, label: 'Урология', img: '/images/directions/4.png'},
-    {id: 1, label: 'Кардиология', img: 'images/directions/5.png'},
-    {id: 1, label: 'Неврология', img: 'images/directions/6.png'},
-    {id: 1, label: 'Гастроэнтерология', img: 'images/directions/7.png'},
-    {id: 1, label: 'Терапия', img: 'images/directions/8.png'},
-    {id: 1, label: 'Сомнология', img: 'images/directions/9.png'},
+    {id: 1, label: 'Хирургия', img: '/images/directions/1.png', path: 'surgery'},
+    {id: 2, label: 'Травматология и ортопедия', img: '/images/directions/2.png', path: 'traumatology'},
+    {id: 3, label: 'Гинекология', img: '/images/directions/3.png', path: 'gynecology'},
+    {id: 4, label: 'Урология', img: '/images/directions/4.png', path: 'urology'},
+    {id: 5, label: 'Кардиология', img: 'images/directions/5.png', path: 'cardiology'},
+    {id: 6, label: 'Неврология', img: 'images/directions/6.png', path: 'neurology'},
+    {id: 7, label: 'Гастроэнтерология', img: 'images/directions/7.png', path: 'gastroenterology'},
+    {id: 8, label: 'Терапия', img: 'images/directions/8.png', path: 'therapy'},
+    {id: 9, label: 'Сомнология', img: 'images/directions/9.png', path: 'somnology'},
 ]
 
 export const services = [

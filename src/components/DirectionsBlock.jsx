@@ -1,7 +1,7 @@
 import {Box, Typography} from '@mui/material'
 import {BaseDirectionCard} from '@/components/base/BaseDirectionCard'
 
-export const DirectionsBlock = ({directions = []}) => {
+export const DirectionsBlock = ({directions = [], router}) => {
 
     return (
         <Box
@@ -34,7 +34,7 @@ export const DirectionsBlock = ({directions = []}) => {
                 }}
             >
 
-                {directions.map((item) => <BaseDirectionCard key={item.id} {...item}/>)}
+                {directions.map((item) => <BaseDirectionCard key={item.id} {...item} router={router}/>)}
 
             </Box>
 
