@@ -6,6 +6,7 @@ import {BaseModal} from '@/components/base/BaseModal'
 import {MessageForm} from '@/components/MessageForm'
 import DialogContentText from '@mui/material/DialogContentText'
 import {timeOut} from '@/config'
+import {Header2} from '@/components/Header2'
 
 export const Layout = ({children}) => {
     const [isOpenForm, setOpenForm] = useState(false)
@@ -44,7 +45,8 @@ export const Layout = ({children}) => {
                 className="container"
                 sx={{minHeight: '100vh'}}
             >
-                <Header/>
+                {/*<Header/>*/}
+                <Header2/>
                 {children}
                 <Footer onOpenForm={handleOpenForm}/>
             </Box>

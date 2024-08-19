@@ -6,6 +6,7 @@ import {PartnersBlock} from '@/components/PartnersBlock'
 import {directions, partners, services} from '@/config'
 import {DirectionsBlock} from '@/components/DirectionsBlock'
 import {ServiceBlock} from '@/components/ServiceBlock'
+import {Banner2} from '@/components/Banner2'
 
 const openSans = Open_Sans({subsets: ['latin', 'cyrillic']})
 
@@ -21,7 +22,8 @@ export default function Home() {
                 <link rel="icon" href="/icon.png"/>
             </Head>
             <main className={openSans.className}>
-                <Banner/>
+                {/*<Banner/>*/}
+                <Banner2/>
                 <DescriptionBlock/>
                 <PartnersBlock partners={partners}/>
                 <DirectionsBlock directions={directions}/>

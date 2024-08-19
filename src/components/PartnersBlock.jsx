@@ -10,18 +10,38 @@ export const PartnersBlock = ({partners = []}) => {
                 paddingX: {xs: '10px', lg: 0},
             }}
         >
-            <Typography
-                variant="h4"
+            <Box
                 sx={{
-                    fontSize: {xs: 32, sm: 38},
-                    fontWeight: 300,
-                    color: 'var(--blue)',
-                    textTransform: 'uppercase',
                     marginBottom: {xs: '15px', sm: '30px'},
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: {xs: '10px', sm: '15px'}
                 }}
             >
-                Клиники
-            </Typography>
+                <Typography
+                    variant="h4"
+                    sx={{
+                        fontSize: {xs: 32, sm: 38},
+                        fontWeight: 300,
+                        color: 'var(--blue)',
+                        textTransform: 'uppercase',
+                    }}
+                >
+                    Клиники
+                </Typography>
+
+                <Typography
+                    sx={{
+                        color: 'var(--blue)',
+                        fontSize: {xs: '16px', sm: '18px'},
+                        fontWeight: 500
+                    }}
+                >
+                    При обращении в сервис МСК&ndash;Групп &mdash; все расчеты ведутся по официальным ценам с конкретной медицинской
+                    организацией
+                </Typography>
+            </Box>
+
             <Box
                 sx={{
                     display: 'grid',
