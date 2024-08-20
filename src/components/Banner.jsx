@@ -23,7 +23,7 @@ export const Banner = () => {
                 }}
             >{phone}</Typography>
 
-            <Box
+            {/*<Box
                 sx={{
                     paddingX: {xs: '10px', lg: 0},
                     marginTop: {xs: '5px', sm: '10px'},
@@ -37,7 +37,7 @@ export const Banner = () => {
                 <Link href="#">Госпитализация</Link>
                 <Link href="#">Стоимость услуг</Link>
                 <Link href="#">Обратный звонок</Link>
-            </Box>
+            </Box>*/}
         </Box>
     )
 }

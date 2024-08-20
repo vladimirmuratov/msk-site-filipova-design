@@ -24,8 +24,8 @@ export default function Home() {
                 <link rel="icon" href="/icon.png"/>
             </Head>
             <main className={openSans.className}>
-                {/*<Banner/>*/}
-                <Banner2/>
+                <Banner/>
+                {/*<Banner2/>*/}
                 <DescriptionBlock/>
                 <PartnersBlock partners={partners}/>
                 <DirectionsBlock directions={directions} router={router}/>
