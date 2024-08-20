@@ -1,11 +1,13 @@
 import {Box, Button, Checkbox, Typography} from '@mui/material'
 import {useForm} from 'react-hook-form'
 import {BaseInput} from '@/components/base/BaseInput'
-import {useEffect, useRef, useState} from 'react'
+import {useState} from 'react'
 import {sendEmail} from '@/lib/sendEmail'
 import {BaseDatePicker} from '@/components/base/BaseDatePicker'
 
 export const MessageForm = ({onSuccess, onFailed, handleClose}) => {
+    const regExpEmail = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+    const regExpPhone = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/
     const [fileName, setFileName] = useState('')
     const [file, setFile] = useState()
     const [checked, setChecked] = useState(false)
@@ -82,9 +84,10 @@ export const MessageForm = ({onSuccess, onFailed, handleClose}) => {
                     <BaseDatePicker control={control} label="Дата рождения" name="dateBirth"/>
                     <BaseInput control={control} label="Телефон" name="phone" required={true}
                                errorType={errors?.phone?.type}
-                               mask="+7 (000) 000 00 00"/>
+                               mask="+7 (000) 000 00 00" regexp={regExpPhone}/>
 
-                    <BaseInput type="email" control={control} label="Email" name="email" mask="smirnov@mail.ru"/>
+                    <BaseInput control={control} label="Email" name="email" mask="smirnov@mail.ru"
+                               regexp={regExpEmail} errorType={errors?.email?.type}/>
                     <BaseInput control={control} label="Доп.информация" name="info" multiline={true}
                                mask="Опишите ситуацию"/>
 
