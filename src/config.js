@@ -170,6 +170,9 @@ export const directions = [
     {id: 7, label: 'Гастроэнтерология', img: 'images/directions/7.png', path: 'gastroenterology'},
     {id: 8, label: 'Терапия', img: 'images/directions/8.png', path: 'therapy'},
     {id: 9, label: 'Сомнология', img: 'images/directions/9.png', path: 'somnology'},
+    {id: 10, label: 'Сосудистая хирургия', img: '/images/directions/10.jpeg', path: 'vascularsurgery'},
+    {id: 11, label: 'Нейрохирургия', img: '/images/directions/11.jpeg', path: 'neurosurgery'},
+    {id: 12, label: 'Пульмонология', img: '/images/directions/12.jpeg', path: 'pulmonology'},
 ]
 
 export const services = [

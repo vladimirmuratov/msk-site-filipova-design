@@ -9,19 +9,27 @@ export const BaseDirectionCard = ({label, img, path, router}) => {
                 flexDirection: 'column',
                 border: '1px solid var(--black)',
                 borderRadius: '5px',
-                cursor: 'pointer'
+                cursor: 'pointer',
             }}
         >
             <Box
-                component="img"
-                src={img}
-                alt="pic"
-                sx={{
-                    width: '100%',
-                    borderTopRightRadius: '5px',
-                    borderTopLeftRadius: '5px',
-                }}
+            sx={{
+                maxHeight: '148px'
+            }}
             >
+                <Box
+                    // component="img"
+                    // src={img}
+                    // alt="pic"
+                    sx={{
+                        width: '100%',
+                        height: '148px',
+                        borderTopRightRadius: '5px',
+                        borderTopLeftRadius: '5px',
+                        backgroundImage: `url(${img})`,
+                        backgroundSize: 'cover'
+                    }}
+                />
             </Box>
             <Typography
                 sx={{

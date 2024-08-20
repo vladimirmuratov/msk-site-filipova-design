@@ -9,12 +9,14 @@ export const BaseBanner = ({imgPath, title}) => {
         >
 
             <Box
-                component="img"
-                src={imgPath}
-                alt="pic"
+                // component="img"
+                // src={imgPath}
+                // alt="pic"
                 sx={{
                     width: '100%',
-                    height: 'auto'
+                    height: '451px',
+                    backgroundImage: `url(${imgPath})`,
+                    backgroundSize: 'cover',
                 }}
             />
             <Typography
