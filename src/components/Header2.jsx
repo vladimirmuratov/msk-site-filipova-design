@@ -1,5 +1,6 @@
 import {Box, Typography} from '@mui/material'
 import Link from 'next/link'
+import {address, email} from '@/config'
 
 export const Header2 = () => {
     return (
@@ -7,14 +8,14 @@ export const Header2 = () => {
             component="header"
             sx={{
                 boxShadow: '0 4px 6px -6px #222',
-                padding: '20px 40px',
+                padding: '20px 20px',
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',
                 gap: '10px'
             }}
         >
-            <Link href='/'>
+            <Link href="/">
                 <Box>
                     <Box
                         component="img"
@@ -39,12 +40,12 @@ export const Header2 = () => {
             </Link>
 
             <Box
-            sx={{
-                display: {xs: 'none', sm: 'flex'},
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center'
-            }}
+                sx={{
+                    display: {xs: 'none', sm: 'flex'},
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center'
+                }}
             >
                 <Typography
                     sx={{
@@ -62,18 +63,34 @@ export const Header2 = () => {
                         fontWeight: 600,
                         color: 'var(--blue)',
                     }}
-                >г.Москва, Мичуринский пр-т д.6</Typography>
+                >{address}</Typography>
             </Box>
 
-            <Box>
+            <Box
+                sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center'
+                }}
+            >
                 <Typography
                     sx={{
                         fontSize: {xs: '17px', sm: '24px', md: '24px', lg: '28px'},
                         fontWeight: 600,
                         color: 'var(--red)',
-                        whiteSpace: 'nowrap'
+                        whiteSpace: 'nowrap',
+                        lineHeight: 1.1
                     }}
                 >8(499)719-81-00</Typography>
+
+                <Typography
+                    sx={{
+                        fontSize: {xs: '10px', sm: '12px', md: '14px', lg: '16px'},
+                        fontWeight: 600,
+                        color: 'var(--red)',
+                    }}
+                >{email}</Typography>
             </Box>
         </Box>
     )
