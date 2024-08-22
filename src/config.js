@@ -161,18 +161,18 @@ export const partners = [
 ]
 
 export const directions = [
-    {id: 1, label: 'Хирургия', img: '/images/directions/1.png', path: 'surgery'},
-    {id: 2, label: 'Травматология и ортопедия', img: '/images/directions/2.png', path: 'traumatology'},
-    {id: 3, label: 'Гинекология', img: '/images/directions/3.png', path: 'gynecology'},
-    {id: 4, label: 'Урология', img: '/images/directions/4.png', path: 'urology'},
-    {id: 5, label: 'Кардиология', img: 'images/directions/5.png', path: 'cardiology'},
-    {id: 6, label: 'Неврология', img: 'images/directions/6.png', path: 'neurology'},
-    {id: 7, label: 'Гастроэнтерология', img: 'images/directions/7.png', path: 'gastroenterology'},
-    {id: 8, label: 'Терапия', img: 'images/directions/8.png', path: 'therapy'},
-    {id: 9, label: 'Сомнология', img: 'images/directions/9.png', path: 'somnology'},
-    {id: 10, label: 'Сосудистая хирургия', img: '/images/directions/10.jpeg', path: 'vascularsurgery'},
-    {id: 11, label: 'Нейрохирургия', img: '/images/directions/11.jpeg', path: 'neurosurgery'},
-    {id: 12, label: 'Пульмонология', img: '/images/directions/12.jpeg', path: 'pulmonology'},
+    {id: 1, label: 'Хирургия', img: '/images/directions/1.png', path: '/directions/surgery'},
+    {id: 2, label: 'Травматология и ортопедия', img: '/images/directions/2.png', path: '/directions/traumatology'},
+    {id: 3, label: 'Гинекология', img: '/images/directions/3.png', path: '/directions/gynecology'},
+    {id: 4, label: 'Урология', img: '/images/directions/4.png', path: '/directions/urology'},
+    {id: 5, label: 'Кардиология', img: 'images/directions/5.png', path: '/directions/cardiology'},
+    {id: 6, label: 'Неврология', img: 'images/directions/6.png', path: '/directions/neurology'},
+    {id: 7, label: 'Гастроэнтерология', img: 'images/directions/7.png', path: '/directions/gastroenterology'},
+    {id: 8, label: 'Терапия', img: 'images/directions/8.png', path: '/directions/therapy'},
+    {id: 9, label: 'Сомнология', img: 'images/directions/9.png', path: '/directions/somnology'},
+    {id: 10, label: 'Сосудистая хирургия', img: '/images/directions/10.jpeg', path: '/directions/vascularsurgery'},
+    {id: 11, label: 'Нейрохирургия', img: '/images/directions/11.jpeg', path: '/directions/neurosurgery'},
+    {id: 12, label: 'Пульмонология', img: '/images/directions/12.jpeg', path: '/directions/pulmonology'},
 ]
 
 export const services = [
