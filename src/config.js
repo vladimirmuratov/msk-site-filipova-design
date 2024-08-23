@@ -94,13 +94,21 @@ export const partners = [
         address: 'г. Москва, ул. Староволынская, д. 10',
         license: 'Лицензия Л041-00110-77/00553430 от 31.03.2020'
     },
-    {
+    /*{
         id: 8,
         logo: '/images/partners/krasnogorsk.webp',
         imgStyle: {height: '82px', width: 'auto'},
         label: 'Красногорская городская больница',
         address: 'Московская область, г.о. Красногорск, г. Красногорск, б-р Павшинский, д. 9',
         license: 'Лицензия Л041-01162-50/00573964 от 16.12.2020'
+    },*/
+    {
+        id: 16,
+        logo: '/images/partners/logo_eramish.png',
+        imgStyle: {height: '82px', width: 'auto'},
+        label: 'ГКБ имени А. К. Ерамишанцева',
+        address: 'г. Москва, ул. Ленская, д. 15',
+        license: 'Лицензия Л041-01137-77/00574895 от 20.11.2020'
     },
     {
         id: 9,
