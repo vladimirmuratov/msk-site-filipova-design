@@ -1,7 +1,8 @@
 import {Box, Typography} from '@mui/material'
 import {BasePartnerCard} from '@/components/base/BasePartnerCard'
+import React from 'react'
 
-export const PartnersBlock = ({partners = []}) => {
+const PartnersBlock = ({partners = []}) => {
     return (
         <Box
             component="section"
@@ -54,3 +55,5 @@ export const PartnersBlock = ({partners = []}) => {
         </Box>
     )
 }
+
+export default React.memo(PartnersBlock)

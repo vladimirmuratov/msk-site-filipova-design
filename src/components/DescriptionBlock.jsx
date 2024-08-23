@@ -1,6 +1,7 @@
 import {Box, Typography} from '@mui/material'
+import React from 'react'
 
-export const DescriptionBlock = () => {
+const DescriptionBlock = () => {
     return (
         <Box
             component="section"
@@ -68,3 +69,5 @@ export const DescriptionBlock = () => {
         </Box>
     )
 }
+
+export default React.memo(DescriptionBlock)

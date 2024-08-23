@@ -1,7 +1,8 @@
 import {Box, Typography} from '@mui/material'
 import {BaseServiceCard} from '@/components/base/BaseServiceCard'
+import React from 'react'
 
-export const ServiceBlock = ({services = []}) => {
+const ServiceBlock = ({services = []}) => {
     return (
         <Box
             component="section"
@@ -37,3 +38,5 @@ export const ServiceBlock = ({services = []}) => {
         </Box>
     )
 }
+
+export default React.memo(ServiceBlock)

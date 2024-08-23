@@ -1,7 +1,8 @@
 import {Box, Link, Typography} from '@mui/material'
 import {phone} from '@/config'
+import React from 'react'
 
-export const Banner = () => {
+const Banner = () => {
     return (
         <Box
             component="figure"
@@ -41,3 +42,5 @@ export const Banner = () => {
         </Box>
     )
 }
+
+export default React.memo(Banner)

@@ -1,7 +1,8 @@
 import {Box, Typography} from '@mui/material'
 import {BaseDirectionCard} from '@/components/base/BaseDirectionCard'
+import React from 'react'
 
-export const DirectionsBlock = ({directions = [], router}) => {
+const DirectionsBlock = ({directions = [], router}) => {
 
     return (
         <Box
@@ -41,3 +42,5 @@ export const DirectionsBlock = ({directions = [], router}) => {
         </Box>
     )
 }
+
+export default React.memo(DirectionsBlock)
