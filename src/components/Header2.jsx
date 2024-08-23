@@ -19,7 +19,7 @@ export const Header2 = () => {
                 <Box>
                     <Box
                         component="img"
-                        src="/images/logo-msk.png"
+                        src="/images/logo-msk.webp"
                         alt="logo"
                         sx={{
                             width: '100px'
@@ -30,7 +30,7 @@ export const Header2 = () => {
                 <Box>
                     <Box
                         component="img"
-                        src="/images/logo-obp.png"
+                        src="/images/logo-obp.webp"
                         alt="logo"
                         sx={{
                             width: '100px'
