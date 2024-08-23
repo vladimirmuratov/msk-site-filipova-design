@@ -9,7 +9,8 @@ export const BaseServiceCard = ({label, text, icon, path = '#'}) => {
                     padding: '10px',
                     border: '1px solid var(--black)',
                     borderRadius: '10px',
-                    height: '100%'
+                    // height: '100%'
+                    height: '213px'
                 }}
             >
                 <Box

@@ -10,7 +10,7 @@ export const Banner = () => {
                 position: 'relative'
             }}>
 
-            <img className="banner" src="/images/banner.png" alt="banner"/>
+            <img className="banner" src="/images/banner.webp" alt="banner"/>
             <Typography
                 sx={{
                     position: 'absolute',
