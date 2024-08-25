@@ -28,23 +28,27 @@ export const MessageForm = ({onSuccess, onFailed, handleClose}) => {
     }
 
     const onSubmit = async (data) => {
-        if (file) {
-            const fd = new FormData()
-            fd.append('file', file)
+        const {person, dateBirth, phone, email, info} = data
+        const fd = new FormData()
 
-            data = {
-                ...data,
-                file: fd
-            }
+        if (file) {
+            fd.append(fileName, file)
         }
 
-        const resStatus = await sendEmail(data)
+        fd.append('person', person)
+        fd.append('dateBirth', dateBirth)
+        fd.append('phone', phone)
+        fd.append('email', email)
+        fd.append('info', info)
+
+        const resStatus = await sendEmail(fd)
 
         if (resStatus === 250) {
             reset()
             handleClose()
             setChecked(false)
             onSuccess(true)
+            setFileName('')
         } else if (resStatus === 404) {
             handleClose()
             onFailed(true)
@@ -106,12 +110,12 @@ export const MessageForm = ({onSuccess, onFailed, handleClose}) => {
 
                     <Box>
                         <Button
-                            disabled
+                            // disabled
                             variant="contained"
                             component="label"
                             sx={{
-                                backgroundColor: 'var(--white)',
-                                color: 'var(--black)',
+                                backgroundColor: '#1976d2',
+                                color: 'var(--white)',
                                 '&:hover': {
                                     color: 'var(--white)'
                                 }
@@ -126,23 +130,25 @@ export const MessageForm = ({onSuccess, onFailed, handleClose}) => {
                         <Typography
                             sx={{
                                 paddingTop: '10px',
-                                fontSize: 12,
+                                fontSize: 10,
                                 fontWeight: 300
                             }}
                         >
-                            Здесь вы можете прикрепить медицинские документы
+                            Здесь вы можете прикрепить медицинские документы.
                             Подойдут электронные копии или фото всех
                             имеющихся документов: выписной эпикриз, выписка из
                             истории болезни, результаты обследований, УЗИ,
                             снимки МРТ или рентгенографии (обычно их
                             записывают на CD и выдают вместе с результатами
                             обследования), расшифровка снимков и пр.
+                            <br/>
+                            Если несколько файлов - то прикрепляйте архив
                         </Typography>
                     </Box>
 
                     <Box sx={{display: 'flex', alignItems: 'center'}}>
                         <Checkbox checked={checked} onChange={handleChange} sx={{alignSelf: 'start'}}/>
-                        <Typography sx={{fontSize: 10, lineHeight: 1.1}}>
+                        <Typography sx={{fontSize: 8, lineHeight: 1.1}}>
                             Я согласен на обработку персональных данных в соответствии
                             c Политикой конфиденциальности
                         </Typography>
@@ -158,13 +164,13 @@ export const MessageForm = ({onSuccess, onFailed, handleClose}) => {
                         <Button
                             type="submit"
                             variant="contained"
-                            size="large"
+                            size="medium"
                             disabled={!checked || isSubmitting}
-                            /*sx={{
+                            sx={{
                                 '&:hover': {
                                     color: 'var(--white)'
-                                }
-                            }}*/
+                                },
+                            }}
                         >Отправить</Button>
 
                         <Typography sx={{fontSize: 10, lineHeight: 1.1, width: '50%'}}>
