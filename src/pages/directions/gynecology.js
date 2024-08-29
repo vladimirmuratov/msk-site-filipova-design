@@ -5,7 +5,7 @@ export default function Gynecology() {
     return (
         <Box>
 
-            <BaseBanner imgPath="/images/directions/3.png" title="Гинекология"/>
+            <BaseBanner imgPath="/images/directions/3.webp" title="Гинекология"/>
 
             <Box
                 sx={{

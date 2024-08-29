@@ -5,7 +5,7 @@ export default function Traumatology() {
     return (
         <Box>
 
-            <BaseBanner imgPath="/images/directions/2.png" title="Травматология и ортопедия"/>
+            <BaseBanner imgPath="/images/directions/2.webp" title="Травматология и ортопедия"/>
 
             <Box
                 sx={{

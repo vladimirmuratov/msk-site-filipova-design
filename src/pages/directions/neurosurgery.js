@@ -5,7 +5,7 @@ export default function Neurosurgery() {
     return (
         <Box>
 
-            <BaseBanner imgPath="/images/directions/11.jpeg" title="Нейрохирургия"/>
+            <BaseBanner imgPath="/images/directions/11.webp" title="Нейрохирургия"/>
 
             <Box
                 sx={{

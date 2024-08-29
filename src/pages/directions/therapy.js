@@ -5,7 +5,7 @@ export default function Therapy() {
     return (
         <Box>
 
-            <BaseBanner imgPath="/images/directions/8.png" title="Терапия"/>
+            <BaseBanner imgPath="/images/directions/8.webp" title="Терапия"/>
 
             <Box
                 sx={{

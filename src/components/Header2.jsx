@@ -7,6 +7,10 @@ export const Header2 = () => {
         <Box
             component="header"
             sx={{
+                position: 'sticky',
+                top: 0,
+                zIndex: 1,
+                backgroundColor: 'var(--white)',
                 boxShadow: '0 4px 6px -6px #222',
                 padding: '20px 20px',
                 display: 'flex',

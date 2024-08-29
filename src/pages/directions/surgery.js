@@ -5,7 +5,7 @@ export default function Surgery() {
     return (
         <Box>
 
-            <BaseBanner imgPath="/images/directions/1.png" title="Хирургия"/>
+            <BaseBanner imgPath="/images/directions/1.webp" title="Хирургия"/>
 
             <Box
                 sx={{

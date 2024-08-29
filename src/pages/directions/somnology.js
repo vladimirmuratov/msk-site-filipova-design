@@ -5,7 +5,7 @@ export default function Somnology() {
     return (
         <Box>
 
-            <BaseBanner imgPath="/images/directions/9.png" title="Сомнология"/>
+            <BaseBanner imgPath="/images/directions/9.webp" title="Сомнология"/>
 
             <Box
                 sx={{

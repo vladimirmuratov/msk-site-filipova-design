@@ -5,7 +5,7 @@ export default function Pulmonology() {
     return (
         <Box>
 
-            <BaseBanner imgPath="/images/directions/12.jpeg" title="Пульмонология"/>
+            <BaseBanner imgPath="/images/directions/12.webp" title="Пульмонология"/>
 
             <Box
                 sx={{

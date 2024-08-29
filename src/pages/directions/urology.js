@@ -5,7 +5,7 @@ export default function Urology() {
     return (
         <Box>
 
-            <BaseBanner imgPath="/images/directions/4.png" title="Урология"/>
+            <BaseBanner imgPath="/images/directions/4.webp" title="Урология"/>
 
             <Box
                 sx={{

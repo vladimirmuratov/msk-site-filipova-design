@@ -5,7 +5,7 @@ export default function Vascularsurgery() {
     return (
         <Box>
 
-            <BaseBanner imgPath="/images/directions/10.jpeg" title="Сосудистая хирургия"/>
+            <BaseBanner imgPath="/images/directions/10.webp" title="Сосудистая хирургия"/>
 
             <Box
                 sx={{

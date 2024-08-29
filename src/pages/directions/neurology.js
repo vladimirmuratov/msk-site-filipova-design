@@ -5,7 +5,7 @@ export default function Neurology() {
     return (
         <Box>
 
-            <BaseBanner imgPath="/images/directions/6.png" title="Неврология"/>
+            <BaseBanner imgPath="/images/directions/6.webp" title="Неврология"/>
 
             <Box
                 sx={{

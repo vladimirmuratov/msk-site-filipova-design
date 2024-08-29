@@ -5,7 +5,7 @@ export default function Gastroenterology() {
     return (
         <Box>
 
-            <BaseBanner imgPath="/images/directions/7.png" title="Гастроэнтерология"/>
+            <BaseBanner imgPath="/images/directions/7.webp" title="Гастроэнтерология"/>
 
             <Box
                 sx={{

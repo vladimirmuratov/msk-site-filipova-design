@@ -5,7 +5,7 @@ export default function Cardiology() {
     return (
         <Box>
 
-            <BaseBanner imgPath="/images/directions/5.png" title="Кардиология"/>
+            <BaseBanner imgPath="/images/directions/5.webp" title="Кардиология"/>
 
             <Box
                 sx={{
