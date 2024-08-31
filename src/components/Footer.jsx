@@ -1,5 +1,5 @@
 import {Box, Link, Typography} from '@mui/material'
-import {address, email, footerList1, footerList2, phone} from '@/config'
+import {email, footerList1, footerList2, phone} from '@/config'
 import {BaseFooterLink} from '@/components/base/BaseFooterLink'
 
 export const Footer = ({onOpenForm}) => {
@@ -50,18 +50,22 @@ export const Footer = ({onOpenForm}) => {
                         marginBottom: '5px'
                     }}>Платная госпитализация:</Typography>
 
-                    <Typography sx={{
-                        fontSize: {xs: '18px', sm: '24px'},
-                        fontWeight: 300,
-                        color: 'var(--red)',
-                    }}>{phone}</Typography>
+                    <Link href={`tel:${phone}`}>
+                        <Typography sx={{
+                            fontSize: {xs: '18px', sm: '24px'},
+                            fontWeight: 300,
+                            color: 'var(--red)',
+                        }}>{phone}</Typography>
+                    </Link>
 
-                    <Typography sx={{
-                        fontSize: {xs: '14px', sm: '16px'},
-                        fontWeight: 500,
-                        color: 'var(--blue)',
-                        marginBottom: '5px'
-                    }}>{email}</Typography>
+                    <Link href={`mailto:${email}`}>
+                        <Typography sx={{
+                            fontSize: {xs: '14px', sm: '16px'},
+                            fontWeight: 500,
+                            color: 'var(--blue)',
+                            marginBottom: '5px'
+                        }}>{email}</Typography>
+                    </Link>
 
                     <Box
                         sx={{

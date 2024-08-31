@@ -1,6 +1,6 @@
 import {Box, Link} from '@mui/material'
 
-export const BaseFooterLink = ({label, path}) => {
+export const BaseFooterLink = ({label, path, target = '_blank'}) => {
     return (
         <Box
             sx={{
@@ -12,6 +12,7 @@ export const BaseFooterLink = ({label, path}) => {
         >
             <img className="icon" src="/images/icons-blue/triangle.svg" alt="icon"/>
             <Link
+                target={target}
                 sx={{
                     textDecoration: 'none',
                     color: 'var(--black)',

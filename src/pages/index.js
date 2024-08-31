@@ -6,7 +6,6 @@ import PartnersBlock from '@/components/PartnersBlock'
 import {directions, partners, services} from '@/config'
 import DirectionsBlock from '@/components/DirectionsBlock'
 import ServiceBlock from '@/components/ServiceBlock'
-import {Banner2} from '@/components/Banner2'
 import {useRouter} from 'next/router'
 
 const openSans = Open_Sans({subsets: ['latin', 'cyrillic']})
@@ -25,7 +24,6 @@ export default function Home() {
             </Head>
             <main className={openSans.className}>
                 <Banner/>
-                {/*<Banner2/>*/}
                 <DescriptionBlock/>
                 <PartnersBlock partners={partners}/>
                 <DirectionsBlock directions={directions} router={router}/>

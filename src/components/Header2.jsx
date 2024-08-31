@@ -1,6 +1,5 @@
-import {Box, Typography} from '@mui/material'
-import Link from 'next/link'
-import {address, email} from '@/config'
+import {Box, Typography, Link} from '@mui/material'
+import {address, email, phone} from '@/config'
 
 export const Header2 = () => {
     return (
@@ -48,7 +47,8 @@ export const Header2 = () => {
                     display: {xs: 'none', sm: 'flex'},
                     flexDirection: 'column',
                     justifyContent: 'center',
-                    alignItems: 'center'
+                    alignItems: 'center',
+                    gap: '5px'
                 }}
             >
                 <Typography
@@ -75,26 +75,31 @@ export const Header2 = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
-                    alignItems: 'center'
+                    alignItems: 'flex-start',
+                    gap: '5px'
                 }}
             >
-                <Typography
-                    sx={{
-                        fontSize: {xs: '17px', sm: '24px', md: '24px', lg: '28px'},
-                        fontWeight: 600,
-                        color: 'var(--red)',
-                        whiteSpace: 'nowrap',
-                        lineHeight: 1.1
-                    }}
-                >8(499)719-81-00</Typography>
+                <Link href={`tel:${phone}`}>
+                    <Typography
+                        sx={{
+                            fontSize: {xs: '19px', sm: '24px', md: '24px', lg: '28px'},
+                            fontWeight: 600,
+                            color: 'var(--red)',
+                            whiteSpace: 'nowrap',
+                            lineHeight: 1.1
+                        }}
+                    >8(499)719-81-00</Typography>
+                </Link>
 
-                <Typography
-                    sx={{
-                        fontSize: {xs: '10px', sm: '12px', md: '14px', lg: '16px'},
-                        fontWeight: 600,
-                        color: 'var(--red)',
-                    }}
-                >{email}</Typography>
+                <Link href={`mailto:${email}`}>
+                    <Typography
+                        sx={{
+                            fontSize: {xs: '12px', sm: '12px', md: '14px', lg: '16px'},
+                            fontWeight: 600,
+                            color: 'var(--red)',
+                        }}
+                    >{email}</Typography>
+                </Link>
             </Box>
         </Box>
     )

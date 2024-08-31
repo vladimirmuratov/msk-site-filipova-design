@@ -245,18 +245,18 @@ export const services = [
 export const footerList1 = [
     {id: 1, label: 'Миссия', path: '#'},
     {id: 2, label: 'Подбор лечения', path: '#'},
-    {id: 3, label: 'Клиники', path: '#'},
-    {id: 4, label: 'Направления лечения', path: '#'},
+    {id: 3, label: 'Клиники', path: '#partners', target: '_self'},
+    {id: 4, label: 'Направления лечения', path: '#direct', target: '_self'},
     {id: 5, label: 'Реквизиты', path: '#'},
 ]
 
 export const footerList2 = [
-    {id: 1, label: 'Перевод пациента из одной больницы в другую', path: '#'},
-    {id: 2, label: 'Плановая платная госпитализация', path: '#'},
-    {id: 3, label: 'Платная госпитализация из регионов на связи 24/7', path: '#'},
-    {id: 4, label: 'Экстренная платная госпитализация', path: '#'},
-    {id: 5, label: 'Платная госпитализация без полиса омс', path: '#'},
-    {id: 6, label: 'Платная госпитализация в федеральные и ведомственные медицинские учреждения', path: '#'},
-    {id: 7, label: 'Работа с тяжелыми пациентами', path: '#'},
-    {id: 8, label: 'Собственная патронажная служба', path: '#'},
+    {id: 1, label: 'Перевод пациента из одной больницы в другую', path: 'https://transfer.mskdoctor.ru/'},
+    {id: 2, label: 'Плановая платная госпитализация', path: 'https://plan-hospital.mskdoctor.ru/'},
+    {id: 3, label: 'Платная госпитализация из регионов на связи 24/7', path: 'https://region.mskdoctor.ru/'},
+    {id: 4, label: 'Экстренная платная госпитализация', path: 'https://emergency.mskdoctor.ru/'},
+    {id: 5, label: 'Платная госпитализация без полиса омс', path: 'https://oms.mskdoctor.ru/'},
+    {id: 6, label: 'Платная госпитализация в федеральные и ведомственные медицинские учреждения', path: 'https://federal.mskdoctor.ru/'},
+    {id: 7, label: 'Работа с тяжелыми пациентами', path: 'https://patient.mskdoctor.ru/'},
+    {id: 8, label: 'Собственная патронажная служба', path: 'https://patronage.mskdoctor.ru/'},
 ]
