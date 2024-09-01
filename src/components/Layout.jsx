@@ -7,6 +7,7 @@ import DialogContentText from '@mui/material/DialogContentText'
 import {timeOut} from '@/config'
 import {Header2} from '@/components/Header2'
 import {Metrika} from '@/Metrika'
+import {FloatBtn} from '@/components/FloatBtn'
 
 export const Layout = ({children}) => {
     const [isOpenForm, setOpenForm] = useState(false)
@@ -51,6 +52,7 @@ export const Layout = ({children}) => {
                     <Metrika/>
                     <Footer onOpenForm={handleOpenForm}/>
                 </Suspense>
+                <FloatBtn handleOpen={handleOpenForm}/>
             </Box>
 
             <BaseModal open={isOpenForm} handleClose={handleCloseForm} title="Связаться с нами">

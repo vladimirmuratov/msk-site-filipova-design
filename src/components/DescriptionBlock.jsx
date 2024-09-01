@@ -13,7 +13,7 @@ const DescriptionBlock = () => {
                 gap: {xs: '10px', sm: '80px'}
             }}
         >
-            <Box>
+            <Box component="article">
                 <Typography
                     sx={{
                         color: 'var(--blue)',
@@ -45,7 +45,9 @@ const DescriptionBlock = () => {
                     пределами.
                 </Typography>
             </Box>
+
             <Box
+                component="article"
                 sx={{
                     margin: {xs: 0, sm: '0 auto'}
                 }}
