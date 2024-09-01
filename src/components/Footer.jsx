@@ -50,7 +50,14 @@ export const Footer = ({onOpenForm}) => {
                         marginBottom: '5px'
                     }}>Платная госпитализация:</Typography>
 
-                    <Link href={`tel:${phone}`}>
+                    <Link href={`tel:${phone}`}
+                          sx={{
+                              '&:hover': {
+                                  textDecoration: 'underline !important',
+                                  color: 'var(--red)'
+                              }
+                          }}
+                    >
                         <Typography sx={{
                             fontSize: {xs: '18px', sm: '24px'},
                             fontWeight: 300,
@@ -58,7 +65,14 @@ export const Footer = ({onOpenForm}) => {
                         }}>{phone}</Typography>
                     </Link>
 
-                    <Link href={`mailto:${email}`}>
+                    <Link href={`mailto:${email}`}
+                          sx={{
+                              '&:hover': {
+                                  textDecoration: 'underline !important',
+                                  color: 'var(--blue)'
+                              }
+                          }}
+                    >
                         <Typography sx={{
                             fontSize: {xs: '14px', sm: '16px'},
                             fontWeight: 500,

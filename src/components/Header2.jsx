@@ -79,7 +79,14 @@ export const Header2 = () => {
                     gap: '5px'
                 }}
             >
-                <Link href={`tel:${phone}`}>
+                <Link href={`tel:${phone}`}
+                      sx={{
+                          '&:hover': {
+                              textDecoration: 'underline !important',
+                              color: 'var(--red)'
+                          }
+                      }}
+                >
                     <Typography
                         sx={{
                             fontSize: {xs: '19px', sm: '24px', md: '24px', lg: '28px'},
@@ -91,7 +98,14 @@ export const Header2 = () => {
                     >8(499)719-81-00</Typography>
                 </Link>
 
-                <Link href={`mailto:${email}`}>
+                <Link href={`mailto:${email}`}
+                      sx={{
+                          '&:hover': {
+                              textDecoration: 'underline !important',
+                              color: 'var(--red)'
+                          }
+                      }}
+                >
                     <Typography
                         sx={{
                             fontSize: {xs: '12px', sm: '12px', md: '14px', lg: '16px'},
