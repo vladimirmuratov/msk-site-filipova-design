@@ -1,7 +1,8 @@
 import {Box, Typography} from '@mui/material'
 import {address, phone} from '@/config'
+import React from 'react'
 
-export const Header = () => {
+const Header = () => {
     return (
         <Box
             component="header"
@@ -129,3 +130,5 @@ export const Header = () => {
         </Box>
     )
 }
+
+export default React.memo(Header)

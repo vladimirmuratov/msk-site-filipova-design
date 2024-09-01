@@ -1,5 +1,6 @@
 import {Box, Typography, Link} from '@mui/material'
 import {address, email, phone} from '@/config'
+import React from 'react'
 
 export const Header2 = () => {
     return (
@@ -118,3 +119,5 @@ export const Header2 = () => {
         </Box>
     )
 }
+
+export default React.memo(Header2)

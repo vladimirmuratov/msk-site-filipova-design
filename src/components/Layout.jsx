@@ -5,9 +5,9 @@ import {BaseModal} from '@/components/base/BaseModal'
 import {MessageForm} from '@/components/MessageForm'
 import DialogContentText from '@mui/material/DialogContentText'
 import {timeOut} from '@/config'
-import {Header2} from '@/components/Header2'
 import {Metrika} from '@/Metrika'
 import {FloatBtn} from '@/components/FloatBtn'
+import Header2 from '@/components/Header2'
 
 export const Layout = ({children}) => {
     const [isOpenForm, setOpenForm] = useState(false)
