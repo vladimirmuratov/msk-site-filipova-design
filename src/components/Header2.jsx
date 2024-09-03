@@ -1,6 +1,7 @@
 import {Box, Typography, Link} from '@mui/material'
 import {address, email, phone} from '@/config'
 import React from 'react'
+import SocialBlock from '@/components/SocialBlock'
 
 export const Header2 = () => {
     return (
@@ -76,7 +77,7 @@ export const Header2 = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
-                    alignItems: 'flex-start',
+                    alignSelf: {xs: 'center', sm: 'flex-end'},
                     gap: '5px'
                 }}
             >
@@ -115,6 +116,9 @@ export const Header2 = () => {
                         }}
                     >{email}</Typography>
                 </Link>
+
+                <SocialBlock/>
+
             </Box>
         </Box>
     )

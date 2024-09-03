@@ -1,6 +1,7 @@
 import {Box, Link, Typography} from '@mui/material'
 import {email, footerList1, footerList2, phone} from '@/config'
 import {BaseFooterLink} from '@/components/base/BaseFooterLink'
+import SocialBlock from '@/components/SocialBlock'
 
 export const Footer = ({onOpenForm}) => {
     return (
@@ -117,6 +118,11 @@ export const Footer = ({onOpenForm}) => {
                             }}
                         >Заказать звонок</Link>
                     </Box>
+
+                    <Box sx={{marginTop: '15px'}}>
+                        <SocialBlock/>
+                    </Box>
+
                 </Box>
             </Box>
             <Typography
