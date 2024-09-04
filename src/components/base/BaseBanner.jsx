@@ -14,7 +14,8 @@ export const BaseBanner = ({imgPath, title}) => {
                 // alt="pic"
                 sx={{
                     width: '100%',
-                    height: '451px',
+                    // height: '451px',
+                    height: {xs: '129px', sm: '241px', md: '322px', lg: '459px'},
                     backgroundImage: `url(${imgPath})`,
                     backgroundSize: 'cover',
                 }}
