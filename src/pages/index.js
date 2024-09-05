@@ -20,7 +20,7 @@ export default function Home() {
                 <meta name="keywords" content="медицинские услуги, скорая помощь, госпитализация"/>
                 <meta name="description" content="компания по оказанию экстренных медицинских услуг"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link rel="icon" href="/favicon.ico"/>
+                <link rel="icon" href="/favicon.png"/>
             </Head>
             <main className={openSans.className}>
                 <Banner3/>
