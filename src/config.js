@@ -250,7 +250,7 @@ export const footerList1 = [
     {id: 2, label: 'Подбор лечения', path: '#'},
     {id: 3, label: 'Клиники', path: '#partners', target: '_self'},
     {id: 4, label: 'Направления лечения', path: '#direct', target: '_self'},
-    {id: 5, label: 'Реквизиты', path: '#'},
+    {id: 5, label: 'Реквизиты', path: '/requisites', target: '_self'},
 ]
 
 export const footerList2 = [
