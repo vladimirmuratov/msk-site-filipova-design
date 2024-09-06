@@ -40,6 +40,17 @@ export const stepsHospitalization = [
     },
 ]
 
+export const headerServiceLinks = [
+    {id: 1, label: 'Перевод в другую больницу', path: 'https://transfer.mskdoctor.ru'},
+    {id: 2, label: 'Плановая госпитализация', path: 'https://plan-hospital.mskdoctor.ru'},
+    {id: 3, label: 'Экстренная госпитализация', path: 'https://emergency.mskdoctor.ru'},
+    {id: 4, label: 'Госпитализация без ОМС', path: 'https://oms.mskdoctor.ru'},
+    {id: 5, label: 'Госпитализация из регионов', path: 'https://region.mskdoctor.ru'},
+    {id: 6, label: 'Госпитализация в мед.учреждения', path: 'https://federal.mskdoctor.ru'},
+    {id: 7, label: 'Работа с тяжелыми пациентами', path: 'https://patient.mskdoctor.ru'},
+    {id: 8, label: 'Патронажная служба', path: 'https://patronage.mskdoctor.ru'},
+]
+
 export const partners = [
     {
         id: 1,
