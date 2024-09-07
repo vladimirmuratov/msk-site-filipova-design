@@ -18,7 +18,8 @@ export const HowToBeHospitalized = ({steps = []}) => {
                     fontSize: {xs: 24, sm: 28},
                     fontWeight: 300,
                     color: 'var(--red)',
-                    marginBottom: {xs: '15px', sm: '30px'}
+                    marginBottom: {xs: '15px', sm: '30px'},
+                    textTransform: 'uppercase',
                 }}
             >
                 КАК ГОСПИТАЛИЗИРОВАТЬСЯ В НУЖНУЮ БОЛЬНИЦУ

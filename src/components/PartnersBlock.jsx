@@ -24,9 +24,10 @@ const PartnersBlock = ({partners = []}) => {
                 <Typography
                     variant="h4"
                     sx={{
-                        fontSize: {xs: 32, sm: 38},
+                        fontSize: {xs: 24, sm: 28},
                         fontWeight: 300,
-                        color: 'var(--blue)',
+                        color: 'var(--red)',
+                        marginBottom: {xs: '15px', sm: '30px'},
                         textTransform: 'uppercase',
                     }}
                 >
