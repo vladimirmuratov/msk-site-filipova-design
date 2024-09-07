@@ -5,7 +5,7 @@ import {useState} from 'react'
 import {sendEmail} from '@/lib/sendEmail'
 import {BaseDatePicker} from '@/components/base/BaseDatePicker'
 
-export const MessageForm = ({onSuccess, onFailed, handleClose}) => {
+export const MessageForm = ({onSuccess, onFailed, handleClose = () => {}}) => {
     const regExpEmail = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
     const regExpPhone = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/
     const [fileName, setFileName] = useState('')

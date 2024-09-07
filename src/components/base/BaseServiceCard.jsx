@@ -3,7 +3,10 @@ import Link from 'next/link'
 
 export const BaseServiceCard = ({label, text, icon, path = '#'}) => {
     return (
-        <Link href={path} target='_blank'>
+        <Link
+            href={path}
+            // target='_blank'
+        >
             <Box
                 sx={{
                     padding: '10px',

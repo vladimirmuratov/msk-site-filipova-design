@@ -11,14 +11,14 @@ export const Header2 = () => {
             sx={{
                 position: 'sticky',
                 top: 0,
-                zIndex: 1,
+                zIndex: 2,
             }}
         >
             <Box
                 sx={{
                     backgroundColor: 'var(--white)',
                     boxShadow: '0 4px 6px -6px #222',
-                    padding: '20px 20px',
+                    padding: '10px',
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',

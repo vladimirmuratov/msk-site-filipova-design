@@ -42,13 +42,45 @@ export const stepsHospitalization = [
 
 export const headerServiceLinks = [
     {id: 1, label: 'Перевод в другую больницу', path: 'https://transfer.mskdoctor.ru'},
-    {id: 2, label: 'Плановая госпитализация', path: 'https://plan-hospital.mskdoctor.ru'},
+    {
+        id: 2,
+        label: 'Платная госпитализация',
+        // path: 'https://plan-hospital.mskdoctor.ru',
+        path: '/services/plan-hospital',
+    },
     {id: 3, label: 'Экстренная госпитализация', path: 'https://emergency.mskdoctor.ru'},
     {id: 4, label: 'Госпитализация без ОМС', path: 'https://oms.mskdoctor.ru'},
     {id: 5, label: 'Госпитализация из регионов', path: 'https://region.mskdoctor.ru'},
     {id: 6, label: 'Госпитализация в мед.учреждения', path: 'https://federal.mskdoctor.ru'},
     {id: 7, label: 'Работа с тяжелыми пациентами', path: 'https://patient.mskdoctor.ru'},
     {id: 8, label: 'Патронажная служба', path: 'https://patronage.mskdoctor.ru'},
+]
+
+export const servicesInfo = [
+    {
+        id: 1,
+        icon: '/images/icons-red/hospital.svg',
+        title: 'Бесплатно подберем лечение',
+        text: 'Отлаженная система взаимодействия медицинскими учреждениями Москвы.'
+    },
+    {
+        id: 2,
+        icon: '/images/icons-red/man.svg',
+        title: 'Личный контроль качества лечения',
+        text: 'Сопровождение пациента до выписки и согласовывание с родственником пациента всех процедур.'
+    },
+    {
+        id: 3,
+        icon: '/images/icons-red/sofa.svg',
+        title: 'Просто и удобно',
+        text: 'Принцип «единого окна» для предоставления высококачественных медицинских услуг и премиального обслуживания.'
+    },
+    {
+        id: 4,
+        icon: '/images/icons-red/car.svg',
+        title: 'Организуем вашу госпитализацию',
+        text: 'Транспортировка собственной бригадой скорой медицинской помощи. Юридическая поддержка, оформление документации, размещение в комфортных условиях с должным уходом и лечением.'
+    },
 ]
 
 export const partners = [
@@ -210,7 +242,8 @@ export const services = [
         label: 'Платная ПЛАНОВАЯ госпитализация',
         text: 'Круглосуточный call-центр для поддержки пациента и решения любых вопросов. На связи менеджеры с медицинским образованием. Наша Служба гарантирует помощь в госпитализации в оптимальные, а при необходимости, в кратчайшие сроки именно в тот медицинский центр, который подходит вам наилучшим образом.',
         icon: '/images/icons-blue/1.svg',
-        path: 'https://plan-hospital.mskdoctor.ru/'
+        // path: 'https://plan-hospital.mskdoctor.ru/',
+        path: '/services/plan-hospital'
     },
     {
         id: 2,
