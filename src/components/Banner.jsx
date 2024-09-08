@@ -1,4 +1,4 @@
-import {Box, Link, Typography} from '@mui/material'
+import {Box, Typography} from '@mui/material'
 import {phone} from '@/config'
 import React from 'react'
 
@@ -23,22 +23,6 @@ const Banner = () => {
                     textShadow: '2px 2px 3px pink'
                 }}
             >{phone}</Typography>
-
-            {/*<Box
-                sx={{
-                    paddingX: {xs: '10px', lg: 0},
-                    marginTop: {xs: '5px', sm: '10px'},
-                    fontSize: {xs: '12px', sm: '14px'},
-                    fontWeight: 300,
-                    display: 'flex',
-                    justifyContent: {xs: 'center', sm: 'flex-start'},
-                    gap: {xs: '5px', sm: '10px'}
-                }}
-            >
-                <Link href="#">Госпитализация</Link>
-                <Link href="#">Стоимость услуг</Link>
-                <Link href="#">Обратный звонок</Link>
-            </Box>*/}
         </Box>
     )
 }
