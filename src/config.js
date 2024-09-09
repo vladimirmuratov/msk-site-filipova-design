@@ -49,9 +49,9 @@ export const headerServiceLinks = [
         path: '/services/plan-hospital',
     },
     {id: 3, label: 'Экстренная госпитализация', path: 'https://emergency.mskdoctor.ru'},
-    {id: 4, label: 'Госпитализация без ОМС', path: 'https://oms.mskdoctor.ru'},
+    {id: 4, label: 'Госпитализация без полиса ОМС', path: 'https://oms.mskdoctor.ru'},
     {id: 5, label: 'Госпитализация из регионов', path: 'https://region.mskdoctor.ru'},
-    {id: 6, label: 'Госпитализация в мед.учреждения', path: 'https://federal.mskdoctor.ru'},
+    {id: 6, label: 'Госпитализация в федеральные мед.учреждения', path: 'https://federal.mskdoctor.ru'},
     {id: 7, label: 'Работа с тяжелыми пациентами', path: 'https://patient.mskdoctor.ru'},
     {id: 8, label: 'Патронажная служба', path: 'https://patronage.mskdoctor.ru'},
 ]
