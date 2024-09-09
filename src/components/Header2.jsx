@@ -29,7 +29,8 @@ export const Header2 = () => {
                     href="/"
                     sx={{
                         display: 'flex',
-                        flexDirection: {xs: 'column', md: 'row'}
+                        flexDirection: {xs: 'column', md: 'row'},
+                        alignItems: 'center'
                     }}
                 >
                     <Box>
