@@ -26,6 +26,7 @@ const HeaderServiceBlock = () => {
                         color: 'var(--light-gray) !important',
                         fontSize: {xs: '12px', md: '14px'},
                         textDecoration: path === pathname ? 'underline !important' : 'none',
+                        whiteSpace: {sm: 'wrap', lg: 'nowrap'},
 
                         '&:hover': {
                             textDecoration: 'underline !important'
