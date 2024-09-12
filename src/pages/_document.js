@@ -8,6 +8,7 @@ export default function Document(props) {
     return (
         <Html lang="en">
             <Head>
+                <title>МСК-Групп</title>
                 <DocumentHeadTags {...props} />
             </Head>
             <body>
