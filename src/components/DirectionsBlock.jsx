@@ -15,7 +15,7 @@ const DirectionsBlock = ({directions = [], router}) => {
             }}
         >
             <Typography
-                variant="h4"
+                variant="h2"
                 sx={{
                     fontSize: {xs: 32, sm: 38},
                     fontWeight: 300,

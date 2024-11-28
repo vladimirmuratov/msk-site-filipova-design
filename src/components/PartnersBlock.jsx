@@ -1,8 +1,9 @@
 import {Box, Typography} from '@mui/material'
 import {BasePartnerCard} from '@/components/base/BasePartnerCard'
 import React from 'react'
+import { partners } from '@/config';
 
-const PartnersBlock = ({partners = []}) => {
+const PartnersBlock = ({title = 'Клиники', color = 'var(--blue)'}) => {
     return (
         <Box
             id='partners'
@@ -22,16 +23,16 @@ const PartnersBlock = ({partners = []}) => {
                 }}
             >
                 <Typography
-                    variant="h4"
+                    variant="h2"
                     sx={{
-                        fontSize: {xs: 24, sm: 28},
+                        fontSize: {xs: 32, sm: 38},
                         fontWeight: 300,
-                        color: 'var(--red)',
-                        marginBottom: {xs: '15px', sm: '30px'},
+                        color: color,
                         textTransform: 'uppercase',
+                        marginBottom: {xs: '15px', sm: '30px'},
                     }}
                 >
-                    Клиники
+                    {title}
                 </Typography>
 
                 <Typography

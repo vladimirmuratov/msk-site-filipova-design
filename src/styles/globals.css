@@ -184,3 +184,7 @@ li {
         transform: scale(1.7, 1.7);
     }
 }
+
+.fw-800{
+    font-weight: 800;
+}

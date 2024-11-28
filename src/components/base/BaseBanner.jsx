@@ -21,18 +21,19 @@ export const BaseBanner = ({imgPath, title}) => {
                 }}
             />
             <Typography
-                component="h4"
+                component="h1"
                 sx={{
                     position: 'absolute',
                     top: '50%',
                     left: '50%',
                     transform: 'translate(-50%, -50%)',
                     color: 'var(--white)',
-                    fontSize: {xs: 40, sm: 58, md: 68, lg: 78},
-                    fontWeight: 600,
+                    fontSize: {xs: 26, sm: 48, md: 58, lg: 68},
+                    fontWeight: {xs: 400, sm: 500},
                     textShadow: '4px 4px 5px var(--gray)',
                     textAlign: 'center',
-                    lineHeight: 1.1
+                    lineHeight: 1.1,
+                    textTransform: 'uppercase'
                 }}
             >{title}</Typography>
 

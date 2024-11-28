@@ -224,9 +224,9 @@ export const directions = [
     {id: 7, label: 'Гастроэнтерология', img: 'images/directions/7.webp', path: '/directions/gastroenterology'},
     {id: 8, label: 'Терапия', img: 'images/directions/8.webp', path: '/directions/therapy'},
     {id: 9, label: 'Сомнология', img: 'images/directions/9.webp', path: '/directions/somnology'},
-    {id: 10, label: 'Сосудистая хирургия', img: '/images/directions/10.webp', path: '/directions/vascularsurgery'},
-    {id: 11, label: 'Нейрохирургия', img: '/images/directions/11.webp', path: '/directions/neurosurgery'},
-    {id: 12, label: 'Пульмонология', img: '/images/directions/12.webp', path: '/directions/pulmonology'},
+    // {id: 10, label: 'Сосудистая хирургия', img: '/images/directions/10.webp', path: '/directions/vascularsurgery'},
+    // {id: 11, label: 'Нейрохирургия', img: '/images/directions/11.webp', path: '/directions/neurosurgery'},
+    // {id: 12, label: 'Пульмонология', img: '/images/directions/12.webp', path: '/directions/pulmonology'},
 ]
 
 export const services = [
@@ -306,4 +306,11 @@ export const footerList2 = [
     {id: 6, label: 'Платная госпитализация в федеральные и ведомственные медицинские учреждения', path: 'https://federal.mskdoctor.ru/'},
     {id: 7, label: 'Работа с тяжелыми пациентами', path: 'https://patient.mskdoctor.ru/'},
     {id: 8, label: 'Собственная патронажная служба', path: 'https://patronage.mskdoctor.ru/'},
+]
+
+
+export const surgeryImages = [
+    {id: 1, src: '/images/surgery/2.webp', alt: 'платные больницы хирургия', title: 'холл в хирургическом отделении'},
+    {id: 2, src: '/images/surgery/3.webp', alt: 'платная хирургия', title: 'холл в хирургическое отделение'},
+    {id: 3, src: '/images/surgery/1.webp', alt: 'платная палата в хирургии', title: 'палата в хирургическом отделении'},
 ]
