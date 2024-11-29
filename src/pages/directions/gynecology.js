@@ -83,7 +83,7 @@ export default function Gynecology() {
                             paddingY: { xs: '25px', sm: '50px' },
                         }}
                     >
-                        <BaseText>
+                        <Box>
                             <Typography
                                 variant="h2"
                                 sx={{
@@ -102,6 +102,7 @@ export default function Gynecology() {
                                 sx={{
                                     fontSize: { xs: 20, sm: 28 },
                                     fontWeight: 300,
+                                    color: 'var(--blue)'
                                 }}
                             >
                                 1. Большой спектр органосохраняющих лапароскопических хирургических вмешательств:
@@ -112,7 +113,7 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Устранение кист яичников</Typography>
+                                        <BaseText>Устранение кист яичников</BaseText>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem sx={{ gap: '10px' }}>
@@ -120,8 +121,8 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Лечение апоплексии и внематочной беременности,
-                                            поликистоза</Typography>
+                                        <BaseText>Лечение апоплексии и внематочной беременности,
+                                            поликистоза</BaseText>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem sx={{ gap: '10px' }}>
@@ -129,8 +130,8 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Операции по восстановлению репродуктивного
-                                            здоровья (бесплодие)</Typography>
+                                        <BaseText>Операции по восстановлению репродуктивного
+                                            здоровья (бесплодие)</BaseText>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem sx={{ gap: '10px' }}>
@@ -138,8 +139,8 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Коррекция наружных генитальных проявлений
-                                            эндометриоза</Typography>
+                                        <BaseText>Коррекция наружных генитальных проявлений
+                                            эндометриоза</BaseText>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem sx={{ gap: '10px' }}>
@@ -147,8 +148,8 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Удаление миомы матки и устранение спаек в
-                                            малом тазу</Typography>
+                                        <BaseText>Удаление миомы матки и устранение спаек в
+                                            малом тазу</BaseText>
                                     </ListItemText>
                                 </ListItem>
                             </List>
@@ -158,6 +159,7 @@ export default function Gynecology() {
                                 sx={{
                                     fontSize: { xs: 20, sm: 28 },
                                     fontWeight: 300,
+                                    color: 'var(--blue)'
                                 }}
                             >
                                 2. Операции на онкоурологических патологиях женских половых органов:
@@ -168,8 +170,8 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>лечение рака шейки, яичников и тела матки
-                                            (эндометрия)</Typography>
+                                        <BaseText>лечение рака шейки, яичников и тела матки
+                                            (эндометрия)</BaseText>
                                     </ListItemText>
                                 </ListItem>
                             </List>
@@ -179,6 +181,7 @@ export default function Gynecology() {
                                 sx={{
                                     fontSize: { xs: 20, sm: 28 },
                                     fontWeight: 300,
+                                    color: 'var(--blue)'
                                 }}
                             >
                                 3. Хирургическое вмешательство с использованием лапаротомного доступа различной
@@ -191,6 +194,7 @@ export default function Gynecology() {
                                 sx={{
                                     fontSize: { xs: 20, sm: 28 },
                                     fontWeight: 300,
+                                    color: 'var(--blue)'
                                 }}
                             >
                                 4. Эстетические операции в гинекологии:
@@ -201,7 +205,7 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Удаление кист бартолиниевой железы</Typography>
+                                        <BaseText>Удаление кист бартолиниевой железы</BaseText>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem sx={{ gap: '10px' }}>
@@ -209,7 +213,7 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Реконструкция влагалищных стенок, восстановление девственной плевы (гименопластика)</Typography>
+                                        <BaseText>Реконструкция влагалищных стенок, восстановление девственной плевы (гименопластика)</BaseText>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem sx={{ gap: '10px' }}>
@@ -217,7 +221,7 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Пластическая коррекция малых половых губ и хирургия при недержании мочи</Typography>
+                                        <BaseText>Пластическая коррекция малых половых губ и хирургия при недержании мочи</BaseText>
                                     </ListItemText>
                                 </ListItem>
                             </List>
@@ -227,6 +231,7 @@ export default function Gynecology() {
                                 sx={{
                                     fontSize: { xs: 20, sm: 28 },
                                     fontWeight: 300,
+                                    color: 'var(--blue)'
                                 }}
                             >
                                 5. Мелкие гинекологические процедуры:
@@ -237,7 +242,7 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Диагностическая гистероскопия с раздельным выскабливанием</Typography>
+                                        <BaseText>Диагностическая гистероскопия с раздельным выскабливанием</BaseText>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem sx={{ gap: '10px' }}>
@@ -245,7 +250,7 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Удаление полипов эндометрия, миоматозных узлов</Typography>
+                                        <BaseText>Удаление полипов эндометрия, миоматозных узлов</BaseText>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem sx={{ gap: '10px' }}>
@@ -253,7 +258,7 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Рассечение внутриматочных синехий и перегородок</Typography>
+                                        <BaseText>Рассечение внутриматочных синехий и перегородок</BaseText>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem sx={{ gap: '10px' }}>
@@ -261,7 +266,7 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Вскрытие абсцессов бартолиниевой железы</Typography>
+                                        <BaseText>Вскрытие абсцессов бартолиниевой железы</BaseText>
                                     </ListItemText>
                                 </ListItem>
                             </List>
@@ -271,6 +276,7 @@ export default function Gynecology() {
                                 sx={{
                                     fontSize: { xs: 20, sm: 28 },
                                     fontWeight: 300,
+                                    color: 'var(--blue)'
                                 }}
                             >
                                 6. Консервативное лечение:
@@ -281,7 +287,7 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Терапия миомы, эндометриоза матки, функциональных кист яичников</Typography>
+                                        <BaseText>Терапия миомы, эндометриоза матки, функциональных кист яичников</BaseText>
                                     </ListItemText>
                                 </ListItem>
                             </List>
@@ -291,6 +297,7 @@ export default function Gynecology() {
                                 sx={{
                                     fontSize: { xs: 20, sm: 28 },
                                     fontWeight: 300,
+                                    color: 'var(--blue)'
                                 }}
                             >
                                 7. Специализированные услуги:
@@ -301,7 +308,7 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Планирование семьи и подбор контрацепции</Typography>
+                                        <BaseText>Планирование семьи и подбор контрацепции</BaseText>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem sx={{ gap: '10px' }}>
@@ -309,7 +316,7 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Заместительная гормональная терапия в период менопаузы</Typography>
+                                        <BaseText>Заместительная гормональная терапия в период менопаузы</BaseText>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem sx={{ gap: '10px' }}>
@@ -317,7 +324,7 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Профилактика и лечение остеопороза</Typography>
+                                        <BaseText>Профилактика и лечение остеопороза</BaseText>
                                     </ListItemText>
                                 </ListItem>
                             </List>
@@ -327,6 +334,7 @@ export default function Gynecology() {
                                 sx={{
                                     fontSize: { xs: 20, sm: 28 },
                                     fontWeight: 300,
+                                    color: 'var(--blue)'
                                 }}
                             >
                                 8. Диагностические процедуры:
@@ -337,7 +345,7 @@ export default function Gynecology() {
                                         <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
                                     </ListItemIcon>
                                     <ListItemText>
-                                        <Typography sx={{ fontSize: 18 }}>Аспирационная биопсия эндометрия, удаление полипов цервикального канала</Typography>
+                                        <BaseText>Аспирационная биопсия эндометрия, удаление полипов цервикального канала</BaseText>
                                     </ListItemText>
                                 </ListItem>
                             </List>
@@ -347,11 +355,12 @@ export default function Gynecology() {
                                 sx={{
                                     fontSize: { xs: 20, sm: 28 },
                                     fontWeight: 300,
+                                    color: 'var(--blue)'
                                 }}
                             >
                                 9. Лечение бесплодия у женщин, терапия патологий шейки матки (лечение эктопии, лейкоплакии и дисплазий)
                             </Typography>
-                        </BaseText>
+                        </Box>
 
                         <PartnersBlock title="платные больницы гинекологии" color="var(--red)" />
 

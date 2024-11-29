@@ -314,3 +314,12 @@ export const surgeryImages = [
     {id: 2, src: '/images/surgery/3.webp', alt: 'платная хирургия', title: 'холл в хирургическое отделение'},
     {id: 3, src: '/images/surgery/1.webp', alt: 'платная палата в хирургии', title: 'палата в хирургическом отделении'},
 ]
+
+export const traumatologyImages = [
+    {id: 1, src: '/images/traumatology/1.webp', alt: 'платная травматология москва', title: 'больница травматология платно'},
+]
+
+export const urologyImages = [
+    {id: 1, src: '/images/urology/1.webp', alt: 'платная госпитализация урология', title: 'больница урология платно'},
+    {id: 2, src: '/images/urology/2.webp', alt: 'платные клиники москвы урология', title: 'больница москва урология'},
+]

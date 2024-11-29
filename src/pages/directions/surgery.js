@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { BaseText } from '@/components/base/BaseText';
 import PartnersBlock from '@/components/PartnersBlock';
 import { surgeryImages } from '@/config';
+import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 
 export default function Surgery() {
     return (
@@ -97,29 +98,8 @@ export default function Surgery() {
                         систем от мировых лидеров индустрии для проведения точных лапароскопических операций.
                     </BaseText>
 
-                    <Box
-                        sx={{
-                            display: 'flex',
-                            flexDirection: { xs: 'column', md: 'row' },
-                            justifyContent: 'center',
-                            gap: '10px',
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
-                        {surgeryImages.map(({ id, src, alt, title }) => (
-                            <Box
-                                component="img"
-                                key={id}
-                                src={src}
-                                alt={alt}
-                                title={title}
-                                sx={{
-                                    width: { xs: '100%', md: '240px' },
-                                    height: { xs: 'auto', md: '160px' },
-                                }}
-                            />
-                        ))}
-                    </Box>
+
+                    <BasePhotoGallery imagesList={surgeryImages}/>
 
                 </Box>
             </Box>
