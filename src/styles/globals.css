@@ -185,10 +185,18 @@ li {
     }
 }
 
-.fw-800{
+.fw-800 {
     font-weight: 800;
 }
 
-.pt-0{
+.pt-0 {
     padding-top: 0;
+}
+
+.pb-0{
+    padding-bottom: 0;
+}
+
+.pb-16 {
+    padding-bottom: 16px;
 }

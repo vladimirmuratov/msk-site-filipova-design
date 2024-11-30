@@ -27,7 +27,7 @@ export default function Traumatology() {
                 <Box
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
-                        marginX: { xs: '15px', lg: 0 }
+                        marginX: { xs: '10px', lg: 0 }
                     }}
                 >
                     <BaseText>

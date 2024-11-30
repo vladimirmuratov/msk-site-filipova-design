@@ -9,6 +9,7 @@ export const BasePhotoGallery = React.memo(({ imagesList = [] }) => {
                 flexDirection: { xs: 'column', md: 'row' },
                 justifyContent: 'center',
                 gap: '10px',
+                flexWrap: 'wrap',
                 paddingY: { xs: '25px', sm: '50px' },
             }}
         >

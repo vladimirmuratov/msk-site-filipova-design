@@ -25,7 +25,7 @@ export default function Cardiology() {
                 <Box
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
-                        marginX: { xs: '15px', lg: 0 }
+                        marginX: { xs: '10px', lg: 0 }
                     }}
                 >
                     <BaseText>
@@ -60,6 +60,7 @@ export default function Cardiology() {
                                 fontWeight: 300,
                                 color: 'var(--red)',
                                 textTransform: 'uppercase',
+                                wordWrap: 'break-word'
                                 // marginBottom: {xs: '15px', sm: '30px'},
                             }}
                         >

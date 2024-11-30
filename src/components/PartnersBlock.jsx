@@ -30,6 +30,7 @@ const PartnersBlock = ({title = 'Клиники', color = 'var(--blue)'}) => {
                         color: color,
                         textTransform: 'uppercase',
                         marginBottom: {xs: '15px', sm: '30px'},
+                        wordWrap: 'break-word'
                     }}
                 >
                     {title}
