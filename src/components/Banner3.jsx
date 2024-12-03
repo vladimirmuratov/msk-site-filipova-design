@@ -13,13 +13,14 @@ const Banner3 = () => {
             }}>
             <Image
                 src="/images/banner.webp"
-                alt="banner"
+                alt="платная госпитализация"
                 width="0"
                 height="0"
                 sizes="100vw"
                 className="banner"
             />
             <Typography
+                component='h1'
                 sx={{
                     position: 'absolute',
                     top: '40%',

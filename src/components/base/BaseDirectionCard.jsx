@@ -32,6 +32,7 @@ export const BaseDirectionCard = ({label, img, path, router}) => {
                 />
             </Box>
             <Typography
+                component='h3'
                 sx={{
                     color: 'var(--blue)',
                     fontSize: {xs: '14px', sm: '14px', md: '16px'},

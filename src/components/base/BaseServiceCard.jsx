@@ -1,7 +1,7 @@
 import {Box, Typography} from '@mui/material'
 import Link from 'next/link'
 
-export const BaseServiceCard = ({label, text, icon, path = '#'}) => {
+export const BaseServiceCard = ({alt, label, text, icon, path = '#'}) => {
     return (
         <Link
             href={path}
@@ -27,12 +27,13 @@ export const BaseServiceCard = ({label, text, icon, path = '#'}) => {
                     <Box
                         component="img"
                         src={icon}
-                        alt="icon"
+                        alt={alt}
                         sx={{
                             height: '50px'
                         }}
                     ></Box>
                     <Typography
+                        component='h3'
                         sx={{
                             color: 'var(--blue)',
                             fontWeight: 500
