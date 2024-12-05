@@ -27,7 +27,7 @@ export const BaseDirectionCard = ({label, img, path, router}) => {
                         borderTopRightRadius: '5px',
                         borderTopLeftRadius: '5px',
                         backgroundImage: `url(${img})`,
-                        backgroundSize: 'cover'
+                        backgroundSize: 'cover',
                     }}
                 />
             </Box>
