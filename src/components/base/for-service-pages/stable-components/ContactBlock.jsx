@@ -20,7 +20,7 @@ export const ContactBlock = () => {
                 }}
             >
                 <Typography
-                    variant="h4"
+                    variant="h2"
                     sx={{
                         fontSize: {xs: 24, sm: 28},
                         fontWeight: 300,
@@ -41,7 +41,8 @@ export const ContactBlock = () => {
                 <Typography
                     sx={{
                         color: 'var(--black)',
-                        fontSize: {xs: 12, sm: 14},
+                        // fontSize: {xs: 12, sm: 14},
+                        fontSize: {xs: 14, sm: 16},
                         fontWeight: 300,
                     }}
                 >

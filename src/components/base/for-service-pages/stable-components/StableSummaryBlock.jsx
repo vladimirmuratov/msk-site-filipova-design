@@ -7,7 +7,7 @@ import {partners} from '@/config'
 
 const StableSummaryBlock = () => (
     <>
-        <PartnersBlock partners={partners}/>
+        <PartnersBlock partners={partners} color='var(--red)'/>
         <WhatWeOffer/>
         <FormBlock/>
         <ContactBlock/>

@@ -13,7 +13,7 @@ export const HowToBeHospitalized = ({steps = []}) => {
             }}
         >
             <Typography
-                variant="h4"
+                variant="h2"
                 sx={{
                     fontSize: {xs: 24, sm: 28},
                     fontWeight: 300,

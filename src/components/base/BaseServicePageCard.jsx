@@ -1,29 +1,30 @@
-import {Box, Typography} from '@mui/material'
+import { Box, Typography } from '@mui/material';
 
-export const BaseServicePageCard = ({icon, title, text}) => {
+export const BaseServicePageCard = ({ icon, title, text }) => {
     return (
         <Box
             sx={{
                 display: 'flex',
-                gap: {xs: '5px', sm: '10px'}
+                gap: { xs: '5px', sm: '10px' }
             }}
         >
-            <img className="service-icon" src={icon} alt="icon"/>
+            <img className="service-icon" src={icon} alt="icon" />
             <Box>
                 <Typography
-                    variant="h6"
+                    variant="h2"
                     sx={{
+                        fontSize: { xs: 18, sm: 20 },
                         color: 'var(--blue)',
                         lineHeight: 1.2,
                     }}
                 >{title}</Typography>
                 <Typography
                     sx={{
-                        fontSize: 14,
+                        fontSize: { xs: 14, sm: 16 },
                         fontWeight: 300
                     }}
                 >{text}</Typography>
             </Box>
         </Box>
-    )
-}
+    );
+};

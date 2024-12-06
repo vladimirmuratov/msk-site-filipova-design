@@ -21,8 +21,9 @@ export const BaseStep = ({icon, title, text, idx, totalLength}) => {
             >
                 <img className="service-icon" src={icon} alt="icon"/>
                 <Typography
-                    variant="h6"
+                    variant="h3"
                     sx={{
+                        fontSize: { xs: 18, sm: 20 },
                         color: 'var(--blue)',
                         lineHeight: 1.2,
                         fontWeight: 600
@@ -30,7 +31,7 @@ export const BaseStep = ({icon, title, text, idx, totalLength}) => {
                 >{title}</Typography>
                 <Typography
                     sx={{
-                        fontSize: 14,
+                        fontSize: { xs: 14, sm: 16 },
                         fontWeight: 300
                     }}
                 >{text}</Typography>

@@ -18,7 +18,7 @@ export const PaidHospitalizationBlock = ({services = []}) => {
                 }}
             >
                 <Typography
-                    variant="h4"
+                    variant="h1"
                     sx={{
                         fontSize: {xs: 24, sm: 28},
                         fontWeight: 300,

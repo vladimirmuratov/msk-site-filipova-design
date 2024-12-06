@@ -5,14 +5,14 @@ export const WhatWeOffer = ({list1 = [], list2 = [], list3 = []}) => {
         <Box
             component="section"
             sx={{
-                bgcolor: 'var(--blue)',
+                backgroundColor: 'var(--blue)',
                 padding: {xs: '16px', sm: '32px'},
                 color: 'var(--white)'
             }}
         >
 
             <Typography
-                variant="h4"
+                variant="h2"
                 sx={{
                     fontSize: {xs: 24, sm: 28},
                     fontWeight: 300,
@@ -47,7 +47,7 @@ export const WhatWeOffer = ({list1 = [], list2 = [], list3 = []}) => {
                     <Box
                         sx={{
                             marginTop: {xs: '15px', sm: '20px'},
-                            bgcolor: 'var(--white)',
+                            backgroundColor: 'var(--white)',
                             color: 'var(--red)',
                             paddingY: '15px',
                             paddingX: '10px',

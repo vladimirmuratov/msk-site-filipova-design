@@ -43,7 +43,7 @@ export const FormBlock = () => {
             >
                 <Box>
                     <Typography
-                        variant="h4"
+                        variant="h2"
                         sx={{
                             fontSize: {xs: 24, sm: 28},
                             fontWeight: 300,
@@ -59,7 +59,7 @@ export const FormBlock = () => {
 
                     <Typography
                         sx={{
-                            fontSize: {xs: '10px', sm: '14px'},
+                            fontSize: {xs: 14, sm: 16},
                             fontWeight: 300,
                             marginBottom: {xs: '10px', sm: '15px'},
                             width: {xs: '100%', sm: '60%'}

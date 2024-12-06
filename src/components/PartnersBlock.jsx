@@ -25,11 +25,11 @@ const PartnersBlock = ({title = 'Клиники', color = 'var(--blue)'}) => {
                 <Typography
                     variant="h2"
                     sx={{
-                        fontSize: {xs: 32, sm: 38},
+                        fontSize: {xs: 24, sm: 28},
                         fontWeight: 300,
                         color: color,
                         textTransform: 'uppercase',
-                        marginBottom: {xs: '15px', sm: '30px'},
+                        // marginBottom: {xs: '15px', sm: '30px'},
                         wordWrap: 'break-word'
                     }}
                 >
@@ -39,7 +39,7 @@ const PartnersBlock = ({title = 'Клиники', color = 'var(--blue)'}) => {
                 <Typography
                     sx={{
                         color: 'var(--blue)',
-                        fontSize: {xs: '16px', sm: '18px'},
+                        fontSize: { xs: 14, sm: 16 },
                         fontWeight: 500
                     }}
                 >
