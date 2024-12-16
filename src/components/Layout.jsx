@@ -50,7 +50,6 @@ export const Layout = ({children}) => {
                 <meta name="keywords"
                       content="платная госпитализация, платная палата, гинекология госпитализация, платная госпитализация в москве хирургия, платная травматология москва, госпитализация урология москва, кардиология платная госпитализация, платная госпитализация неврология, платная гастроэнтерология в москве, платный стационар терапия" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="yandex-verification" content="7bb2122b277ff1f4" />
                 <link rel="canonical" href="https://msk-group-hospital.ru/" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
