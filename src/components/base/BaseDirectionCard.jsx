@@ -10,6 +10,12 @@ export const BaseDirectionCard = ({label, img, path, router}) => {
                 border: '1px solid var(--black)',
                 borderRadius: '5px',
                 cursor: 'pointer',
+                transition: '0.3s',
+                '&:hover': {
+                    background: 'var(--light-blue)',
+                    transform: 'translateY(-5px)'
+
+                }
             }}
         >
             <Box

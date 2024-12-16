@@ -41,19 +41,20 @@ export const stepsHospitalization = [
 ]
 
 export const headerServiceLinks = [
-    {id: 1, label: 'Перевод в другую больницу', path: 'https://transfer.mskdoctor.ru'},
+    {id: 1, label: 'Перевод в другую больницу', path: 'https://transfer.mskdoctor.ru', sitePage: false},
     {
         id: 2,
         label: 'Платная госпитализация',
         // path: 'https://plan-hospital.mskdoctor.ru',
         path: '/services/plan-hospital',
+        sitePage: true
     },
-    {id: 3, label: 'Экстренная госпитализация', path: 'https://emergency.mskdoctor.ru'},
-    {id: 4, label: 'Госпитализация без полиса ОМС', path: 'https://oms.mskdoctor.ru'},
+    {id: 3, label: 'Экстренная госпитализация', path: 'https://emergency.mskdoctor.ru', sitePage: false},
+    {id: 4, label: 'Госпитализация без полиса ОМС', path: 'https://oms.mskdoctor.ru', sitePage: false},
     {id: 5, label: 'Госпитализация из регионов', path: 'https://region.mskdoctor.ru'},
-    {id: 6, label: 'Госпитализация в федеральные мед.учреждения', path: 'https://federal.mskdoctor.ru'},
-    {id: 7, label: 'Работа с тяжелыми пациентами', path: 'https://patient.mskdoctor.ru'},
-    {id: 8, label: 'Патронажная служба', path: 'https://patronage.mskdoctor.ru'},
+    {id: 6, label: 'Госпитализация в федеральные мед.учреждения', path: 'https://federal.mskdoctor.ru', sitePage: false},
+    {id: 7, label: 'Работа с тяжелыми пациентами', path: 'https://patient.mskdoctor.ru', sitePage: false},
+    {id: 8, label: 'Патронажная служба', path: 'https://patronage.mskdoctor.ru', sitePage: false},
 ]
 
 export const servicesInfo = [
@@ -252,7 +253,8 @@ export const services = [
         text: 'Осуществляем грамотный и быстрый перевод пациента из городских и районных больниц в ведомственные и федеральные учреждения. Перевод в другую больницу может быть осуществлен в течение 2 часов с момента подачи Вами заявки по телефону.',
         icon: '/images/icons-blue/5.svg',
         path: 'https://transfer.mskdoctor.ru/',
-        alt: 'пациент перевод'
+        alt: 'пациент перевод',
+        sitePage: false
     },
     {
         id: 1,
@@ -261,7 +263,8 @@ export const services = [
         icon: '/images/icons-blue/1.svg',
         // path: 'https://plan-hospital.mskdoctor.ru/',
         path: '/services/plan-hospital',
-        alt: 'платная плановая госпитализация'
+        alt: 'платная плановая госпитализация',
+        sitePage: true
     },
     {
         id: 2,
@@ -269,7 +272,8 @@ export const services = [
         text: 'Для оперативной транспортировки больных мы имеем парк автомобилей скорой помощи и реанимобилей, укомплектованных современным оборудованием.',
         icon: '/images/icons-blue/2.svg',
         path: 'https://emergency.mskdoctor.ru/',
-        alt: 'экстренная госпитализация'
+        alt: 'экстренная госпитализация',
+        sitePage: false
     },
     {
         id: 3,
@@ -277,7 +281,8 @@ export const services = [
         text: 'Мы оперативно организуем платную госпитализацию при отсутствии полиса ОМС.',
         icon: '/images/icons-blue/3.svg',
         path: 'https://oms.mskdoctor.ru/',
-        alt: 'госпитализация без полиса омс'
+        alt: 'госпитализация без полиса омс',
+        sitePage: false
     },
     {
         id: 4,
@@ -285,7 +290,8 @@ export const services = [
         text: 'Круглосуточный call-центр для поддержки пациента и решения любых вопросов. На связи менеджеры с медицинским образованием. Наша Служба гарантирует помощь в госпитализации в оптимальные, а при необходимости, в кратчайшие сроки именно в тот медицинский центр, который подходит вам наилучшим образом.',
         icon: '/images/icons-blue/4.svg',
         path: 'https://region.mskdoctor.ru/',
-        alt: 'платная госпитализация'
+        alt: 'платная госпитализация',
+        sitePage: false
     },
     {
         id: 6,
@@ -293,7 +299,8 @@ export const services = [
         text: 'Мы сотрудничаем со всеми ведущими больницами Москвы и Московской области (кроме детских) и прекрасно знаем их компетенции.',
         icon: '/images/icons-blue/6.svg',
         path: 'https://federal.mskdoctor.ru/',
-        alt: 'платная госпитализация в москве'
+        alt: 'платная госпитализация в москве',
+        sitePage: false
     },
     {
         id: 7,
@@ -301,7 +308,8 @@ export const services = [
         text: 'Отказ от сложных случаев лечения противоречит нашим Принципам. Еcли Вы получили отказ от госпитализации, просто позвоните нам.',
         icon: '/images/icons-blue/7.svg',
         path: 'https://patient.mskdoctor.ru/',
-        alt: 'экстренная госпитализация пациента в стационар'
+        alt: 'экстренная госпитализация пациента в стационар',
+        sitePage: false
     },
     {
         id: 8,
@@ -309,7 +317,8 @@ export const services = [
         text: 'В день обращения мы подберем для Вас опытную, добрую и порядочную патронажную сестру, обладающую всеми необходимыми медицинскими навыками.',
         icon: '/images/icons-blue/8.svg',
         path: 'https://patronage.mskdoctor.ru/',
-        alt: 'патронажная служба'
+        alt: 'патронажная служба',
+        sitePage: false
     },
 ]
 

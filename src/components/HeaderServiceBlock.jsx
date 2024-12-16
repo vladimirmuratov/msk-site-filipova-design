@@ -17,11 +17,11 @@ const HeaderServiceBlock = () => {
             }}
         >
 
-            {headerServiceLinks.map(({id, label, path}) => (
+            {headerServiceLinks.map(({id, label, path, sitePage}) => (
                 <Link
                     key={id}
                     href={path}
-                    // target='_blank'
+                    target={sitePage ? '_self' : '_blank'}
                     sx={{
                         color: 'var(--light-gray) !important',
                         fontSize: {xs: '12px', md: '14px'},

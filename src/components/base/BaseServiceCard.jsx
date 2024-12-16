@@ -1,11 +1,11 @@
 import {Box, Typography} from '@mui/material'
 import Link from 'next/link'
 
-export const BaseServiceCard = ({alt, label, text, icon, path = '#'}) => {
+export const BaseServiceCard = ({alt, label, text, icon, path = '#', sitePage}) => {
     return (
         <Link
             href={path}
-            // target='_blank'
+            target={sitePage ? '_self' : '_blank'}
         >
             <Box
                 sx={{
@@ -13,7 +13,13 @@ export const BaseServiceCard = ({alt, label, text, icon, path = '#'}) => {
                     border: '1px solid var(--black)',
                     borderRadius: '10px',
                     // height: '100%'
-                    height: '213px'
+                    height: '213px',
+                    transition: '0.3s',
+                    '&:hover': {
+                        background: 'var(--light-blue)',
+                        transform: 'translateY(-5px)'
+
+                    }
                 }}
             >
                 <Box
