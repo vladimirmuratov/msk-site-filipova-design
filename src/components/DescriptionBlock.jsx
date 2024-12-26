@@ -59,7 +59,7 @@ const DescriptionBlock = () => {
                         fontSize: {xs: '18px', sm: '32px'},
                         fontWeight: 300,
                         lineHeight: 1.4,
-                        width: {xs: '100%', sm: '50%'}
+                        // width: {xs: '100%', sm: '50%'}
                     }}
                 >
                     МСК Групп —

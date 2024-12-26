@@ -5,7 +5,8 @@ import { directions, services } from '@/config';
 import DirectionsBlock from '@/components/DirectionsBlock';
 import ServiceBlock from '@/components/ServiceBlock';
 import { useRouter } from 'next/router';
-import Banner3 from '@/components/Banner3';
+// import Banner3 from '@/components/Banner3';
+import { Banner2 } from '@/components/Banner2';
 
 const openSans = Open_Sans({ subsets: ['latin', 'cyrillic'] });
 
@@ -14,7 +15,8 @@ export default function Home() {
 
     return (
         <main className={openSans.className}>
-            <Banner3 />
+            {/*<Banner3 />*/}
+            <Banner2 />
             <DescriptionBlock />
             <PartnersBlock />
             <DirectionsBlock directions={directions} router={router} />

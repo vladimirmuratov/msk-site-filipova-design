@@ -130,25 +130,26 @@ export const MessageForm = ({onSuccess, onFailed, handleClose = () => {}}) => {
                         <Typography
                             sx={{
                                 paddingTop: '10px',
-                                fontSize: 10,
+                                fontSize: 12,
+                                lineHeight: 1.1,
                                 fontWeight: 300
                             }}
                         >
                             Здесь вы можете прикрепить медицинские документы.
-                            Подойдут электронные копии или фото всех
+                            {/*Подойдут электронные копии или фото всех
                             имеющихся документов: выписной эпикриз, выписка из
                             истории болезни, результаты обследований, УЗИ,
                             снимки МРТ или рентгенографии (обычно их
                             записывают на CD и выдают вместе с результатами
-                            обследования), расшифровка снимков и пр.
-                            <br/>
+                            обследования), расшифровка снимков и пр.*/}
+                            {/*<br/>*/}
                             Если несколько файлов - то прикрепляйте архив
                         </Typography>
                     </Box>
 
                     <Box sx={{display: 'flex', alignItems: 'center'}}>
                         <Checkbox checked={checked} onChange={handleChange} sx={{alignSelf: 'start'}}/>
-                        <Typography sx={{fontSize: 8, lineHeight: 1.1}}>
+                        <Typography sx={{fontSize: 12, lineHeight: 1.1}}>
                             Я согласен на обработку персональных данных в соответствии
                             c Политикой конфиденциальности
                         </Typography>
@@ -172,13 +173,19 @@ export const MessageForm = ({onSuccess, onFailed, handleClose = () => {}}) => {
                                 },
                             }}
                         >Отправить</Button>
+                        <Button
+                            onClick={handleClose}
+                            variant="text"
+                            color="error"
+                            size="medium"
+                        >Отмена</Button>
 
-                        <Typography sx={{fontSize: 10, lineHeight: 1.1, width: '50%'}}>
+                        {/*<Typography sx={{fontSize: 10, lineHeight: 1.1, width: '50%'}}>
                             Если по какой-то причине вам не удается отправить
                             заявку, можете отправить данные на электронную
                             почту:
                             moscowsc.post@yandex.ru
-                        </Typography>
+                        </Typography>*/}
                     </Box>
 
                 </Box>
