@@ -186,6 +186,12 @@ li {
     }
 }
 
+.video-banner{
+    width: 100%;
+    height: auto;
+    filter: brightness(70%);
+}
+
 .fw-800 {
     font-weight: 800;
 }

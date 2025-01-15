@@ -7,11 +7,25 @@ import ServiceBlock from '@/components/ServiceBlock';
 import { useRouter } from 'next/router';
 import { Banner2 } from '@/components/Banner2';
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
+import { Loader } from '@/components/loader/Loader';
+import { VideoBanner } from '@/components/VideoBanner';
 
 const openSans = Open_Sans({ subsets: ['latin', 'cyrillic'] });
 
 export default function Home() {
   const router = useRouter();
+  const [isMobile, setMobile] = useState(undefined);
+
+  useEffect(() => {
+    const os = navigator.userAgentData.platform;
+
+    if (os === 'Android' || os === 'iOS') {
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
+  }, []);
 
   return (
     <>
@@ -30,13 +44,17 @@ export default function Home() {
         <link rel="canonical" href="https://msk-group-hospital.ru/" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <main className={openSans.className}>
-        <Banner2 />
-        <DescriptionBlock />
-        <PartnersBlock />
-        <DirectionsBlock directions={directions} router={router} />
-        <ServiceBlock services={services} />
-      </main>
+      {typeof isMobile === 'boolean' ? (
+        <main className={openSans.className}>
+          {isMobile ? <Banner2 /> : <VideoBanner />}
+          <DescriptionBlock />
+          <PartnersBlock />
+          <DirectionsBlock directions={directions} router={router} />
+          <ServiceBlock services={services} />
+        </main>
+      ) : (
+        <Loader />
+      )}
     </>
   );
 }
