@@ -11,7 +11,7 @@ export const BaseServicePageCard = ({ icon, title, text }) => {
             <img className="service-icon" src={icon} alt="icon" />
             <Box>
                 <Typography
-                    variant="h2"
+                    variant="h3"
                     sx={{
                         fontSize: { xs: 18, sm: 20 },
                         color: 'var(--blue)',

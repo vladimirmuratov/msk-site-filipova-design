@@ -1,17 +1,14 @@
 import { Box, Typography } from '@mui/material';
-import { BasePartnerCard } from '@/components/base/BasePartnerCard';
-import React from 'react';
-import { partners } from '@/config';
+import { BaseServicePageCard } from '@/components/base/BaseServicePageCard';
 
-const PartnersBlock = ({ title = 'Клиники', color = 'var(--blue)' }) => {
+export const BaseFirstBlock = ({ services = [], title = '', description = '' }) => {
     return (
         <Box
-            id="partners"
             component="section"
             sx={{
-                scrollMarginTop: '150px',
                 paddingY: { xs: '25px', sm: '50px' },
                 paddingX: { xs: '10px', lg: 0 },
+                // marginX: {xs: '15px', sm: 0}
             }}
         >
             <Box
@@ -27,38 +24,33 @@ const PartnersBlock = ({ title = 'Клиники', color = 'var(--blue)' }) => {
                     sx={{
                         fontSize: { xs: 24, sm: 28 },
                         fontWeight: 300,
-                        color: color,
-                        textTransform: 'uppercase',
-                        // marginBottom: {xs: '15px', sm: '30px'},
+                        color: 'var(--red)',
+                        textTransform: 'uppercase'
                     }}
                 >
                     {title}
                 </Typography>
-
                 <Typography
                     sx={{
                         color: 'var(--blue)',
                         fontSize: { xs: 14, sm: 16 },
-                        fontWeight: 500
+                        fontWeight: 300,
                     }}
                 >
-                    При обращении в сервис МСК&ndash;Групп &mdash; все расчеты ведутся по официальным ценам с конкретной
-                    медицинской
-                    организацией
+                    {description}
                 </Typography>
             </Box>
 
             <Box
                 sx={{
                     display: 'grid',
-                    gridTemplateColumns: { xs: '1fr', sm: '1fr 1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr' },
-                    gap: { xs: '3px', sm: '5px', md: '10px' },
+                    gridTemplateColumns: { xs: '1fr', sm: '1fr 1fr' },
+                    rowGap: { xs: '15px', sm: '20px' },
+                    columnGap: '10px'
                 }}
             >
-                {partners.map((item) => <BasePartnerCard key={item.id} {...item} />)}
+                {services.map((item) => <BaseServicePageCard key={item.id} {...item} />)}
             </Box>
         </Box>
     );
 };
-
-export default React.memo(PartnersBlock);

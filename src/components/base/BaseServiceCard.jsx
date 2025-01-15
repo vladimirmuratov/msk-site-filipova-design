@@ -1,7 +1,7 @@
-import {Box, Typography} from '@mui/material'
-import Link from 'next/link'
+import { Box, Typography } from '@mui/material';
+import Link from 'next/link';
 
-export const BaseServiceCard = ({alt, label, text, icon, path = '#', sitePage}) => {
+export const BaseServiceCard = ({ alt, label, text, icon, path = '#', sitePage }) => {
     return (
         <Link
             href={path}
@@ -26,8 +26,8 @@ export const BaseServiceCard = ({alt, label, text, icon, path = '#', sitePage}) 
                     sx={{
                         display: 'flex',
                         alignItems: 'center',
-                        gap: {xs: '5px', sm: '10px', md: '15px'},
-                        marginBottom: {xs: '10px', sm: '15px'}
+                        gap: { xs: '5px', sm: '10px', md: '15px' },
+                        marginBottom: { xs: '10px', sm: '15px' }
                     }}
                 >
                     <Box
@@ -39,7 +39,7 @@ export const BaseServiceCard = ({alt, label, text, icon, path = '#', sitePage}) 
                         }}
                     ></Box>
                     <Typography
-                        component='h3'
+                        component="h3"
                         sx={{
                             color: 'var(--blue)',
                             fontWeight: 500
@@ -48,12 +48,12 @@ export const BaseServiceCard = ({alt, label, text, icon, path = '#', sitePage}) 
                 </Box>
                 <Typography
                     sx={{
-                        fontSize: {xs: '10px', sm: '12px'}
+                        fontSize: { xs: '10px', sm: '12px' }
                     }}
                 >
                     {text}
                 </Typography>
             </Box>
         </Link>
-    )
-}
+    );
+};

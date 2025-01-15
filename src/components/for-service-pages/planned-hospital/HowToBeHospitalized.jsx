@@ -1,7 +1,7 @@
 import {Box, Typography} from '@mui/material'
 import {BaseStep} from '@/components/base/for-service-pages/BaseStep'
 
-export const HowToBeHospitalized = ({steps = []}) => {
+export const HowToBeHospitalized = ({steps = [], title = ''}) => {
     return (
         <Box
             component="section"
@@ -22,7 +22,7 @@ export const HowToBeHospitalized = ({steps = []}) => {
                     textTransform: 'uppercase',
                 }}
             >
-                КАК ГОСПИТАЛИЗИРОВАТЬСЯ В НУЖНУЮ БОЛЬНИЦУ
+                {title}
             </Typography>
             <Box
                 sx={{

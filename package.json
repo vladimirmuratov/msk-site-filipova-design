@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write src/**/*.js"
   },
   "dependencies": {
     "@emotion/cache": "^11.13.1",
@@ -22,5 +23,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.52.2"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2"
   }
 }
