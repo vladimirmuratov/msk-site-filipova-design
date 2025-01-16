@@ -1,9 +1,9 @@
-import { Banner } from '@/components/for-service-pages/planned-hospital/Banner';
 import { BaseFirstBlock } from '@/components/base/for-service-pages/BaseFirstBlock';
 import { HowToBeHospitalized } from '@/components/for-service-pages/planned-hospital/HowToBeHospitalized';
 import StableSummaryBlock from '@/components/base/for-service-pages/stable-components/StableSummaryBlock';
 import { servicesPlanHospitalInfo, stepsPlanHospitalization } from '@/config';
 import Head from 'next/head';
+import { BaseBanner } from '@/components/base/BaseBanner';
 
 export default function PlanHospital() {
   return (
@@ -21,7 +21,12 @@ export default function PlanHospital() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <Banner />
+      <BaseBanner
+        imgPath="/images/services/plan-hospital.webp"
+        title="платная плановая госпитализация"
+        fontColor="var(--red)"
+        fontShadowColor="var(--white)"
+      />
       <BaseFirstBlock
         services={servicesPlanHospitalInfo}
         title="ПЛАТНАЯ ГОСПИТАЛИЗАЦИЯ В МОСКВЕ"

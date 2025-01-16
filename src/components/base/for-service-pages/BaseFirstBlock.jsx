@@ -35,6 +35,7 @@ export const BaseFirstBlock = ({ services = [], title = '', description = '' }) 
                         color: 'var(--blue)',
                         fontSize: { xs: 14, sm: 16 },
                         fontWeight: 300,
+                        whiteSpace: 'pre-wrap'
                     }}
                 >
                     {description}

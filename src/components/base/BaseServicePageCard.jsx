@@ -21,7 +21,8 @@ export const BaseServicePageCard = ({ icon, title, text }) => {
                 <Typography
                     sx={{
                         fontSize: { xs: 14, sm: 16 },
-                        fontWeight: 300
+                        fontWeight: 300,
+                        whiteSpace: 'pre-wrap'
                     }}
                 >{text}</Typography>
             </Box>

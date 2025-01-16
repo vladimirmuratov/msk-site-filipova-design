@@ -6,7 +6,7 @@ export const Banner = () => {
         <Box
             component="figure"
             sx={{
-                paddingY: {xs: '25px', sm: '50px'},
+                // paddingY: {xs: '25px', sm: '50px'},
                 position: 'relative'
             }}
         >
