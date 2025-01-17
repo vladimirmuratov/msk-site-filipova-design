@@ -26,6 +26,7 @@ export default function Transfer() {
         title="перевод пациента в другую больницу"
         fontColor="var(--red)"
         fontShadowColor="var(--white)"
+        bgPosition=""
       />
       <BaseFirstBlock
         services={servicesTransferInfo}
