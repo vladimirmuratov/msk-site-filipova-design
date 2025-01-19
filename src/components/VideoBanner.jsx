@@ -7,7 +7,7 @@ export const VideoBanner = React.memo(() => {
         <Box
             sx={{
                 position: 'relative',
-                // paddingY: {xs: '25px', sm: '50px'},
+                paddingY: {xs: '25px', sm: '50px'},
             }}
         >
             <video className="video-banner" autoPlay loop muted>

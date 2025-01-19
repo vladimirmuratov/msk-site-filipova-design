@@ -4,7 +4,8 @@ export const BaseBanner = ({imgPath, title, fontColor = 'var(--white)', fontShad
     return (
         <Box
             sx={{
-                position: 'relative'
+                position: 'relative',
+                paddingY: {xs: '25px', sm: '50px'},
             }}
         >
 
