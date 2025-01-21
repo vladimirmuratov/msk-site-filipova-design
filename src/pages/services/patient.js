@@ -9,10 +9,10 @@ export default function Patient() {
   return (
     <>
       <Head>
-        <title>Лечение тяжелых пациентов. Звоните: 8 (499) 719-81-00, 24/7</title>
+        <title>Лечение тяжелых пациентов 8 (499) 719-81-00, 24/7</title>
         <meta
           name="description"
-          content="Нужна помощь в лечении тяжелых пациентов? Мы работаем круглосуточно! Звоните 8 (499) 719-81-00 и получите профессиональную поддержку."
+          content="Лечение тяжелобольных пациентов. Если вам отказали в госпитализации - позвоните нам."
         />
         <meta name="keywords" content="Лечение тяжелых пациентов" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
