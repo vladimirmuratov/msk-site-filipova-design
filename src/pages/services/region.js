@@ -35,3 +35,9 @@ export default function Region() {
     </>
   );
 }
+
+export async function getServerSideProps(context) {
+    return {
+        props: {},
+    };
+}

@@ -31,3 +31,9 @@ export default function Neurosurgery() {
     </Box>
   );
 }
+
+export async function getServerSideProps(context) {
+    return {
+        props: {},
+    };
+}

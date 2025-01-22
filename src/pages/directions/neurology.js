@@ -601,3 +601,9 @@ export default function Neurology() {
     </>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: {},
+  };
+}

@@ -503,3 +503,9 @@ export default function Cardiology() {
     </>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: {},
+  };
+}

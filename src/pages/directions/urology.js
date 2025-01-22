@@ -245,3 +245,9 @@ export default function Urology() {
     </>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: {},
+  };
+}

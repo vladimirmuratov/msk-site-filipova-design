@@ -41,3 +41,9 @@ export default function PlanHospital() {
     </>
   );
 }
+
+export async function getServerSideProps(context) {
+    return {
+        props: {},
+    };
+}

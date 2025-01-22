@@ -415,3 +415,9 @@ export default function Therapy() {
     </>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: {},
+  };
+}

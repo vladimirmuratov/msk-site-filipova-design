@@ -349,3 +349,9 @@ export default function Gastroenterology() {
     </>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: {},
+  };
+}

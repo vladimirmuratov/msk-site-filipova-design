@@ -41,3 +41,9 @@ export default function Pulmonology() {
     </Box>
   );
 }
+
+export async function getServerSideProps(context) {
+    return {
+        props: {},
+    };
+}

@@ -379,3 +379,9 @@ export default function Gynecology() {
     </>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: {},
+  };
+}

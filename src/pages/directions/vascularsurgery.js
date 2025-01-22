@@ -43,3 +43,9 @@ export default function Vascularsurgery() {
     </Box>
   );
 }
+
+export async function getServerSideProps(context) {
+    return {
+        props: {},
+    };
+}

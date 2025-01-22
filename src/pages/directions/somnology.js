@@ -286,3 +286,9 @@ export default function Somnology() {
     </>
   );
 }
+
+export async function getServerSideProps(context) {
+  return {
+    props: {},
+  };
+}

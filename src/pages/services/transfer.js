@@ -42,3 +42,9 @@ export default function Transfer() {
     </>
   );
 }
+
+export async function getServerSideProps(context) {
+    return {
+        props: {},
+    };
+}

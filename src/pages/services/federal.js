@@ -38,3 +38,9 @@ export default function Federal() {
     </>
   );
 }
+
+export async function getServerSideProps(context) {
+    return {
+        props: {},
+    };
+}
