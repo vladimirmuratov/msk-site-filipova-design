@@ -22,6 +22,7 @@ export default function Neurology() {
           content="Платная госпитализация неврология, больница неврология платно, платный стационар неврологии, платная неврология москва"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://msk-group-hospital.ru/" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Box>

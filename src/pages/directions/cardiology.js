@@ -22,6 +22,7 @@ export default function Cardiology() {
           content="кардиология платная госпитализация, платная больница кардиология, платный стационар кардиология, платная госпитализация в москве кардиология, платные палаты"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://msk-group-hospital.ru/" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Box>

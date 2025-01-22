@@ -19,6 +19,7 @@ export default function Patronage() {
           content="медицинский патронаж, патронаж москва, патронаж на дому, патронаж пожилых людей"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://msk-group-hospital.ru/" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <BaseBanner

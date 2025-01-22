@@ -22,6 +22,7 @@ export default function Surgery() {
           content="платная госпитализация в москве хирургия, платные больницы хирургия, платная хирургия, платная палата в хирургии"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://msk-group-hospital.ru/" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Box>

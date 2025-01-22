@@ -24,6 +24,7 @@ export default function Gastroenterology() {
           content="платная гастроэнтерология в москве, платная больница гастроэнтерология,  платный стационар гастроэнтерология,  платная госпитализация в москве гастроэнтерология, платные палаты в больнице"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://msk-group-hospital.ru/" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Box>

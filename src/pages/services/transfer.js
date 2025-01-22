@@ -19,6 +19,7 @@ export default function Transfer() {
           content="перевод в другую больницу, перевод больного в другую больницу"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://msk-group-hospital.ru/" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <BaseBanner

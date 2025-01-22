@@ -20,6 +20,7 @@ export default function Somnology() {
           content="сомнолог лечение, сомнолог москва лечение храпа, сомнология в москве"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href="https://msk-group-hospital.ru/" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Box>
