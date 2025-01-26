@@ -22,7 +22,6 @@ export default function Therapy() {
           content="больница терапия платная палата, платный стационар терапия, госпитализация в терапию"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://msk-group-hospital.ru/" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Box>

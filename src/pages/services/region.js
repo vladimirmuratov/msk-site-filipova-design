@@ -16,7 +16,6 @@ export default function Region() {
         />
         <meta name="keywords" content="Платная госпитализация из регионов" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://msk-group-hospital.ru/" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <BaseBanner

@@ -16,7 +16,6 @@ export default function Patient() {
         />
         <meta name="keywords" content="Лечение тяжелых пациентов" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://msk-group-hospital.ru/" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <BaseBanner

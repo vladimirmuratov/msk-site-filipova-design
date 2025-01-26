@@ -19,7 +19,6 @@ export default function Oms() {
           content="без полиса омс, полис омс без прописки, без полиса омс в поликлинику"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://msk-group-hospital.ru/" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <BaseBanner
