@@ -10,6 +10,8 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import { Loader } from '@/components/loader/Loader';
 import { VideoBanner } from '@/components/VideoBanner';
+import { ReviewsBlock } from '@/components/ReviewsBlock';
+import { reviews } from '@/reviews';
 
 const openSans = Open_Sans({ subsets: ['latin', 'cyrillic'] });
 
@@ -50,6 +52,7 @@ export default function Home() {
           <PartnersBlock />
           <DirectionsBlock directions={directions} router={router} />
           <ServiceBlock services={services} />
+          <ReviewsBlock reviews={reviews} isMobile={isMobile} />
         </main>
       ) : (
         <Loader />

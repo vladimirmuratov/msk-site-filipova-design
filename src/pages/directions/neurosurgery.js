@@ -33,7 +33,7 @@ export default function Neurosurgery() {
 }
 
 export async function getServerSideProps(context) {
-    return {
-        props: {},
-    };
+  return {
+    props: {},
+  };
 }

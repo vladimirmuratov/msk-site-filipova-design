@@ -45,7 +45,7 @@ export default function Vascularsurgery() {
 }
 
 export async function getServerSideProps(context) {
-    return {
-        props: {},
-    };
+  return {
+    props: {},
+  };
 }

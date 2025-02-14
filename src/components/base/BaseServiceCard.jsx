@@ -13,7 +13,7 @@ export const BaseServiceCard = ({ alt, label, text, icon, path = '#', sitePage }
                     border: '1px solid var(--black)',
                     borderRadius: '10px',
                     // height: '100%'
-                    height: '213px',
+                    height: '222px',
                     transition: '0.3s',
                     '&:hover': {
                         background: 'var(--light-blue)',
@@ -48,7 +48,7 @@ export const BaseServiceCard = ({ alt, label, text, icon, path = '#', sitePage }
                 </Box>
                 <Typography
                     sx={{
-                        fontSize: { xs: '10px', sm: '12px' }
+                        fontSize: { xs: 12, sm: 12 }
                     }}
                 >
                     {text}
