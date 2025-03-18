@@ -13,6 +13,17 @@ export const Layout = ({ children }) => {
     const [isOpenForm, setOpenForm] = useState(false);
     const [success, setSuccess] = useState(false);
     const [failed, setFailed] = useState(false);
+    const [isMobile, setMobile] = useState(undefined);
+
+    useEffect(() => {
+        const os = navigator.userAgentData.platform;
+
+        if (os === 'Android' || os === 'iOS') {
+            setMobile(true);
+        } else {
+            setMobile(false);
+        }
+    }, []);
 
     useEffect(() => {
         let timeout;
@@ -52,7 +63,7 @@ export const Layout = ({ children }) => {
                     <Metrika />
                     <Footer onOpenForm={handleOpenForm} />
                 </Suspense>
-                <FloatBtn handleOpen={handleOpenForm} />
+                <FloatBtn handleOpen={handleOpenForm} isMobile={isMobile} />
             </Box>
 
             <BaseModal open={isOpenForm} handleClose={handleCloseForm} title="Связаться с нами">
