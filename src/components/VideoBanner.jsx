@@ -2,21 +2,6 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 
 export const VideoBanner = React.memo(() => {
-    // const videoCount = 5;
-    // const [count, setCount] = useState(1);
-    // const videoRef = useRef();
-
-    /*useEffect(() => {
-        if (count > videoCount) setCount(1);
-
-        videoRef.current?.load();
-
-        const timer = setTimeout(() => {
-            setCount(prevState => prevState + 1);
-        }, 10000);
-
-        return () => clearInterval(timer);
-    }, [count]);*/
 
     return (
         <Box
@@ -26,7 +11,7 @@ export const VideoBanner = React.memo(() => {
             }}
         >
             <video className="video-banner" autoPlay loop muted>
-                <source src={`/video/video-banner-${2}.webm`} type="video/webm" />
+                <source src={`/video/video-banner-0.webm`} type="video/webm" />
                 Your browser does not support the video tag.
                 <a href="https://ru.freepik.com/free-video/close-up-view-senior-caucasian-female-doctor-hands-typing-laptop-desktop_473369#fromView=search&page=1&position=0&uuid=f225933e-fd27-40a6-b1e8-6c837f0f2fe9">Видео
                     от freepik</a>
