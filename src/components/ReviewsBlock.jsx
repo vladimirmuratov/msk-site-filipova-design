@@ -18,7 +18,7 @@ export const ReviewsBlock = React.memo(({ reviews = [], isMobile }) => {
                 sx={{
                     fontSize: { xs: 32, sm: 38 },
                     fontWeight: 300,
-                    color: 'var(--blue)',
+                    color: 'var(--red)',
                     textTransform: 'uppercase',
                     marginBottom: { xs: '15px', sm: '30px' },
                 }}

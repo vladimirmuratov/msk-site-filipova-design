@@ -3,7 +3,7 @@ import { BasePartnerCard } from '@/components/base/BasePartnerCard';
 import React from 'react';
 import { partners } from '@/config';
 
-const PartnersBlock = ({ title = 'Клиники', color = 'var(--blue)' }) => {
+const PartnersBlock = ({ title = 'наши партнеры', color = 'var(--red)' }) => {
     return (
         <Box
             id="partners"
@@ -37,9 +37,30 @@ const PartnersBlock = ({ title = 'Клиники', color = 'var(--blue)' }) => {
 
                 <Typography
                     sx={{
+                        fontSize: {xs: 14, sm: 18},
                         color: 'var(--blue)',
-                        fontSize: { xs: 14, sm: 16 },
-                        fontWeight: 500
+                        // marginBottom: {xs: '10px', sm: '15px'}
+                    }}
+                >
+                    Мы сотрудничаем со всеми ведущими больницами Москвы и Московской области (кроме детских)
+                    и прекрасно знаем их компетенции.
+                </Typography>
+
+                <Typography
+                    sx={{
+                        fontSize: {xs: 14, sm: 18},
+                        fontWeight: 600,
+                        color: 'var(--blue)',
+                    }}
+                >
+                    Для вас всегда найдется место в палате.
+                </Typography>
+
+                <Typography
+                    sx={{
+                        color: 'var(--blue)',
+                        fontSize: { xs: 14, sm: 18 },
+                        // fontWeight: 500
                     }}
                 >
                     При обращении в сервис МСК&ndash;Групп &mdash; все расчеты ведутся по официальным ценам с конкретной

@@ -19,7 +19,7 @@ const DirectionsBlock = ({directions = [], router}) => {
                 sx={{
                     fontSize: {xs: 32, sm: 38},
                     fontWeight: 300,
-                    color: 'var(--blue)',
+                    color: 'var(--red)',
                     textTransform: 'uppercase',
                     marginBottom: {xs: '15px', sm: '30px'},
                 }}
