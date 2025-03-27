@@ -60,10 +60,10 @@ export const Layout = ({ children }) => {
                 <Suspense>
                     <Header2 />
                     {children}
-                    <Metrika />
                     <Footer onOpenForm={handleOpenForm} />
                 </Suspense>
                 <FloatBtn handleOpen={handleOpenForm} isMobile={isMobile} />
+                <Metrika />
             </Box>
 
             <BaseModal open={isOpenForm} handleClose={handleCloseForm} title="Связаться с нами">
