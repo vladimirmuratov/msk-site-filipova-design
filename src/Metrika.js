@@ -22,7 +22,8 @@ export function Metrika() {
            ym(98192528, "init", {
                 clickmap:true,
                 trackLinks:true,
-                accurateTrackBounce:true
+                accurateTrackBounce:true,
+                webvisor:true
            });
       `}
     </Script>
