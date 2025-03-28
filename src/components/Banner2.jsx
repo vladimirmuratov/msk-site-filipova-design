@@ -10,7 +10,7 @@ export const Banner2 = () => {
             }}>
             <Box
                 component="img"
-                src="/images/banner-2.png"
+                src="/images/banner-2.webp"
                 alt="banner"
                 sx={{
                     width: '100%',
