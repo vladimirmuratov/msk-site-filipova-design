@@ -5,17 +5,18 @@ import { BaseText } from '@/components/base/BaseText';
 import PartnersBlock from '@/components/PartnersBlock';
 import { surgeryImages } from '@/config';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
+import React from 'react';
 
 export default function Surgery() {
   return (
     <>
       <Head>
         <title>
-          Платная госпитализация в Москве хирургия. Платные госпитализации 8 (499) 719-81-00, 24/7
+          Платная хирургия в Москве 8 (499) 719-81-00, 24/7
         </title>
         <meta
           name="description"
-          content="Обеспечьте себе качественную платную хирургическую помощь в Москве! Звоните 8 (499) 719-81-00, наша команда работает 24/7 для вашего удобства."
+          content="Обеспечьте себе качественную хирургическую помощь в Москве! Звоните 8 (499) 719-81-00, 24/7"
         />
         <meta
           name="keywords"
@@ -23,6 +24,15 @@ export default function Surgery() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
+        <meta property="og:locale" content="ru_RU" />
+        <meta property="og:title" content="Платная хирургия в Москве 8 (499) 719-81-00, 24/7" />
+        <meta property="og:description" content="Платная хирургия в Москве. 10 лет опыта. 20 клиник-партнеров. Федеральные, ведомственные и частные клиники. Работаем по всей территории России и СНГ. Оперативно. Финансовая прозрачность." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://msk-group-hospital.ru/directions/surgery" />
+        <meta property="og:image" content="https://msk-group-hospital.ru/images/banner-3.webp" />
+        <meta property="og:image:alt" content="Медицинская Сервисная Компания. Платная госпитализация 8 (499) 719-81-00, 24/7" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:site_name" content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7" />
       </Head>
       <Box>
         <BaseBanner

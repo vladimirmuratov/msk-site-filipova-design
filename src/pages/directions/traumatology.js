@@ -12,10 +12,10 @@ export default function Traumatology() {
   return (
     <>
       <Head>
-        <title>Платная травматология Москва. Платные госпитализации 8 (499) 719-81-00, 24/7</title>
+        <title>Платная травматология Москва 8 (499) 719-81-00, 24/7</title>
         <meta
           name="description"
-          content="Платная травматология в Москве предлагает круглосуточные услуги. Комфортабельные палаты и квалифицированные специалисты. Звоните 8 (499) 719-81-00!"
+          content="Платная травматология в Москве, круглосуточные услуги. Комфортабельные палаты и квалифицированные специалисты. Звоните 8 (499) 719-81-00"
         />
         <meta
           name="keywords"
@@ -23,6 +23,15 @@ export default function Traumatology() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
+        <meta property="og:locale" content="ru_RU" />
+        <meta property="og:title" content="Платная травматология Москва 8 (499) 719-81-00, 24/7" />
+        <meta property="og:description" content="Платная травматология Москва. 10 лет опыта. 20 клиник-партнеров. Федеральные, ведомственные и частные клиники. Работаем по всей территории России и СНГ. Оперативно. Финансовая прозрачность." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://msk-group-hospital.ru/directions/traumatology" />
+        <meta property="og:image" content="https://msk-group-hospital.ru/images/banner-3.webp" />
+        <meta property="og:image:alt" content="Медицинская Сервисная Компания. Платная госпитализация 8 (499) 719-81-00, 24/7" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:site_name" content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7" />
       </Head>
       <Box>
         <BaseBanner imgPath="/images/directions/2.webp" title="платная травматология москва" />

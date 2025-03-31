@@ -12,7 +12,7 @@ export default function Therapy() {
   return (
     <>
       <Head>
-        <title>Госпитализация в терапию. Платные госпитализации 8 (499) 719-81-00, 24/7</title>
+        <title>Госпитализация в терапию 8 (499) 719-81-00, 24/7</title>
         <meta
           name="description"
           content="Платная госпитализация в терапию 24/7. Комфортные палаты и профессиональная помощь. Свяжитесь с нами по номеру 8 (499) 719-81-00."
@@ -23,6 +23,15 @@ export default function Therapy() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
+        <meta property="og:locale" content="ru_RU" />
+        <meta property="og:title" content="Госпитализация в терапию 8 (499) 719-81-00, 24/7" />
+        <meta property="og:description" content="Госпитализация в терапию. 10 лет опыта. 20 клиник-партнеров. Федеральные, ведомственные и частные клиники. Работаем по всей территории России и СНГ. Оперативно. Финансовая прозрачность." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://msk-group-hospital.ru/directions/therapy" />
+        <meta property="og:image" content="https://msk-group-hospital.ru/images/banner-3.webp" />
+        <meta property="og:image:alt" content="Медицинская Сервисная Компания. Платная госпитализация 8 (499) 719-81-00, 24/7" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:site_name" content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7" />
       </Head>
       <Box>
         <BaseBanner imgPath="/images/directions/8.webp" title="госпитализация в терапию" />
