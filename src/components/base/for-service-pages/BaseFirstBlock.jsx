@@ -33,7 +33,7 @@ export const BaseFirstBlock = ({ services = [], title = '', description = '' }) 
                 <Typography
                     sx={{
                         color: 'var(--blue)',
-                        fontSize: { xs: 14, sm: 16 },
+                        fontSize: { xs: 18, sm: 20 },
                         fontWeight: 300,
                         whiteSpace: 'pre-wrap'
                     }}

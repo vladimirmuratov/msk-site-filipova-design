@@ -280,7 +280,7 @@ export default function Somnology() {
             component="h2"
             sx={{
               color: 'var(--blue)',
-              fontSize: { xs: 14, sm: 16, md: 18 },
+              fontSize: { xs: 18, sm: 20 },
               fontWeight: 400,
               display: 'inline',
             }}

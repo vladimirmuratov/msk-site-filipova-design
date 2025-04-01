@@ -17,7 +17,7 @@ const DescriptionBlock = () => {
                 <Typography
                     sx={{
                         color: 'var(--blue)',
-                        fontSize: {xs: '16px', sm: '18px'},
+                        fontSize: {xs: '18px', sm: '20px'},
                         fontWeight: 400,
                         marginBottom: {xs: '5px', sm: '10px'}
                     }}
@@ -32,7 +32,7 @@ const DescriptionBlock = () => {
                 <Typography
                     sx={{
                         color: 'var(--blue)',
-                        fontSize: {xs: '16px', sm: '18px'},
+                        fontSize: {xs: '18px', sm: '20px'},
                         fontWeight: 400
                     }}
                 >

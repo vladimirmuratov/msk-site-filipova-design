@@ -37,7 +37,7 @@ const PartnersBlock = ({ title = 'наши партнеры', color = 'var(--red
 
                 <Typography
                     sx={{
-                        fontSize: {xs: 14, sm: 18},
+                        fontSize: {xs: 18, sm: 20},
                         color: 'var(--blue)',
                         // marginBottom: {xs: '10px', sm: '15px'}
                     }}
@@ -48,7 +48,7 @@ const PartnersBlock = ({ title = 'наши партнеры', color = 'var(--red
 
                 <Typography
                     sx={{
-                        fontSize: {xs: 14, sm: 18},
+                        fontSize: {xs: 18, sm: 20},
                         fontWeight: 600,
                         color: 'var(--blue)',
                     }}
@@ -59,7 +59,7 @@ const PartnersBlock = ({ title = 'наши партнеры', color = 'var(--red
                 <Typography
                     sx={{
                         color: 'var(--blue)',
-                        fontSize: { xs: 14, sm: 18 },
+                        fontSize: { xs: 18, sm: 20 },
                         // fontWeight: 500
                     }}
                 >
