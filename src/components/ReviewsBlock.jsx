@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel } from '@/components/Carousel';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
+import { BaseSubTitle } from '@/components/base/BaseSubTitle';
 
 export const ReviewsBlock = React.memo(({ reviews = [], isMobile }) => {
     return (
@@ -13,18 +14,9 @@ export const ReviewsBlock = React.memo(({ reviews = [], isMobile }) => {
                 paddingX: { xs: '10px', lg: 0 },
             }}
         >
-            <Typography
-                variant="h2"
-                sx={{
-                    fontSize: { xs: 32, sm: 38 },
-                    fontWeight: 300,
-                    color: 'var(--red)',
-                    textTransform: 'uppercase',
-                    marginBottom: { xs: '15px', sm: '30px' },
-                }}
-            >
-                ОТЗЫВЫ
-            </Typography>
+
+            <BaseSubTitle title="ОТЗЫВЫ" marginBottom={true} />
+
             <Carousel reviews={reviews} isMobile={isMobile} />
         </Box>
     );

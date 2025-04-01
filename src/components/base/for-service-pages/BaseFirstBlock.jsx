@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { BaseServicePageCard } from '@/components/base/BaseServicePageCard';
+import { BaseSubTitle } from '@/components/base/BaseSubTitle';
 
 export const BaseFirstBlock = ({ services = [], title = '', description = '' }) => {
     return (
@@ -19,17 +20,9 @@ export const BaseFirstBlock = ({ services = [], title = '', description = '' }) 
                     gap: { xs: '10px', sm: '15px' }
                 }}
             >
-                <Typography
-                    variant="h2"
-                    sx={{
-                        fontSize: { xs: 24, sm: 28 },
-                        fontWeight: 300,
-                        color: 'var(--red)',
-                        textTransform: 'uppercase'
-                    }}
-                >
-                    {title}
-                </Typography>
+
+                <BaseSubTitle title={title} />
+
                 <Typography
                     sx={{
                         color: 'var(--blue)',

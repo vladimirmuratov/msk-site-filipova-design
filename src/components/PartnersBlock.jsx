@@ -2,6 +2,7 @@ import { Box, Typography } from '@mui/material';
 import { BasePartnerCard } from '@/components/base/BasePartnerCard';
 import React from 'react';
 import { partners } from '@/config';
+import { BaseSubTitle } from '@/components/base/BaseSubTitle';
 
 const PartnersBlock = ({ title = 'наши партнеры', color = 'var(--red)' }) => {
     return (
@@ -22,18 +23,8 @@ const PartnersBlock = ({ title = 'наши партнеры', color = 'var(--red
                     gap: { xs: '10px', sm: '15px' }
                 }}
             >
-                <Typography
-                    variant="h2"
-                    sx={{
-                        fontSize: { xs: 32, sm: 38 },
-                        fontWeight: 300,
-                        color: color,
-                        textTransform: 'uppercase',
-                        // marginBottom: {xs: '15px', sm: '30px'},
-                    }}
-                >
-                    {title}
-                </Typography>
+
+                <BaseSubTitle title={title} color={color} />
 
                 <Typography
                     sx={{

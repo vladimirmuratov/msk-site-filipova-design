@@ -1,13 +1,14 @@
-import {Box, Typography} from '@mui/material'
-import {phone} from '@/config'
+import { Box, Typography } from '@mui/material';
+import { phone } from '@/config';
+import { BaseSubTitle } from '@/components/base/BaseSubTitle';
 
 export const ContactBlock = () => {
     return (
         <Box
             component="section"
             sx={{
-                paddingY: {xs: '50px', sm: '100px'},
-                paddingX: {xs: '10px', lg: 0},
+                paddingY: { xs: '50px', sm: '100px' },
+                paddingX: { xs: '10px', lg: 0 },
                 // marginX: {xs: '15px', sm: 0}
             }}
         >
@@ -15,24 +16,17 @@ export const ContactBlock = () => {
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
-                    gap: {xs: '5px', sm: '10px'},
-                    marginBottom: {xs: '15px', sm: '30px'}
+                    gap: { xs: '5px', sm: '10px' },
+                    marginBottom: { xs: '15px', sm: '30px' }
                 }}
             >
-                <Typography
-                    variant="h2"
-                    sx={{
-                        fontSize: {xs: 24, sm: 28},
-                        fontWeight: 300,
-                        color: 'var(--red)'
-                    }}
-                >
-                    КОНТАКТЫ
-                </Typography>
+
+                <BaseSubTitle title="КОНТАКТЫ" />
+
                 <Typography
                     sx={{
                         color: 'var(--blue)',
-                        fontSize: {xs: 14, sm: 16},
+                        fontSize: { xs: 14, sm: 16 },
                         fontWeight: 500,
                     }}
                 >
@@ -42,7 +36,7 @@ export const ContactBlock = () => {
                     sx={{
                         color: 'var(--black)',
                         // fontSize: {xs: 12, sm: 14},
-                        fontSize: {xs: 14, sm: 16},
+                        fontSize: { xs: 14, sm: 16 },
                         fontWeight: 300,
                     }}
                 >
@@ -54,14 +48,14 @@ export const ContactBlock = () => {
             <Box
                 sx={{
                     display: 'flex',
-                    flexDirection: {xs: 'column', sm: 'row'},
-                    gap: {xs: '10px', sm: '30px'}
+                    flexDirection: { xs: 'column', sm: 'row' },
+                    gap: { xs: '10px', sm: '30px' }
                 }}
             >
                 <Box
                     sx={{
                         // flex: 1
-                        width: {xs: '100%', sm: '60%'}
+                        width: { xs: '100%', sm: '60%' }
                     }}
                 >
                     <iframe
@@ -74,44 +68,45 @@ export const ContactBlock = () => {
                     sx={{
                         display: 'flex',
                         flexDirection: 'column',
-                        gap: {xs: '5px', sm: '10px'}
+                        gap: { xs: '5px', sm: '10px' }
                     }}
                 >
                     <Box>
                         <Typography sx={{
-                            fontSize: {xs: '14px', sm: '16px'},
+                            fontSize: { xs: '14px', sm: '16px' },
                             fontWeight: 500,
                             color: 'var(--blue)'
                         }}>Контакты</Typography>
 
-                        <Typography sx={{fontSize: {xs: '12px', sm: '14px'}, fontWeight: 300}}>ООО "МСК"</Typography>
-                        <Typography sx={{fontSize: {xs: '12px', sm: '14px'}, fontWeight: 300}}>ИНН:
+                        <Typography sx={{ fontSize: { xs: '12px', sm: '14px' }, fontWeight: 300 }}>ООО
+                            "МСК"</Typography>
+                        <Typography sx={{ fontSize: { xs: '12px', sm: '14px' }, fontWeight: 300 }}>ИНН:
                             9725116009</Typography>
-                        <Typography sx={{fontSize: {xs: '12px', sm: '14px'}, fontWeight: 300}}>КПП:
+                        <Typography sx={{ fontSize: { xs: '12px', sm: '14px' }, fontWeight: 300 }}>КПП:
                             772501001</Typography>
-                        <Typography sx={{fontSize: {xs: '12px', sm: '14px'}, fontWeight: 300}}>ОГРН:
+                        <Typography sx={{ fontSize: { xs: '12px', sm: '14px' }, fontWeight: 300 }}>ОГРН:
                             1237700147343</Typography>
                     </Box>
 
                     <Box>
-                        <Typography sx={{fontSize: {xs: '12px', sm: '14px'}, fontWeight: 300}}>
+                        <Typography sx={{ fontSize: { xs: '12px', sm: '14px' }, fontWeight: 300 }}>
                             Центральный офис
                         </Typography>
 
                         <Typography sx={{
-                            fontSize: {xs: '14px', sm: '16px'},
+                            fontSize: { xs: '14px', sm: '16px' },
                             fontWeight: 500,
                             color: 'var(--blue)'
                         }}>г. Москва, Мичуринский проспект, 6</Typography>
                     </Box>
 
                     <Box>
-                        <Typography sx={{fontSize: {xs: '12px', sm: '14px'}, fontWeight: 300}}>
+                        <Typography sx={{ fontSize: { xs: '12px', sm: '14px' }, fontWeight: 300 }}>
                             Телефон
                         </Typography>
 
                         <Typography sx={{
-                            fontSize: {xs: '14px', sm: '16px'},
+                            fontSize: { xs: '14px', sm: '16px' },
                             fontWeight: 500,
                             color: 'var(--blue)'
                         }}>{phone}</Typography>
@@ -120,5 +115,5 @@ export const ContactBlock = () => {
             </Box>
 
         </Box>
-    )
-}
+    );
+};
