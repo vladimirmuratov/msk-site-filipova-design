@@ -54,7 +54,6 @@ export default function Home() {
         <meta property="og:image:alt" content="Медицинская Сервисная Компания. Платная госпитализация 8 (499) 719-81-00, 24/7" />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:site_name" content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7" />
-        <meta name="google-site-verification" content="esv7d4q6D0-Wq7NhLFwyhvy2OEOwaOGF8lVqUdghggo" />
       </Head>
       {typeof isMobile === 'boolean' ? (
         <main className={openSans.className}>
