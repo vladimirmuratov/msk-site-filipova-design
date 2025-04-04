@@ -45,15 +45,6 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
-        <meta property="og:locale" content="ru_RU" />
-        <meta property="og:title" content="Платная госпитализация 8 (499) 719-81-00, 24/7" />
-        <meta property="og:description" content="Платная госпитализация в Москве. 10 лет опыта. 20 клиник-партнеров. Федеральные, ведомственные и частные клиники. Работаем по всей территории России и СНГ. Оперативно. Финансовая прозрачность." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://msk-group-hospital.ru/" />
-        <meta property="og:image" content="https://msk-group-hospital.ru/images/banner-3.webp" />
-        <meta property="og:image:alt" content="Медицинская Сервисная Компания. Платная госпитализация 8 (499) 719-81-00, 24/7" />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:site_name" content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7" />
       </Head>
       {typeof isMobile === 'boolean' ? (
         <main className={openSans.className}>
