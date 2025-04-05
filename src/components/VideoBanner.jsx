@@ -10,7 +10,13 @@ export const VideoBanner = React.memo(() => {
                 paddingY: { xs: '25px', sm: '50px' },
             }}
         >
-            <video className="video-banner" autoPlay loop muted>
+            <video
+                onContextMenu={(event) => event.preventDefault()}
+                className="video-banner"
+                autoPlay
+                loop
+                muted
+            >
                 <source src={`/video/video-banner-0.webm`} type="video/webm" />
                 Your browser does not support the video tag.
                 <a href="https://ru.freepik.com/free-video/close-up-view-senior-caucasian-female-doctor-hands-typing-laptop-desktop_473369#fromView=search&page=1&position=0&uuid=f225933e-fd27-40a6-b1e8-6c837f0f2fe9">Видео
