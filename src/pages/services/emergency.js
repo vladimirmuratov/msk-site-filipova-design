@@ -17,7 +17,7 @@ export default function Emergency() {
                 />
                 <meta name="keywords" content="Экстренная госпитализация в Москве" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.png" />
+                <link rel="icon" href="/favicon.ico" type="image/x-icon" />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:title" content="Экстренная госпитализация в Москве 8 (499) 719-81-00, 24/7" />
                 <meta property="og:description"

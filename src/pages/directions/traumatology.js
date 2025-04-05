@@ -23,7 +23,7 @@ export default function Traumatology() {
                     content="травматология платная палата, больница травматология платно, платная травматология москва"
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.png" />
+                <link rel="icon" href="/favicon.ico" type="image/x-icon" />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:title" content="Платная травматология Москва 8 (499) 719-81-00, 24/7" />
                 <meta property="og:description"
