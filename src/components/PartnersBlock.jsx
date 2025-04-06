@@ -54,7 +54,7 @@ const PartnersBlock = ({ title = 'наши партнеры', color = 'var(--red
                         // fontWeight: 500
                     }}
                 >
-                    При обращении в сервис МСК&ndash;Групп &mdash; все расчеты ведутся по официальным ценам с конкретной
+                    При обращении в сервис <span style={{fontWeight: 600, whiteSpace: 'nowrap', color: 'var(--red)'}}>МСК-Групп</span> все расчеты ведутся по официальным ценам с конкретной
                     медицинской
                     организацией
                 </Typography>
