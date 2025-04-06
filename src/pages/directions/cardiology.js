@@ -23,7 +23,7 @@ export default function Cardiology() {
                     content="кардиология платная госпитализация, платная больница кардиология, платный стационар кардиология, платная госпитализация в москве кардиология, платные палаты"
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+                <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:title" content="Кардиология платная госпитализация 8 (499) 719-81-00, 24/7" />
                 <meta property="og:description"
@@ -38,6 +38,7 @@ export default function Cardiology() {
                       content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7" />
             </Head>
             <Box>
+
                 <BaseBanner
                     imgPath="/images/directions/5.webp"
                     title="кардиология платная госпитализация"

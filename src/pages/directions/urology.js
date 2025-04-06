@@ -25,7 +25,7 @@ export default function Urology() {
                     content="госпитализация урология москва, платные клиники москвы урология, платная госпитализация урология"
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+                <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:title" content="Госпитализация урология Москва 8 (499) 719-81-00, 24/7" />
                 <meta property="og:description"
@@ -40,6 +40,7 @@ export default function Urology() {
                       content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7" />
             </Head>
             <Box>
+
                 <BaseBanner imgPath="/images/directions/4.webp" title="госпитализация урология москва" />
 
                 <Box

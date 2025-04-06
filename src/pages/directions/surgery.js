@@ -23,7 +23,7 @@ export default function Surgery() {
           content="платная госпитализация в москве хирургия, платные больницы хирургия, платная хирургия, платная палата в хирургии"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta property="og:locale" content="ru_RU" />
         <meta property="og:title" content="Платная хирургия в Москве 8 (499) 719-81-00, 24/7" />
         <meta property="og:description" content="Платная хирургия в Москве. 10 лет опыта. 20 клиник-партнеров. Федеральные, ведомственные и частные клиники. Работаем по всей территории России и СНГ. Оперативно. Финансовая прозрачность." />
@@ -35,6 +35,7 @@ export default function Surgery() {
         <meta property="og:site_name" content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7" />
       </Head>
       <Box>
+
         <BaseBanner
           imgPath="/images/directions/1.webp"
           title="Платная госпитализация в Москве хирургия"

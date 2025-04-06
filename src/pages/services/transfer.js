@@ -20,7 +20,7 @@ export default function Transfer() {
                     content="перевод в другую больницу, перевод больного в другую больницу"
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+                <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:title"
                       content="Перевод пациента в другую больницу 8 (499) 719-81-00, 24/7" />

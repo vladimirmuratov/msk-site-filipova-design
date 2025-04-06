@@ -20,7 +20,7 @@ export default function Patronage() {
                     content="медицинский патронаж, патронаж москва, патронаж на дому, патронаж пожилых людей"
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+                <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:title"
                       content="Медицинский патронаж 8 (499) 719-81-00, 24/7" />

@@ -44,7 +44,7 @@ export default function Home() {
                     content="платная госпитализация, платная палата, гинекология госпитализация, платная госпитализация в москве хирургия, платная травматология москва, госпитализация урология москва, кардиология платная госпитализация, платная госпитализация неврология, платная гастроэнтерология в москве, платный стационар терапия"
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+                <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
             </Head>
             {typeof isMobile === 'boolean' ? (
                 <main className={openSans.className}>
