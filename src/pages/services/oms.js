@@ -1,7 +1,7 @@
 import { BaseFirstBlock } from '@/components/base/for-service-pages/BaseFirstBlock';
 import { HowToBeHospitalized } from '@/components/for-service-pages/planned-hospital/HowToBeHospitalized';
 import StableSummaryBlock from '@/components/base/for-service-pages/stable-components/StableSummaryBlock';
-import { serviceOmsDescriptionText, servicesOmsInfo, stepsOms } from '@/config';
+import { serviceOmsDescriptionText, servicesOmsInfo, stepsPlanHospitalization } from '@/config';
 import Head from 'next/head';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import React from 'react';
@@ -46,7 +46,7 @@ export default function Oms() {
                 description={serviceOmsDescriptionText}
                 services={servicesOmsInfo}
             />
-            <HowToBeHospitalized title="как вам надо действовать" steps={stepsOms} />
+            <HowToBeHospitalized title="как вам надо действовать" steps={stepsPlanHospitalization} />
             <StableSummaryBlock />
         </>
     );

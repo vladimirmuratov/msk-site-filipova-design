@@ -1,7 +1,7 @@
 import { BaseFirstBlock } from '@/components/base/for-service-pages/BaseFirstBlock';
 import { HowToBeHospitalized } from '@/components/for-service-pages/planned-hospital/HowToBeHospitalized';
 import StableSummaryBlock from '@/components/base/for-service-pages/stable-components/StableSummaryBlock';
-import { servicePatientDescriptionText, servicesPatientInfo, stepsPatient } from '@/config';
+import { servicePatientDescriptionText, servicesPatientInfo, stepsPlanHospitalization } from '@/config';
 import Head from 'next/head';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import React from 'react';
@@ -43,7 +43,7 @@ export default function Patient() {
                 description={servicePatientDescriptionText}
                 services={servicesPatientInfo}
             />
-            <HowToBeHospitalized title="госпитализация тяжелобольных" steps={stepsPatient} />
+            <HowToBeHospitalized title="госпитализация тяжелобольных" steps={stepsPlanHospitalization} />
             <StableSummaryBlock />
         </>
     );

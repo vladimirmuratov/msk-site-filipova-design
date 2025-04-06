@@ -1,7 +1,7 @@
 import { BaseFirstBlock } from '@/components/base/for-service-pages/BaseFirstBlock';
 import { HowToBeHospitalized } from '@/components/for-service-pages/planned-hospital/HowToBeHospitalized';
 import StableSummaryBlock from '@/components/base/for-service-pages/stable-components/StableSummaryBlock';
-import { serviceEmergencyDescriptionText, servicesEmergencyInfo, stepsEmergency } from '@/config';
+import { serviceEmergencyDescriptionText, servicesEmergencyInfo, stepsPlanHospitalization } from '@/config';
 import Head from 'next/head';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import React from 'react';
@@ -42,7 +42,7 @@ export default function Emergency() {
                 title="экстренная платная госпитализация в москве"
                 description={serviceEmergencyDescriptionText}
             />
-            <HowToBeHospitalized title="что делать при экстренной ситуации" steps={stepsEmergency} />
+            <HowToBeHospitalized title="что делать при экстренной ситуации" steps={stepsPlanHospitalization} />
             <StableSummaryBlock />
         </>
     );

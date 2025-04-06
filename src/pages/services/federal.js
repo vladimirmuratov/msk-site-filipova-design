@@ -1,7 +1,7 @@
 import { BaseFirstBlock } from '@/components/base/for-service-pages/BaseFirstBlock';
 import { HowToBeHospitalized } from '@/components/for-service-pages/planned-hospital/HowToBeHospitalized';
 import StableSummaryBlock from '@/components/base/for-service-pages/stable-components/StableSummaryBlock';
-import { serviceFederalDescriptionText, servicesFederalInfo, stepsFederal } from '@/config';
+import { serviceFederalDescriptionText, servicesFederalInfo, stepsPlanHospitalization } from '@/config';
 import Head from 'next/head';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import React from 'react';
@@ -21,7 +21,8 @@ export default function Federal() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
                 <meta property="og:locale" content="ru_RU" />
-                <meta property="og:title" content="Госпитализация в федеральные медицинские учреждения 8 (499) 719-81-00, 24/7" />
+                <meta property="og:title"
+                      content="Госпитализация в федеральные медицинские учреждения 8 (499) 719-81-00, 24/7" />
                 <meta property="og:description"
                       content="Госпитализация в федеральные медицинские учреждения. 10 лет опыта. 20 клиник-партнеров. Федеральные, ведомственные и частные клиники. Работаем по всей территории России и СНГ. Оперативно. Финансовая прозрачность." />
                 <meta property="og:type" content="website" />
@@ -44,7 +45,7 @@ export default function Federal() {
                 description={serviceFederalDescriptionText}
                 services={servicesFederalInfo}
             />
-            <HowToBeHospitalized title="КАК ГОСПИТАЛИЗИРОВАТЬСЯ В НУЖНУЮ БОЛЬНИЦУ" steps={stepsFederal} />
+            <HowToBeHospitalized title="КАК ГОСПИТАЛИЗИРОВАТЬСЯ В НУЖНУЮ БОЛЬНИЦУ" steps={stepsPlanHospitalization} />
             <StableSummaryBlock />
         </>
     );
