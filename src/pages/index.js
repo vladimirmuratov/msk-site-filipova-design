@@ -13,6 +13,7 @@ import { ReviewsBlock } from '@/components/ReviewsBlock';
 import { reviews } from '@/reviews';
 import { Banner4 } from '@/components/Banner/Banner4';
 import { HowToBeHospitalized } from '@/components/for-service-pages/planned-hospital/HowToBeHospitalized';
+import { WhyWeBlock } from '@/components/WhyWeBlock';
 
 const openSans = Open_Sans({ subsets: ['latin', 'cyrillic'] });
 
@@ -50,6 +51,7 @@ export default function Home() {
                 <main className={openSans.className}>
                     {isMobile ? <Banner4 /> : <VideoBanner />}
                     <DescriptionBlock />
+                    <WhyWeBlock/>
                     <HowToBeHospitalized
                         steps={stepsPlanHospitalization}
                         title="как это работает"
