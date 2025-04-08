@@ -60,7 +60,7 @@ export default function Cardiology() {
                         component="h2"
                         sx={{
                             color: 'var(--blue)',
-                            fontSize: { xs: 18, sm: 20 },
+                            fontSize: { xs: 20, sm: 22 },
                             fontWeight: 400,
                             display: 'inline',
                         }}
@@ -211,9 +211,9 @@ export default function Cardiology() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
+                                fontSize: { xs: 22, sm: 28 },
                                 fontWeight: 300,
-                                color: 'var(--blue)',
+                                color: 'var(--red)',
                             }}
                         >
                             1. Выбор и подготовка пациентов для оказания высокотехнологичной помощи при острых
@@ -223,9 +223,9 @@ export default function Cardiology() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
+                                fontSize: { xs: 22, sm: 28 },
                                 fontWeight: 300,
-                                color: 'var(--blue)',
+                                color: 'var(--red)',
                             }}
                         >
                             2. Применение диагностических методов:
@@ -339,9 +339,9 @@ export default function Cardiology() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
+                                fontSize: { xs: 22, sm: 28 },
                                 fontWeight: 300,
-                                color: 'var(--blue)',
+                                color: 'var(--red)',
                             }}
                         >
                             3. Диагностические исследования:
@@ -389,9 +389,9 @@ export default function Cardiology() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
+                                fontSize: { xs: 22, sm: 28 },
                                 fontWeight: 300,
-                                color: 'var(--blue)',
+                                color: 'var(--red)',
                             }}
                         >
                             4. Рентгенологические исследования органов грудной клетки.
@@ -401,9 +401,9 @@ export default function Cardiology() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
+                                fontSize: { xs: 22, sm: 28 },
                                 fontWeight: 300,
-                                color: 'var(--blue)',
+                                color: 'var(--red)',
                             }}
                         >
                             5. Система экстренного оповещения (сигнализации) в реанимационных палатах.
@@ -413,9 +413,9 @@ export default function Cardiology() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
+                                fontSize: { xs: 22, sm: 28 },
                                 fontWeight: 300,
-                                color: 'var(--blue)',
+                                color: 'var(--red)',
                             }}
                         >
                             6. Кислородотерапия и интенсивная терапия с круглосуточным мониторингом основных

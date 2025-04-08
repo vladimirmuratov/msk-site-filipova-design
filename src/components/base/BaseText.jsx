@@ -5,7 +5,7 @@ export const BaseText = ({ children }) => {
         <Typography
             sx={{
                 color: 'var(--blue)',
-                fontSize: { xs: 18, sm: 20 },
+                fontSize: { xs: 20, sm: 22 },
                 fontWeight: 400,
                 display: 'inline'
             }}

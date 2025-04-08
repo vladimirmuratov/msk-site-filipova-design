@@ -48,7 +48,8 @@ export default function Therapy() {
                     }}
                 >
                     <BaseText>
-                        <span style={{color: 'var(--red)'}}>Терапевтическое отделение</span> в стационарах клиник партнеров
+                        <span style={{ color: 'var(--red)' }}>Терапевтическое отделение</span> в стационарах клиник
+                        партнеров
                         занимает особое место, где сосредоточена высокопрофессиональная медицинская поддержка
                         для пациентов с терапевтическими, кардиологическими, ревматологическими и эндокринными
                         проблемами. Врачи отделения — сертифицированные специалисты в области «Терапии»,
@@ -60,7 +61,7 @@ export default function Therapy() {
                         component="h2"
                         sx={{
                             color: 'var(--blue)',
-                            fontSize: { xs: 18, sm: 20 },
+                            fontSize: { xs: 20, sm: 22 },
                             fontWeight: 400,
                             display: 'inline',
                         }}
@@ -82,9 +83,9 @@ export default function Therapy() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--blue)',
+                                fontSize: { xs: 22, sm: 30 },
+                                fontWeight: 200,
+                                color: 'var(--red)',
                             }}
                         >
                             Сложная сердечная недостаточность:
@@ -105,9 +106,9 @@ export default function Therapy() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--blue)',
+                                fontSize: { xs: 22, sm: 30 },
+                                fontWeight: 200,
+                                color: 'var(--red)',
                             }}
                         >
                             Резистентная артериальная гипертензия:
@@ -134,9 +135,9 @@ export default function Therapy() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--blue)',
+                                fontSize: { xs: 22, sm: 30 },
+                                fontWeight: 200,
+                                color: 'var(--red)',
                             }}
                         >
                             Нарушения ритма сердца, включая фибрилляцию предсердий:
@@ -155,9 +156,9 @@ export default function Therapy() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--blue)',
+                                fontSize: { xs: 22, sm: 30 },
+                                fontWeight: 200,
+                                color: 'var(--red)',
                             }}
                         >
                             Ишемия и коронарные заболевания:
@@ -187,9 +188,9 @@ export default function Therapy() {
                             variant="h3"
                             className="pb-16"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
+                                fontSize: { xs: 24, sm: 32 },
                                 fontWeight: 300,
-                                color: 'var(--blue)',
+                                color: 'var(--red)',
                             }}
                         >
                             Стабилизация состояния тяжелых пациентов с множественными хроническими патологиями.
@@ -198,9 +199,9 @@ export default function Therapy() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--blue)',
+                                fontSize: { xs: 22, sm: 30 },
+                                fontWeight: 200,
+                                color: 'var(--red)',
                             }}
                         >
                             Анемии различного происхождения:
@@ -219,9 +220,9 @@ export default function Therapy() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--blue)',
+                                fontSize: { xs: 22, sm: 30 },
+                                fontWeight: 200,
+                                color: 'var(--red)',
                             }}
                         >
                             Ревматические заболевания:
@@ -248,9 +249,9 @@ export default function Therapy() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--blue)',
+                                fontSize: { xs: 22, sm: 30 },
+                                fontWeight: 200,
+                                color: 'var(--red)',
                             }}
                         >
                             Гипертоническая болезнь:
@@ -272,9 +273,9 @@ export default function Therapy() {
                             variant="h3"
                             className="pb-16"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
+                                fontSize: { xs: 24, sm: 32 },
                                 fontWeight: 300,
-                                color: 'var(--blue)',
+                                color: 'var(--red)',
                             }}
                         >
                             Подготовка к хирургическому вмешательству для тяжелых больных.
@@ -283,9 +284,9 @@ export default function Therapy() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--blue)',
+                                fontSize: { xs: 22, sm: 30 },
+                                fontWeight: 200,
+                                color: 'var(--red)',
                             }}
                         >
                             Заболевания легких (включая интерстициальные и специфические формы):
@@ -313,9 +314,9 @@ export default function Therapy() {
                             variant="h3"
                             className="pb-16"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
+                                fontSize: { xs: 24, sm: 32 },
                                 fontWeight: 300,
-                                color: 'var(--blue)',
+                                color: 'var(--red)',
                             }}
                         >
                             Реабилитация после COVID-19, инфарктов, инсультов и тромбоэмболий.
@@ -325,9 +326,9 @@ export default function Therapy() {
                             variant="h3"
                             className="pb-16"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
+                                fontSize: { xs: 24, sm: 32 },
                                 fontWeight: 300,
-                                color: 'var(--blue)',
+                                color: 'var(--red)',
                             }}
                         >
                             Особенности лечения у пациентов с тяжелым морбидным ожирением.
@@ -336,9 +337,9 @@ export default function Therapy() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--blue)',
+                                fontSize: { xs: 22, sm: 30 },
+                                fontWeight: 200,
+                                color: 'var(--red)',
                             }}
                         >
                             Сахарный диабет:
@@ -357,9 +358,9 @@ export default function Therapy() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--blue)',
+                                fontSize: { xs: 22, sm: 30 },
+                                fontWeight: 200,
+                                color: 'var(--red)',
                             }}
                         >
                             Ранняя диагностика сердечно-сосудистых и онкологических заболеваний:
@@ -381,9 +382,9 @@ export default function Therapy() {
                             variant="h3"
                             className="pb-16"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
+                                fontSize: { xs: 24, sm: 32 },
                                 fontWeight: 300,
-                                color: 'var(--blue)',
+                                color: 'var(--red)',
                             }}
                         >
                             Хроническая почечная недостаточность у полиморбидных пациентов.
@@ -392,9 +393,9 @@ export default function Therapy() {
                         <Typography
                             variant="h3"
                             sx={{
-                                fontSize: { xs: 20, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--blue)',
+                                fontSize: { xs: 22, sm: 30 },
+                                fontWeight: 200,
+                                color: 'var(--red)',
                             }}
                         >
                             Другие внутренние болезни:

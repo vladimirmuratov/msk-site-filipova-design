@@ -28,7 +28,7 @@ const PartnersBlock = ({ title = 'наши партнеры', color = 'var(--red
 
                 <Typography
                     sx={{
-                        fontSize: {xs: 18, sm: 20},
+                        fontSize: {xs: 20, sm: 22},
                         color: 'var(--blue)',
                         // marginBottom: {xs: '10px', sm: '15px'}
                     }}
@@ -39,9 +39,9 @@ const PartnersBlock = ({ title = 'наши партнеры', color = 'var(--red
 
                 <Typography
                     sx={{
-                        fontSize: {xs: 18, sm: 20},
+                        fontSize: {xs: 20, sm: 22},
                         fontWeight: 600,
-                        color: 'var(--blue)',
+                        color: 'var(--red)',
                     }}
                 >
                     Для вас всегда найдется место в палате.
@@ -50,7 +50,7 @@ const PartnersBlock = ({ title = 'наши партнеры', color = 'var(--red
                 <Typography
                     sx={{
                         color: 'var(--blue)',
-                        fontSize: { xs: 18, sm: 20 },
+                        fontSize: { xs: 20, sm: 22 },
                         // fontWeight: 500
                     }}
                 >

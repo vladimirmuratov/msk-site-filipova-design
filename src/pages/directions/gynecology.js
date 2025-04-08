@@ -107,9 +107,9 @@ export default function Gynecology() {
                             <Typography
                                 variant="h3"
                                 sx={{
-                                    fontSize: { xs: 20, sm: 28 },
+                                    fontSize: { xs: 22, sm: 28 },
                                     fontWeight: 300,
-                                    color: 'var(--blue)',
+                                    color: 'var(--red)',
                                 }}
                             >
                                 1. Большой спектр органосохраняющих лапароскопических хирургических вмешательств:
@@ -162,9 +162,9 @@ export default function Gynecology() {
                             <Typography
                                 variant="h3"
                                 sx={{
-                                    fontSize: { xs: 20, sm: 28 },
+                                    fontSize: { xs: 22, sm: 28 },
                                     fontWeight: 300,
-                                    color: 'var(--blue)',
+                                    color: 'var(--red)',
                                 }}
                             >
                                 2. Операции на онкоурологических патологиях женских половых органов:
@@ -183,9 +183,9 @@ export default function Gynecology() {
                             <Typography
                                 variant="h3"
                                 sx={{
-                                    fontSize: { xs: 20, sm: 28 },
+                                    fontSize: { xs: 22, sm: 28 },
                                     fontWeight: 300,
-                                    color: 'var(--blue)',
+                                    color: 'var(--red)',
                                 }}
                             >
                                 3. Хирургическое вмешательство с использованием лапаротомного доступа различной
@@ -196,9 +196,9 @@ export default function Gynecology() {
                             <Typography
                                 variant="h3"
                                 sx={{
-                                    fontSize: { xs: 20, sm: 28 },
+                                    fontSize: { xs: 22, sm: 28 },
                                     fontWeight: 300,
-                                    color: 'var(--blue)',
+                                    color: 'var(--red)',
                                 }}
                             >
                                 4. Эстетические операции в гинекологии:
@@ -238,9 +238,9 @@ export default function Gynecology() {
                             <Typography
                                 variant="h3"
                                 sx={{
-                                    fontSize: { xs: 20, sm: 28 },
+                                    fontSize: { xs: 22, sm: 28 },
                                     fontWeight: 300,
-                                    color: 'var(--blue)',
+                                    color: 'var(--red)',
                                 }}
                             >
                                 5. Мелкие гинекологические процедуры:
@@ -283,9 +283,9 @@ export default function Gynecology() {
                             <Typography
                                 variant="h3"
                                 sx={{
-                                    fontSize: { xs: 20, sm: 28 },
+                                    fontSize: { xs: 22, sm: 28 },
                                     fontWeight: 300,
-                                    color: 'var(--blue)',
+                                    color: 'var(--red)',
                                 }}
                             >
                                 6. Консервативное лечение:
@@ -306,9 +306,9 @@ export default function Gynecology() {
                             <Typography
                                 variant="h3"
                                 sx={{
-                                    fontSize: { xs: 20, sm: 28 },
+                                    fontSize: { xs: 22, sm: 28 },
                                     fontWeight: 300,
-                                    color: 'var(--blue)',
+                                    color: 'var(--red)',
                                 }}
                             >
                                 7. Специализированные услуги:
@@ -343,9 +343,9 @@ export default function Gynecology() {
                             <Typography
                                 variant="h3"
                                 sx={{
-                                    fontSize: { xs: 20, sm: 28 },
+                                    fontSize: { xs: 22, sm: 28 },
                                     fontWeight: 300,
-                                    color: 'var(--blue)',
+                                    color: 'var(--red)',
                                 }}
                             >
                                 8. Диагностические процедуры:
@@ -366,9 +366,9 @@ export default function Gynecology() {
                             <Typography
                                 variant="h3"
                                 sx={{
-                                    fontSize: { xs: 20, sm: 28 },
+                                    fontSize: { xs: 22, sm: 28 },
                                     fontWeight: 300,
-                                    color: 'var(--blue)',
+                                    color: 'var(--red)',
                                 }}
                             >
                                 9. Лечение бесплодия у женщин, терапия патологий шейки матки (лечение эктопии,
