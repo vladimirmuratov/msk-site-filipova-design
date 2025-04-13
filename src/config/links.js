@@ -1,0 +1,58 @@
+export const headerServiceLinks = [
+    {
+        id: 1,
+        label: 'Перевод в другую больницу',
+        // path: 'https://transfer.mskdoctor.ru',
+        path: '/services/transfer',
+        sitePage: true,
+    },
+    {
+        id: 2,
+        label: 'Платная госпитализация',
+        // path: 'https://plan-hospital.mskdoctor.ru',
+        path: '/services/plan-hospital',
+        sitePage: true,
+    },
+    {
+        id: 3,
+        label: 'Экстренная госпитализация',
+        // path: 'https://emergency.mskdoctor.ru',
+        path: '/services/emergency',
+        sitePage: true,
+    },
+    {
+        id: 4,
+        label: 'Госпитализация без полиса ОМС',
+        // path: 'https://oms.mskdoctor.ru',
+        path: '/services/oms',
+        sitePage: true,
+    },
+    {
+        id: 5,
+        label: 'Госпитализация из регионов',
+        // path: 'https://region.mskdoctor.ru',
+        path: '/services/region',
+        sitePage: true,
+    },
+    {
+        id: 6,
+        label: 'Госпитализация в федеральные мед.учреждения',
+        // path: 'https://federal.mskdoctor.ru',
+        path: '/services/federal',
+        sitePage: true,
+    },
+    {
+        id: 7,
+        label: 'Работа с тяжелыми пациентами',
+        // path: 'https://patient.mskdoctor.ru',
+        path: '/services/patient',
+        sitePage: true,
+    },
+    {
+        id: 8,
+        label: 'Патронажная служба',
+        // path: 'https://patronage.mskdoctor.ru',
+        path: '/services/patronage',
+        sitePage: true,
+    },
+];

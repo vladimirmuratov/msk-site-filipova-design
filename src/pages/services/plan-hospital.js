@@ -1,10 +1,11 @@
 import { BaseFirstBlock } from '@/components/base/for-service-pages/BaseFirstBlock';
 import { HowToBeHospitalized } from '@/components/for-service-pages/planned-hospital/HowToBeHospitalized';
 import StableSummaryBlock from '@/components/base/for-service-pages/stable-components/StableSummaryBlock';
-import { servicesPlanHospitalInfo, stepsPlanHospitalization } from '@/config';
 import Head from 'next/head';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import React from 'react';
+import { stepsPlanHospitalization } from '@/config/steps';
+import { servicesPlanHospitalInfo } from '@/config/services-info';
 
 export default function PlanHospital() {
     return (

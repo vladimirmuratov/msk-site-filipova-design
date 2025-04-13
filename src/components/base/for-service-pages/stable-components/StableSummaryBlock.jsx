@@ -3,7 +3,7 @@ import { WhatWeOffer } from '@/components/base/for-service-pages/stable-componen
 import { FormBlock } from '@/components/base/for-service-pages/stable-components/FormBlock';
 import { ContactBlock } from '@/components/base/for-service-pages/stable-components/ContactBlock';
 import PartnersBlock from '@/components/PartnersBlock';
-import { partners } from '@/config';
+import { partners } from '@/config/partners';
 
 const StableSummaryBlock = () => (
     <>

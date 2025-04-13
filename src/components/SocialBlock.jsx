@@ -1,7 +1,7 @@
-import React from 'react'
-import {Box, Link} from '@mui/material'
-import Image from 'next/image'
-import { email, phoneTelegram, phoneViber, phoneWhatsApp } from '@/config';
+import React from 'react';
+import { Box, Link } from '@mui/material';
+import Image from 'next/image';
+import { email, phoneTelegram, phoneWhatsApp } from '@/config/default-values';
 
 const SocialBlock = () => {
     return (
@@ -46,7 +46,7 @@ const SocialBlock = () => {
                 />
             </Link>
         </Box>
-    )
-}
+    );
+};
 
-export default React.memo(SocialBlock)
+export default React.memo(SocialBlock);

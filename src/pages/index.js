@@ -1,7 +1,6 @@
 import { Open_Sans } from 'next/font/google';
 import DescriptionBlock from '@/components/DescriptionBlock';
 import PartnersBlock from '@/components/PartnersBlock';
-import { directions, services, stepsPlanHospitalization } from '@/config';
 import DirectionsBlock from '@/components/DirectionsBlock';
 import ServiceBlock from '@/components/ServiceBlock';
 import { useRouter } from 'next/router';
@@ -14,6 +13,9 @@ import { reviews } from '@/reviews';
 import { Banner4 } from '@/components/Banner/Banner4';
 import { HowToBeHospitalized } from '@/components/for-service-pages/planned-hospital/HowToBeHospitalized';
 import { WhyWeBlock } from '@/components/WhyWeBlock';
+import { stepsPlanHospitalization } from '@/config/steps';
+import { directions } from '@/config/directions';
+import { services } from '@/config/services';
 
 const openSans = Open_Sans({ subsets: ['latin', 'cyrillic'] });
 
@@ -51,7 +53,7 @@ export default function Home() {
                 <main className={openSans.className}>
                     {isMobile ? <Banner4 /> : <VideoBanner />}
                     <DescriptionBlock />
-                    <WhyWeBlock/>
+                    <WhyWeBlock />
                     <HowToBeHospitalized
                         steps={stepsPlanHospitalization}
                         title="как это работает"

@@ -1,8 +1,8 @@
-import {Box, Typography, Link} from '@mui/material'
-import {address, email, phone} from '@/config'
-import React from 'react'
-import SocialBlock from '@/components/SocialBlock'
-import HeaderServiceBlock from '@/components/HeaderServiceBlock'
+import { Box, Link, Typography } from '@mui/material';
+import React from 'react';
+import SocialBlock from '@/components/SocialBlock';
+import HeaderServiceBlock from '@/components/HeaderServiceBlock';
+import { address, email, phone } from '@/config/default-values';
 
 export const Header2 = () => {
     return (
@@ -29,7 +29,7 @@ export const Header2 = () => {
                     href="/"
                     sx={{
                         display: 'flex',
-                        flexDirection: {xs: 'column', md: 'row'},
+                        flexDirection: { xs: 'column', md: 'row' },
                         alignItems: 'center'
                     }}
                 >
@@ -58,7 +58,7 @@ export const Header2 = () => {
 
                 <Box
                     sx={{
-                        display: {xs: 'none', sm: 'flex'},
+                        display: { xs: 'none', sm: 'flex' },
                         flexDirection: 'column',
                         justifyContent: 'center',
                         alignItems: 'center',
@@ -67,7 +67,7 @@ export const Header2 = () => {
                 >
                     <Typography
                         sx={{
-                            fontSize: {xs: '18px', sm: '24px', md: '26px', lg: '28px'},
+                            fontSize: { xs: '18px', sm: '24px', md: '26px', lg: '28px' },
                             fontWeight: 600,
                             color: 'var(--blue)',
                             textAlign: 'center',
@@ -77,7 +77,7 @@ export const Header2 = () => {
 
                     <Typography
                         sx={{
-                            fontSize: {xs: '10px', sm: '12px', md: '14px', lg: '16px'},
+                            fontSize: { xs: '10px', sm: '12px', md: '14px', lg: '16px' },
                             fontWeight: 600,
                             color: 'var(--blue)',
                         }}
@@ -102,7 +102,7 @@ export const Header2 = () => {
                     >
                         <Typography
                             sx={{
-                                fontSize: {xs: '19px', sm: '24px', md: '24px', lg: '28px'},
+                                fontSize: { xs: '19px', sm: '24px', md: '24px', lg: '28px' },
                                 fontWeight: 600,
                                 color: 'var(--red)',
                                 whiteSpace: 'nowrap',
@@ -121,22 +121,22 @@ export const Header2 = () => {
                     >
                         <Typography
                             sx={{
-                                fontSize: {xs: '12px', sm: '12px', md: '14px', lg: '16px'},
+                                fontSize: { xs: '12px', sm: '12px', md: '14px', lg: '16px' },
                                 fontWeight: 600,
                                 color: 'var(--red)',
                             }}
                         >{email}</Typography>
                     </Link>
 
-                    <SocialBlock/>
+                    <SocialBlock />
 
                 </Box>
             </Box>
 
-            <HeaderServiceBlock/>
+            <HeaderServiceBlock />
 
         </Box>
-    )
-}
+    );
+};
 
-export default React.memo(Header2)
+export default React.memo(Header2);

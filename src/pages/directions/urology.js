@@ -4,10 +4,10 @@ import { BaseText } from '@/components/base/BaseText';
 import React from 'react';
 import { LocalHospital } from '@mui/icons-material';
 import PartnersBlock from '@/components/PartnersBlock';
-import { urologyImages } from '@/config';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import Head from 'next/head';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { urologyImages } from '@/config/images';
 
 export default function Urology() {
     return (

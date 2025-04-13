@@ -1,10 +1,12 @@
 import { BaseFirstBlock } from '@/components/base/for-service-pages/BaseFirstBlock';
 import { HowToBeHospitalized } from '@/components/for-service-pages/planned-hospital/HowToBeHospitalized';
 import StableSummaryBlock from '@/components/base/for-service-pages/stable-components/StableSummaryBlock';
-import { serviceOmsDescriptionText, servicesOmsInfo, stepsPlanHospitalization } from '@/config';
 import Head from 'next/head';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import React from 'react';
+import { serviceOmsDescriptionText } from '@/config/service-text';
+import { stepsPlanHospitalization } from '@/config/steps';
+import { servicesOmsInfo } from '@/config/services-info';
 
 export default function Oms() {
     return (

@@ -6,8 +6,8 @@ import { BaseText } from '@/components/base/BaseText';
 import { LocalHospital } from '@mui/icons-material';
 import PartnersBlock from '@/components/PartnersBlock';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
-import { traumatologyImages } from '@/config';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { traumatologyImages } from '@/config/images';
 
 export default function Traumatology() {
     return (
@@ -48,7 +48,8 @@ export default function Traumatology() {
                     }}
                 >
                     <BaseText>
-                        <span style={{color: 'var(--red)'}}>Ортопедические и травматологические подразделения</span> наших
+                        <span
+                            style={{ color: 'var(--red)' }}>Ортопедические и травматологические подразделения</span> наших
                         партнеров обладают глубоким опытом в области терапии различных заболеваний и повреждений
                         опорно-двигательной системы.
                     </BaseText>

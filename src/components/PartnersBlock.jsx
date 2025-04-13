@@ -1,8 +1,8 @@
 import { Box, Typography } from '@mui/material';
 import { BasePartnerCard } from '@/components/base/BasePartnerCard';
 import React from 'react';
-import { partners } from '@/config';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { partners } from '@/config/partners';
 
 const PartnersBlock = ({ title = 'наши партнеры', color = 'var(--red)' }) => {
     return (
@@ -28,7 +28,7 @@ const PartnersBlock = ({ title = 'наши партнеры', color = 'var(--red
 
                 <Typography
                     sx={{
-                        fontSize: {xs: 20, sm: 22},
+                        fontSize: { xs: 20, sm: 22 },
                         color: 'var(--blue)',
                         // marginBottom: {xs: '10px', sm: '15px'}
                     }}
@@ -39,7 +39,7 @@ const PartnersBlock = ({ title = 'наши партнеры', color = 'var(--red
 
                 <Typography
                     sx={{
-                        fontSize: {xs: 20, sm: 22},
+                        fontSize: { xs: 20, sm: 22 },
                         fontWeight: 600,
                         color: 'var(--red)',
                     }}
@@ -54,7 +54,9 @@ const PartnersBlock = ({ title = 'наши партнеры', color = 'var(--red
                         // fontWeight: 500
                     }}
                 >
-                    При обращении в сервис <span style={{fontWeight: 600, whiteSpace: 'nowrap', color: 'var(--red)'}}>МСК-Групп</span> все расчеты ведутся по официальным ценам с конкретной
+                    При обращении в сервис <span
+                    style={{ fontWeight: 600, whiteSpace: 'nowrap', color: 'var(--red)' }}>МСК-Групп</span> все расчеты
+                    ведутся по официальным ценам с конкретной
                     медицинской
                     организацией
                 </Typography>

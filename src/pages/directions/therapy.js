@@ -5,9 +5,9 @@ import { LocalHospital } from '@mui/icons-material';
 import React from 'react';
 import PartnersBlock from '@/components/PartnersBlock';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
-import { therapyImages } from '@/config';
 import Head from 'next/head';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { therapyImages } from '@/config/images';
 
 export default function Therapy() {
     return (

@@ -3,9 +3,9 @@ import { BaseBanner } from '@/components/base/BaseBanner';
 import Head from 'next/head';
 import { BaseText } from '@/components/base/BaseText';
 import PartnersBlock from '@/components/PartnersBlock';
-import { surgeryImages } from '@/config';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import React from 'react';
+import { surgeryImages } from '@/config/images';
 
 export default function Surgery() {
   return (

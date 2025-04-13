@@ -1,7 +1,7 @@
 import { Box, Link, Typography } from '@mui/material';
-import { email, phone } from '@/config';
 import Head from 'next/head';
 import React from 'react';
+import { email, phone } from '@/config/default-values';
 
 export default function Requisites() {
     return (

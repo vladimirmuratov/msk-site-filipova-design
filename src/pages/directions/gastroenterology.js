@@ -4,10 +4,10 @@ import { BaseText } from '@/components/base/BaseText';
 import { LocalHospital } from '@mui/icons-material';
 import React from 'react';
 import PartnersBlock from '@/components/PartnersBlock';
-import { gastroenterologyImages } from '@/config';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import Head from 'next/head';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { gastroenterologyImages } from '@/config/images';
 
 export default function Gastroenterology() {
     return (

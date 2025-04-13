@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
-import { phone } from '@/config';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { phone } from '@/config/default-values';
 
 export const ContactBlock = () => {
     return (

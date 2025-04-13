@@ -4,10 +4,10 @@ import { Suspense, useEffect, useState } from 'react';
 import { BaseModal } from '@/components/base/BaseModal';
 import { MessageForm } from '@/components/MessageForm';
 import DialogContentText from '@mui/material/DialogContentText';
-import { timeOut } from '@/config';
 import { Metrika } from '@/Metrika';
 import { FloatBtn } from '@/components/FloatBtn';
 import Header2 from '@/components/Header2';
+import { timeOut } from '@/config/default-values';
 
 export const Layout = ({ children }) => {
     const [isOpenForm, setOpenForm] = useState(false);

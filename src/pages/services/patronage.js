@@ -1,10 +1,12 @@
 import { BaseFirstBlock } from '@/components/base/for-service-pages/BaseFirstBlock';
 import { HowToBeHospitalized } from '@/components/for-service-pages/planned-hospital/HowToBeHospitalized';
 import StableSummaryBlock from '@/components/base/for-service-pages/stable-components/StableSummaryBlock';
-import { servicePatronageDescriptionText, servicesPatronageInfo, stepsPatronage } from '@/config';
 import Head from 'next/head';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import React from 'react';
+import { servicePatronageDescriptionText } from '@/config/service-text';
+import { stepsPatronage } from '@/config/steps';
+import { servicesPatronageInfo } from '@/config/services-info';
 
 export default function Patronage() {
     return (

@@ -1,7 +1,8 @@
 import { Box, Link, Typography } from '@mui/material';
-import { email, footerList1, footerList2, phone } from '@/config';
 import { BaseFooterLink } from '@/components/base/BaseFooterLink';
 import SocialBlock from '@/components/SocialBlock';
+import { email, phone } from '@/config/default-values';
+import { footerList1, footerList2 } from '@/config/footer';
 
 export const Footer = ({ onOpenForm }) => {
     return (
@@ -132,7 +133,7 @@ export const Footer = ({ onOpenForm }) => {
                     fontWeight: 300,
                     textAlign: 'center'
                 }}
-            >&copy;2017 - {new Date().getFullYear()} OOO "МСК"</Typography>
+            >&copy;2014 - {new Date().getFullYear()} OOO "МСК"</Typography>
         </Box>
     );
 };

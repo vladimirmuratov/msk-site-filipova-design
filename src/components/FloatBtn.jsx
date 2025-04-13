@@ -1,6 +1,6 @@
 import { Fab, Link } from '@mui/material';
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
-import { phone } from '@/config';
+import { phone } from '@/config/default-values';
 
 export const FloatBtn = ({ handleOpen, isMobile }) => {
     return (

@@ -1,5 +1,5 @@
-import {Box, Typography} from '@mui/material'
-import {phone} from '@/config'
+import { Box, Typography } from '@mui/material';
+import { phone } from '@/config/default-values';
 
 export const Banner = () => {
     return (
@@ -10,18 +10,18 @@ export const Banner = () => {
                 position: 'relative'
             }}
         >
-            <img className="banner" src="/images/banner.png" alt="banner"/>
+            <img className="banner" src="/images/banner.png" alt="banner" />
             <Typography
                 sx={{
                     position: 'absolute',
                     top: '50%',
                     left: '2%',
                     color: 'var(--red)',
-                    fontSize: {xs: 32, sm: 42, md: 58, lg: 68},
+                    fontSize: { xs: 32, sm: 42, md: 58, lg: 68 },
                     fontWeight: 700,
                     textShadow: '2px 2px 3px pink'
                 }}
             >{phone}</Typography>
         </Box>
-    )
-}
+    );
+};
