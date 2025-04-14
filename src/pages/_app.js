@@ -7,27 +7,27 @@ import { useEffect, useState } from 'react';
 import Head from 'next/head';
 
 export default function App({ Component, pageProps }) {
-  const [visible, setVisible] = useState(false);
+    const [visible, setVisible] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => setVisible(true), 0);
+    useEffect(() => {
+        const timer = setTimeout(() => setVisible(true), 0);
 
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
+        return () => {
+            clearTimeout(timer);
+        };
+    }, []);
 
-  return (
-    <>
-      {visible && (
-        <AppCacheProvider {...pageProps}>
-          <ThemeProvider theme={theme}>
-            <Layout>
-              <Component {...pageProps} />
-            </Layout>
-          </ThemeProvider>
-        </AppCacheProvider>
-      )}
-    </>
-  );
+    return (
+        <>
+            {visible && (
+                <AppCacheProvider {...pageProps}>
+                    <ThemeProvider theme={theme}>
+                        <Layout>
+                            <Component {...pageProps} />
+                        </Layout>
+                    </ThemeProvider>
+                </AppCacheProvider>
+            )}
+        </>
+    );
 }

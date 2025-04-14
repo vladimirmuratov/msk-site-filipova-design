@@ -16,6 +16,7 @@ import { WhyWeBlock } from '@/components/WhyWeBlock';
 import { stepsPlanHospitalization } from '@/config/steps';
 import { directions } from '@/config/directions';
 import { services } from '@/config/services';
+import { useScrollPosition } from '@/lib/useScrollPosition ';
 
 const openSans = Open_Sans({ subsets: ['latin', 'cyrillic'] });
 
@@ -32,6 +33,8 @@ export default function Home() {
             setMobile(false);
         }
     }, []);
+
+    useScrollPosition('Home');
 
     return (
         <>
