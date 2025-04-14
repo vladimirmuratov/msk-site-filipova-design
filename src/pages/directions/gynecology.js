@@ -1,4 +1,4 @@
-import { Box, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Box, Link, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import { BaseText } from '@/components/base/BaseText';
 import Head from 'next/head';
@@ -6,8 +6,27 @@ import { LocalHospital } from '@mui/icons-material';
 import React from 'react';
 import PartnersBlock from '@/components/PartnersBlock';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 
 export default function Gynecology() {
+    const breadcrumbs = (router) => {
+        return [
+            <Link
+                // href="/"
+                component="button"
+                onClick={() => router.back()}
+                underline="hover"
+                key="1"
+                sx={{ color: 'var(--blue)!important', fontWeight: 400 }}
+            >
+                Главная
+            </Link>,
+            <Typography key="2" sx={{ color: 'var(--gray)' }}>
+                Гинекология
+            </Typography>,
+        ];
+    };
+
     return (
         <>
             <Head>
@@ -37,6 +56,8 @@ export default function Gynecology() {
             </Head>
             <Box>
 
+                <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
+
                 <BaseBanner imgPath="/images/directions/3.webp" title="гинекология госпитализация" />
 
                 <Box
@@ -46,7 +67,8 @@ export default function Gynecology() {
                     }}
                 >
                     <BaseText>
-                        В <span style={{color: 'var(--red)'}}>отделениях гинекологии</span> наших партнеров гарантируется
+                        В <span style={{ color: 'var(--red)' }}>отделениях гинекологии</span> наших партнеров
+                        гарантируется
                         полноценная диагностика, включающая экспресс-обследования и профессиональную
                         консультацию с размещением в комфортабельных одно- или двухместных палатах стационара.
                     </BaseText>

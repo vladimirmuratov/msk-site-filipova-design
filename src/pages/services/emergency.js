@@ -7,8 +7,28 @@ import React from 'react';
 import { serviceEmergencyDescriptionText } from '@/config/service-text';
 import { stepsPlanHospitalization } from '@/config/steps';
 import { servicesEmergencyInfo } from '@/config/services-info';
+import { Link, Typography } from '@mui/material';
+import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 
 export default function Emergency() {
+    const breadcrumbs = (router) => {
+        return [
+            <Link
+                // href="/"
+                component="button"
+                onClick={() => router.back()}
+                underline="hover"
+                key="1"
+                sx={{ color: 'var(--blue)!important', fontWeight: 400 }}
+            >
+                Главная
+            </Link>,
+            <Typography key="2" sx={{ color: 'var(--gray)' }}>
+                Экстренная госпитализация
+            </Typography>,
+        ];
+    };
+
     return (
         <>
             <Head>
@@ -33,6 +53,9 @@ export default function Emergency() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7" />
             </Head>
+
+            <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
+
             <BaseBanner
                 imgPath="/images/services/emergency.webp"
                 title="платная экстренная госпитализация"

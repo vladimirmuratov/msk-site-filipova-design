@@ -1,4 +1,4 @@
-import { Box, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Box, Link, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import { BaseText } from '@/components/base/BaseText';
 import { LocalHospital } from '@mui/icons-material';
@@ -8,8 +8,27 @@ import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import Head from 'next/head';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
 import { gastroenterologyImages } from '@/config/images';
+import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 
 export default function Gastroenterology() {
+    const breadcrumbs = (router) => {
+        return [
+            <Link
+                // href="/"
+                component="button"
+                onClick={() => router.back()}
+                underline="hover"
+                key="1"
+                sx={{ color: 'var(--blue)!important', fontWeight: 400 }}
+            >
+                Главная
+            </Link>,
+            <Typography key="2" sx={{ color: 'var(--gray)' }}>
+                Гастроэнтерология
+            </Typography>,
+        ];
+    };
+
     return (
         <>
             <Head>
@@ -40,6 +59,8 @@ export default function Gastroenterology() {
                       content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7" />
             </Head>
             <Box>
+
+                <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
 
                 <BaseBanner
                     imgPath="/images/directions/7.webp"

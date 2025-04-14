@@ -7,8 +7,28 @@ import React from 'react';
 import { serviceFederalDescriptionText } from '@/config/service-text';
 import { stepsPlanHospitalization } from '@/config/steps';
 import { servicesFederalInfo } from '@/config/services-info';
+import { Link, Typography } from '@mui/material';
+import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 
 export default function Federal() {
+    const breadcrumbs = (router) => {
+        return [
+            <Link
+                // href="/"
+                component="button"
+                onClick={() => router.back()}
+                underline="hover"
+                key="1"
+                sx={{ color: 'var(--blue)!important', fontWeight: 400 }}
+            >
+                Главная
+            </Link>,
+            <Typography key="2" sx={{ color: 'var(--gray)' }}>
+                Госпитализация в фед.мед.учреждения
+            </Typography>,
+        ];
+    };
+
     return (
         <>
             <Head>
@@ -36,6 +56,9 @@ export default function Federal() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7" />
             </Head>
+
+            <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
+
             <BaseBanner
                 imgPath="/images/services/federal.webp"
                 title="Платная госпитализация в федеральные мед. учреждения"

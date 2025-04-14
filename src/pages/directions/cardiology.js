@@ -1,4 +1,4 @@
-import { Box, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Box, Link, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import Head from 'next/head';
 import { BaseText } from '@/components/base/BaseText';
@@ -6,8 +6,27 @@ import React from 'react';
 import { LocalHospital } from '@mui/icons-material';
 import PartnersBlock from '@/components/PartnersBlock';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 
 export default function Cardiology() {
+    const breadcrumbs = (router) => {
+        return [
+            <Link
+                // href="/"
+                component="button"
+                onClick={() => router.back()}
+                underline="hover"
+                key="1"
+                sx={{ color: 'var(--blue)!important', fontWeight: 400 }}
+            >
+                Главная
+            </Link>,
+            <Typography key="2" sx={{ color: 'var(--gray)' }}>
+                Кардиология
+            </Typography>,
+        ];
+    };
+
     return (
         <>
             <Head>
@@ -39,6 +58,8 @@ export default function Cardiology() {
             </Head>
             <Box>
 
+                <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
+
                 <BaseBanner
                     imgPath="/images/directions/5.webp"
                     title="кардиология платная госпитализация"
@@ -51,7 +72,7 @@ export default function Cardiology() {
                     }}
                 >
                     <BaseText>
-                        В <span style={{color: 'var(--red)'}}>кардиологических отделениях</span> наших партнеров
+                        В <span style={{ color: 'var(--red)' }}>кардиологических отделениях</span> наших партнеров
                         диагностика и терапия пациентов основывается на официальных рекомендациях Минздрава
                         России, клинических указаниях Российского кардиологического общества (РКО), Европейского
                         и Американских ассоциаций кардиологов, а также данных из доказательной медицины.

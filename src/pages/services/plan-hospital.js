@@ -6,8 +6,28 @@ import { BaseBanner } from '@/components/base/BaseBanner';
 import React from 'react';
 import { stepsPlanHospitalization } from '@/config/steps';
 import { servicesPlanHospitalInfo } from '@/config/services-info';
+import { Link, Typography } from '@mui/material';
+import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 
 export default function PlanHospital() {
+    const breadcrumbs = (router) => {
+        return [
+            <Link
+                // href="/"
+                component="button"
+                onClick={() => router.back()}
+                underline="hover"
+                key="1"
+                sx={{ color: 'var(--blue)!important', fontWeight: 400 }}
+            >
+                Главная
+            </Link>,
+            <Typography key="2" sx={{ color: 'var(--gray)' }}>
+                Плановая госпитализация
+            </Typography>,
+        ];
+    };
+
     return (
         <>
             <Head>
@@ -36,6 +56,9 @@ export default function PlanHospital() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7" />
             </Head>
+
+            <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
+
             <BaseBanner
                 imgPath="/images/services/plan-hospital.webp"
                 title="платная плановая госпитализация"

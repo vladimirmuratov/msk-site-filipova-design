@@ -7,8 +7,28 @@ import React from 'react';
 import { servicePatronageDescriptionText } from '@/config/service-text';
 import { stepsPatronage } from '@/config/steps';
 import { servicesPatronageInfo } from '@/config/services-info';
+import { Link, Typography } from '@mui/material';
+import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 
 export default function Patronage() {
+    const breadcrumbs = (router) => {
+        return [
+            <Link
+                // href="/"
+                component="button"
+                onClick={() => router.back()}
+                underline="hover"
+                key="1"
+                sx={{ color: 'var(--blue)!important', fontWeight: 400 }}
+            >
+                Главная
+            </Link>,
+            <Typography key="2" sx={{ color: 'var(--gray)' }}>
+                Патронаж
+            </Typography>,
+        ];
+    };
+
     return (
         <>
             <Head>
@@ -37,6 +57,9 @@ export default function Patronage() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7" />
             </Head>
+
+            <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
+
             <BaseBanner
                 imgPath="/images/services/patronage.webp"
                 title="медицинский патронаж"
