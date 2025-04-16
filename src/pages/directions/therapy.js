@@ -1,7 +1,6 @@
-import { Box, Link, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Box, Link, List, Typography } from '@mui/material';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import { BaseText } from '@/components/base/BaseText';
-import { LocalHospital } from '@mui/icons-material';
 import React from 'react';
 import PartnersBlock from '@/components/PartnersBlock';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
@@ -9,6 +8,20 @@ import Head from 'next/head';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
 import { therapyImages } from '@/config/images';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
+import {
+    therapyList1,
+    therapyList10,
+    therapyList11,
+    therapyList2,
+    therapyList3,
+    therapyList4,
+    therapyList5,
+    therapyList6,
+    therapyList7,
+    therapyList8,
+    therapyList9
+} from '@/config/directions/therapy';
+import { BaseLi } from '@/components/base/BaseLi';
 
 export default function Therapy() {
     const breadcrumbs = (router) => {
@@ -112,16 +125,7 @@ export default function Therapy() {
                             Сложная сердечная недостаточность:
                         </Typography>
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Эффективное управление с акцентом на достижении стабильности состояния
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {therapyList1.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
                         </List>
 
                         <Typography
@@ -135,22 +139,7 @@ export default function Therapy() {
                             Резистентная артериальная гипертензия:
                         </Typography>
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Тщательная диагностика для исключения симптоматических причин</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Индивидуализированный подход к лечению</BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {therapyList2.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
                         </List>
 
                         <Typography
@@ -164,14 +153,7 @@ export default function Therapy() {
                             Нарушения ритма сердца, включая фибрилляцию предсердий:
                         </Typography>
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Оптимизация антиаритмической терапии</BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {therapyList3.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
                         </List>
 
                         <Typography
@@ -185,24 +167,7 @@ export default function Therapy() {
                             Ишемия и коронарные заболевания:
                         </Typography>
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Проведение стентирования в рамках высокотехнологичной медицинской помощи
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Индивидуальный подход к каждому случаю</BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {therapyList4.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
                         </List>
 
                         <Typography
@@ -228,14 +193,7 @@ export default function Therapy() {
                             Анемии различного происхождения:
                         </Typography>
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Быстрое выявление и комплексное лечение</BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {therapyList5.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
                         </List>
 
                         <Typography
@@ -249,22 +207,7 @@ export default function Therapy() {
                             Ревматические заболевания:
                         </Typography>
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Включая применение генно-инженерных препаратов</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Индивидуальные стратегии терапии</BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {therapyList6.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
                         </List>
 
                         <Typography
@@ -278,16 +221,7 @@ export default function Therapy() {
                             Гипертоническая болезнь:
                         </Typography>
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Программы с фиксированной стоимостью, учитывающие особенности каждого пациента
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {therapyList7.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
                         </List>
 
                         <Typography
@@ -313,22 +247,7 @@ export default function Therapy() {
                             Заболевания легких (включая интерстициальные и специфические формы):
                         </Typography>
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Современная терапия по клиническим протоколам</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Использование вспомогательных методов</BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {therapyList8.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
                         </List>
 
                         <Typography
@@ -366,14 +285,7 @@ export default function Therapy() {
                             Сахарный диабет:
                         </Typography>
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Разработка персонализированных схем терапии</BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {therapyList9.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
                         </List>
 
                         <Typography
@@ -387,16 +299,7 @@ export default function Therapy() {
                             Ранняя диагностика сердечно-сосудистых и онкологических заболеваний:
                         </Typography>
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Комплексное обследование для своевременного выявления патологий
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {therapyList10.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
                         </List>
 
                         <Typography
@@ -422,21 +325,17 @@ export default function Therapy() {
                             Другие внутренние болезни:
                         </Typography>
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Специализированная помощь в широком спектре состояний</BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {therapyList11.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
                         </List>
                     </Box>
 
-                    <PartnersBlock title="платный стационар терапия" color="var(--red)" />
 
-                    <BasePhotoGallery imagesList={therapyImages} />
                 </Box>
+
+                <PartnersBlock title="платный стационар терапия" color="var(--red)" />
+                
+                <BasePhotoGallery imagesList={therapyImages} />
+
             </Box>
         </>
     );

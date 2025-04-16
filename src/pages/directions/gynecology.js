@@ -7,6 +7,16 @@ import React from 'react';
 import PartnersBlock from '@/components/PartnersBlock';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
+import { gynecologyImages, traumatologyImages } from '@/config/images';
+import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
+import {
+    gynecologyList1,
+    gynecologyList2,
+    gynecologyList3,
+    gynecologyList4,
+    gynecologyList5, gynecologyList6, gynecologyList7
+} from '@/config/directions/gynecology';
+import { BaseLi } from '@/components/base/BaseLi';
 
 export default function Gynecology() {
     const breadcrumbs = (router) => {
@@ -137,48 +147,7 @@ export default function Gynecology() {
                                 1. Большой спектр органосохраняющих лапароскопических хирургических вмешательств:
                             </Typography>
                             <List>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>Устранение кист яичников</BaseText>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>Лечение апоплексии и внематочной беременности, поликистоза</BaseText>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>
-                                            Операции по восстановлению репродуктивного здоровья (бесплодие)
-                                        </BaseText>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>Коррекция наружных генитальных проявлений эндометриоза</BaseText>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>Удаление миомы матки и устранение спаек в малом тазу</BaseText>
-                                    </ListItemText>
-                                </ListItem>
+                                {gynecologyList1.map(({ id, label }) => <BaseLi key={id} label={label} component='h4' />)}
                             </List>
 
                             <Typography
@@ -192,14 +161,7 @@ export default function Gynecology() {
                                 2. Операции на онкоурологических патологиях женских половых органов:
                             </Typography>
                             <List>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>лечение рака шейки, яичников и тела матки (эндометрия)</BaseText>
-                                    </ListItemText>
-                                </ListItem>
+                                {gynecologyList2.map(({ id, label }) => <BaseLi key={id} label={label} component='h4' />)}
                             </List>
 
                             <Typography
@@ -226,35 +188,7 @@ export default function Gynecology() {
                                 4. Эстетические операции в гинекологии:
                             </Typography>
                             <List>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>Удаление кист бартолиниевой железы</BaseText>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>
-                                            Реконструкция влагалищных стенок, восстановление девственной плевы
-                                            (гименопластика)
-                                        </BaseText>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>
-                                            Пластическая коррекция малых половых губ и хирургия при недержании мочи
-                                        </BaseText>
-                                    </ListItemText>
-                                </ListItem>
+                                {gynecologyList3.map(({ id, label }) => <BaseLi key={id} label={label} component='h4' />)}
                             </List>
 
                             <Typography
@@ -268,38 +202,7 @@ export default function Gynecology() {
                                 5. Мелкие гинекологические процедуры:
                             </Typography>
                             <List>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>Диагностическая гистероскопия с раздельным выскабливанием</BaseText>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>Удаление полипов эндометрия, миоматозных узлов</BaseText>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>Рассечение внутриматочных синехий и перегородок</BaseText>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>Вскрытие абсцессов бартолиниевой железы</BaseText>
-                                    </ListItemText>
-                                </ListItem>
+                                {gynecologyList4.map(({ id, label }) => <BaseLi key={id} label={label} component='h4' />)}
                             </List>
 
                             <Typography
@@ -313,16 +216,7 @@ export default function Gynecology() {
                                 6. Консервативное лечение:
                             </Typography>
                             <List>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>
-                                            Терапия миомы, эндометриоза матки, функциональных кист яичников
-                                        </BaseText>
-                                    </ListItemText>
-                                </ListItem>
+                                {gynecologyList5.map(({ id, label }) => <BaseLi key={id} label={label} component='h4' />)}
                             </List>
 
                             <Typography
@@ -336,30 +230,7 @@ export default function Gynecology() {
                                 7. Специализированные услуги:
                             </Typography>
                             <List>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>Планирование семьи и подбор контрацепции</BaseText>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>Заместительная гормональная терапия в период менопаузы</BaseText>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>Профилактика и лечение остеопороза</BaseText>
-                                    </ListItemText>
-                                </ListItem>
+                                {gynecologyList6.map(({ id, label }) => <BaseLi key={id} label={label} component='h4' />)}
                             </List>
 
                             <Typography
@@ -373,16 +244,7 @@ export default function Gynecology() {
                                 8. Диагностические процедуры:
                             </Typography>
                             <List>
-                                <ListItem sx={{ gap: '10px' }}>
-                                    <ListItemIcon sx={{ minWidth: 0 }}>
-                                        <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                    </ListItemIcon>
-                                    <ListItemText>
-                                        <BaseText>
-                                            Аспирационная биопсия эндометрия, удаление полипов цервикального канала
-                                        </BaseText>
-                                    </ListItemText>
-                                </ListItem>
+                                {gynecologyList7.map(({ id, label }) => <BaseLi key={id} label={label} component='h4' />)}
                             </List>
 
                             <Typography
@@ -397,10 +259,13 @@ export default function Gynecology() {
                                 лейкоплакии и дисплазий)
                             </Typography>
                         </Box>
-
-                        <PartnersBlock title="платные больницы гинекологии" color="var(--red)" />
                     </Box>
                 </Box>
+
+                <PartnersBlock title="платные больницы гинекологии" color="var(--red)" />
+
+                <BasePhotoGallery imagesList={gynecologyImages} />
+
             </Box>
         </>
     );

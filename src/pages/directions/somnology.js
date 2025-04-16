@@ -1,12 +1,15 @@
-import { Box, Link, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Box, Link, List, Typography } from '@mui/material';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import { BaseText } from '@/components/base/BaseText';
-import { LocalHospital } from '@mui/icons-material';
 import React from 'react';
 import PartnersBlock from '@/components/PartnersBlock';
 import Head from 'next/head';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
+import { somnologyList1, somnologyList2, somnologyList3 } from '@/config/directions/somnology';
+import { BaseLi } from '@/components/base/BaseLi';
+import { somnologyImages } from '@/config/images';
+import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 
 export default function Somnology() {
     const breadcrumbs = (router) => {
@@ -84,189 +87,19 @@ export default function Somnology() {
                             title="Отделение сомнологии специализируется на диагностике и терапии широкого спектра расстройств:" />
 
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Хроническая бессонница</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Зависимость от снотворных препаратов</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Гиперсомния (чрезмерная дневная сонливость)</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Нарколепсия</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Нарушения циркадного ритма</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Невротические состояния, включая депрессию</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Апноэ сна и храповые синдромы</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Расстройства пищевого поведения (включая ожирение)</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Ночное учащенное мочеиспускание</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Эректильная дисфункция</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Сердечно-сосудистые проблемы во сне: аритмии, гипертония, ночные удушья и
-                                        вегетативные кризы
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {somnologyList1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
                         </List>
 
                         <BaseSubTitle title="Дополнительные синдромы:" />
 
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Синдром беспокойных ног (РЛС)</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Бруксизм</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Ночные кошмары, лунатизм, пробуждения с нарушениями сознания</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Сноговорение и судороги во сне</BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {somnologyList2.map(({ id, label }) => <BaseLi key={id} label={label} />)}
                         </List>
 
                         <BaseSubTitle title="Диагностические методы:" />
 
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Полная полисомнографическая оценка (с учетом эректильной функции)
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Кардио-респираторный мониторинг</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Тестирование латентного периода сна</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Оптимизация режима СИПАП терапии</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Энцефалофония для глубокого анализа мозговых процессов</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Психотерапевтическая поддержка</BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {somnologyList3.map(({ id, label }) => <BaseLi key={id} label={label} />)}
                         </List>
                     </Box>
 
@@ -286,8 +119,11 @@ export default function Somnology() {
                         &nbsp;Сомнолог лечение.
                     </Typography>
 
-                    <PartnersBlock title="сомнолог москва лечение храпа" color="var(--red)" />
                 </Box>
+
+                <PartnersBlock title="сомнолог москва лечение храпа" color="var(--red)" />
+
+                <BasePhotoGallery imagesList={somnologyImages} />
             </Box>
         </>
     );

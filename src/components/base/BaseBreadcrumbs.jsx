@@ -6,7 +6,7 @@ export const BaseBreadcrumbs = ({ breadcrumbs = () => {} }) => {
     const router = useRouter();
 
     return (
-        <Box sx={{ marginTop: { xs: '15px', sm: '25px' }, marginLeft: { xs: '10px', sm: 0 } }}>
+        <Box sx={{ marginTop: { xs: '15px', sm: '25px' }, marginLeft: { xs: '10px', lg: 0 } }}>
             <Breadcrumbs separator={<NavigateNextIcon fontSize="small" sx={{ color: 'var(--blue)' }} />}
                          aria-label="breadcrumb">
                 {breadcrumbs(router)}

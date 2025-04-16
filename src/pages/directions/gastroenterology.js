@@ -9,6 +9,12 @@ import Head from 'next/head';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
 import { gastroenterologyImages } from '@/config/images';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
+import {
+    gastroenterologyList1,
+    gastroenterologyList2,
+    gastroenterologyList3, gastroenterologyList4
+} from '@/config/directions/gastroenterology';
+import { BaseLi } from '@/components/base/BaseLi';
 
 export default function Gastroenterology() {
     const breadcrumbs = (router) => {
@@ -99,88 +105,7 @@ export default function Gastroenterology() {
                         <BaseSubTitle title="В сферу диагностических исследований входят:" />
 
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Комплексное биохимическое изучение крови (включая ферменты печени и поджелудка)
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Иммунные анализы</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Определение липидового профиля, показателей иммунитета</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Выявление маркеров инфекций — бактериальных, вирусных и паразитарных
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Эндоскопические исследования ЖКТ (включая ФГДС)</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Рентгенография с использованием современного оборудования (рентгенотелевизионные
-                                        системы, КТ)
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Ультразвуковые методы, радиоизотопная диагностика</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Магнитно-резонансное сканирование брюшной полости</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Гистологические исследования биопсийных материалов (желудок, печень), включая
-                                        подтверждение хеликобактероза и вирусного гепатита
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {gastroenterologyList1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
                         </List>
                     </Box>
 
@@ -194,33 +119,7 @@ export default function Gastroenterology() {
                         <BaseSubTitle title="Лечебные стратегии включают:" />
 
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Передовые схемы эрадикации H. pylori</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Этиотропное лечение хронических вирусных гепатитов</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Терапия воспалительных процессов в поджелудочной железе и кишечнике, с
-                                        восстановлением микрофлоры и моторики при СРК
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {gastroenterologyList2.map(({ id, label }) => <BaseLi key={id} label={label} />)}
                         </List>
                     </Box>
 
@@ -235,46 +134,7 @@ export default function Gastroenterology() {
                             title="Для пациентов с метаболическими нарушениями (ожирение, диабет, дислипопротеинемия) разработан комплексный метод:" />
 
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Индивидуально подобранные диеты</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Физиотерапия</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Лечебная физкультура и плавание</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Гипербарическая оксигенация</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Экстракорпоральные процедуры</BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {gastroenterologyList3.map(({ id, label }) => <BaseLi key={id} label={label} />)}
                         </List>
                     </Box>
 
@@ -293,55 +153,16 @@ export default function Gastroenterology() {
                         <BaseSubTitle title="Размещение предусматривает одноместные и двухместные палаты:" />
 
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Оснащены функциональными кроватями</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Телевизором, телефоном</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Санузлом, душевой кабиной</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Селекторной связью</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Палаты повышенного комфорта дополнительно включают мягкую мебель и холодильник
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {gastroenterologyList4.map(({ id, label }) => <BaseLi key={id} label={label} />)}
                         </List>
                     </Box>
+
+                </Box>
 
                     <PartnersBlock title="платная больница гастроэнтерология" color="var(--red)" />
 
                     <BasePhotoGallery imagesList={gastroenterologyImages} />
-                </Box>
+
             </Box>
         </>
     );

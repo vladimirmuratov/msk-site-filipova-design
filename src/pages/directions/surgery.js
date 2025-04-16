@@ -25,7 +25,7 @@ export default function Surgery() {
                 Хирургия
             </Typography>,
         ];
-    }
+    };
 
     return (
         <>
@@ -103,11 +103,6 @@ export default function Surgery() {
                         использование МР-холангиографии. Мультидисциплинарный подход к диагностике объединяет
                         все необходимые инструменты для комплексной оценки состояния здоровья.
                     </BaseText>
-
-                    <PartnersBlock title="Платные больницы хирургия" color="var(--red)" />
-
-                    <br />
-                    <br />
                     <BaseText>
                         Профессиональный состав отделения включает кандидатов наук в медицине, а также врачей
                         высшей категории, что гарантирует высочайший уровень медицинского обслуживания.
@@ -144,8 +139,12 @@ export default function Surgery() {
                         точных лапароскопических операций.
                     </BaseText>
 
-                    <BasePhotoGallery imagesList={surgeryImages} />
                 </Box>
+
+                <PartnersBlock title="Платные больницы хирургия" color="var(--red)" />
+
+                <BasePhotoGallery imagesList={surgeryImages} />
+
             </Box>
         </>
     );

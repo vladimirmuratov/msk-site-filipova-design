@@ -21,8 +21,10 @@ export const BasePhotoGallery = React.memo(({ imagesList = [] }) => {
                     alt={alt}
                     title={title}
                     sx={{
-                        width: { xs: '100%', md: '240px' },
+                        // width: { xs: '100%', md: '240px' },
+                        width: { xs: '100%', md: 'auto' },
                         height: { xs: 'auto', md: '160px' },
+                        // height: { xs: 'auto', md: 'auto' },
                     }}
                 />
             ))}

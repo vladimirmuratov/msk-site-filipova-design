@@ -14,9 +14,11 @@ import { Banner4 } from '@/components/Banner/Banner4';
 import { HowToBeHospitalized } from '@/components/for-service-pages/planned-hospital/HowToBeHospitalized';
 import { WhyWeBlock } from '@/components/WhyWeBlock';
 import { stepsPlanHospitalization } from '@/config/steps';
-import { directions } from '@/config/directions';
+import { directions } from '@/config/directions/directions';
 import { services } from '@/config/services';
 import { useScrollPosition } from '@/lib/useScrollPosition ';
+import { DiseasesBlock } from '@/components/DiseasesBlock';
+import { diseases } from '@/config/diseases/diseases';
 
 const openSans = Open_Sans({ subsets: ['latin', 'cyrillic'] });
 
@@ -64,6 +66,7 @@ export default function Home() {
                     <PartnersBlock />
                     <DirectionsBlock directions={directions} router={router} />
                     <ServiceBlock services={services} />
+                    {/*<DiseasesBlock diseases={diseases}/>*/}
                     <ReviewsBlock reviews={reviews} isMobile={isMobile} />
                 </main>
             ) : (

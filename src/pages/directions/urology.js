@@ -9,6 +9,8 @@ import Head from 'next/head';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
 import { urologyImages } from '@/config/images';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
+import { urologyList1, urologyList2 } from '@/config/directions/urology';
+import { BaseLi } from '@/components/base/BaseLi';
 
 export default function Urology() {
     const breadcrumbs = (router) => {
@@ -105,40 +107,7 @@ export default function Urology() {
                             title="В наличии оснащённая по последнему слову науки лаборатория с возможностью проведения:" />
 
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Стандартных исследований крови и мочи</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Бактериологических посевов (моча, секрет простаты, уретральный экссудат)
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Биохимического анализа</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Иммунологической диагностики</BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {urologyList1.map(({id, label}) => <BaseLi key={id} label={label} />)}
                         </List>
                     </Box>
                     <BaseText>
@@ -158,91 +127,9 @@ export default function Urology() {
                             title="В арсенале урологического отделения богатый опыт применения консервативных методов в лечении широкого спектра заболеваний:" />
 
                         <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Инфекций мочеполовой системы, включая ЗППП</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Эректильной дисфункции и бесплодия (включая протезирование полового члена)
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Современные подходы к лечению мочекаменной болезни: эндоскопические операции,
-                                        перкутанная литотрипсия, дистанционное дробление камней
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Терапия доброкачественных и злокачественных новообразований простаты (ТУР
-                                        аденомы, лазерная энуклеация) с использованием малоинвазивных технологий
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Коррекция мочеполовых расстройств: облитерации, стриктуры уретры и мочеточников,
-                                        включая кишечную пластику
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Лечение недержания мочи (установка сетчатых петель TVT/Аргус) и искусственного
-                                        сфинктера
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>Хирургия пролапса тазовых органов у женщин (система Prolift)</BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Закрытие свищей различной локализации, включая пузырно-влагалищные и
-                                        ректовагинальные
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
+                            {urologyList2.map(({id, label}) => <BaseLi key={id} label={label} />)}
                         </List>
                     </Box>
-
-                    <PartnersBlock title="платные клиники москвы урология" color="var(--red)" />
 
                     <BaseText>
                         Также проводятся операции по исправлению врождённых аномалий мочеполовой системы:
@@ -255,8 +142,12 @@ export default function Urology() {
                         необходимости – санаторно-курортное лечение.
                     </BaseText>
 
-                    <BasePhotoGallery imagesList={urologyImages} />
                 </Box>
+
+                <PartnersBlock title="платные клиники москвы урология" color="var(--red)" />
+
+                <BasePhotoGallery imagesList={urologyImages} />
+
             </Box>
         </>
     );

@@ -1,6 +1,6 @@
 import {Box, Typography} from '@mui/material'
 
-export const BaseBanner = ({imgPath, title, fontColor = 'var(--white)', fontShadowColor = 'var(--gray)', bgPosition = 'center'}) => {
+export const BaseBanner = ({imgPath, title, fontColor = 'var(--white)', fontShadowColor = 'var(--gray)', bgPosition = 'center', style = {}}) => {
     return (
         <Box
             sx={{
@@ -20,7 +20,8 @@ export const BaseBanner = ({imgPath, title, fontColor = 'var(--white)', fontShad
                     backgroundImage: `url(${imgPath})`,
                     backgroundSize: 'cover',
                     backgroundPosition: bgPosition,
-                    filter: 'brightness(70%)'
+                    filter: 'brightness(70%)',
+                    ...style
                 }}
             />
             <Typography

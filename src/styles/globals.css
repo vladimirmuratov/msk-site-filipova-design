@@ -51,7 +51,7 @@ button::-moz-focus-inner {
 
 a, a:visited {
     text-decoration: none !important;
-    color: var(--black);
+    color: var(--blue);
 }
 
 a:hover {
@@ -71,8 +71,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: inherit;
 }
 
-nav > ol > li{
-    list-style-type: none!important;
+nav > ol > li {
+    list-style-type: none !important;
 }
 
 /*--------------------*/
@@ -190,7 +190,7 @@ li {
     }
 }
 
-.video-banner{
+.video-banner {
     width: 100%;
     height: auto;
     filter: brightness(80%);
@@ -204,10 +204,20 @@ li {
     padding-top: 0;
 }
 
-.pb-0{
+.pb-0 {
     padding-bottom: 0;
 }
 
 .pb-16 {
     padding-bottom: 16px;
+}
+
+.breadcrumb-link {
+    color: var(--blue) !important;
+    font-weight: 400;
+}
+
+.breadcrumb-link:hover {
+    text-decoration: underline !important;
+    text-decoration-color: var(--blue) !important;
 }
