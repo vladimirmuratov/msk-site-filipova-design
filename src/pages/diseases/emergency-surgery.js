@@ -32,31 +32,31 @@ export default function EmergencySurgery() {
         <>
             <Head>
                 <title>
-                    Медицинская Сервисная Компания. Колопроктология в Москве. 8 (499) 719-81-00, 24/7
+                    Медицинская Сервисная Компания. Экстренная хирургия. 8 (499) 719-81-00, 24/7
                 </title>
                 <meta
                     name="description"
-                    content="Диагностика и лечение заболеваний толстой и прямой кишки: геморрой, трещины, полипы, воспаления. Современные методы, индивидуальный подход, бережное восстановление здоровья. Звоните 8 (499) 719-81-00, 24/7"
+                    content="Экстренная хирургия — неотложная медицинская помощь при острых состояниях: травмах, аппендиците, кровотечениях и других угрозах жизни. Круглосуточно. Быстро. Надёжно."
                 />
                 <meta
                     name="keywords"
-                    content="колопроктология в москве, институт колопроктологии в москве, центр колопроктологии в москве, больница колопроктологии в москве"
+                    content="экстренная хирургия в москве, отделение экстренной хирургии, экстренная помощь в хирургии, центр экстренной хирургии"
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:title"
-                      content="Медицинская Сервисная Компания. Колопроктология в Москве. 8 (499) 719-81-00, 24/7" />
+                      content="Медицинская Сервисная Компания. Экстренная хирургия. 8 (499) 719-81-00, 24/7" />
                 <meta property="og:description"
-                      content="Диагностика и лечение заболеваний толстой и прямой кишки: геморрой, трещины, полипы, воспаления. Современные методы, индивидуальный подход, бережное восстановление здоровья. Звоните 8 (499) 719-81-00, 24/7" />
+                      content="Экстренная хирургия — неотложная медицинская помощь при острых состояниях: травмах, аппендиците, кровотечениях и других угрозах жизни. Круглосуточно. Быстро. Надёжно." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/diseases/proctology" />
+                <meta property="og:url" content="https://msk-group-hospital.ru/diseases/emergency-surgery" />
                 <meta property="og:image"
-                      content="https://msk-group-hospital.ru/images/diseases/proctology/proctology1.webp" />
-                <meta property="og:image:alt" content="колопроктология в Москве. 8 (499) 719-81-00, 24/7" />
+                      content="https://msk-group-hospital.ru/images/diseases/emergency-surgery/emergency-surgery1.webp" />
+                <meta property="og:image:alt" content="экстренная хирургия в Москве. 8 (499) 719-81-00, 24/7" />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
-                      content="Медицинская Сервисная Компания. Колопроктология в Москве. 8 (499) 719-81-00, 24/7" />
+                      content="Медицинская Сервисная Компания. Экстренная хирургия в Москве. 8 (499) 719-81-00, 24/7" />
             </Head>
             <Box component="section">
 
