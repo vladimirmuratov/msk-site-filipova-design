@@ -4,13 +4,13 @@ import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import { BaseText } from '@/components/base/BaseText';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
-import { emergencySurgeryImages } from '@/config/images';
+import { pulmonologyImages } from '@/config/images';
 import Link from 'next/link';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
 import React from 'react';
 import { BaseCallBlock } from '@/components/base/BaseCallBlock';
-import { emergencySurgeryList } from '@/config/diseases/emergency-surgery';
 import { BaseLi } from '@/components/base/BaseLi';
+import { pulmonologyList1, pulmonologyList2 } from '@/config/diseases/pulmonology';
 
 export default function Pulmonology() {
     const breadcrumbs = () => {
@@ -32,41 +32,40 @@ export default function Pulmonology() {
         <>
             <Head>
                 <title>
-                    Медицинская Сервисная Компания. Колопроктология в Москве. 8 (499) 719-81-00, 24/7
+                    Медицинская Сервисная Компания. Пульмонология в Москве. 8 (499) 719-81-00, 24/7
                 </title>
                 <meta
                     name="description"
-                    content="Диагностика и лечение заболеваний толстой и прямой кишки: геморрой, трещины, полипы, воспаления. Современные методы, индивидуальный подход, бережное восстановление здоровья. Звоните 8 (499) 719-81-00, 24/7"
+                    content="Пульмонология в Москве — диагностика и лечение заболеваний дыхательной системы: астма, бронхит, пневмония, ХОБЛ, постковид. Приём пульмонолога, современная диагностика. Звоните 8 (499) 719-81-00, 24/7"
                 />
                 <meta
                     name="keywords"
-                    content="колопроктология в москве, институт колопроктологии в москве, центр колопроктологии в москве, больница колопроктологии в москве"
+                    content="пульмонология в москве, институт пульмонологии в москве, центр пульмонологии в москве"
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:title"
-                      content="Медицинская Сервисная Компания. Колопроктология в Москве. 8 (499) 719-81-00, 24/7" />
+                      content="Медицинская Сервисная Компания. Пульмонология в Москве. 8 (499) 719-81-00, 24/7" />
                 <meta property="og:description"
-                      content="Диагностика и лечение заболеваний толстой и прямой кишки: геморрой, трещины, полипы, воспаления. Современные методы, индивидуальный подход, бережное восстановление здоровья. Звоните 8 (499) 719-81-00, 24/7" />
+                      content="Пульмонология в Москве — диагностика и лечение заболеваний дыхательной системы: астма, бронхит, пневмония, ХОБЛ, постковид. Приём пульмонолога, современная диагностика. Звоните 8 (499) 719-81-00, 24/7" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/diseases/proctology" />
+                <meta property="og:url" content="https://msk-group-hospital.ru/diseases/pulmonology" />
                 <meta property="og:image"
-                      content="https://msk-group-hospital.ru/images/diseases/proctology/proctology1.webp" />
-                <meta property="og:image:alt" content="колопроктология в Москве. 8 (499) 719-81-00, 24/7" />
+                      content="https://msk-group-hospital.ru/images/diseases/pulmonology/pulmonology1.webp" />
+                <meta property="og:image:alt" content="пульмонология в Москве. 8 (499) 719-81-00, 24/7" />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
-                      content="Медицинская Сервисная Компания. Колопроктология в Москве. 8 (499) 719-81-00, 24/7" />
+                      content="Медицинская Сервисная Компания. Пульмонология в Москве. 8 (499) 719-81-00, 24/7" />
             </Head>
             <Box component="section">
 
                 <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
 
                 <BaseBanner
-                    imgPath="/images/diseases/emergency-surgery//emergency-surgery1.webp"
-                    title="Экстренная хирургия в Москве"
+                    imgPath="/images/diseases/pulmonology/pulmonology1.webp"
+                    title="Пульмонология в Москве"
                     bgPosition="top"
-                    // fontShadowColor="var(--red)"
                 />
 
                 <Box
@@ -76,10 +75,19 @@ export default function Pulmonology() {
                     }}
                 >
                     <BaseText style={{ display: 'block', marginBottom: '10px' }}>
-                        <Box component="span" sx={{ color: 'var(--red)' }}>Экстренная хирургия</Box> — это область
-                        медицины, занимающаяся неотложным хирургическим вмешательством
-                        при состояниях, угрожающих жизни пациента. Такие операции проводятся срочно, без длительной
-                        подготовки, с целью спасения жизни, предотвращения осложнений или стабилизации состояния.
+                        <Box component="span" sx={{ color: 'var(--red)' }}>Пульмонология</Box> — это медицинская
+                        специальность, направленная на диагностику, лечение и
+                        профилактику заболеваний дыхательной системы. Врачи-пульмонологи в нашей клинике
+                        помогают взрослым и детям справляться с острыми и хроническими заболеваниями лёгких и бронхов.
+                    </BaseText>
+                    <BaseText style={{ display: 'block', marginBottom: '10px' }}>
+                        В клинике <Box component="span"
+                                       sx={{ color: 'var(--red)' }}>специалисты пульмонологи</Box> способны справиться с
+                        нарушениями нормального
+                        дыхания. Здесь трудятся опытные врачи, включая докторов и кандидатов наук, а также врачей высшей
+                        квалификационной категории. Клиника является площадкой для внедрения передовых терапевтических
+                        подходов, разработанных как в России, так и за рубежом. Это позволяет пациентам получать самые
+                        действенные и надежные лекарственные средства с наименьшим риском нежелательных реакций.
                     </BaseText>
                 </Box>
 
@@ -90,10 +98,10 @@ export default function Pulmonology() {
                     }}
                 >
 
-                    <BaseSubTitle title="К экстренным случаям относятся:" />
+                    <BaseSubTitle title="Когда стоит обратиться к пульмонологу:" />
 
                     <List>
-                        {emergencySurgeryList.map(({ id, label }) => (
+                        {pulmonologyList1.map(({ id, label }) => (
                             <BaseLi key={id} label={label} />
                         ))}
                     </List>
@@ -106,26 +114,47 @@ export default function Pulmonology() {
                     }}
                 >
                     <BaseText style={{ display: 'block', marginBottom: '10px' }}>
-                        Особенность <Box component="span" sx={{ color: 'var(--red)' }}>экстренной хирургии</Box> —
-                        высокая скорость реагирования. Решения принимаются быстро, а
-                        команда врачей и медицинский персонал работает слаженно и оперативно, чтобы минимизировать риски
-                        и спасти пациента.
+                        В нашей клинике <Box component="span" sx={{ color: 'var(--red)' }}>диагностика респираторных
+                        заболеваний</Box> выполняется с применением самых
+                        современных и передовых технологий. Врачи используют для исследований оборудование последнего
+                        поколения, произведенное известными европейскими, американскими и японскими компаниями. Особое
+                        внимание уделяется эндоскопии, компьютерной томографии легких и средостения.
+                        Специалисты-пульмонологи осуществляют точную дифференциацию между хронической обструктивной
+                        болезнью легких и бронхиальной астмой.
                     </BaseText>
-                    <BaseText style={{ display: 'block' }}>
-                        Не стоит откладывать обращение к врачам, даже если это поздно вечером или в выходной день,
-                        поскольку затягивание с необходимой <Box component="span" sx={{ color: 'var(--red)' }}>медицинской
-                        помощью</Box> может иметь серьезные последствия. В
-                        критических случаях или при возникновении внезапных, тревожных признаков следует незамедлительно
-                        вызывать <Box component="span" sx={{ color: 'var(--red)' }}>скорую помощь</Box>, чтобы опытные
-                        медики смогли оценить ваше состояние и, если потребуется,
-                        провести операцию.
-                    </BaseText>
+                </Box>
 
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
+
+                    <BaseSubTitle title="Что лечит пульмонолог:" />
+
+                    <List>
+                        {pulmonologyList2.map(({ id, label }) => (
+                            <BaseLi key={id} label={label} />
+                        ))}
+                    </List>
+                </Box>
+
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
+                    <BaseText style={{ display: 'block', marginBottom: '10px' }}>
+                        Не откладывайте здоровье на потом — при первых признаках проблем с лёгкими запишитесь на приём к
+                        пульмонологу в Москве. Дышите свободно — мы рядом, чтобы помочь.
+                    </BaseText>
                 </Box>
 
                 <BaseCallBlock />
 
-                <BasePhotoGallery imagesList={emergencySurgeryImages} />
+                <BasePhotoGallery imagesList={pulmonologyImages} />
 
             </Box>
         </>

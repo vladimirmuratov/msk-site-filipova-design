@@ -63,7 +63,7 @@ export default function EmergencySurgery() {
                 <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
 
                 <BaseBanner
-                    imgPath="/images/diseases/emergency-surgery//emergency-surgery1.webp"
+                    imgPath="/images/diseases/emergency-surgery/emergency-surgery1.webp"
                     title="Экстренная хирургия в Москве"
                     bgPosition="top"
                     // fontShadowColor="var(--red)"

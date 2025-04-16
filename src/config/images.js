@@ -352,3 +352,30 @@ export const emergencySurgeryImages = [
         title: 'экстренная помощь в хирургии',
     },
 ]
+
+export const pulmonologyImages = [
+    {
+        id: 1,
+        src: '/images/diseases/pulmonology/pulmonology2.webp',
+        alt: 'пульмонология',
+        title: 'пульмонология',
+    },
+    {
+        id: 2,
+        src: '/images/diseases/pulmonology/pulmonology3.webp',
+        alt: 'пульмонология в москве',
+        title: 'пульмонология в Москве',
+    },
+    {
+        id: 3,
+        src: '/images/diseases/pulmonology/pulmonology4.webp',
+        alt: 'институт пульмонологии',
+        title: 'центр пульмонологии',
+    },
+    {
+        id: 4,
+        src: '/images/diseases/pulmonology/pulmonology5.webp',
+        alt: 'центр пульмонологии',
+        title: 'институт пульмонологии',
+    },
+]
