@@ -66,7 +66,7 @@ export default function Home() {
                     <PartnersBlock />
                     <DirectionsBlock directions={directions} router={router} />
                     <ServiceBlock services={services} />
-                    {/*<DiseasesBlock diseases={diseases}/>*/}
+                    <DiseasesBlock diseases={diseases}/>
                     <ReviewsBlock reviews={reviews} isMobile={isMobile} />
                 </main>
             ) : (
