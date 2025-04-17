@@ -1,24 +1,26 @@
+import { createID } from '@/lib/createID';
+
 export const surgeryImages = [
     {
-        id: 1,
+        id: createID(),
         src: '/images/surgery/1.webp',
         alt: 'платные больницы хирургия',
         title: 'хирургия',
     },
     {
-        id: 2,
+        id: createID(),
         src: '/images/surgery/3.webp',
         alt: 'платная хирургия',
         title: 'операция хирургия',
     },
     {
-        id: 3,
+        id: createID(),
         src: '/images/surgery/2.webp',
         alt: 'платная палата в хирургии',
         title: 'операционная хирургия',
     },
     {
-        id: 4,
+        id: createID(),
         src: '/images/surgery/4.webp',
         alt: 'платная палата в хирургии москва',
         title: 'хирургическое отделение',
@@ -27,25 +29,25 @@ export const surgeryImages = [
 
 export const traumatologyImages = [
     {
-        id: 1,
+        id: createID(),
         src: '/images/traumatology/1.webp',
         alt: 'платная травматология москва',
         title: 'травматология платно',
     },
     {
-        id: 2,
+        id: createID(),
         src: '/images/traumatology/2.webp',
         alt: 'травматология платные услуги',
         title: 'больница травматология',
     },
     {
-        id: 3,
+        id: createID(),
         src: '/images/traumatology/3.webp',
         alt: 'платные больницы травматологии',
         title: 'травматология и ортопедия',
     },
     {
-        id: 4,
+        id: createID(),
         src: '/images/traumatology/4.webp',
         alt: 'круглосуточная платная травматология',
         title: 'клиника травматология',
@@ -54,25 +56,25 @@ export const traumatologyImages = [
 
 export const gynecologyImages = [
     {
-        id: 1,
+        id: createID(),
         src: '/images/gynecology/1.webp',
         alt: 'гинекология в москве',
         title: 'гинекология',
     },
     {
-        id: 2,
+        id: createID(),
         src: '/images/gynecology/2.webp',
         alt: 'акушерство и гинекология в москве',
         title: 'клиника гинекологии',
     },
     {
-        id: 3,
+        id: createID(),
         src: '/images/gynecology/3.webp',
         alt: 'центр гинекологии в москве',
         title: 'гинекология и акушерство',
     },
     {
-        id: 4,
+        id: createID(),
         src: '/images/gynecology/4.webp',
         alt: 'центр акушерства и гинекологии в москве',
         title: 'больница гинекологии и акушерства',
@@ -81,25 +83,25 @@ export const gynecologyImages = [
 
 export const urologyImages = [
     {
-        id: 1,
+        id: createID(),
         src: '/images/urology/1.webp',
         alt: 'платная госпитализация урология',
         title: 'больница урология платно',
     },
     {
-        id: 2,
+        id: createID(),
         src: '/images/urology/2.webp',
         alt: 'платные клиники москвы урология',
         title: 'больница москва урология',
     },
     {
-        id: 3,
+        id: createID(),
         src: '/images/urology/3.webp',
         alt: 'платные клиники москвы урология',
         title: 'больница москва урология',
     },
     {
-        id: 4,
+        id: createID(),
         src: '/images/urology/4.webp',
         alt: 'платные клиники москвы урология',
         title: 'больница москва урология',
@@ -108,25 +110,25 @@ export const urologyImages = [
 
 export const cardiologyImages = [
     {
-        id: 1,
+        id: createID(),
         src: '/images/cardiology/1.webp',
         alt: 'платная госпитализация кардиология',
         title: 'клиника кардиология платно',
     },
     {
-        id: 2,
+        id: createID(),
         src: '/images/cardiology/2.webp',
         alt: 'платные клиники Москвы кардиология',
         title: 'больница Москва кардиология',
     },
     {
-        id: 3,
+        id: createID(),
         src: '/images/cardiology/3.webp',
         alt: 'платная кардиология',
         title: 'больница кардиология платно',
     },
     {
-        id: 4,
+        id: createID(),
         src: '/images/cardiology/4.webp',
         alt: 'платная кардиология в Москве',
         title: 'платная кардиология',
@@ -135,25 +137,25 @@ export const cardiologyImages = [
 
 export const neurologyImages = [
     {
-        id: 1,
+        id: createID(),
         src: '/images/neurology/1.webp',
         alt: 'платная госпитализация кардиология',
         title: 'клиника кардиология платно',
     },
     {
-        id: 2,
+        id: createID(),
         src: '/images/neurology/2.webp',
         alt: 'платные клиники Москвы кардиология',
         title: 'больница Москва кардиология',
     },
     {
-        id: 3,
+        id: createID(),
         src: '/images/neurology/3.webp',
         alt: 'платная кардиология',
         title: 'больница кардиология платно',
     },
     {
-        id: 4,
+        id: createID(),
         src: '/images/neurology/4.webp',
         alt: 'платная кардиология в Москве',
         title: 'платная кардиология',
@@ -162,25 +164,25 @@ export const neurologyImages = [
 
 export const gastroenterologyImages = [
     {
-        id: 1,
+        id: createID(),
         src: '/images/gastroenterology/1.webp',
         alt: 'платный стационар гастроэнтерология',
         title: 'платная гастроэнтерология в Москве',
     },
     {
-        id: 2,
+        id: createID(),
         src: '/images/gastroenterology/2.webp',
         alt: 'платная госпитализация в Москве гастроэнтерология',
         title: 'больница гастроэнтерология',
     },
     {
-        id: 3,
+        id: createID(),
         src: '/images/gastroenterology/3.webp',
         alt: 'институт гастроэнтерологии в Москве',
         title: 'клиника гастроэнтерология',
     },
     {
-        id: 4,
+        id: createID(),
         src: '/images/gastroenterology/4.webp',
         alt: 'больница гастроэнтерологии',
         title: 'центр гастроэнтерологии',
@@ -189,25 +191,25 @@ export const gastroenterologyImages = [
 
 export const therapyImages = [
     {
-        id: 1,
+        id: createID(),
         src: '/images/therapy/1.webp',
         alt: 'платная госпитализация в терапию',
         title: 'платная терапия',
     },
     {
-        id: 2,
+        id: createID(),
         src: '/images/therapy/2.webp',
         alt: 'платный стационар терапия',
         title: 'терапия платный центр',
     },
     {
-        id: 3,
+        id: createID(),
         src: '/images/therapy/3.webp',
         alt: 'терапия платная палата',
         title: 'терапия платное отделение',
     },
     {
-        id: 4,
+        id: createID(),
         src: '/images/therapy/4.webp',
         alt: 'платная госпитализация в терапию Москва',
         title: 'платная терапия в Москве',
@@ -216,25 +218,25 @@ export const therapyImages = [
 
 export const somnologyImages = [
     {
-        id: 1,
+        id: createID(),
         src: '/images/somnology/1.webp',
         alt: 'сомнология',
         title: 'клиника сомнологии',
     },
     {
-        id: 2,
+        id: createID(),
         src: '/images/somnology/2.webp',
         alt: 'сомнология в Москве',
         title: 'центр сомнологии',
     },
     {
-        id: 3,
+        id: createID(),
         src: '/images/somnology/3.webp',
         alt: 'центр сомнологии',
         title: 'платная сомнология',
     },
     {
-        id: 4,
+        id: createID(),
         src: '/images/somnology/4.webp',
         alt: 'институт сомнологии',
         title: 'платная сомнология в Москве',
@@ -247,25 +249,25 @@ export const somnologyImages = [
 
 export const painImages = [
     {
-        id: 1,
+        id: createID(),
         src: '/images/diseases/pain/pain2.webp',
         alt: 'лечение боли',
         title: 'доктор и пациент',
     },
     {
-        id: 2,
+        id: createID(),
         src: '/images/diseases/pain/pain3.webp',
         alt: 'институт лечения боли в москве',
         title: 'доктор и пациент в кабинете',
     },
     {
-        id: 3,
+        id: createID(),
         src: '/images/diseases/pain/pain4.webp',
         alt: 'клиника лечения боли в москве',
         title: 'пациент благодарит доктора',
     },
     {
-        id: 4,
+        id: createID(),
         src: '/images/diseases/pain/pain5.webp',
         alt: 'лечение головной боли в москве',
         title: 'доктор сообщает пациенту диагноз',
@@ -274,25 +276,25 @@ export const painImages = [
 
 export const strokeImages = [
     {
-        id: 1,
+        id: createID(),
         src: '/images/diseases/stroke/stroke2.webp',
         alt: 'реабилитация после инсульта',
         title: 'реабилитация пациента',
     },
     {
-        id: 2,
+        id: createID(),
         src: '/images/diseases/stroke/stroke3.webp',
         alt: 'центр реабилитации после инсульта',
         title: 'доктор и пациент реабилитация',
     },
     {
-        id: 3,
+        id: createID(),
         src: '/images/diseases/stroke/stroke4.webp',
         alt: 'реабилитация после инсульта в москве',
         title: 'реабилитация пациента после инсульта',
     },
     {
-        id: 4,
+        id: createID(),
         src: '/images/diseases/stroke/stroke5.webp',
         alt: 'больница реабилитация после инсульта',
         title: 'помощь в реабилитации',
@@ -301,25 +303,25 @@ export const strokeImages = [
 
 export const proctologyImages = [
     {
-        id: 1,
+        id: createID(),
         src: '/images/diseases/proctology/proctology2.webp',
         alt: 'колопроктология в москве',
         title: 'хирургия проктология',
     },
     {
-        id: 2,
+        id: createID(),
         src: '/images/diseases/proctology/proctology4.webp',
         alt: 'институт колопроктологии в москве',
         title: 'хирургия колопроктология',
     },
     {
-        id: 3,
+        id: createID(),
         src: '/images/diseases/proctology/proctology3.webp',
         alt: 'центр колопроктологии в москве',
         title: 'хирургия проктология в Москве',
     },
     {
-        id: 4,
+        id: createID(),
         src: '/images/diseases/proctology/proctology5.webp',
         alt: 'клиника колопроктологии в москве',
         title: 'центр колопроктологии',
@@ -328,25 +330,25 @@ export const proctologyImages = [
 
 export const emergencySurgeryImages = [
     {
-        id: 1,
+        id: createID(),
         src: '/images/diseases/emergency-surgery/emergency-surgery2.webp',
         alt: 'экстренная хирургия',
         title: 'экстренная хирургия',
     },
     {
-        id: 2,
+        id: createID(),
         src: '/images/diseases/emergency-surgery/emergency-surgery4.webp',
         alt: 'экстренная хирургия в москве',
         title: 'экстренная хирургия в Москве',
     },
     {
-        id: 3,
+        id: createID(),
         src: '/images/diseases/emergency-surgery/emergency-surgery3.webp',
         alt: 'отделение экстренной хирургии',
         title: 'отделение экстренной хирургии',
     },
     {
-        id: 4,
+        id: createID(),
         src: '/images/diseases/emergency-surgery/emergency-surgery5.webp',
         alt: 'экстренная челюстно лицевая хирургия',
         title: 'экстренная помощь в хирургии',
@@ -355,27 +357,81 @@ export const emergencySurgeryImages = [
 
 export const pulmonologyImages = [
     {
-        id: 1,
+        id: createID(),
         src: '/images/diseases/pulmonology/pulmonology2.webp',
         alt: 'пульмонология',
         title: 'пульмонология',
     },
     {
-        id: 2,
+        id: createID(),
         src: '/images/diseases/pulmonology/pulmonology3.webp',
         alt: 'пульмонология в москве',
         title: 'пульмонология в Москве',
     },
     {
-        id: 3,
+        id: createID(),
         src: '/images/diseases/pulmonology/pulmonology4.webp',
         alt: 'институт пульмонологии',
         title: 'центр пульмонологии',
     },
     {
-        id: 4,
+        id: createID(),
         src: '/images/diseases/pulmonology/pulmonology5.webp',
         alt: 'центр пульмонологии',
+        title: 'институт пульмонологии',
+    },
+]
+
+export const copdImages = [
+    {
+        id: createID(),
+        src: '/images/diseases/copd/copd2.webp',
+        alt: 'пульмонология',
+        title: 'пульмонология',
+    },
+    {
+        id: createID(),
+        src: '/images/diseases/copd/copd3.webp',
+        alt: 'пульмонология в москве',
+        title: 'пульмонология в Москве',
+    },
+    {
+        id: createID(),
+        src: '/images/diseases/copd/copd4.webp',
+        alt: 'институт пульмонологии',
+        title: 'центр пульмонологии',
+    },
+    {
+        id: createID(),
+        src: '/images/diseases/copd/copd5.webp',
+        alt: 'центр пульмонологии',
+        title: 'институт пульмонологии',
+    },
+]
+
+export const pneumoniaImages = [
+    {
+        id: createID(),
+        src: '/images/diseases/pneumonia/pneumonia2.webp',
+        alt: 'лечение пневмонии',
+        title: 'пульмонология',
+    },
+    {
+        id: createID(),
+        src: '/images/diseases/pneumonia/pneumonia3.webp',
+        alt: 'лечение пневмонии у взрослых',
+        title: 'пульмонология в Москве',
+    },
+    {
+        id: createID(),
+        src: '/images/diseases/pneumonia/pneumonia4.webp',
+        alt: 'микоплазменная пневмония лечение',
+        title: 'центр пульмонологии',
+    },
+    {
+        id: createID(),
+        src: '/images/diseases/pneumonia/pneumonia5.webp',
+        alt: 'пневмония симптомы и лечение у взрослых',
         title: 'институт пульмонологии',
     },
 ]

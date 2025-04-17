@@ -1,14 +1,15 @@
-import { Box, Link, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Box, Link, List, Typography } from '@mui/material';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import Head from 'next/head';
 import React from 'react';
 import { BaseText } from '@/components/base/BaseText';
-import { LocalHospital } from '@mui/icons-material';
 import PartnersBlock from '@/components/PartnersBlock';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
 import { traumatologyImages } from '@/config/images';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
+import { traumatologyList1 } from '@/config/directions/traumatology';
+import { BaseLi } from '@/components/base/BaseLi';
 
 export default function Traumatology() {
     const breadcrumbs = (router) => {
@@ -68,101 +69,64 @@ export default function Traumatology() {
                         marginX: { xs: '10px', lg: 0 },
                     }}
                 >
-                    <BaseText>
+                    <BaseText style={{ display: 'block', marginBottom: '10px' }}>
                         <span
                             style={{ color: 'var(--red)' }}>Ортопедические и травматологические подразделения</span> наших
                         партнеров обладают глубоким опытом в области терапии различных заболеваний и повреждений
                         опорно-двигательной системы.
                     </BaseText>
-                    <br />
-                    <br />
-                    <BaseText>
+                    <BaseText style={{ display: 'block', marginBottom: '10px' }}>
                         Высокий профессионализм специалистов позволяет осуществлять хирургическое вмешательство
                         любой сложности, не зависимо от возраста пациента.
                     </BaseText>
-                    <br />
-                    <br />
                     <BaseText>
                         Вся медицинская команда прошла сертификацию по передовым технологиям артропластики (АО)
                         и внедрению современных эндопротезов различных брендов.
                     </BaseText>
+                </Box>
 
-                    <Box
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                    }}
+                >
 
-                        <BaseSubTitle title="Основные направления деятельности включают:" />
+                    <BaseSubTitle title="Основные направления деятельности включают:" />
 
-                        <List>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Сложнейшие реконструктивные операции у взрослых, включая восстановление
-                                        конечностей после тяжелых травм
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
-                            <ListItem sx={{ gap: '10px' }}>
-                                <ListItemIcon sx={{ minWidth: 0 }}>
-                                    <LocalHospital fontSize="small" sx={{ color: 'var(--blue)' }} />
-                                </ListItemIcon>
-                                <ListItemText>
-                                    <BaseText>
-                                        Лечение дегенеративно-деформирующих суставов и коррекцию патологии позвоночника
-                                        с использованием инновационных методик
-                                    </BaseText>
-                                </ListItemText>
-                            </ListItem>
-                        </List>
-                    </Box>
+                    <List>
+                        {traumatologyList1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
 
-                    <BaseText>
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
+                    <BaseText style={{ display: 'block', marginBottom: '10px' }}>
                         В нашей практике применяются самые актуальные подходы к терапии, включая авторские
                         разработки. Например, двухэтапное эндопротезирование тазобедренного сустава и
                         радикальные малоинвазивные операции на позвоночнике.
                     </BaseText>
-                    <br />
-                    <br />
-                    <BaseText>
+                    <BaseText style={{ display: 'block', marginBottom: '10px' }}>
                         Использование передовых компьютерных систем с навигацией обеспечивает непрерывный
                         контроль процесса установки имплантатов, гарантируя их идеальное соответствие
                         анатомическим особенностям пациента.
                     </BaseText>
-                    <br />
-                    <br />
-                    <BaseText>
+                    <BaseText style={{ display: 'block', marginBottom: '10px' }}>
                         Все данные операций сохраняются в цифровом формате и предоставляются больным для
                         дальнейшего использования.
                     </BaseText>
-                    <br />
-                    <br />
-                    <BaseText>
+                    <BaseText style={{ display: 'block', marginBottom: '10px' }}>
                         При лечении мы применяем только оригинальные продукты ведущих мировых производителей
                         фиксаторов и эндопротезов, обеспечивая высокое качество медицинских изделий.
                     </BaseText>
-                    <br />
-                    <br />
-                    <BaseText>
+                    <BaseText style={{ display: 'block', marginBottom: '10px' }}>
                         После хирургического вмешательства каждому пациенту предоставляется комплексная
                         реабилитационная программа для успешного восстановления функций опорно-двигательного
                         аппарата на всех этапах послеоперационной терапии.
                     </BaseText>
-                    <Typography
-                        component="h2"
-                        sx={{
-                            color: 'var(--blue)',
-                            fontSize: { xs: 14, sm: 16, md: 18 },
-                            fontWeight: 400,
-                            display: 'inline',
-                        }}
-                    >
-                        &nbsp;Травматология платная палата.
-                    </Typography>
                 </Box>
 
                 <PartnersBlock title="больница травматология платно" color="var(--red)" />

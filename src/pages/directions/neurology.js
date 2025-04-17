@@ -82,187 +82,194 @@ export default function Neurology() {
                         marginX: { xs: '10px', lg: 0 },
                     }}
                 >
-                    <BaseText>
+                    <BaseText style={{ display: 'box', marginBottom: '10px' }}>
                         В партнерских медицинских учреждениях{' '}
-                        <span style={{ color: 'var(--red)' }}>неврологические подразделения</span> оснащены всем
-                        необходимым
-                        для комплексного обследования и терапии пациентов с разнообразными заболеваниями нервной
-                        системы.
+                        <Box component="span" sx={{ color: 'var(--red)' }}>неврологические подразделения</Box> оснащены
+                        всем необходимым для комплексного обследования и терапии пациентов с разнообразными
+                        заболеваниями нервной системы.
                     </BaseText>
-                    <br />
-                    <br />
-                    <BaseText>
+                    <BaseText style={{ display: 'box', marginBottom: '10px' }}>
                         Современное оборудование, включая сканеры МРТ/КТ, УЗИ-оборудование, аппаратуру для ЭЭГ и
                         ЭМГ исследований, а также полный спектр лабораторных анализов, обеспечивает глубокое
                         диагностирование.
                     </BaseText>
-                    <br />
-                    <br />
                     <BaseText>
                         Палаты одноместные с высоким уровнем комфорта: телевидение, телефон, личные санузлы со
                         встроенными душевыми кабинами.
                     </BaseText>
-                    <Typography
-                        component="h2"
-                        sx={{
-                            color: 'var(--blue)',
-                            fontSize: { xs: 18, sm: 20 },
-                            fontWeight: 400,
-                            display: 'inline',
-                        }}
-                    >
-                        &nbsp;Платная неврология москва.
-                    </Typography>
+                </Box>
 
-                    <Box
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                        <BaseSubTitle title="Коллектив профессионалов включает:" />
+                    <BaseSubTitle title="Коллектив профессионалов включает:" />
 
-                        <List>
-                            {neurologyList1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
+                    <List>
+                        {neurologyList1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
 
-                    <Box
-                        className="pt-0"
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                        <BaseSubTitle title="В свободные от процедур моменты пациентам доступны:" />
+                    <BaseSubTitle title="В свободные от процедур моменты пациентам доступны:" />
 
-                        <List>
-                            {neurologyList2.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
+                    <List>
+                        {neurologyList2.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
 
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
                     <BaseText>
                         После стационара возможна переадресация в специализированный Реабилитационный Центр для
                         продолжения восстановительного лечения.
                     </BaseText>
+                </Box>
 
-                    <Box
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                        <BaseSubTitle
-                            title="Спектр неврологических заболеваний, с которыми успешно справляются наши врачи:" />
+                    <BaseSubTitle
+                        title="Спектр неврологических заболеваний, с которыми успешно справляются наши врачи:" />
 
-                        <List>
-                            {neurologyList3.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
+                    <List>
+                        {neurologyList3.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
 
-                    <Box
-                        className="pt-0"
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                        <BaseSubTitle title="Методы диагностики включают:" />
+                    <BaseSubTitle title="Методы диагностики включают:" />
 
-                        <List>
-                            {neurologyList4.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
+                    <List>
+                        {neurologyList4.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
 
-                    <Box
-                        className="pt-0"
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                        <BaseSubTitle title="Индивидуальный подход к лечению основывается на:" />
+                    <BaseSubTitle title="Индивидуальный подход к лечению основывается на:" />
 
-                        <List>
-                            {neurologyList5.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
+                    <List>
+                        {neurologyList5.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
 
-                    <Box
-                        className="pt-0"
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                        <BaseSubTitle title="Лечение охватывает следующие заболевания:" />
+                    <BaseSubTitle title="Лечение охватывает следующие заболевания:" />
 
-                        <List>
-                            {neurologyList6.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
+                    <List>
+                        {neurologyList6.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
 
-                    <Box
-                        className="pt-0"
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                        <BaseSubTitle title="Противопоказания к госпитализации:" />
+                    <BaseSubTitle title="Противопоказания к госпитализации:" />
 
-                        <List>
-                            {neurologyList7.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
+                    <List>
+                        {neurologyList7.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
 
-                    <Box
-                        className="pt-0"
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                        <BaseSubTitle title="Особое внимание уделяется лечению хронических болей в спине:" />
+                    <BaseSubTitle title="Особое внимание уделяется лечению хронических болей в спине:" />
 
-                        <List>
-                            {neurologyList8.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
+                    <List>
+                        {neurologyList8.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
 
-                    <Box
-                        className="pt-0"
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                        <BaseSubTitle title="Реабилитация после инсультов включает:" />
+                    <BaseSubTitle title="Реабилитация после инсультов включает:" />
 
-                        <List>
-                            {neurologyList9.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
+                    <List>
+                        {neurologyList9.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
 
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
                     <BaseText>
                         Для пациентов с вестибулопатиями проводится совместная работа с ЛОР-врачами,
                         обеспечивающая адекватное восстановление равновесия.
                     </BaseText>
+                </Box>
 
-                    <Box
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                        <BaseSubTitle title="Лечение невротических расстройств предполагает:" />
+                    <BaseSubTitle title="Лечение невротических расстройств предполагает:" />
 
-                        <List>
-                            {neurologyList10.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
+                    <List>
+                        {neurologyList10.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
 
-
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
                     <BaseText>
                         Мониторинг состояния пациентов осуществляется неврологами в сотрудничестве с
                         психиатрами, что обеспечивает оптимальные сроки лечения.

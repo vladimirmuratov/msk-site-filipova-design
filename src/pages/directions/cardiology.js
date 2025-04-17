@@ -1,13 +1,12 @@
-import { Box, Link, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Box, Link, List, Typography } from '@mui/material';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import Head from 'next/head';
 import { BaseText } from '@/components/base/BaseText';
 import React from 'react';
-import { LocalHospital } from '@mui/icons-material';
 import PartnersBlock from '@/components/PartnersBlock';
 import { BaseSubTitle } from '@/components/base/BaseSubTitle';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
-import { cardiologyImages, urologyImages } from '@/config/images';
+import { cardiologyImages } from '@/config/images';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import { cardiologyList1, cardiologyList2, cardiologyList3, cardiologyList4 } from '@/config/directions/cardiology';
 import { BaseLi } from '@/components/base/BaseLi';
@@ -76,125 +75,119 @@ export default function Cardiology() {
                     }}
                 >
                     <BaseText>
-                        В <span style={{ color: 'var(--red)' }}>кардиологических отделениях</span> наших партнеров
-                        диагностика и терапия пациентов основывается на официальных рекомендациях Минздрава
+                        В <Box component="span" sx={{ color: 'var(--red)' }}>кардиологических отделениях</Box> наших
+                        партнеров диагностика и терапия пациентов основывается на официальных рекомендациях Минздрава
                         России, клинических указаниях Российского кардиологического общества (РКО), Европейского
                         и Американских ассоциаций кардиологов, а также данных из доказательной медицины.
                     </BaseText>
+                </Box>
+
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                    }}
+                >
+
+                    <BaseSubTitle title="Мы специализируемся на лечении следующих состояний:" />
+
+                    <List>
+                        {cardiologyList1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
+
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
+
+                    <BaseSubTitle title="В нашем отделении осуществляется:" />
+
+                    <br />
                     <Typography
-                        component="h2"
+                        variant="h3"
                         sx={{
-                            color: 'var(--blue)',
-                            fontSize: { xs: 20, sm: 22 },
-                            fontWeight: 400,
-                            display: 'inline',
+                            fontSize: { xs: 22, sm: 28 },
+                            fontWeight: 300,
+                            color: 'var(--red)',
                         }}
                     >
-                        &nbsp;Кардиология платная госпитализация.
+                        1. Выбор и подготовка пациентов для оказания высокотехнологичной помощи при острых
+                        коронарных синдромах, а также в рамках долгосрочного лечения ИБС.
                     </Typography>
                     <br />
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            fontSize: { xs: 22, sm: 28 },
+                            fontWeight: 300,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        2. Применение диагностических методов:
+                    </Typography>
+                    <List>
+                        {cardiologyList2.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+
                     <br />
-
-                    <Box
+                    <Typography
+                        variant="h3"
                         sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
+                            fontSize: { xs: 22, sm: 28 },
+                            fontWeight: 300,
+                            color: 'var(--red)',
                         }}
                     >
+                        3. Диагностические исследования:
+                    </Typography>
+                    <List>
+                        {cardiologyList3.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
 
-                        <BaseSubTitle title="Мы специализируемся на лечении следующих состояний:" />
-
-                        <List>
-                            {cardiologyList1.map(({id, label}) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
-
-                    <Box
-                        className="pt-0"
+                    <Typography
+                        variant="h3"
                         sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
+                            fontSize: { xs: 22, sm: 28 },
+                            fontWeight: 300,
+                            color: 'var(--red)',
                         }}
                     >
+                        4. Рентгенологические исследования органов грудной клетки.
+                    </Typography>
 
-                        <BaseSubTitle title="В нашем отделении осуществляется:" />
+                    <br />
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            fontSize: { xs: 22, sm: 28 },
+                            fontWeight: 300,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        5. Система экстренного оповещения (сигнализации) в реанимационных палатах.
+                    </Typography>
 
-                        <br />
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            1. Выбор и подготовка пациентов для оказания высокотехнологичной помощи при острых
-                            коронарных синдромах, а также в рамках долгосрочного лечения ИБС.
-                        </Typography>
-                        <br />
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            2. Применение диагностических методов:
-                        </Typography>
-                        <List>
-                            {cardiologyList2.map(({id, label}) => <BaseLi key={id} label={label} />)}
-                        </List>
-
-                        <br />
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            3. Диагностические исследования:
-                        </Typography>
-                        <List>
-                            {cardiologyList3.map(({id, label}) => <BaseLi key={id} label={label} />)}
-                        </List>
-
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            4. Рентгенологические исследования органов грудной клетки.
-                        </Typography>
-
-                        <br />
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            5. Система экстренного оповещения (сигнализации) в реанимационных палатах.
-                        </Typography>
-
-                        <br />
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 28 },
-                                fontWeight: 300,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            6. Кислородотерапия и интенсивная терапия с круглосуточным мониторингом основных
-                            показателей жизнедеятельности.
-                        </Typography>
-                    </Box>
+                    <br />
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            fontSize: { xs: 22, sm: 28 },
+                            fontWeight: 300,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        6. Кислородотерапия и интенсивная терапия с круглосуточным мониторингом основных
+                        показателей жизнедеятельности.
+                    </Typography>
+                </Box>
+                <Box
+                    sx={{
+                        // paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
                     <BaseText>
                         Палата реанимации оснащена для проведения полного комплекса мероприятий по
                         сердечно-легочной реанимации при клинической смерти.
@@ -210,20 +203,20 @@ export default function Cardiology() {
                     >
                         &nbsp;Платные палаты.
                     </Typography>
+                </Box>
 
-                    <Box
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                        <BaseSubTitle title="Дополнительные направления деятельности:" />
+                    <BaseSubTitle title="Дополнительные направления деятельности:" />
 
-                        <List>
-                            {cardiologyList4.map(({id, label}) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
-
+                    <List>
+                        {cardiologyList4.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
                 </Box>
 
                 <PartnersBlock title="платный стационар кардиология" color="var(--red)" />

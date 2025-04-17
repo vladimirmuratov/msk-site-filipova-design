@@ -1,8 +1,7 @@
-import { Box, Link, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Box, Link, List, Typography } from '@mui/material';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import { BaseText } from '@/components/base/BaseText';
 import React from 'react';
-import { LocalHospital } from '@mui/icons-material';
 import PartnersBlock from '@/components/PartnersBlock';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import Head from 'next/head';
@@ -72,76 +71,76 @@ export default function Urology() {
                         marginX: { xs: '10px', lg: 0 },
                     }}
                 >
-                    <BaseText>
+                    <BaseText style={{ display: 'box', marginBottom: '10px' }}>
                         В клиниках наших партнеров осуществляется полный цикл урологических исследований и
                         терапии, соответствующий современным стандартам. Обратитесь к нам – мы подберём
                         идеальную для вас медицинскую структуру.
                     </BaseText>
-                    <br />
-                    <br />
-                    <BaseText>
+                    <BaseText style={{ display: 'box' }}>
                         В условиях стационаров пациенты размещаются в комфортабельных одно- или двухместных
                         палатах с акцентом на непрерывность лечения между амбулаторной и госпитальной помощью.
                         Благодаря внедрению инновационных методик, продолжительность пребывания сокращается до
                         оптимального периода при сохранении высокого качества медицинского обслуживания.
                     </BaseText>
-                    <Typography
-                        component="h2"
-                        sx={{
-                            color: 'var(--blue)',
-                            fontSize: { xs: 18, sm: 20 },
-                            fontWeight: 400,
-                            display: 'inline',
-                        }}
-                    >
-                        &nbsp;Платная госпитализация урология.
-                    </Typography>
+                </Box>
 
-                    <Box
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                        <BaseSubTitle
-                            title="В наличии оснащённая по последнему слову науки лаборатория с возможностью проведения:" />
+                    <BaseSubTitle
+                        title="В наличии оснащённая по последнему слову науки лаборатория с возможностью проведения:" />
 
-                        <List>
-                            {urologyList1.map(({id, label}) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
+                    <List>
+                        {urologyList1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
+
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
                     <BaseText>
                         Применяется передовое оборудование для УЗИ с допплерографией, позволяющее выявлять
                         мельчайшие патологии и своевременно определять заболевания. Предлагаются все виды
                         рентгеновских исследований: классические, КТ (компьютерная томография) и МРТ
                         (магнитно-резонансная томография).
                     </BaseText>
+                </Box>
 
-                    <Box
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                    }}
+                >
 
-                        <BaseSubTitle
-                            title="В арсенале урологического отделения богатый опыт применения консервативных методов в лечении широкого спектра заболеваний:" />
+                    <BaseSubTitle
+                        title="В арсенале урологического отделения богатый опыт применения консервативных методов в лечении широкого спектра заболеваний:" />
 
-                        <List>
-                            {urologyList2.map(({id, label}) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
+                    <List>
+                        {urologyList2.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
 
-                    <BaseText>
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
+                    <BaseText style={{ display: 'box', marginBottom: '10px' }}>
                         Также проводятся операции по исправлению врождённых аномалий мочеполовой системы:
                         стриктуры уретры, лоханочно-мочеточниковых сегментов, гипоспадии.
                     </BaseText>
-                    <br />
-                    <br />
-                    <BaseText>
+                    <BaseText style={{ display: 'box' }}>
                         Для усиления терапевтического эффекта используются физиотерапевтические процедуры и при
                         необходимости – санаторно-курортное лечение.
                     </BaseText>
-
                 </Box>
 
                 <PartnersBlock title="платные клиники москвы урология" color="var(--red)" />

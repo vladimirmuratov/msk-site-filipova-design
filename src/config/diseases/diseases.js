@@ -1,9 +1,12 @@
+import { createID } from '@/lib/createID';
+
 export const diseases = [
-    {id: 1, label: 'лечение боли', path: '/diseases/pain'},
-    {id: 2, label: 'реабилитация после инсульта', path: '/diseases/stroke'},
-    {id: 3, label: 'колопроктология', path: '/diseases/proctology'},
-    {id: 4, label: 'экстренная хирургия', path: '/diseases/emergency-surgery'},
-    {id: 5, label: 'пульмонология', path: '/diseases/pulmonology'},
-    /*{id: 6, label: 'пневмония', path: '/diseases/pneumonia'},
-    {id: 7, label: 'гастроэнтерология', path: '/diseases/gastro'},*/
+    {id: createID(), label: 'лечение боли', path: '/diseases/pain'},
+    {id: createID(), label: 'реабилитация после инсульта', path: '/diseases/stroke'},
+    {id: createID(), label: 'колопроктология', path: '/diseases/proctology'},
+    {id: createID(), label: 'экстренная хирургия', path: '/diseases/emergency-surgery'},
+    {id: createID(), label: 'пульмонология', path: '/diseases/pulmonology'},
+    {id: createID(), label: 'ХОБЛ', path: '/diseases/copd'},
+    {id: createID(), label: 'пневмония', path: '/diseases/pneumonia'},
+    {id: createID(), label: 'гастроэнтерология', /*path: '/diseases/gastro',*/ path: '/directions/gastroenterology'},
 ]

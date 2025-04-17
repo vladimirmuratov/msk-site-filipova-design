@@ -82,9 +82,9 @@ export default function Therapy() {
                     }}
                 >
                     <BaseText>
-                        <span style={{ color: 'var(--red)' }}>Терапевтическое отделение</span> в стационарах клиник
-                        партнеров
-                        занимает особое место, где сосредоточена высокопрофессиональная медицинская поддержка
+                        <Box component="span" sx={{ color: 'var(--red)' }}>Терапевтическое отделение</Box> в стационарах
+                        клиник партнеров занимает особое место, где сосредоточена высокопрофессиональная медицинская
+                        поддержка
                         для пациентов с терапевтическими, кардиологическими, ревматологическими и эндокринными
                         проблемами. Врачи отделения — сертифицированные специалисты в области «Терапии»,
                         «Кардиологии», «Ревматологии» и «Эндокринологии». Их глубокие знания и богатый
@@ -102,238 +102,236 @@ export default function Therapy() {
                     >
                         &nbsp;Больница терапия платная палата.
                     </Typography>
+                </Box>
 
-                    <Box
-                        className="pb-0"
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '15px', lg: 0 },
+                    }}
+                >
+
+                    <BaseSubTitle title="Профили специализации:" />
+
+                    <br />
+                    <Typography
+                        variant="h3"
                         sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                            marginX: { xs: '15px', lg: 0 },
+                            fontSize: { xs: 22, sm: 30 },
+                            fontWeight: 200,
+                            color: 'var(--red)',
                         }}
                     >
+                        Сложная сердечная недостаточность:
+                    </Typography>
+                    <List>
+                        {therapyList1.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
+                    </List>
 
-                        <BaseSubTitle title="Профили специализации:" />
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            fontSize: { xs: 22, sm: 30 },
+                            fontWeight: 200,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        Резистентная артериальная гипертензия:
+                    </Typography>
+                    <List>
+                        {therapyList2.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
+                    </List>
 
-                        <br />
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 30 },
-                                fontWeight: 200,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            Сложная сердечная недостаточность:
-                        </Typography>
-                        <List>
-                            {therapyList1.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
-                        </List>
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            fontSize: { xs: 22, sm: 30 },
+                            fontWeight: 200,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        Нарушения ритма сердца, включая фибрилляцию предсердий:
+                    </Typography>
+                    <List>
+                        {therapyList3.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
+                    </List>
 
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 30 },
-                                fontWeight: 200,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            Резистентная артериальная гипертензия:
-                        </Typography>
-                        <List>
-                            {therapyList2.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
-                        </List>
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            fontSize: { xs: 22, sm: 30 },
+                            fontWeight: 200,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        Ишемия и коронарные заболевания:
+                    </Typography>
+                    <List>
+                        {therapyList4.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
+                    </List>
 
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 30 },
-                                fontWeight: 200,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            Нарушения ритма сердца, включая фибрилляцию предсердий:
-                        </Typography>
-                        <List>
-                            {therapyList3.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
-                        </List>
+                    <Typography
+                        variant="h3"
+                        className="pb-16"
+                        sx={{
+                            fontSize: { xs: 24, sm: 32 },
+                            fontWeight: 300,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        Стабилизация состояния тяжелых пациентов с множественными хроническими патологиями.
+                    </Typography>
 
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 30 },
-                                fontWeight: 200,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            Ишемия и коронарные заболевания:
-                        </Typography>
-                        <List>
-                            {therapyList4.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
-                        </List>
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            fontSize: { xs: 22, sm: 30 },
+                            fontWeight: 200,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        Анемии различного происхождения:
+                    </Typography>
+                    <List>
+                        {therapyList5.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
+                    </List>
 
-                        <Typography
-                            variant="h3"
-                            className="pb-16"
-                            sx={{
-                                fontSize: { xs: 24, sm: 32 },
-                                fontWeight: 300,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            Стабилизация состояния тяжелых пациентов с множественными хроническими патологиями.
-                        </Typography>
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            fontSize: { xs: 22, sm: 30 },
+                            fontWeight: 200,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        Ревматические заболевания:
+                    </Typography>
+                    <List>
+                        {therapyList6.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
+                    </List>
 
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 30 },
-                                fontWeight: 200,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            Анемии различного происхождения:
-                        </Typography>
-                        <List>
-                            {therapyList5.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
-                        </List>
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            fontSize: { xs: 22, sm: 30 },
+                            fontWeight: 200,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        Гипертоническая болезнь:
+                    </Typography>
+                    <List>
+                        {therapyList7.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
+                    </List>
 
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 30 },
-                                fontWeight: 200,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            Ревматические заболевания:
-                        </Typography>
-                        <List>
-                            {therapyList6.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
-                        </List>
+                    <Typography
+                        variant="h3"
+                        className="pb-16"
+                        sx={{
+                            fontSize: { xs: 24, sm: 32 },
+                            fontWeight: 300,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        Подготовка к хирургическому вмешательству для тяжелых больных.
+                    </Typography>
 
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 30 },
-                                fontWeight: 200,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            Гипертоническая болезнь:
-                        </Typography>
-                        <List>
-                            {therapyList7.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
-                        </List>
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            fontSize: { xs: 22, sm: 30 },
+                            fontWeight: 200,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        Заболевания легких (включая интерстициальные и специфические формы):
+                    </Typography>
+                    <List>
+                        {therapyList8.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
+                    </List>
 
-                        <Typography
-                            variant="h3"
-                            className="pb-16"
-                            sx={{
-                                fontSize: { xs: 24, sm: 32 },
-                                fontWeight: 300,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            Подготовка к хирургическому вмешательству для тяжелых больных.
-                        </Typography>
+                    <Typography
+                        variant="h3"
+                        className="pb-16"
+                        sx={{
+                            fontSize: { xs: 24, sm: 32 },
+                            fontWeight: 300,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        Реабилитация после COVID-19, инфарктов, инсультов и тромбоэмболий.
+                    </Typography>
 
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 30 },
-                                fontWeight: 200,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            Заболевания легких (включая интерстициальные и специфические формы):
-                        </Typography>
-                        <List>
-                            {therapyList8.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
-                        </List>
+                    <Typography
+                        variant="h3"
+                        className="pb-16"
+                        sx={{
+                            fontSize: { xs: 24, sm: 32 },
+                            fontWeight: 300,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        Особенности лечения у пациентов с тяжелым морбидным ожирением.
+                    </Typography>
 
-                        <Typography
-                            variant="h3"
-                            className="pb-16"
-                            sx={{
-                                fontSize: { xs: 24, sm: 32 },
-                                fontWeight: 300,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            Реабилитация после COVID-19, инфарктов, инсультов и тромбоэмболий.
-                        </Typography>
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            fontSize: { xs: 22, sm: 30 },
+                            fontWeight: 200,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        Сахарный диабет:
+                    </Typography>
+                    <List>
+                        {therapyList9.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
+                    </List>
 
-                        <Typography
-                            variant="h3"
-                            className="pb-16"
-                            sx={{
-                                fontSize: { xs: 24, sm: 32 },
-                                fontWeight: 300,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            Особенности лечения у пациентов с тяжелым морбидным ожирением.
-                        </Typography>
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            fontSize: { xs: 22, sm: 30 },
+                            fontWeight: 200,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        Ранняя диагностика сердечно-сосудистых и онкологических заболеваний:
+                    </Typography>
+                    <List>
+                        {therapyList10.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
+                    </List>
 
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 30 },
-                                fontWeight: 200,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            Сахарный диабет:
-                        </Typography>
-                        <List>
-                            {therapyList9.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
-                        </List>
+                    <Typography
+                        variant="h3"
+                        className="pb-16"
+                        sx={{
+                            fontSize: { xs: 24, sm: 32 },
+                            fontWeight: 300,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        Хроническая почечная недостаточность у полиморбидных пациентов.
+                    </Typography>
 
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 30 },
-                                fontWeight: 200,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            Ранняя диагностика сердечно-сосудистых и онкологических заболеваний:
-                        </Typography>
-                        <List>
-                            {therapyList10.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
-                        </List>
-
-                        <Typography
-                            variant="h3"
-                            className="pb-16"
-                            sx={{
-                                fontSize: { xs: 24, sm: 32 },
-                                fontWeight: 300,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            Хроническая почечная недостаточность у полиморбидных пациентов.
-                        </Typography>
-
-                        <Typography
-                            variant="h3"
-                            sx={{
-                                fontSize: { xs: 22, sm: 30 },
-                                fontWeight: 200,
-                                color: 'var(--red)',
-                            }}
-                        >
-                            Другие внутренние болезни:
-                        </Typography>
-                        <List>
-                            {therapyList11.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
-                        </List>
-                    </Box>
-
+                    <Typography
+                        variant="h3"
+                        sx={{
+                            fontSize: { xs: 22, sm: 30 },
+                            fontWeight: 200,
+                            color: 'var(--red)',
+                        }}
+                    >
+                        Другие внутренние болезни:
+                    </Typography>
+                    <List>
+                        {therapyList11.map(({ id, label }) => <BaseLi key={id} label={label} component="h4" />)}
+                    </List>
 
                 </Box>
 
                 <PartnersBlock title="платный стационар терапия" color="var(--red)" />
-                
+
                 <BasePhotoGallery imagesList={therapyImages} />
 
             </Box>

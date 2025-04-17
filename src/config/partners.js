@@ -1,6 +1,8 @@
+import { createID } from '@/lib/createID';
+
 export const partners = [
     {
-        id: 1,
+        id: createID(),
         logo: '/images/partners/2_1_1x.png',
         imgStyle: { height: '64px', width: 'auto' },
         label:
@@ -10,7 +12,7 @@ export const partners = [
         alt: 'ФГБУ «Объединенная больница с поликлиникой» Управление делами Президента Российской Федерации',
     },
     {
-        id: 2,
+        id: createID(),
         logo: '/images/partners/ckb.png',
         imgStyle: { height: '64px', width: 'auto' },
         label:
@@ -20,7 +22,7 @@ export const partners = [
         alt: 'ФГБУ «Объединенная больница с поликлиникой» на Маршала Тимошенко',
     },
     {
-        id: 3,
+        id: createID(),
         logo: '/images/partners/3_1_1x.png',
         imgStyle: { height: '64px', width: 'auto' },
         label: '«Клиническая больница» Управления делами Президента Российской Федерации',
@@ -30,7 +32,7 @@ export const partners = [
         alt: 'Клиническая больница Управления делами Президента Российской Федерации',
     },
     {
-        id: 4,
+        id: createID(),
         logo: '/images/partners/4_1_1x.png',
         imgStyle: { height: '56px', width: 'auto' },
         label: 'Городская клиническая больница имени С.С. Юдина',
@@ -39,7 +41,7 @@ export const partners = [
         alt: 'Городская клиническая больница имени С.С. Юдина',
     },
     {
-        id: 5,
+        id: createID(),
         logo: '/images/partners/medsi.png',
         imgStyle: { height: '56px', width: 'auto' },
         label: 'МЕДСИ',
@@ -48,7 +50,7 @@ export const partners = [
         alt: 'МЕДСИ',
     },
     {
-        id: 6,
+        id: createID(),
         logo: '/images/partners/6_1_1x.png',
         imgStyle: { height: '56px', width: 'auto' },
         label: 'Юсуповская больница',
@@ -57,7 +59,7 @@ export const partners = [
         alt: 'Юсуповская больница',
     },
     {
-        id: 7,
+        id: createID(),
         logo: '/images/partners/volinka.svg',
         imgStyle: { height: '82px', width: 'auto' },
         label:
@@ -67,7 +69,7 @@ export const partners = [
         alt: 'Больница на волынке',
     },
     /*{
-            id: 8,
+            id: createID(),
             logo: '/images/partners/krasnogorsk.webp',
             imgStyle: {height: '82px', width: 'auto'},
             label: 'Красногорская городская больница',
@@ -76,7 +78,7 @@ export const partners = [
             alt: 'Красногорская городская больница'
         },*/
     {
-        id: 16,
+        id: createID(),
         logo: '/images/partners/logo_eramish.png',
         imgStyle: { height: '82px', width: 'auto' },
         label: 'ГКБ имени А. К. Ерамишанцева',
@@ -85,7 +87,7 @@ export const partners = [
         alt: 'ГКБ имени А. К. Ерамишанцева',
     },
     {
-        id: 9,
+        id: createID(),
         logo: '/images/partners/9_1_1x.png',
         imgStyle: { height: '82px', width: 'auto' },
         label: 'Городская клиническая больница № 67 имени Л. А. Ворохобова',
@@ -94,7 +96,7 @@ export const partners = [
         alt: 'Городская клиническая больница № 67 имени Л. А. Ворохобова',
     },
     {
-        id: 10,
+        id: createID(),
         logo: '/images/partners/pirogovka.png',
         imgStyle: { height: '100px', width: 'auto' },
         label: 'Первая Градская Больница имени Н.И. Пирогова',
@@ -103,7 +105,7 @@ export const partners = [
         alt: 'Первая Градская Больница имени Н.И. Пирогова',
     },
     {
-        id: 11,
+        id: createID(),
         logo: '/images/partners/11_1_1x.png',
         imgStyle: { height: '100px', width: 'auto' },
         label: 'Городская клиническая больница имени В.В. Виноградова',
@@ -112,7 +114,7 @@ export const partners = [
         alt: 'Городская клиническая больница имени В.В. Виноградова',
     },
     {
-        id: 12,
+        id: createID(),
         logo: '/images/partners/52clinic.svg',
         imgStyle: { height: '100px', width: 'auto' },
         label: 'Городская клиническая больница №52',
@@ -121,7 +123,7 @@ export const partners = [
         alt: 'Городская клиническая больница №52',
     },
     {
-        id: 13,
+        id: createID(),
         logo: '/images/partners/mknc.svg',
         imgStyle: { height: '90px', width: 'auto' },
         label: 'Московский клинический научный центр имени А.С. Логинова',
@@ -130,7 +132,7 @@ export const partners = [
         alt: 'Московский клинический научный центр имени А.С. Логинова',
     },
     {
-        id: 14,
+        id: createID(),
         logo: '/images/partners/botkin.svg',
         imgStyle: { height: '90px', width: 'auto' },
         label: 'Московский многопрофильный научно-клинический центр имени С.П. Боткина',
@@ -139,7 +141,7 @@ export const partners = [
         alt: 'Московский многопрофильный научно-клинический центр имени С.П. Боткина',
     },
     {
-        id: 15,
+        id: createID(),
         logo: '/images/partners/gemo-centr.png',
         imgStyle: { height: '90px', width: 'auto' },
         label: 'ФГБУ «НМИЦ ГЕМАТОЛОГИИ» МИНЗДРАВА РОССИИ',

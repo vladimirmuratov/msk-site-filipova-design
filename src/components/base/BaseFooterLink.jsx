@@ -1,6 +1,7 @@
-import {Box, Link} from '@mui/material'
+import { Box } from '@mui/material';
+import Link from 'next/link';
 
-export const BaseFooterLink = ({label, path, target = '_blank'}) => {
+export const BaseFooterLink = ({ label, path, target = '_blank' }) => {
     return (
         <Box
             sx={{
@@ -10,17 +11,23 @@ export const BaseFooterLink = ({label, path, target = '_blank'}) => {
                 marginBottom: '5px'
             }}
         >
-            <img className="icon" src="/images/icons-blue/triangle.svg" alt="icon"/>
+            <img className="icon" src="/images/icons-blue/triangle.svg" alt="icon" />
             <Link
                 target={target}
-                sx={{
+                href={path}
+                style={{
                     textDecoration: 'none',
                     color: 'var(--black)',
                     fontSize: 14,
                     fontWeight: 300
                 }}
-                href={path}
+                /*sx={{
+                    textDecoration: 'none',
+                    color: 'var(--black)',
+                    fontSize: 14,
+                    fontWeight: 300
+                }}*/
             >{label}</Link>
         </Box>
-    )
-}
+    );
+};

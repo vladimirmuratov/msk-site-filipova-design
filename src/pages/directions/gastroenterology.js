@@ -1,7 +1,6 @@
-import { Box, Link, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Box, Link, List, Typography } from '@mui/material';
 import { BaseBanner } from '@/components/base/BaseBanner';
 import { BaseText } from '@/components/base/BaseText';
-import { LocalHospital } from '@mui/icons-material';
 import React from 'react';
 import PartnersBlock from '@/components/PartnersBlock';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
@@ -12,7 +11,8 @@ import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 import {
     gastroenterologyList1,
     gastroenterologyList2,
-    gastroenterologyList3, gastroenterologyList4
+    gastroenterologyList3,
+    gastroenterologyList4
 } from '@/config/directions/gastroenterology';
 import { BaseLi } from '@/components/base/BaseLi';
 
@@ -95,73 +95,81 @@ export default function Gastroenterology() {
                     >
                         &nbsp;Платная госпитализация в москве гастроэнтерология.
                     </Typography>
+                </Box>
 
-                    <Box
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                        <BaseSubTitle title="В сферу диагностических исследований входят:" />
+                    <BaseSubTitle title="В сферу диагностических исследований входят:" />
 
-                        <List>
-                            {gastroenterologyList1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
+                    <List>
+                        {gastroenterologyList1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
 
-                    <Box
-                        className="pt-0"
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                        <BaseSubTitle title="Лечебные стратегии включают:" />
+                    <BaseSubTitle title="Лечебные стратегии включают:" />
 
-                        <List>
-                            {gastroenterologyList2.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
+                    <List>
+                        {gastroenterologyList2.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
 
-                    <Box
-                        className="pt-0"
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                        <BaseSubTitle
-                            title="Для пациентов с метаболическими нарушениями (ожирение, диабет, дислипопротеинемия) разработан комплексный метод:" />
+                    <BaseSubTitle
+                        title="Для пациентов с метаболическими нарушениями (ожирение, диабет, дислипопротеинемия) разработан комплексный метод:" />
 
-                        <List>
-                            {gastroenterologyList3.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
+                    <List>
+                        {gastroenterologyList3.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
 
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
                     <BaseText>
                         Коллектив состоит из высококлассных гастроэнтерологов, терапевтов с внимательным
                         подходом к пациентам, создающим атмосферу заботы и профессионализма по стандартам лучших
                         медицинских учреждений страны.
                     </BaseText>
-
-                    <Box
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
-
-                        <BaseSubTitle title="Размещение предусматривает одноместные и двухместные палаты:" />
-
-                        <List>
-                            {gastroenterologyList4.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
-
                 </Box>
 
-                    <PartnersBlock title="платная больница гастроэнтерология" color="var(--red)" />
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                    <BasePhotoGallery imagesList={gastroenterologyImages} />
+                    <BaseSubTitle title="Размещение предусматривает одноместные и двухместные палаты:" />
+
+                    <List>
+                        {gastroenterologyList4.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
+
+                <PartnersBlock title="платная больница гастроэнтерология" color="var(--red)" />
+
+                <BasePhotoGallery imagesList={gastroenterologyImages} />
 
             </Box>
         </>

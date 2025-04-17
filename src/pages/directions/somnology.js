@@ -76,33 +76,41 @@ export default function Somnology() {
                         и воздействии на разнообразие сбоев в режиме сна, оснащена передовыми инструментами для
                         преодоления даже самых сложных и хронических нарушений.
                     </BaseText>
+                </Box>
 
-                    <Box
-                        sx={{
-                            paddingY: { xs: '25px', sm: '50px' },
-                        }}
-                    >
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
 
-                        <BaseSubTitle
-                            title="Отделение сомнологии специализируется на диагностике и терапии широкого спектра расстройств:" />
+                    <BaseSubTitle
+                        title="Отделение сомнологии специализируется на диагностике и терапии широкого спектра расстройств:" />
 
-                        <List>
-                            {somnologyList1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
+                    <List>
+                        {somnologyList1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
 
-                        <BaseSubTitle title="Дополнительные синдромы:" />
+                    <BaseSubTitle title="Дополнительные синдромы:" />
 
-                        <List>
-                            {somnologyList2.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
+                    <List>
+                        {somnologyList2.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
 
-                        <BaseSubTitle title="Диагностические методы:" />
+                    <BaseSubTitle title="Диагностические методы:" />
 
-                        <List>
-                            {somnologyList3.map(({ id, label }) => <BaseLi key={id} label={label} />)}
-                        </List>
-                    </Box>
+                    <List>
+                        {somnologyList3.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
 
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
                     <BaseText>
                         Мы гарантируем комплексный, персонализированный подход к каждому пациенту с целью
                         восстановления гармоничного сна и улучшения качества жизни.
@@ -118,12 +126,12 @@ export default function Somnology() {
                     >
                         &nbsp;Сомнолог лечение.
                     </Typography>
-
                 </Box>
 
                 <PartnersBlock title="сомнолог москва лечение храпа" color="var(--red)" />
 
                 <BasePhotoGallery imagesList={somnologyImages} />
+
             </Box>
         </>
     );
