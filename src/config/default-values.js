@@ -1,4 +1,5 @@
 export const phone = '+7 (499) 719-81-00';
+export const phone2 = '+7 (925) 179-97-86';
 export const phoneWhatsApp = '+79268158505';
 export const phoneTelegram = '+79268158505';
 export const phoneViber = '79268158505';

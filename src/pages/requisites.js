@@ -1,7 +1,7 @@
 import { Box, Link, Typography } from '@mui/material';
 import Head from 'next/head';
 import React from 'react';
-import { email, phone } from '@/config/default-values';
+import { address, email, phone, phone2 } from '@/config/default-values';
 
 export default function Requisites() {
     return (
@@ -25,12 +25,14 @@ export default function Requisites() {
                 sx={{
                     paddingY: { xs: '25px', sm: '50px' },
                     paddingX: { xs: '10px' },
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '5px',
                 }}
             >
                 <Typography sx={{ color: 'var(--blue)', fontWeight: 500 }}>ООО "МСК"</Typography>
                 <Typography>
-                    <span style={{ color: 'var(--blue)', fontWeight: 500 }}>адрес:</span> г. Москва, Мичуринский
-                    пр-т д.6
+                    <span style={{ color: 'var(--blue)', fontWeight: 500 }}>адрес:</span> {address}
                 </Typography>
                 <Link href={`tel:${phone}`}>
                     <Typography
@@ -42,6 +44,18 @@ export default function Requisites() {
                     >
                         <span style={{ color: 'var(--blue)', fontWeight: 500 }}>телефон: </span>
                         {phone}
+                    </Typography>
+                </Link>
+                <Link href={`tel:${phone2}`}>
+                    <Typography
+                        sx={{
+                            '&:hover': {
+                                textDecoration: 'underline !important',
+                            },
+                        }}
+                    >
+                        <span style={{ color: 'var(--blue)', fontWeight: 500, visibility: 'hidden' }}>телефон: </span>
+                        {phone2}
                     </Typography>
                 </Link>
                 <Link href={`mailto:${email}`}>
