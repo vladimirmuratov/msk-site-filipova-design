@@ -23,7 +23,7 @@ export const WhyWeBlock = React.memo(() => {
                     sx={{
                         fontSize: { xs: 18, sm: 20 },
                         color: 'var(--blue)',
-                        marginBottom: {xs: '10px', sm: '20px'}
+                        marginBottom: { xs: '10px', sm: '20px' }
                     }}
                 >
                     Подбор подходящей клиники — важный шаг на пути к выздоровлению. Мы берём на себя все сложности и
@@ -103,14 +103,20 @@ export const WhyWeBlock = React.memo(() => {
             </Box>
             <Box>
                 <Typography
+                    variant='h3'
                     sx={{
-                        fontSize: { xs: 20, sm: 22 },
+                        fontSize: { xs: 22, sm: 24 },
                         color: 'var(--red)',
-                        paddingTop: {xs: '10px', sm: '20px'}
+                        paddingTop: { xs: '10px', sm: '20px' },
+                        textAlign: 'center',
+                        fontStyle: 'italic',
+                        textWrap: 'balance',
+                        lineHeight: 1.5
                     }}
                 >
-                    С нами вы уверены в своём выборе.<br/>
-                    Оставьте заявку — и мы поможем вам сделать первый шаг к качественному лечению.
+                    В ситуациях, требующих высококвалифицированной медицинской помощи, особенно важно действовать без
+                    промедления. Мы организуем быструю госпитализацию в ведущие клиники Москвы, тщательно подбирая
+                    учреждение и профильного специалиста в соответствии с вашими индивидуальными потребностями.
                 </Typography>
             </Box>
         </Box>
