@@ -4,7 +4,6 @@ import { ThemeProvider } from '@mui/material/styles';
 import { theme } from '@/theme';
 import { Layout } from '@/components/Layout';
 import { useEffect, useState } from 'react';
-import Head from 'next/head';
 
 export default function App({ Component, pageProps }) {
     const [visible, setVisible] = useState(false);
