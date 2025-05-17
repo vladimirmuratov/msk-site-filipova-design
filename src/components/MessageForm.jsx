@@ -1,17 +1,20 @@
-import {Box, Button, Checkbox, Typography} from '@mui/material'
-import {useForm} from 'react-hook-form'
-import {BaseInput} from '@/components/base/BaseInput'
-import {useState} from 'react'
-import {sendEmail} from '@/lib/sendEmail'
-import {BaseDatePicker} from '@/components/base/BaseDatePicker'
+import { Box, Button, Checkbox, Typography } from '@mui/material';
+import { useForm } from 'react-hook-form';
+import { BaseInput } from '@/components/base/BaseInput';
+import { memo, useState } from 'react';
+import { sendEmail } from '@/lib/sendEmail';
+import { BaseDatePicker } from '@/components/base/BaseDatePicker';
 
-export const MessageForm = ({onSuccess, onFailed, handleClose = () => {}}) => {
-    const regExpEmail = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
-    const regExpPhone = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/
-    const [fileName, setFileName] = useState('')
-    const [file, setFile] = useState()
-    const [checked, setChecked] = useState(false)
-    const {control, handleSubmit, formState: {errors, isSubmitting}, reset, register, watch} = useForm({
+export const MessageForm = memo(({
+                                     onSuccess, onFailed, handleClose = () => {
+    }
+                                 }) => {
+    const regExpEmail = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+    const regExpPhone = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+    const [fileName, setFileName] = useState('');
+    const [file, setFile] = useState();
+    const [checked, setChecked] = useState(false);
+    const { control, handleSubmit, formState: { errors, isSubmitting }, reset, register, watch } = useForm({
         defaultValues: {
             person: '',
             dateBirth: '',
@@ -19,45 +22,45 @@ export const MessageForm = ({onSuccess, onFailed, handleClose = () => {}}) => {
             email: '',
             info: ''
         }
-    })
+    });
 
     const handleUploadFile = (e) => {
         // console.log(e.target.files[0])
-        setFileName(e.target.files[0].name)
-        setFile(e.target.files[0])
-    }
+        setFileName(e.target.files[0].name);
+        setFile(e.target.files[0]);
+    };
 
     const onSubmit = async (data) => {
-        const {person, dateBirth, phone, email, info} = data
-        const fd = new FormData()
+        const { person, dateBirth, phone, email, info } = data;
+        const fd = new FormData();
 
         if (file) {
-            fd.append(fileName, file)
+            fd.append(fileName, file);
         }
 
-        fd.append('person', person)
-        fd.append('dateBirth', dateBirth)
-        fd.append('phone', phone)
-        fd.append('email', email)
-        fd.append('info', info)
+        fd.append('person', person);
+        fd.append('dateBirth', dateBirth);
+        fd.append('phone', phone);
+        fd.append('email', email);
+        fd.append('info', info);
 
-        const resStatus = await sendEmail(fd)
+        const resStatus = await sendEmail(fd);
 
         if (resStatus === 250) {
-            reset()
-            handleClose()
-            setChecked(false)
-            onSuccess(true)
-            setFileName('')
+            reset();
+            handleClose();
+            setChecked(false);
+            onSuccess(true);
+            setFileName('');
         } else if (resStatus === 404) {
-            handleClose()
-            onFailed(true)
+            handleClose();
+            onFailed(true);
         }
-    }
+    };
 
     const handleChange = (event) => {
-        setChecked(event.target.checked)
-    }
+        setChecked(event.target.checked);
+    };
 
     return (
         <Box
@@ -68,8 +71,8 @@ export const MessageForm = ({onSuccess, onFailed, handleClose = () => {}}) => {
             <Box
                 sx={{
                     display: 'grid',
-                    gridTemplateColumns: {xs: '1fr', sm: '1fr 1fr'},
-                    gap: {xs: '10px', sm: '20px'}
+                    gridTemplateColumns: { xs: '1fr', sm: '1fr 1fr' },
+                    gap: { xs: '10px', sm: '20px' }
                 }}
             >
 
@@ -84,16 +87,16 @@ export const MessageForm = ({onSuccess, onFailed, handleClose = () => {}}) => {
 
                     <BaseInput control={control} label="Ваше имя" name="person" required={true}
                                errorType={errors?.person?.type}
-                               mask="Смирнов Иван"/>
-                    <BaseDatePicker control={control} label="Дата рождения" name="dateBirth"/>
+                               mask="Смирнов Иван" />
+                    <BaseDatePicker control={control} label="Дата рождения" name="dateBirth" />
                     <BaseInput control={control} label="Телефон" name="phone" required={true}
                                errorType={errors?.phone?.type}
-                               mask="+7 (000) 000 00 00" regexp={regExpPhone}/>
+                               mask="+7 (000) 000 00 00" regexp={regExpPhone} />
 
                     <BaseInput control={control} label="Email" name="email" mask="smirnov@mail.ru"
-                               regexp={regExpEmail} errorType={errors?.email?.type}/>
+                               regexp={regExpEmail} errorType={errors?.email?.type} />
                     <BaseInput control={control} label="Доп.информация" name="info" multiline={true}
-                               mask="Опишите ситуацию"/>
+                               mask="Опишите ситуацию" />
 
                 </Box>
 
@@ -104,7 +107,7 @@ export const MessageForm = ({onSuccess, onFailed, handleClose = () => {}}) => {
                         margin: '0 auto',
                         gap: '10px',
                         borderRadius: '10px',
-                        width: {xs: '100%', md: '80%'}
+                        width: { xs: '100%', md: '80%' }
                     }}
                 >
 
@@ -122,7 +125,7 @@ export const MessageForm = ({onSuccess, onFailed, handleClose = () => {}}) => {
                             }}
                         >
                             Загрузить файлы
-                            <input type="file" hidden  {...register('file')} onChange={handleUploadFile}/>
+                            <input type="file" hidden  {...register('file')} onChange={handleUploadFile} />
                         </Button>
 
                         {fileName && <Typography>{fileName}</Typography>}
@@ -147,9 +150,9 @@ export const MessageForm = ({onSuccess, onFailed, handleClose = () => {}}) => {
                         </Typography>
                     </Box>
 
-                    <Box sx={{display: 'flex', alignItems: 'center'}}>
-                        <Checkbox checked={checked} onChange={handleChange} sx={{alignSelf: 'start'}}/>
-                        <Typography sx={{fontSize: 12, lineHeight: 1.1}}>
+                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                        <Checkbox checked={checked} onChange={handleChange} sx={{ alignSelf: 'start' }} />
+                        <Typography sx={{ fontSize: 12, lineHeight: 1.1 }}>
                             Я согласен на обработку персональных данных в соответствии
                             c Политикой конфиденциальности
                         </Typography>
@@ -159,7 +162,7 @@ export const MessageForm = ({onSuccess, onFailed, handleClose = () => {}}) => {
                         sx={{
                             display: 'flex',
                             alignItems: 'center',
-                            gap: {xs: '5px', sm: '10px'}
+                            gap: { xs: '5px', sm: '10px' }
                         }}
                     >
                         <Button
@@ -192,5 +195,5 @@ export const MessageForm = ({onSuccess, onFailed, handleClose = () => {}}) => {
 
             </Box>
         </Box>
-    )
-}
+    );
+});

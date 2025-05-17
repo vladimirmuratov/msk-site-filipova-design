@@ -1,11 +1,12 @@
-import {Box} from '@mui/material'
+import { Box } from '@mui/material';
+import { memo } from 'react';
 
-export const Banner2 = () => {
+export const Banner2 = memo(() => {
     return (
         <Box
             component="figure"
             sx={{
-                paddingY: {xs: '25px', sm: '50px'},
+                paddingY: { xs: '25px', sm: '50px' },
                 position: 'relative'
             }}>
             <Box
@@ -18,5 +19,5 @@ export const Banner2 = () => {
                 }}
             />
         </Box>
-    )
-}
+    );
+});

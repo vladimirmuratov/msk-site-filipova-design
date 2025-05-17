@@ -1,7 +1,8 @@
 import { Box } from '@mui/material';
 import Link from 'next/link';
+import { memo } from 'react';
 
-export const BaseFooterLink = ({ label, path, target = '_blank' }) => {
+export const BaseFooterLink = memo(({ label, path, target = '_blank' }) => {
     return (
         <Box
             sx={{
@@ -30,4 +31,4 @@ export const BaseFooterLink = ({ label, path, target = '_blank' }) => {
             >{label}</Link>
         </Box>
     );
-};
+});

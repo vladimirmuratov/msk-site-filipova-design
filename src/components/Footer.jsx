@@ -3,8 +3,9 @@ import { BaseFooterLink } from '@/components/base/BaseFooterLink';
 import SocialBlock from '@/components/SocialBlock';
 import { email, phone } from '@/config/default-values';
 import { footerList1, footerList2 } from '@/config/footer';
+import { memo } from 'react';
 
-export const Footer = ({ onOpenForm }) => {
+export const Footer = memo(({ onOpenForm }) => {
     return (
         <Box
             component="footer"
@@ -136,4 +137,4 @@ export const Footer = ({ onOpenForm }) => {
             >&copy;2014 - {new Date().getFullYear()} OOO "МСК"</Typography>
         </Box>
     );
-};
+});

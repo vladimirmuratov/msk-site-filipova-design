@@ -1,8 +1,12 @@
 import { Box, Breadcrumbs } from '@mui/material';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { useRouter } from 'next/navigation';
+import { memo } from 'react';
 
-export const BaseBreadcrumbs = ({ breadcrumbs = () => {} }) => {
+export const BaseBreadcrumbs = memo(({
+                                         breadcrumbs = () => {
+                                         }
+                                     }) => {
     const router = useRouter();
 
     return (
@@ -13,4 +17,4 @@ export const BaseBreadcrumbs = ({ breadcrumbs = () => {} }) => {
             </Breadcrumbs>
         </Box>
     );
-};
+});

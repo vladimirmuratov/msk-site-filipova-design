@@ -1,7 +1,8 @@
 import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
+import { memo } from 'react';
 
-export const Banner4 = () => {
+export const Banner4 = memo(() => {
     return (
         <Box
             component="figure"
@@ -57,4 +58,4 @@ export const Banner4 = () => {
             </Box>
         </Box>
     );
-};
+});

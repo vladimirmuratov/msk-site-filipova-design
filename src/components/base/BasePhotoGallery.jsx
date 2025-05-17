@@ -1,7 +1,7 @@
-import React from 'react';
+import { memo } from 'react';
 import { Box } from '@mui/material';
 
-export const BasePhotoGallery = React.memo(({ imagesList = [] }) => {
+export const BasePhotoGallery = memo(({ imagesList = [] }) => {
     return (
         <Box
             sx={{

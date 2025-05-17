@@ -1,8 +1,9 @@
 import { Fab, Link } from '@mui/material';
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import { phone } from '@/config/default-values';
+import { memo } from 'react';
 
-export const FloatBtn = ({ handleOpen, isMobile }) => {
+export const FloatBtn = memo(({ handleOpen, isMobile }) => {
     return (
         <>
             {typeof isMobile === 'boolean' &&
@@ -41,4 +42,4 @@ export const FloatBtn = ({ handleOpen, isMobile }) => {
             }
         </>
     );
-};
+});

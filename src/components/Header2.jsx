@@ -113,7 +113,7 @@ export const Header2 = () => {
                                 whiteSpace: 'nowrap',
                                 lineHeight: 1.1
                             }}
-                        >8(499)719-81-00</Typography>
+                        >8 (499) 719-81-00</Typography>
                     </Link>
 
                     <Link href={`mailto:${email}`}

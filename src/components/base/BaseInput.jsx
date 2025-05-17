@@ -1,27 +1,28 @@
-import {TextField, Typography} from '@mui/material'
-import {Controller} from 'react-hook-form'
+import { TextField, Typography } from '@mui/material';
+import { Controller } from 'react-hook-form';
+import { memo } from 'react';
 
-export const BaseInput = ({
-                              control,
-                              name,
-                              label = '',
-                              required = false,
-                              multiline = false,
-                              errorType = '',
-                              mask = '',
-                              type = 'text',
-                              regexp = ''
-                          }) => {
+export const BaseInput = memo(({
+                                   control,
+                                   name,
+                                   label = '',
+                                   required = false,
+                                   multiline = false,
+                                   errorType = '',
+                                   mask = '',
+                                   type = 'text',
+                                   regexp = ''
+                               }) => {
 
     return (
         <>
             <Controller
                 name={name}
                 control={control}
-                rules={{required: required, pattern: regexp}}
+                rules={{ required: required, pattern: regexp }}
                 render={({
-                             field: {onChange, value},
-                             fieldState: {error},
+                             field: { onChange, value },
+                             fieldState: { error },
                              formState,
                          }) => (
                     <TextField
@@ -37,17 +38,17 @@ export const BaseInput = ({
                         id="outlined-basic"
                         label={`${label}${required ? '*' : ''}`}
                         variant="outlined"
-                        sx={{backgroundColor: 'var(--white)', borderRadius: '5px'}}
+                        sx={{ backgroundColor: 'var(--white)', borderRadius: '5px' }}
                     />
                 )}
             />
 
             {errorType === 'required' &&
-                <Typography sx={{fontSize: '14px', color: 'var(--red)'}}>Обязательное поле</Typography>}
+                <Typography sx={{ fontSize: '14px', color: 'var(--red)' }}>Обязательное поле</Typography>}
 
             {errorType === 'pattern' &&
-                <Typography sx={{fontSize: '14px', color: 'var(--red)'}}>Введите валидное значение</Typography>}
+                <Typography sx={{ fontSize: '14px', color: 'var(--red)' }}>Введите валидное значение</Typography>}
 
         </>
-    )
-}
+    );
+});

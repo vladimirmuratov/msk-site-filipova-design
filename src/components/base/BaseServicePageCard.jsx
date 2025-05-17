@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material';
+import { memo } from 'react';
 
-export const BaseServicePageCard = ({ icon, title, text }) => {
+export const BaseServicePageCard = memo(({ icon, title, text }) => {
     return (
         <Box
             sx={{
@@ -28,4 +29,4 @@ export const BaseServicePageCard = ({ icon, title, text }) => {
             </Box>
         </Box>
     );
-};
+});

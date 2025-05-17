@@ -1,7 +1,8 @@
 import { Box, Typography } from '@mui/material';
 import Link from 'next/link';
+import { memo } from 'react';
 
-export const BaseServiceCard = ({ alt, label, text, icon, path = '#', sitePage }) => {
+export const BaseServiceCard = memo(({ alt, label, text, icon, path = '#', sitePage }) => {
     return (
         <Link
             href={path}
@@ -56,4 +57,4 @@ export const BaseServiceCard = ({ alt, label, text, icon, path = '#', sitePage }
             </Box>
         </Link>
     );
-};
+});

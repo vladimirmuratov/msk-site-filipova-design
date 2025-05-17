@@ -1,6 +1,7 @@
 import { Typography } from '@mui/material';
+import { memo } from 'react';
 
-export const BaseText = ({ children, style = {}, component = 'p' }) => {
+export const BaseText = memo(({ children, style = {}, component = 'p' }) => {
     return (
         <Typography
             component={component}
@@ -15,4 +16,4 @@ export const BaseText = ({ children, style = {}, component = 'p' }) => {
             {children}
         </Typography>
     );
-};
+});
