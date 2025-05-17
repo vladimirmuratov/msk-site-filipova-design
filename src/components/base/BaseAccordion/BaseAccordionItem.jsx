@@ -1,0 +1,21 @@
+import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+export const BaseAccordionItem = ({ id, question, answer }) => {
+
+    return (
+        <Accordion>
+            <AccordionSummary
+                expandIcon={<ExpandMoreIcon sx={{color: 'var(--blue)'}} />}
+                aria-controls={`panel${id}-content`}
+                id={`panel${id}-header`}
+            >
+                <Typography sx={{ fontWeight: 500, fontSize: 18, color: 'var(--blue)' }}>{question}</Typography>
+            </AccordionSummary>
+            <AccordionDetails sx={{ backgroundColor: 'var(--blue)' }}>
+                <Typography
+                    sx={{ fontSize: 18, lineHeight: 1.5, color: '#fff', whiteSpace: 'pre-wrap' }}>{answer}</Typography>
+            </AccordionDetails>
+        </Accordion>
+    );
+};

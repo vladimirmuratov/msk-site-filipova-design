@@ -7,6 +7,7 @@ import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import React from 'react';
 import { surgeryImages } from '@/config/images';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
+import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 
 export default function Surgery() {
     const breadcrumbs = (router) => {
@@ -143,6 +144,8 @@ export default function Surgery() {
                 </Box>
 
                 <PartnersBlock title="Платные больницы хирургия" color="var(--red)" />
+
+                <BaseCallBlock />
 
                 <BasePhotoGallery imagesList={surgeryImages} />
 

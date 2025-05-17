@@ -1,5 +1,5 @@
 import React from 'react';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import { Box } from '@mui/material';
 import { BaseText } from '@/components/base/BaseText';
 import Link from 'next/link';
@@ -14,7 +14,7 @@ export const DiseasesBlock = React.memo(({ diseases = [] }) => {
             }}
         >
 
-            <BaseSubTitle title="чаще всего к нам обращаются:" marginBottom={true} />
+            <BaseH2 title="чаще всего к нам обращаются:" marginBottom={true} />
 
             <Box
                 sx={{

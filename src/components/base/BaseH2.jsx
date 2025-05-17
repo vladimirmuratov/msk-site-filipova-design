@@ -1,7 +1,9 @@
 import { Typography } from '@mui/material';
 import React, { memo } from 'react';
 
-export const BaseSubTitle = memo(({ title = '', color = 'var(--red)', marginBottom = false }) => {
+export const BaseH2 = memo((props) => {
+    const { title = '', color = 'var(--red)', marginBottom = false, textAlign = 'left' } = props;
+
     return (
         <Typography
             variant="h2"
@@ -10,8 +12,9 @@ export const BaseSubTitle = memo(({ title = '', color = 'var(--red)', marginBott
                 fontWeight: 300,
                 color: color,
                 textTransform: 'uppercase',
-                marginBottom: marginBottom ? { xs: '15px', sm: '30px' } : '',
+                marginBottom: marginBottom ? { xs: '15px', sm: '30px' } : 0,
                 wordWrap: 'break-word',
+                textAlign
             }}
         >
             {title}

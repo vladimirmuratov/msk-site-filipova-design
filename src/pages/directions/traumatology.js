@@ -5,11 +5,12 @@ import React from 'react';
 import { BaseText } from '@/components/base/BaseText';
 import PartnersBlock from '@/components/PartnersBlock';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import { traumatologyImages } from '@/config/images';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 import { traumatologyList1 } from '@/config/directions/traumatology';
 import { BaseLi } from '@/components/base/BaseLi';
+import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 
 export default function Traumatology() {
     const breadcrumbs = (router) => {
@@ -88,10 +89,11 @@ export default function Traumatology() {
                 <Box
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
                     }}
                 >
 
-                    <BaseSubTitle title="Основные направления деятельности включают:" />
+                    <BaseH2 title="Основные направления деятельности включают:" />
 
                     <List>
                         {traumatologyList1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
@@ -130,6 +132,8 @@ export default function Traumatology() {
                 </Box>
 
                 <PartnersBlock title="больница травматология платно" color="var(--red)" />
+
+                <BaseCallBlock />
 
                 <BasePhotoGallery imagesList={traumatologyImages} />
             </Box>

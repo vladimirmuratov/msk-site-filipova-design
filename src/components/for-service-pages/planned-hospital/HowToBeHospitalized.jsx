@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import { BaseStep } from '@/components/base/for-service-pages/BaseStep';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 
 export const HowToBeHospitalized = ({ steps = [], title = '' }) => {
     return (
@@ -14,7 +14,7 @@ export const HowToBeHospitalized = ({ steps = [], title = '' }) => {
             }}
         >
 
-            <BaseSubTitle title={title} marginBottom={true} />
+            <BaseH2 title={title} marginBottom={true} />
 
             <Box
                 sx={{

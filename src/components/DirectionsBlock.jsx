@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import { BaseDirectionCard } from '@/components/base/BaseDirectionCard';
 import React from 'react';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 
 const DirectionsBlock = ({ directions = [], router }) => {
 
@@ -16,7 +16,7 @@ const DirectionsBlock = ({ directions = [], router }) => {
             }}
         >
 
-            <BaseSubTitle title="НАПРАВЛЕНИЯ ЛЕЧЕНИЯ" marginBottom={true} />
+            <BaseH2 title="НАПРАВЛЕНИЯ ЛЕЧЕНИЯ" marginBottom={true} />
 
             <Box
                 sx={{

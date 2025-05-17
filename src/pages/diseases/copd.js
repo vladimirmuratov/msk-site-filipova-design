@@ -6,7 +6,7 @@ import { BaseText } from '@/components/base/BaseText';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import { copdImages } from '@/config/images';
 import Link from 'next/link';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import React from 'react';
 import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 import { BaseLi } from '@/components/base/BaseLi';
@@ -95,7 +95,7 @@ export default function Copd() {
                     }}
                 >
 
-                    <BaseSubTitle title="Основные симптомы:" />
+                    <BaseH2 title="Основные симптомы:" />
 
                     <List>
                         {copd1.map(({ id, label }) => (
@@ -126,7 +126,7 @@ export default function Copd() {
                     }}
                 >
 
-                    <BaseSubTitle title="Подход к лечению:" />
+                    <BaseH2 title="Подход к лечению:" />
 
                     <BaseText style={{ display: 'block', marginY: '10px' }}>
                         Наш центр предлагает комплексный подход к лечению ХОБЛ, включающий:

@@ -4,12 +4,13 @@ import Head from 'next/head';
 import { BaseText } from '@/components/base/BaseText';
 import React from 'react';
 import PartnersBlock from '@/components/PartnersBlock';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 import { cardiologyImages } from '@/config/images';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import { cardiologyList1, cardiologyList2, cardiologyList3, cardiologyList4 } from '@/config/directions/cardiology';
 import { BaseLi } from '@/components/base/BaseLi';
+import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 
 export default function Cardiology() {
     const breadcrumbs = (router) => {
@@ -88,7 +89,7 @@ export default function Cardiology() {
                     }}
                 >
 
-                    <BaseSubTitle title="Мы специализируемся на лечении следующих состояний:" />
+                    <BaseH2 title="Мы специализируемся на лечении следующих состояний:" />
 
                     <List>
                         {cardiologyList1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
@@ -102,7 +103,7 @@ export default function Cardiology() {
                     }}
                 >
 
-                    <BaseSubTitle title="В нашем отделении осуществляется:" />
+                    <BaseH2 title="В нашем отделении осуществляется:" />
 
                     <br />
                     <Typography
@@ -212,7 +213,7 @@ export default function Cardiology() {
                     }}
                 >
 
-                    <BaseSubTitle title="Дополнительные направления деятельности:" />
+                    <BaseH2 title="Дополнительные направления деятельности:" />
 
                     <List>
                         {cardiologyList4.map(({ id, label }) => <BaseLi key={id} label={label} />)}
@@ -220,6 +221,8 @@ export default function Cardiology() {
                 </Box>
 
                 <PartnersBlock title="платный стационар кардиология" color="var(--red)" />
+
+                <BaseCallBlock />
 
                 <BasePhotoGallery imagesList={cardiologyImages} />
 

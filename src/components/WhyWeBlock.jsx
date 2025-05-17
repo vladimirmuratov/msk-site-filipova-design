@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 
 export const WhyWeBlock = React.memo(() => {
     return (
@@ -15,8 +15,8 @@ export const WhyWeBlock = React.memo(() => {
             }}
         >
 
-            <BaseSubTitle title="Почему стоит обратиться в наш сервис подбора медицинской клиники?"
-                          marginBottom={true} />
+            <BaseH2 title="Почему стоит обратиться в наш сервис подбора медицинской клиники?"
+                    marginBottom={true} />
 
             <Box>
                 <Typography

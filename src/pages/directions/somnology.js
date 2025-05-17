@@ -4,12 +4,13 @@ import { BaseText } from '@/components/base/BaseText';
 import React from 'react';
 import PartnersBlock from '@/components/PartnersBlock';
 import Head from 'next/head';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 import { somnologyList1, somnologyList2, somnologyList3 } from '@/config/directions/somnology';
 import { BaseLi } from '@/components/base/BaseLi';
 import { somnologyImages } from '@/config/images';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
+import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 
 export default function Somnology() {
     const breadcrumbs = (router) => {
@@ -85,20 +86,20 @@ export default function Somnology() {
                     }}
                 >
 
-                    <BaseSubTitle
+                    <BaseH2
                         title="Отделение сомнологии специализируется на диагностике и терапии широкого спектра расстройств:" />
 
                     <List>
                         {somnologyList1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
                     </List>
 
-                    <BaseSubTitle title="Дополнительные синдромы:" />
+                    <BaseH2 title="Дополнительные синдромы:" />
 
                     <List>
                         {somnologyList2.map(({ id, label }) => <BaseLi key={id} label={label} />)}
                     </List>
 
-                    <BaseSubTitle title="Диагностические методы:" />
+                    <BaseH2 title="Диагностические методы:" />
 
                     <List>
                         {somnologyList3.map(({ id, label }) => <BaseLi key={id} label={label} />)}
@@ -129,6 +130,8 @@ export default function Somnology() {
                 </Box>
 
                 <PartnersBlock title="сомнолог москва лечение храпа" color="var(--red)" />
+
+                <BaseCallBlock />
 
                 <BasePhotoGallery imagesList={somnologyImages} />
 

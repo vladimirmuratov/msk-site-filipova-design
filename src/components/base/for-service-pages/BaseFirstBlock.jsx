@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { BaseServicePageCard } from '@/components/base/BaseServicePageCard';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 
 export const BaseFirstBlock = ({ services = [], title = '', description = '' }) => {
     return (
@@ -21,7 +21,7 @@ export const BaseFirstBlock = ({ services = [], title = '', description = '' }) 
                 }}
             >
 
-                <BaseSubTitle title={title} />
+                <BaseH2 title={title} />
 
                 <Typography
                     sx={{

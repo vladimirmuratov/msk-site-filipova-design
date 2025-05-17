@@ -5,7 +5,7 @@ import React from 'react';
 import PartnersBlock from '@/components/PartnersBlock';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import Head from 'next/head';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import { gastroenterologyImages } from '@/config/images';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 import {
@@ -15,6 +15,7 @@ import {
     gastroenterologyList4
 } from '@/config/directions/gastroenterology';
 import { BaseLi } from '@/components/base/BaseLi';
+import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 
 export default function Gastroenterology() {
     const breadcrumbs = (router) => {
@@ -104,7 +105,7 @@ export default function Gastroenterology() {
                     }}
                 >
 
-                    <BaseSubTitle title="В сферу диагностических исследований входят:" />
+                    <BaseH2 title="В сферу диагностических исследований входят:" />
 
                     <List>
                         {gastroenterologyList1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
@@ -118,7 +119,7 @@ export default function Gastroenterology() {
                     }}
                 >
 
-                    <BaseSubTitle title="Лечебные стратегии включают:" />
+                    <BaseH2 title="Лечебные стратегии включают:" />
 
                     <List>
                         {gastroenterologyList2.map(({ id, label }) => <BaseLi key={id} label={label} />)}
@@ -132,7 +133,7 @@ export default function Gastroenterology() {
                     }}
                 >
 
-                    <BaseSubTitle
+                    <BaseH2
                         title="Для пациентов с метаболическими нарушениями (ожирение, диабет, дислипопротеинемия) разработан комплексный метод:" />
 
                     <List>
@@ -160,7 +161,7 @@ export default function Gastroenterology() {
                     }}
                 >
 
-                    <BaseSubTitle title="Размещение предусматривает одноместные и двухместные палаты:" />
+                    <BaseH2 title="Размещение предусматривает одноместные и двухместные палаты:" />
 
                     <List>
                         {gastroenterologyList4.map(({ id, label }) => <BaseLi key={id} label={label} />)}
@@ -168,6 +169,8 @@ export default function Gastroenterology() {
                 </Box>
 
                 <PartnersBlock title="платная больница гастроэнтерология" color="var(--red)" />
+
+                <BaseCallBlock />
 
                 <BasePhotoGallery imagesList={gastroenterologyImages} />
 

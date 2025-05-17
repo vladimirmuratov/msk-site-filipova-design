@@ -6,7 +6,7 @@ import { BaseText } from '@/components/base/BaseText';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import { painImages } from '@/config/images';
 import Link from 'next/link';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import { LocalHospital } from '@mui/icons-material';
 import React from 'react';
 import { BaseCallBlock } from '@/components/base/BaseCallBlock';
@@ -99,7 +99,7 @@ export default function Pain() {
                     }}
                 >
 
-                    <BaseSubTitle title="Виды боли, которые мы лечим:" />
+                    <BaseH2 title="Виды боли, которые мы лечим:" />
 
                     <List>
                         <ListItem sx={{ gap: '10px' }}>

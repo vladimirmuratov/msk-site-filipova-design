@@ -5,11 +5,12 @@ import React from 'react';
 import PartnersBlock from '@/components/PartnersBlock';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import Head from 'next/head';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import { urologyImages } from '@/config/images';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 import { urologyList1, urologyList2 } from '@/config/directions/urology';
 import { BaseLi } from '@/components/base/BaseLi';
+import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 
 export default function Urology() {
     const breadcrumbs = (router) => {
@@ -91,7 +92,7 @@ export default function Urology() {
                     }}
                 >
 
-                    <BaseSubTitle
+                    <BaseH2
                         title="В наличии оснащённая по последнему слову науки лаборатория с возможностью проведения:" />
 
                     <List>
@@ -119,7 +120,7 @@ export default function Urology() {
                     }}
                 >
 
-                    <BaseSubTitle
+                    <BaseH2
                         title="В арсенале урологического отделения богатый опыт применения консервативных методов в лечении широкого спектра заболеваний:" />
 
                     <List>
@@ -144,6 +145,8 @@ export default function Urology() {
                 </Box>
 
                 <PartnersBlock title="платные клиники москвы урология" color="var(--red)" />
+
+                <BaseCallBlock />
 
                 <BasePhotoGallery imagesList={urologyImages} />
 

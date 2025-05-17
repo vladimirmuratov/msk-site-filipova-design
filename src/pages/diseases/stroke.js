@@ -6,7 +6,7 @@ import { BaseText } from '@/components/base/BaseText';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import { strokeImages } from '@/config/images';
 import Link from 'next/link';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import React from 'react';
 import CheckIcon from '@mui/icons-material/Check';
 import { BaseCallBlock } from '@/components/base/BaseCallBlock';
@@ -102,7 +102,7 @@ export default function Stroke() {
                         marginX: { xs: '10px', lg: 0 },
                     }}
                 >
-                    <BaseSubTitle title="Методики реабилитации после инсульта" marginBottom={true} />
+                    <BaseH2 title="Методики реабилитации после инсульта" marginBottom={true} />
 
                     <Box>
                         <Typography

@@ -4,7 +4,7 @@ import Head from 'next/head';
 import React from 'react';
 import { BaseText } from '@/components/base/BaseText';
 import PartnersBlock from '@/components/PartnersBlock';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 import {
     neurologyList1,
@@ -21,6 +21,7 @@ import {
 import { BaseLi } from '@/components/base/BaseLi';
 import { neurologyImages } from '@/config/images';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
+import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 
 export default function Neurology() {
     const breadcrumbs = (router) => {
@@ -106,7 +107,7 @@ export default function Neurology() {
                     }}
                 >
 
-                    <BaseSubTitle title="Коллектив профессионалов включает:" />
+                    <BaseH2 title="Коллектив профессионалов включает:" />
 
                     <List>
                         {neurologyList1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
@@ -120,7 +121,7 @@ export default function Neurology() {
                     }}
                 >
 
-                    <BaseSubTitle title="В свободные от процедур моменты пациентам доступны:" />
+                    <BaseH2 title="В свободные от процедур моменты пациентам доступны:" />
 
                     <List>
                         {neurologyList2.map(({ id, label }) => <BaseLi key={id} label={label} />)}
@@ -146,7 +147,7 @@ export default function Neurology() {
                     }}
                 >
 
-                    <BaseSubTitle
+                    <BaseH2
                         title="Спектр неврологических заболеваний, с которыми успешно справляются наши врачи:" />
 
                     <List>
@@ -161,7 +162,7 @@ export default function Neurology() {
                     }}
                 >
 
-                    <BaseSubTitle title="Методы диагностики включают:" />
+                    <BaseH2 title="Методы диагностики включают:" />
 
                     <List>
                         {neurologyList4.map(({ id, label }) => <BaseLi key={id} label={label} />)}
@@ -175,7 +176,7 @@ export default function Neurology() {
                     }}
                 >
 
-                    <BaseSubTitle title="Индивидуальный подход к лечению основывается на:" />
+                    <BaseH2 title="Индивидуальный подход к лечению основывается на:" />
 
                     <List>
                         {neurologyList5.map(({ id, label }) => <BaseLi key={id} label={label} />)}
@@ -189,7 +190,7 @@ export default function Neurology() {
                     }}
                 >
 
-                    <BaseSubTitle title="Лечение охватывает следующие заболевания:" />
+                    <BaseH2 title="Лечение охватывает следующие заболевания:" />
 
                     <List>
                         {neurologyList6.map(({ id, label }) => <BaseLi key={id} label={label} />)}
@@ -203,7 +204,7 @@ export default function Neurology() {
                     }}
                 >
 
-                    <BaseSubTitle title="Противопоказания к госпитализации:" />
+                    <BaseH2 title="Противопоказания к госпитализации:" />
 
                     <List>
                         {neurologyList7.map(({ id, label }) => <BaseLi key={id} label={label} />)}
@@ -217,7 +218,7 @@ export default function Neurology() {
                     }}
                 >
 
-                    <BaseSubTitle title="Особое внимание уделяется лечению хронических болей в спине:" />
+                    <BaseH2 title="Особое внимание уделяется лечению хронических болей в спине:" />
 
                     <List>
                         {neurologyList8.map(({ id, label }) => <BaseLi key={id} label={label} />)}
@@ -231,7 +232,7 @@ export default function Neurology() {
                     }}
                 >
 
-                    <BaseSubTitle title="Реабилитация после инсультов включает:" />
+                    <BaseH2 title="Реабилитация после инсультов включает:" />
 
                     <List>
                         {neurologyList9.map(({ id, label }) => <BaseLi key={id} label={label} />)}
@@ -257,7 +258,7 @@ export default function Neurology() {
                     }}
                 >
 
-                    <BaseSubTitle title="Лечение невротических расстройств предполагает:" />
+                    <BaseH2 title="Лечение невротических расстройств предполагает:" />
 
                     <List>
                         {neurologyList10.map(({ id, label }) => <BaseLi key={id} label={label} />)}
@@ -277,6 +278,8 @@ export default function Neurology() {
                 </Box>
 
                 <PartnersBlock title="платный стационар неврологии" color="var(--red)" />
+
+                <BaseCallBlock />
 
                 <BasePhotoGallery imagesList={neurologyImages} />
 

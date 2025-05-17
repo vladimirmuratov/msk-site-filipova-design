@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import { phone } from '@/config/default-values';
 
 export const ContactBlock = () => {
@@ -21,7 +21,7 @@ export const ContactBlock = () => {
                 }}
             >
 
-                <BaseSubTitle title="КОНТАКТЫ" />
+                <BaseH2 title="КОНТАКТЫ" />
 
                 <Typography
                     sx={{

@@ -6,7 +6,7 @@ import { BaseText } from '@/components/base/BaseText';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import { proctologyImages } from '@/config/images';
 import Link from 'next/link';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import React from 'react';
 import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 import { LocalHospital } from '@mui/icons-material';
@@ -98,7 +98,7 @@ export default function Proctology() {
                     }}
                 >
 
-                    <BaseSubTitle title="Лечение колопроктологических заболеваний:" />
+                    <BaseH2 title="Лечение колопроктологических заболеваний:" />
 
                     <List>
                         {proctologyList.map(({id, label}) => (

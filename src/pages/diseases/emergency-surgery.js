@@ -6,7 +6,7 @@ import { BaseText } from '@/components/base/BaseText';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import { emergencySurgeryImages } from '@/config/images';
 import Link from 'next/link';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import React from 'react';
 import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 import { emergencySurgeryList } from '@/config/diseases/emergency-surgery';
@@ -90,7 +90,7 @@ export default function EmergencySurgery() {
                     }}
                 >
 
-                    <BaseSubTitle title="К экстренным случаям относятся:" />
+                    <BaseH2 title="К экстренным случаям относятся:" />
 
                     <List>
                         {emergencySurgeryList.map(({ id, label }) => (

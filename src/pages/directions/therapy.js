@@ -5,7 +5,7 @@ import React from 'react';
 import PartnersBlock from '@/components/PartnersBlock';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import Head from 'next/head';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import { therapyImages } from '@/config/images';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 import {
@@ -22,6 +22,7 @@ import {
     therapyList9
 } from '@/config/directions/therapy';
 import { BaseLi } from '@/components/base/BaseLi';
+import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 
 export default function Therapy() {
     const breadcrumbs = (router) => {
@@ -111,7 +112,7 @@ export default function Therapy() {
                     }}
                 >
 
-                    <BaseSubTitle title="Профили специализации:" />
+                    <BaseH2 title="Профили специализации:" />
 
                     <br />
                     <Typography
@@ -331,6 +332,8 @@ export default function Therapy() {
                 </Box>
 
                 <PartnersBlock title="платный стационар терапия" color="var(--red)" />
+
+                <BaseCallBlock />
 
                 <BasePhotoGallery imagesList={therapyImages} />
 

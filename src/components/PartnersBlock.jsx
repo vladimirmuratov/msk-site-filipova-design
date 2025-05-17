@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import { BasePartnerCard } from '@/components/base/BasePartnerCard';
 import React from 'react';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import { partners } from '@/config/partners';
 
 const PartnersBlock = ({ title = 'наши партнеры', color = 'var(--red)' }) => {
@@ -24,7 +24,7 @@ const PartnersBlock = ({ title = 'наши партнеры', color = 'var(--red
                 }}
             >
 
-                <BaseSubTitle title={title} color={color} />
+                <BaseH2 title={title} color={color} />
 
                 <Typography
                     sx={{

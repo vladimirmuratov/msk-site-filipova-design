@@ -9,7 +9,7 @@ import React, { useEffect, useState } from 'react';
 import { Loader } from '@/components/loader/Loader';
 import { VideoBanner } from '@/components/VideoBanner';
 import { ReviewsBlock } from '@/components/ReviewsBlock';
-import { reviews } from '@/reviews';
+import { reviews } from '@/config/reviews';
 import { Banner4 } from '@/components/Banner/Banner4';
 import { HowToBeHospitalized } from '@/components/for-service-pages/planned-hospital/HowToBeHospitalized';
 import { WhyWeBlock } from '@/components/WhyWeBlock';
@@ -18,7 +18,7 @@ import { directions } from '@/config/directions/directions';
 import { services } from '@/config/services';
 import { useScrollPosition } from '@/lib/useScrollPosition ';
 import { DiseasesBlock } from '@/components/DiseasesBlock';
-import { diseases } from '@/config/diseases/diseases';
+import { diseasesList } from '@/config/diseases/diseases-list';
 
 const openSans = Open_Sans({ subsets: ['latin', 'cyrillic'] });
 
@@ -66,7 +66,7 @@ export default function Home() {
                     <PartnersBlock />
                     <DirectionsBlock directions={directions} router={router} />
                     <ServiceBlock services={services} />
-                    <DiseasesBlock diseases={diseases}/>
+                    <DiseasesBlock diseases={diseasesList}/>
                     <ReviewsBlock reviews={reviews} isMobile={isMobile} />
                 </main>
             ) : (

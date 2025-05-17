@@ -4,7 +4,7 @@ import { BaseText } from '@/components/base/BaseText';
 import Head from 'next/head';
 import React from 'react';
 import PartnersBlock from '@/components/PartnersBlock';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 import { gynecologyImages } from '@/config/images';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
@@ -18,6 +18,7 @@ import {
     gynecologyList7
 } from '@/config/directions/gynecology';
 import { BaseLi } from '@/components/base/BaseLi';
+import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 
 export default function Gynecology() {
     const breadcrumbs = (router) => {
@@ -108,7 +109,7 @@ export default function Gynecology() {
                 >
                     <Box>
 
-                        <BaseSubTitle title="В отделении гинекологии стационара проводится:" />
+                        <BaseH2 title="В отделении гинекологии стационара проводится:" />
 
                         <br />
                         <Typography
@@ -237,6 +238,8 @@ export default function Gynecology() {
                 </Box>
 
                 <PartnersBlock title="платные больницы гинекологии" color="var(--red)" />
+
+                <BaseCallBlock />
 
                 <BasePhotoGallery imagesList={gynecologyImages} />
 

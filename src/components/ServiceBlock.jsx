@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import { BaseServiceCard } from '@/components/base/BaseServiceCard';
 import React from 'react';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 
 const ServiceBlock = ({ services = [] }) => {
     return (
@@ -13,7 +13,7 @@ const ServiceBlock = ({ services = [] }) => {
             }}
         >
 
-            <BaseSubTitle title="Услуги" marginBottom={true} />
+            <BaseH2 title="Услуги" marginBottom={true} />
 
             <Box
                 sx={{

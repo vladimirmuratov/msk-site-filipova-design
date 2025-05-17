@@ -6,7 +6,7 @@ import { BaseText } from '@/components/base/BaseText';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import { pulmonologyImages } from '@/config/images';
 import Link from 'next/link';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import React from 'react';
 import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 import { BaseLi } from '@/components/base/BaseLi';
@@ -98,7 +98,7 @@ export default function Pulmonology() {
                     }}
                 >
 
-                    <BaseSubTitle title="Когда стоит обратиться к пульмонологу:" />
+                    <BaseH2 title="Когда стоит обратиться к пульмонологу:" />
 
                     <List>
                         {pulmonologyList1.map(({ id, label }) => (
@@ -131,7 +131,7 @@ export default function Pulmonology() {
                     }}
                 >
 
-                    <BaseSubTitle title="Что лечит пульмонолог:" />
+                    <BaseH2 title="Что лечит пульмонолог:" />
 
                     <List>
                         {pulmonologyList2.map(({ id, label }) => (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from '@/components/Carousel';
 import { Box } from '@mui/material';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 
 export const ReviewsBlock = React.memo(({ reviews = [], isMobile }) => {
     return (
@@ -15,7 +15,7 @@ export const ReviewsBlock = React.memo(({ reviews = [], isMobile }) => {
             }}
         >
 
-            <BaseSubTitle title="ОТЗЫВЫ" marginBottom={true} />
+            <BaseH2 title="ОТЗЫВЫ" marginBottom={true} />
 
             <Carousel reviews={reviews} isMobile={isMobile} />
         </Box>

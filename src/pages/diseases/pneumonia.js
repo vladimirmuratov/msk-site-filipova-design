@@ -6,7 +6,7 @@ import { BaseText } from '@/components/base/BaseText';
 import { BasePhotoGallery } from '@/components/base/BasePhotoGallery';
 import { pneumoniaImages } from '@/config/images';
 import Link from 'next/link';
-import { BaseSubTitle } from '@/components/base/BaseSubTitle';
+import { BaseH2 } from '@/components/base/BaseH2';
 import React from 'react';
 import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 import { BaseLi } from '@/components/base/BaseLi';
@@ -90,7 +90,7 @@ export default function Pneumonia() {
                     }}
                 >
 
-                    <BaseSubTitle title="Симптомы пневмонии у взрослых и детей:" />
+                    <BaseH2 title="Симптомы пневмонии у взрослых и детей:" />
 
                     <List>
                         {pneumonia1.map(({ id, label }) => (
@@ -119,7 +119,7 @@ export default function Pneumonia() {
                     }}
                 >
 
-                    <BaseSubTitle title="Диагностика пневмонии:" />
+                    <BaseH2 title="Диагностика пневмонии:" />
 
                     <BaseText style={{ display: 'block', marginY: '10px' }}>
                         Для постановки точного диагноза в нашей клинике проводится комплексное обследование:
@@ -139,7 +139,7 @@ export default function Pneumonia() {
                     }}
                 >
 
-                    <BaseSubTitle title="Лечение пневмонии:" />
+                    <BaseH2 title="Лечение пневмонии:" />
 
                     <BaseText style={{ display: 'block', marginY: '10px' }}>
                         Мы предлагаем эффективное лечение пневмонии с индивидуальным подходом к каждому пациенту. В
