@@ -304,25 +304,25 @@ export const strokeImages = [
 export const proctologyImages = [
     {
         id: createID(),
-        src: '/images/diseases/proctology/proctology2.webp',
+        src: '/images/proctology/proctology2.webp',
         alt: 'колопроктология в москве',
         title: 'хирургия проктология',
     },
     {
         id: createID(),
-        src: '/images/diseases/proctology/proctology4.webp',
+        src: '/images/proctology/proctology4.webp',
         alt: 'институт колопроктологии в москве',
         title: 'хирургия колопроктология',
     },
     {
         id: createID(),
-        src: '/images/diseases/proctology/proctology3.webp',
+        src: '/images/proctology/proctology3.webp',
         alt: 'центр колопроктологии в москве',
         title: 'хирургия проктология в Москве',
     },
     {
         id: createID(),
-        src: '/images/diseases/proctology/proctology5.webp',
+        src: '/images/proctology/proctology5.webp',
         alt: 'клиника колопроктологии в москве',
         title: 'центр колопроктологии',
     },
@@ -358,25 +358,25 @@ export const emergencySurgeryImages = [
 export const pulmonologyImages = [
     {
         id: createID(),
-        src: '/images/diseases/pulmonology/pulmonology2.webp',
+        src: '/images/pulmonology/pulmonology2.webp',
         alt: 'пульмонология',
         title: 'пульмонология',
     },
     {
         id: createID(),
-        src: '/images/diseases/pulmonology/pulmonology3.webp',
+        src: '/images/pulmonology/pulmonology3.webp',
         alt: 'пульмонология в москве',
         title: 'пульмонология в Москве',
     },
     {
         id: createID(),
-        src: '/images/diseases/pulmonology/pulmonology4.webp',
+        src: '/images/pulmonology/pulmonology4.webp',
         alt: 'институт пульмонологии',
         title: 'центр пульмонологии',
     },
     {
         id: createID(),
-        src: '/images/diseases/pulmonology/pulmonology5.webp',
+        src: '/images/pulmonology/pulmonology5.webp',
         alt: 'центр пульмонологии',
         title: 'институт пульмонологии',
     },

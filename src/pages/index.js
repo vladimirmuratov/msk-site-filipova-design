@@ -14,7 +14,7 @@ import { Banner4 } from '@/components/Banner/Banner4';
 import { HowToBeHospitalized } from '@/components/for-service-pages/planned-hospital/HowToBeHospitalized';
 import { WhyWeBlock } from '@/components/WhyWeBlock';
 import { stepsPlanHospitalization } from '@/config/steps';
-import { directions } from '@/config/directions/directions';
+import { directionsList } from '@/config/directions/directions-list';
 import { services } from '@/config/services';
 import { useScrollPosition } from '@/lib/useScrollPosition ';
 import { DiseasesBlock } from '@/components/DiseasesBlock';
@@ -41,11 +41,11 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Платная госпитализация 8 (499) 719-81-00, 24/7</title>
+                <title>Медицинская Сервисная Компания. Платная госпитализация 8 (499) 719-81-00, 24/7</title>
                 <meta name="yandex-verification" content="7bb2122b277ff1f4" />
                 <meta
                     name="description"
-                    content="Платная госпитализация в Москве. 10 лет опыта. 20 клиник-партнеров. Федеральные, ведомственные и частные клиники. Работаем по всей территории России и СНГ. Оперативно. Финансовая прозрачность."
+                    content="Платная госпитализация в Москве. 15 лет опыта. 20 клиник-партнеров. Федеральные, ведомственные и частные клиники. Работаем по всей территории России и СНГ. Оперативно. Финансовая прозрачность."
                 />
                 <meta
                     name="keywords"
@@ -64,7 +64,7 @@ export default function Home() {
                         title="как это работает"
                     />
                     <PartnersBlock />
-                    <DirectionsBlock directions={directions} router={router} />
+                    <DirectionsBlock directions={directionsList} router={router} />
                     <ServiceBlock services={services} />
                     <DiseasesBlock diseases={diseasesList}/>
                     <ReviewsBlock reviews={reviews} isMobile={isMobile} />

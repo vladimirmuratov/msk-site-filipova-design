@@ -10,7 +10,7 @@ import { BaseH2 } from '@/components/base/BaseH2';
 import React from 'react';
 import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 import { BaseLi } from '@/components/base/BaseLi';
-import { pulmonologyList1, pulmonologyList2 } from '@/config/diseases/pulmonology';
+import { pulmonologyList1, pulmonologyList2 } from '@/config/directions/pulmonology';
 
 export default function Pulmonology() {
     const breadcrumbs = () => {
