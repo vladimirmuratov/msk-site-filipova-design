@@ -31,7 +31,7 @@ export const Header2 = () => {
                 <Link
                     // href="/"
                     component="button"
-                    onClick={() => router.back()}
+                    onClick={() => router.push('/')}
                     sx={{
                         display: 'flex',
                         flexDirection: { xs: 'column', md: 'row' },
