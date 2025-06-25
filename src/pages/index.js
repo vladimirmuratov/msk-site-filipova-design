@@ -41,7 +41,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Медицинская Сервисная Компания. Платная госпитализация 8 (499) 719-81-00, 24/7</title>
+                <title>Медицинская Сервисная Компания. Платная госпитализация. Медицинский туризм. 8 (499) 719-81-00, 24/7</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
             </Head>
