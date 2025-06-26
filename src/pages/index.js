@@ -4,7 +4,6 @@ import PartnersBlock from '@/components/PartnersBlock';
 import DirectionsBlock from '@/components/DirectionsBlock';
 import ServiceBlock from '@/components/ServiceBlock';
 import { useRouter } from 'next/router';
-import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
 import { Loader } from '@/components/loader/Loader';
 import { VideoBanner } from '@/components/VideoBanner';
@@ -40,11 +39,6 @@ export default function Home() {
 
     return (
         <>
-            <Head>
-                <title>Медицинская Сервисная Компания. Платная госпитализация. Медицинский туризм. 8 (499) 719-81-00, 24/7</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-            </Head>
             {typeof isMobile === 'boolean' ? (
                 <main className={openSans.className}>
                     {isMobile ? <Banner4 /> : <VideoBanner />}
@@ -57,7 +51,7 @@ export default function Home() {
                     <PartnersBlock />
                     <DirectionsBlock directions={directionsList} router={router} />
                     <ServiceBlock services={services} />
-                    <DiseasesBlock diseases={diseasesList}/>
+                    <DiseasesBlock diseases={diseasesList} />
                     <ReviewsBlock reviews={reviews} isMobile={isMobile} />
                 </main>
             ) : (

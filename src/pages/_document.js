@@ -7,6 +7,7 @@ export default function Document(props) {
         <Html lang="en" prefix="og: https://ogp.me/ns#">
             <Head>
                 <DocumentHeadTags {...props} />
+                <title>Медицинская Сервисная Компания. Платная госпитализация. Медицинский туризм. 8 (499) 719-81-00, 24/7</title>
                 <meta name="yandex-verification" content="7bb2122b277ff1f4" />
                 <meta name="google-site-verification" content="esv7d4q6D0-Wq7NhLFwyhvy2OEOwaOGF8lVqUdghggo" />
                 <meta
