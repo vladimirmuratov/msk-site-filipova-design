@@ -73,7 +73,7 @@ export const Layout = ({ children }) => {
             {success && (
                 <BaseModal title="Сообщение отправлено!" open={success} handleClose={handleCloseAnswerMessage}
                            color="var(--blue)">
-                    <DialogContentText id="alert-dialog-description">
+                    <DialogContentText id="alert-dialog-description" sx={{textAlign: 'center'}}>
                         Скоро в Вами свяжется наш специалист
                     </DialogContentText>
                 </BaseModal>
