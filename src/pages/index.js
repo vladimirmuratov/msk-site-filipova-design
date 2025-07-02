@@ -4,7 +4,7 @@ import PartnersBlock from '@/components/PartnersBlock';
 import DirectionsBlock from '@/components/DirectionsBlock';
 import ServiceBlock from '@/components/ServiceBlock';
 import { useRouter } from 'next/router';
-import Head from 'next/head';
+// import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
 import { Loader } from '@/components/loader/Loader';
 import { VideoBanner } from '@/components/VideoBanner';
@@ -40,7 +40,7 @@ export default function Home() {
 
     return (
         <>
-            <Head>
+            <head>
                 <title>Медицинская Сервисная Компания. Платная госпитализация. Медицинский туризм. 8 (499) 719-81-00, 24/7</title>
                 <meta
                     name="description"
@@ -59,7 +59,7 @@ export default function Home() {
                 <meta property="og:image:alt" content="Медицинская Сервисная Компания. Платная госпитализация. Медицинский туризм. 8 (499) 719-81-00, 24/7" />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name" content="Медицинская Сервисная Компания. Платная госпитализация. Медицинский туризм. 8 (499) 719-81-00, 24/7" />
-            </Head>
+            </head>
             {typeof isMobile === 'boolean' ? (
                 <main className={openSans.className}>
                     {isMobile ? <Banner4 /> : <VideoBanner />}
