@@ -435,3 +435,30 @@ export const pneumoniaImages = [
         title: 'институт пульмонологии',
     },
 ]
+
+export const adenomaImages = [
+    {
+        id: createID(),
+        src: '/images/diseases/adenoma/adenoma1.webp',
+        alt: 'лечение аденомы простаты',
+        title: 'лечение аденомы простаты',
+    },
+    {
+        id: createID(),
+        src: '/images/diseases/adenoma/adenoma3.webp',
+        alt: 'лечение аденомы простаты в москве',
+        title: 'лечение аденомы простаты в Москве',
+    },
+    {
+        id: createID(),
+        src: '/images/diseases/adenoma/adenoma4.webp',
+        alt: 'Аденома простаты. Диагностика и лечение',
+        title: 'Аденома простаты. Диагностика и лечение',
+    },
+    {
+        id: createID(),
+        src: '/images/diseases/adenoma/adenoma6.webp',
+        alt: 'Аденома простаты. Признаки, диагностика, лечение',
+        title: 'Аденома простаты. Признаки, диагностика, лечение',
+    },
+]

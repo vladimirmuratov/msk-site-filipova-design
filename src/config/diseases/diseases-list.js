@@ -10,4 +10,5 @@ export const diseasesList = [
     {id: createID(), label: 'пневмония', path: '/diseases/pneumonia'},
     {id: createID(), label: 'лечение водородом', path: '/diseases/hydrogen'},
     {id: createID(), label: 'гастроэнтерология', path: '/directions/gastroenterology'},
+    {id: createID(), label: 'лечение аденомы простаты', path: '/diseases/adenoma'},
 ]
