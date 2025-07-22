@@ -51,7 +51,7 @@ export const MainPageContent = () => {
                         steps={stepsPlanHospitalization}
                         title="как это работает"
                     />
-                    <BaseCallBlock/>
+                    <BaseCallBlock text='Остались вопросы? Позвоните нам — и мы развеем все ваши сомнения лично. Платная госпитализация в Москве — это доступ к качественной медицине без бюрократии и ожидания. Доверьте организацию профессионалам.'/>
                     <PartnersBlock />
                     <DirectionsBlock directions={directionsList} router={router} />
                     <ServiceBlock services={services} />

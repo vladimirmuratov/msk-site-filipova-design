@@ -1,7 +1,7 @@
+import React from 'react';
 import { Box, Typography } from '@mui/material';
 import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMarkOutlined';
 import CheckOutlinedIcon from '@mui/icons-material/CheckOutlined';
-import React from 'react';
 
 export const BaseFearItem = React.memo(({ question, answer }) => (
     <Box
