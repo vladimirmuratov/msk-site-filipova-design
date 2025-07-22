@@ -18,6 +18,8 @@ import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useScrollPosition } from '@/lib/useScrollPosition ';
 import { Open_Sans } from 'next/font/google';
+import { FearBlock } from '@/components/FearBlock';
+import { BaseCallBlock } from '@/components/base/BaseCallBlock';
 
 const openSans = Open_Sans({ subsets: ['latin', 'cyrillic'] });
 
@@ -44,10 +46,12 @@ export const MainPageContent = () => {
                     {isMobile ? <Banner4 /> : <VideoBanner />}
                     <DescriptionBlock />
                     <WhyWeBlock />
+                    <FearBlock />
                     <HowToBeHospitalized
                         steps={stepsPlanHospitalization}
                         title="как это работает"
                     />
+                    <BaseCallBlock/>
                     <PartnersBlock />
                     <DirectionsBlock directions={directionsList} router={router} />
                     <ServiceBlock services={services} />
