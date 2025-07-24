@@ -86,6 +86,7 @@ export default function Cardiology() {
                 <Box
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
                     }}
                 >
 

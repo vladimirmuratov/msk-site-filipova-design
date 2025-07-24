@@ -1,5 +1,6 @@
-import { Box, Typography } from '@mui/material';
 import { memo } from 'react';
+import { Box, Typography } from '@mui/material';
+import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
 
 export const BaseDirectionCard = memo(({ label, img, path, router }) => {
     return (
@@ -38,15 +39,26 @@ export const BaseDirectionCard = memo(({ label, img, path, router }) => {
                     }}
                 />
             </Box>
-            <Typography
-                component="h3"
-                sx={{
-                    color: 'var(--blue)',
-                    fontSize: { xs: '14px', sm: '14px', md: '16px' },
-                    fontWeight: 500,
-                    padding: '5px 10px'
-                }}
-            >{label}</Typography>
+            <Box
+            sx={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '5px',
+                padding: '5px 10px',
+            }}
+            >
+                <Typography
+                    component="h3"
+                    sx={{
+                        color: 'var(--blue)',
+                        fontSize: { xs: '14px', sm: '14px', md: '16px' },
+                        fontWeight: 500,
+                    }}
+                >
+                    {label}
+                </Typography>
+                <KeyboardArrowRightOutlinedIcon fontSize='small' sx={{color: 'var(--blue)', }} />
+            </Box>
         </Box>
     );
 });
