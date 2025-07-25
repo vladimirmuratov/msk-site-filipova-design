@@ -42,10 +42,10 @@ export default function Gynecology() {
     return (
         <>
             <Head>
-                <title>Медицинская Сервисная Компания. Гинекология в Москве — диагностика и лечение женских заболеваний. 8 (499) 719-81-00, 24/7</title>
+                <title>Медицинская Сервисная Компания. Платная гинекология в Москве — приём без очередей. Звоните! 8 (499) 719-81-00, 24/7</title>
                 <meta
                     name="description"
-                    content="Платный приём гинеколога без очередей и направления. Лечение воспалений, нарушений цикла, эрозии, бесплодия. УЗИ, анализы, консультации в один день."
+                    content="Помощь в экстренной и плановой госпитализации по гинекологии: лечение миомы, кист, эндометриоза, бесплодия. Сопровождение, комфортные условия, лучшие врачи Москвы."
                 />
                 <meta
                     name="keywords"
@@ -54,9 +54,9 @@ export default function Gynecology() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                 <meta property="og:locale" content="ru_RU" />
-                <meta property="og:title" content="Медицинская Сервисная Компания. Гинекология в Москве — диагностика и лечение женских заболеваний. 8 (499) 719-81-00, 24/7" />
+                <meta property="og:title" content="Медицинская Сервисная Компания. Платная гинекология в Москве — приём без очередей. Звоните! 8 (499) 719-81-00, 24/7" />
                 <meta property="og:description"
-                      content="Платный приём гинеколога без очередей и направления. Лечение воспалений, нарушений цикла, эрозии, бесплодия. УЗИ, анализы, консультации в один день." />
+                      content="Помощь в экстренной и плановой госпитализации по гинекологии: лечение миомы, кист, эндометриоза, бесплодия. Сопровождение, комфортные условия, лучшие врачи Москвы." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://msk-group-hospital.ru/directions/gynecology" />
                 <meta property="og:image" content="https://msk-group-hospital.ru/images/banner-3.webp" />
