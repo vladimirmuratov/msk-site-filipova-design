@@ -34,10 +34,10 @@ export default function Traumatology() {
     return (
         <>
             <Head>
-                <title>Медицинская Сервисная Компания. Травматология в Москве — диагностика и лечение травм. 8 (499) 719-81-00, 24/7</title>
+                <title>Медицинская Сервисная Компания. Срочная госпитализация в травматологию Москвы — без ОМС. 8 (499) 719-81-00, 24/7</title>
                 <meta
                     name="description"
-                    content="Платная травматология: приём травматолога без ОМС, рентген, УЗИ, перевязки, гипс. Лечение ушибов, вывихов, переломов. Без очередей и направлений. 8 (499) 719-81-00"
+                    content="Госпитализация при травмах любой сложности. Срочно, официально, с комфортом. Перевод из других клиник, приём без ОМС, круглосуточная поддержка."
                 />
                 <meta
                     name="keywords"
@@ -46,9 +46,9 @@ export default function Traumatology() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                 <meta property="og:locale" content="ru_RU" />
-                <meta property="og:title" content="Медицинская Сервисная Компания. Травматология в Москве — диагностика и лечение травм. 8 (499) 719-81-00, 24/7" />
+                <meta property="og:title" content="Медицинская Сервисная Компания. Срочная госпитализация в травматологию Москвы — без ОМС. 8 (499) 719-81-00, 24/7" />
                 <meta property="og:description"
-                      content="Платная травматология: приём травматолога без ОМС, рентген, УЗИ, перевязки, гипс. Лечение ушибов, вывихов, переломов. Без очередей и направлений. 8 (499) 719-81-00, 24/7" />
+                      content="Госпитализация при травмах любой сложности. Срочно, официально, с комфортом. Перевод из других клиник, приём без ОМС, круглосуточная поддержка." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://msk-group-hospital.ru/directions/traumatology" />
                 <meta property="og:image" content="https://msk-group-hospital.ru/images/banner-3.webp" />

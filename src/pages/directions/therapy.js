@@ -46,10 +46,10 @@ export default function Therapy() {
     return (
         <>
             <Head>
-                <title>Медицинская Сервисная Компания. Терапия в Москве — приём без ОМС и очередей. 8 (499) 719-81-00, 24/7</title>
+                <title>Медицинская Сервисная Компания. Платная госпитализация в терапию Москвы — без ОМС и ожидания. 8 (499) 719-81-00, 24/7</title>
                 <meta
                     name="description"
-                    content="Платная терапия: опытные врачи, обследование, анализы, лечение простуд, болей, хронических заболеваний. Приём в день обращения. Без направления. 8 (499) 719-81-00."
+                    content="Острые и хронические заболевания? Поможем срочно попасть в терапевтическое отделение. Госпитализация без полиса ОМС, с полным сопровождением и подбором клиники."
                 />
                 <meta
                     name="keywords"
@@ -58,9 +58,9 @@ export default function Therapy() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                 <meta property="og:locale" content="ru_RU" />
-                <meta property="og:title" content="Медицинская Сервисная Компания. Терапия в Москве — приём без ОМС и очередей. 8 (499) 719-81-00, 24/7" />
+                <meta property="og:title" content="Медицинская Сервисная Компания. Платная госпитализация в терапию Москвы — без ОМС и ожидания. 8 (499) 719-81-00, 24/7" />
                 <meta property="og:description"
-                      content="Платная терапия: опытные врачи, обследование, анализы, лечение простуд, болей, хронических заболеваний. Приём в день обращения. Без направления. 8 (499) 719-81-00, 24/7" />
+                      content="Острые и хронические заболевания? Поможем срочно попасть в терапевтическое отделение. Госпитализация без полиса ОМС, с полным сопровождением и подбором клиники." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://msk-group-hospital.ru/directions/therapy" />
                 <meta property="og:image" content="https://msk-group-hospital.ru/images/banner-3.webp" />
