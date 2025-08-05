@@ -75,7 +75,7 @@ export default function Endoprosthetics() {
 
                 <BaseBanner imgPath="/images/endoprosthetics/1.webp" title="Эндопротезирование коленного и тазобедренного суставов" />
 
-                <BaseCallBlock />
+                <BaseCallBlock text='Запись на операцию' style={{fontWeight: 500, fontSize: {xs: 22, sm: 28}}} />
 
                 <Box
                     sx={{
@@ -85,7 +85,7 @@ export default function Endoprosthetics() {
                 >
                     <BaseText>
                         <span style={{
-                            fontWeight: 600,
+                            fontWeight: 500,
                             color: 'var(--red)'
                         }}>Эндопротезирование коленного и тазобедренного суставов</span> — это хирургическая операция по замене повреждённого сустава
                         искусственным
@@ -230,7 +230,7 @@ export default function Endoprosthetics() {
 
                 {/*<PartnersBlock title="платные клиники москвы урология" color="var(--red)" />*/}
 
-                <BaseCallBlock />
+                <BaseCallBlock text='Запись на операцию' style={{fontWeight: 500, fontSize: {xs: 22, sm: 28}}} />
 
                 <BasePhotoGallery imagesList={endoprostheticsImages} />
 

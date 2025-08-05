@@ -49,7 +49,8 @@ export default function Hip() {
         <>
             <Head>
                 <title>
-                    Медицинская Сервисная Компания. Эндопротезирование тазобедренного сустава в Москве. 8 (499) 719-81-00, 24/7
+                    Медицинская Сервисная Компания. Эндопротезирование тазобедренного сустава в Москве. 8 (499)
+                    719-81-00, 24/7
                 </title>
                 <meta
                     name="description"
@@ -82,7 +83,7 @@ export default function Hip() {
                 <BaseBanner imgPath="/images/endoprosthetics/6.webp"
                             title="Эндопротезирование тазобедренного сустава" />
 
-                <BaseCallBlock />
+                <BaseCallBlock text="Запись на операцию" style={{ fontWeight: 500, fontSize: { xs: 22, sm: 28 } }} />
 
                 <Box
                     sx={{
@@ -93,7 +94,7 @@ export default function Hip() {
                     <BaseText>
                         <span
                             style={{
-                                fontWeight: 600,
+                                fontWeight: 500,
                                 color: 'var(--red)'
                             }}>Эндопротезирование тазобедренного сустава </span> — это высокоэффективная операция,
                         позволяющая восстановить подвижность и устранить боль при тяжёлых поражениях сустава. Замена
@@ -190,7 +191,7 @@ export default function Hip() {
 
                 {/*<PartnersBlock title="платные клиники москвы урология" color="var(--red)" />*/}
 
-                <BaseCallBlock />
+                <BaseCallBlock text='Запись на операцию' style={{fontWeight: 500, fontSize: {xs: 22, sm: 28}}} />
 
                 <BasePhotoGallery imagesList={endoprostheticsImages} />
 

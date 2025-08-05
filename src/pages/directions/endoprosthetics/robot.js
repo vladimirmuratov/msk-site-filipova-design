@@ -82,11 +82,12 @@ export default function Robot() {
 
                 <BaseBanner
                     imgPath="/images/endoprosthetics/7.webp"
-                    title="Роботизированное эндопротезирование коленного и тазобедренного суставов"
-                    fontShadowColor='var(--red)'
+                    title="Роботизированное эндопротезирование"
+                    fontShadowColor='var(--white)'
+                    fontColor='var(--red)'
                 />
 
-                <BaseCallBlock />
+                <BaseCallBlock text='Запись на операцию' style={{fontWeight: 500, fontSize: {xs: 22, sm: 28}}} />
 
                 <Box
                     sx={{
@@ -97,7 +98,7 @@ export default function Robot() {
                     <BaseText>
                         <span
                             style={{
-                                fontWeight: 600,
+                                fontWeight: 500,
                                 color: 'var(--red)'
                             }}>Роботизированное эндопротезирование коленного и тазобедренного суставов </span> — это высокотехнологичная операция по замене
                         сустава, проводимая с применением роботизированных хирургических систем. Такая методика
@@ -192,8 +193,7 @@ export default function Robot() {
 
                 {/*<PartnersBlock title="платные клиники москвы урология" color="var(--red)" />*/}
 
-                <BaseCallBlock
-                    text="Свяжитесь с нами, и мы организуем роботизированное эндопротезирование в кратчайшие сроки, без лишней бюрократии и с заботой о каждом пациенте." />
+                <BaseCallBlock text='Запись на операцию' style={{fontWeight: 500, fontSize: {xs: 22, sm: 28}}} />
 
                 <BasePhotoGallery imagesList={endoprostheticsImages} />
 

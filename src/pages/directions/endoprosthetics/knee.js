@@ -82,7 +82,7 @@ export default function Knee() {
 
                 <BaseBanner imgPath="/images/endoprosthetics/5.webp" title="Эндопротезирование коленного сустава" />
 
-                <BaseCallBlock />
+                <BaseCallBlock text='Запись на операцию' style={{fontWeight: 500, fontSize: {xs: 22, sm: 28}}}/>
 
                 <Box
                     sx={{
@@ -93,7 +93,7 @@ export default function Knee() {
                     <BaseText>
                         <span
                             style={{
-                                fontWeight: 600,
+                                fontWeight: 500,
                                 color: 'var(--red)'
                             }}>Эндопротезирование коленного сустава </span> — это хирургическая операция по замене
                         повреждённого сустава искусственным имплантом (эндопротезом). Этот метод применяется при тяжёлых
@@ -228,7 +228,7 @@ export default function Knee() {
 
                 {/*<PartnersBlock title="платные клиники москвы урология" color="var(--red)" />*/}
 
-                <BaseCallBlock />
+                <BaseCallBlock text='Запись на операцию' style={{fontWeight: 500, fontSize: {xs: 22, sm: 28}}} />
 
                 <BasePhotoGallery imagesList={endoprostheticsImages} />
 
