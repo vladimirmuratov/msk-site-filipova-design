@@ -86,7 +86,6 @@ export default function Endoprosthetics() {
                     <BaseText>
                         <span style={{
                             fontWeight: 600,
-                            whiteSpace: 'nowrap',
                             color: 'var(--red)'
                         }}>Эндопротезирование коленного и тазобедренного суставов</span> — это хирургическая операция по замене повреждённого сустава
                         искусственным
