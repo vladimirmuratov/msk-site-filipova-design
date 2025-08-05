@@ -244,9 +244,6 @@ export const somnologyImages = [
 ];
 
 
-
-
-
 export const painImages = [
     {
         id: createID(),
@@ -272,7 +269,7 @@ export const painImages = [
         alt: 'лечение головной боли в москве',
         title: 'доктор сообщает пациенту диагноз',
     },
-]
+];
 
 export const strokeImages = [
     {
@@ -299,7 +296,7 @@ export const strokeImages = [
         alt: 'больница реабилитация после инсульта',
         title: 'помощь в реабилитации',
     },
-]
+];
 
 export const proctologyImages = [
     {
@@ -326,7 +323,7 @@ export const proctologyImages = [
         alt: 'клиника колопроктологии в москве',
         title: 'центр колопроктологии',
     },
-]
+];
 
 export const emergencySurgeryImages = [
     {
@@ -353,7 +350,7 @@ export const emergencySurgeryImages = [
         alt: 'экстренная челюстно лицевая хирургия',
         title: 'экстренная помощь в хирургии',
     },
-]
+];
 
 export const pulmonologyImages = [
     {
@@ -380,7 +377,7 @@ export const pulmonologyImages = [
         alt: 'центр пульмонологии',
         title: 'институт пульмонологии',
     },
-]
+];
 
 export const copdImages = [
     {
@@ -407,7 +404,7 @@ export const copdImages = [
         alt: 'центр пульмонологии',
         title: 'институт пульмонологии',
     },
-]
+];
 
 export const pneumoniaImages = [
     {
@@ -434,7 +431,7 @@ export const pneumoniaImages = [
         alt: 'пневмония симптомы и лечение у взрослых',
         title: 'институт пульмонологии',
     },
-]
+];
 
 export const adenomaImages = [
     {
@@ -461,4 +458,31 @@ export const adenomaImages = [
         alt: 'Аденома простаты. Признаки, диагностика, лечение',
         title: 'Аденома простаты. Признаки, диагностика, лечение',
     },
-]
+];
+
+export const endoprostheticsImages = [
+    {
+        id: createID(),
+        src: '/images/endoprosthetics/2.webp',
+        alt: 'Ортопед проводит осмотр перед эндопротезированием',
+        title: 'Консультация перед заменой сустава',
+    },
+    {
+        id: createID(),
+        src: '/images/endoprosthetics/3.webp',
+        alt: 'Пациент после успешной операции по замене сустава',
+        title: 'Эндопротезирование сустава — восстановление под контролем врачей',
+    },
+    {
+        id: createID(),
+        src: '/images/endoprosthetics/4.webp',
+        alt: 'Подготовка к эндопротезированию сустава',
+        title: 'Эндопротезирование суставов в лучших клиниках Москвы',
+    },
+    {
+        id: createID(),
+        src: '/images/endoprosthetics/1.webp',
+        alt: 'Эндопротезирование в Москве',
+        title: 'Эндопротезирование в Москве',
+    },
+];

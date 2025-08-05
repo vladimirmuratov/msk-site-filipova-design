@@ -22,6 +22,7 @@ export const directionsList = [
     { id: createID(), label: 'Сомнология', img: 'images/directions/9.webp', path: '/directions/somnology' },
     {id: createID(), label: 'Пульмонология', img: '/images/directions/12.webp', path: '/directions/pulmonology'},
     {id: createID(), label: 'Колопроктология', img: '/images/directions/13.webp', path: '/directions/proctology'},
+    {id: createID(), label: 'Эндопротезирование', img: '/images/directions/14.webp', path: '/directions/endoprosthetics'},
     // {id: 10, label: 'Сосудистая хирургия', img: '/images/directions/10.webp', path: '/directions/vascularsurgery'},
     // {id: 11, label: 'Нейрохирургия', img: '/images/directions/11.webp', path: '/directions/neurosurgery'},
 ];

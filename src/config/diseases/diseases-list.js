@@ -1,6 +1,9 @@
 import { createID } from '@/lib/createID';
 
 export const diseasesList = [
+    {id: createID(), label: 'эндопротезирование коленного сустава', path: 'directions/endoprosthetics/knee'},
+    {id: createID(), label: 'эндопротезирование тазобедренного сустава', path: 'directions/endoprosthetics/hip'},
+    {id: createID(), label: 'роботизированное эндопротезирование', path: 'directions/endoprosthetics/robot'},
     {id: createID(), label: 'лечение боли', path: '/diseases/pain'},
     {id: createID(), label: 'реабилитация после инсульта', path: '/diseases/stroke'},
     {id: createID(), label: 'колопроктология', path: '/directions/proctology'},
