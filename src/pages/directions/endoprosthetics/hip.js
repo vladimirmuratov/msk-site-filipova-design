@@ -82,6 +82,8 @@ export default function Hip() {
                 <BaseBanner imgPath="/images/endoprosthetics/6.webp"
                             title="Эндопротезирование тазобедренного сустава" />
 
+                <BaseCallBlock />
+
                 <Box
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },

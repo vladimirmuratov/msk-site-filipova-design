@@ -82,6 +82,8 @@ export default function Knee() {
 
                 <BaseBanner imgPath="/images/endoprosthetics/5.webp" title="Эндопротезирование коленного сустава" />
 
+                <BaseCallBlock />
+
                 <Box
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },

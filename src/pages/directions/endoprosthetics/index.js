@@ -73,7 +73,9 @@ export default function Endoprosthetics() {
 
                 <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
 
-                <BaseBanner imgPath="/images/endoprosthetics/1.webp" title="Эндопротезирование суставов" />
+                <BaseBanner imgPath="/images/endoprosthetics/1.webp" title="Эндопротезирование коленного и тазобедренного суставов" />
+
+                <BaseCallBlock />
 
                 <Box
                     sx={{
@@ -86,7 +88,7 @@ export default function Endoprosthetics() {
                             fontWeight: 600,
                             whiteSpace: 'nowrap',
                             color: 'var(--red)'
-                        }}>Эндопротезирование</span> — это хирургическая операция по замене повреждённого сустава
+                        }}>Эндопротезирование коленного и тазобедренного суставов</span> — это хирургическая операция по замене повреждённого сустава
                         искусственным
                         имплантатом. Процедура позволяет восстановить подвижность, устранить хроническую боль и вернуть
                         качество жизни пациентам с тяжёлыми формами артроза, артрита, дисплазии или после серьёзных
