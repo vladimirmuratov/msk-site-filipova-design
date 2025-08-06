@@ -75,7 +75,7 @@ export default function Endoprosthetics() {
 
                 <BaseBanner imgPath="/images/endoprosthetics/1.webp" title="Эндопротезирование коленного и тазобедренного суставов" />
 
-                <BaseCallBlock text='Запись на операцию' style={{fontWeight: 500, fontSize: {xs: 22, sm: 28}}} />
+                <BaseCallBlock text='Запись на операцию' />
 
                 <Box
                     sx={{
@@ -230,7 +230,7 @@ export default function Endoprosthetics() {
 
                 {/*<PartnersBlock title="платные клиники москвы урология" color="var(--red)" />*/}
 
-                <BaseCallBlock text='Запись на операцию' style={{fontWeight: 500, fontSize: {xs: 22, sm: 28}}} />
+                <BaseCallBlock text='Запись на операцию' />
 
                 <BasePhotoGallery imagesList={endoprostheticsImages} />
 

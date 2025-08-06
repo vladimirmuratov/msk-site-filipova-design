@@ -486,3 +486,30 @@ export const endoprostheticsImages = [
         title: 'Эндопротезирование в Москве',
     },
 ];
+
+export const gerontologyImages = [
+    {
+        id: createID(),
+        src: '/images/gerontology/2.webp',
+        alt: 'Ортопед проводит осмотр перед эндопротезированием',
+        title: 'Консультация перед заменой сустава',
+    },
+    {
+        id: createID(),
+        src: '/images/gerontology/3.webp',
+        alt: 'Пациент после успешной операции по замене сустава',
+        title: 'Эндопротезирование сустава — восстановление под контролем врачей',
+    },
+    {
+        id: createID(),
+        src: '/images/gerontology/4.webp',
+        alt: 'Подготовка к эндопротезированию сустава',
+        title: 'Эндопротезирование суставов в лучших клиниках Москвы',
+    },
+    {
+        id: createID(),
+        src: '/images/gerontology/1.webp',
+        alt: 'Эндопротезирование в Москве',
+        title: 'Эндопротезирование в Москве',
+    },
+];

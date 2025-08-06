@@ -3,7 +3,7 @@ import { BaseText } from '@/components/base/BaseText';
 import { Box, Link, Typography } from '@mui/material';
 import { phone } from '@/config/default-values';
 
-export const BaseCallBlock = memo(({style = {}, text = 'Запись на консультацию возможна по телефону или через форму на сайте.'}) => {
+export const BaseCallBlock = memo(({style = {}, text = 'Запись на консультацию'}) => {
     return (
         <Box
             sx={{
@@ -22,6 +22,8 @@ export const BaseCallBlock = memo(({style = {}, text = 'Запись на кон
                     fontStyle: 'italic',
                     textAlign: 'center',
                     textWrap: 'balance',
+                    fontWeight: 500,
+                    fontSize: { xs: 22, sm: 28 },
                     ...style
                 }}
             >

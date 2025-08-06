@@ -66,6 +66,8 @@ export default function Urology() {
 
                 <BaseBanner imgPath="/images/directions/4.webp" title="госпитализация урология москва" />
 
+                <BaseCallBlock />
+
                 <Box
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },

@@ -45,7 +45,8 @@ export default function Surgery() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
                 <meta property="og:locale" content="ru_RU" />
-                <meta property="og:title" content="Медицинская Сервисная Компания. Срочная и плановая хирургия без очередей. 8 (499) 719-81-00, 24/7" />
+                <meta property="og:title"
+                      content="Медицинская Сервисная Компания. Срочная и плановая хирургия без очередей. 8 (499) 719-81-00, 24/7" />
                 <meta property="og:description"
                       content="Экстренные и плановые хирургические вмешательства: госпитализация в течение 1 дня, ведущие хирурги, современное оборудование, круглосуточное сопровождение. Без ОМС — быстро, безопасно, результативно." />
                 <meta property="og:type" content="website" />
@@ -65,6 +66,9 @@ export default function Surgery() {
                     imgPath="/images/directions/1.webp"
                     title="хирургия в Москве"
                 />
+
+                <BaseCallBlock />
+
 
                 <Box
                     sx={{

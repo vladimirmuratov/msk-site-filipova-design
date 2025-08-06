@@ -69,6 +69,8 @@ export default function Cardiology() {
                     title="кардиология в москве"
                 />
 
+                <BaseCallBlock />
+
                 <Box
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },

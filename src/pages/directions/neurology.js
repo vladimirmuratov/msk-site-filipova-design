@@ -77,6 +77,8 @@ export default function Neurology() {
 
                 <BaseBanner imgPath="/images/directions/6.webp" title="неврология в москве" />
 
+                <BaseCallBlock />
+
                 <Box
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },

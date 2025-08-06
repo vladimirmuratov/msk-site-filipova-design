@@ -69,6 +69,8 @@ export default function Proctology() {
                     fontShadowColor="var(--red)"
                 />
 
+                <BaseCallBlock />
+
                 <Box
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },

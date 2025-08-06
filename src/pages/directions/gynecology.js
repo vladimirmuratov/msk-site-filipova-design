@@ -72,6 +72,8 @@ export default function Gynecology() {
 
                 <BaseBanner imgPath="/images/directions/3.webp" title="гинекология в москве" />
 
+                <BaseCallBlock />
+
                 <Box
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },

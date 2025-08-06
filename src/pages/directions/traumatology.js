@@ -64,6 +64,8 @@ export default function Traumatology() {
 
                 <BaseBanner imgPath="/images/directions/2.webp" title="травматология в москве" />
 
+                <BaseCallBlock />
+
                 <Box
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },

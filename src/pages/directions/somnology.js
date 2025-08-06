@@ -66,6 +66,8 @@ export default function Somnology() {
 
                 <BaseBanner imgPath="/images/directions/9.webp" title="сомнология в москве" />
 
+                <BaseCallBlock />
+
                 <Box
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },

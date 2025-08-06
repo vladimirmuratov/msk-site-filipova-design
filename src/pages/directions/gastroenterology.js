@@ -74,6 +74,8 @@ export default function Gastroenterology() {
                     title="гастроэнтерология в москве"
                 />
 
+                <BaseCallBlock />
+
                 <Box
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },

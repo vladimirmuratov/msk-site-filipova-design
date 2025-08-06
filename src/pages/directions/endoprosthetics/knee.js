@@ -82,7 +82,7 @@ export default function Knee() {
 
                 <BaseBanner imgPath="/images/endoprosthetics/5.webp" title="Эндопротезирование коленного сустава" />
 
-                <BaseCallBlock text='Запись на операцию' style={{fontWeight: 500, fontSize: {xs: 22, sm: 28}}}/>
+                <BaseCallBlock text='Запись на операцию' />
 
                 <Box
                     sx={{
@@ -228,7 +228,7 @@ export default function Knee() {
 
                 {/*<PartnersBlock title="платные клиники москвы урология" color="var(--red)" />*/}
 
-                <BaseCallBlock text='Запись на операцию' style={{fontWeight: 500, fontSize: {xs: 22, sm: 28}}} />
+                <BaseCallBlock text='Запись на операцию' />
 
                 <BasePhotoGallery imagesList={endoprostheticsImages} />
 

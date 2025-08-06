@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { Box, Typography } from '@mui/material';
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
 
-export const BaseDirectionCard = memo(({ label, img, path, router }) => {
+export const BaseDirectionCard = memo(({ label, img, imgStyle = {}, path, router }) => {
     return (
         <Box
             onClick={() => router.push(path)}
@@ -36,6 +36,7 @@ export const BaseDirectionCard = memo(({ label, img, path, router }) => {
                         borderTopLeftRadius: '5px',
                         backgroundImage: `url(${img})`,
                         backgroundSize: 'cover',
+                        ...imgStyle
                     }}
                 />
             </Box>

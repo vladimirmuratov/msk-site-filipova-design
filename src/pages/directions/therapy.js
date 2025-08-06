@@ -76,6 +76,8 @@ export default function Therapy() {
 
                 <BaseBanner imgPath="/images/directions/8.webp" title="терапия в москве" />
 
+                <BaseCallBlock />
+
                 <Box
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },

@@ -87,7 +87,7 @@ export default function Robot() {
                     fontColor='var(--red)'
                 />
 
-                <BaseCallBlock text='Запись на операцию' style={{fontWeight: 500, fontSize: {xs: 22, sm: 28}}} />
+                <BaseCallBlock text='Запись на операцию' />
 
                 <Box
                     sx={{
@@ -193,7 +193,7 @@ export default function Robot() {
 
                 {/*<PartnersBlock title="платные клиники москвы урология" color="var(--red)" />*/}
 
-                <BaseCallBlock text='Запись на операцию' style={{fontWeight: 500, fontSize: {xs: 22, sm: 28}}} />
+                <BaseCallBlock text='Запись на операцию' />
 
                 <BasePhotoGallery imagesList={endoprostheticsImages} />
 
