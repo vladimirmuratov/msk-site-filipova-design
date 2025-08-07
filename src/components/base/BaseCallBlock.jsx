@@ -3,7 +3,7 @@ import { BaseText } from '@/components/base/BaseText';
 import { Box, Link, Typography } from '@mui/material';
 import { phone } from '@/config/default-values';
 
-export const BaseCallBlock = memo(({style = {}, text = 'Запись на консультацию'}) => {
+export const BaseCallBlock = memo(({style = {}, text = 'Запись на госпитализацию'}) => {
     return (
         <Box
             sx={{
@@ -23,7 +23,7 @@ export const BaseCallBlock = memo(({style = {}, text = 'Запись на кон
                     textAlign: 'center',
                     textWrap: 'balance',
                     fontWeight: 500,
-                    fontSize: { xs: 22, sm: 28 },
+                    fontSize: { xs: 22, sm: 28, md: 32 },
                     ...style
                 }}
             >
@@ -53,7 +53,7 @@ export const BaseCallBlock = memo(({style = {}, text = 'Запись на кон
                 >
                     <Typography
                         sx={{
-                            fontSize: { xs: '19px', sm: '24px', md: '24px', lg: '28px' },
+                            fontSize: { xs: 22, sm: 28, md: 32 },
                             fontWeight: 600,
                             color: 'var(--red)',
                             whiteSpace: 'nowrap',

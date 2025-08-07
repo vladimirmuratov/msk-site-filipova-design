@@ -9,7 +9,7 @@ import { gerontologyImages } from '@/config/images';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 import { BaseLi } from '@/components/base/BaseLi';
 import { BaseCallBlock } from '@/components/base/BaseCallBlock';
-import { gerontology1, gerontology2, gerontology3 } from '@/config/directions/gerontology';
+import { gerontology1, gerontology2, gerontology3, gerontology4 } from '@/config/directions/gerontology';
 
 export default function Gerontology() {
     const breadcrumbs = (router) => {
@@ -34,7 +34,8 @@ export default function Gerontology() {
         <>
             <Head>
                 <title>
-                    Медицинская Сервисная Компания. Геронтология в Москве — помощь пожилым, госпитализация, патронаж. 8 (499) 719-81-00, 24/7
+                    Медицинская Сервисная Компания. Геронтология в Москве — помощь пожилым, госпитализация, патронаж. 8
+                    (499) 719-81-00, 24/7
                 </title>
                 <meta
                     name="description"
@@ -64,9 +65,10 @@ export default function Gerontology() {
 
                 <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
 
-                <BaseBanner imgPath="/images/gerontology/1.webp" title="Геронтология в москве" />
+                <BaseBanner imgPath="/images/gerontology/1.webp"
+                            title="Госпитализация пожилых пациентов (геронтологическое отделение)" />
 
-                <BaseCallBlock text="Запись на консультацию" />
+                <BaseCallBlock />
 
                 <Box
                     sx={{
@@ -107,6 +109,31 @@ export default function Gerontology() {
 
                     <List>
                         {gerontology1.map(({ id, label }) => <BaseLi key={id} label={label} />)}
+                    </List>
+                </Box>
+
+                <Box
+                    sx={{
+                        paddingY: { xs: '25px', sm: '50px' },
+                        marginX: { xs: '10px', lg: 0 },
+                    }}
+                >
+
+                    <BaseH2 title="Виды госпитализации пожилых людей" />
+                    <Box
+                        sx={{
+                            marginY: '15px'
+                        }}
+                    >
+                        <BaseText style={{ fontWeight: 500 }}>
+                            Госпитализация пожилых пациентов — значимый шаг в
+                            предоставлении ему необходимой медицинской поддержки. В зависимости от самочувствия и
+                            медицинских заключений, выделяют несколько разновидностей:
+                        </BaseText>
+                    </Box>
+
+                    <List>
+                        {gerontology4.map(({ id, label }) => <BaseLi key={id} label={label} />)}
                     </List>
                 </Box>
 
@@ -162,7 +189,7 @@ export default function Gerontology() {
 
                 {/*<PartnersBlock title="платные клиники москвы урология" color="var(--red)" />*/}
 
-                <BaseCallBlock text="Запись на консультацию" />
+                <BaseCallBlock />
 
                 <BasePhotoGallery imagesList={gerontologyImages} />
 
