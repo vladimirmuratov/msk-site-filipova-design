@@ -44,6 +44,7 @@ export const MainPageContent = () => {
             {typeof isMobile === 'boolean' ? (
                 <main className={openSans.className}>
                     {isMobile ? <Banner4 /> : <VideoBanner />}
+                    <BaseCallBlock text='Ответим на любые вопросы по госпитализации и лечению. Звоните!' />
                     <DescriptionBlock />
                     <WhyWeBlock />
                     <FearBlock />
@@ -51,7 +52,8 @@ export const MainPageContent = () => {
                         steps={stepsPlanHospitalization}
                         title="как это работает"
                     />
-                    <BaseCallBlock text='Остались вопросы? Позвоните нам — и мы развеем все ваши сомнения лично. Платная госпитализация в Москве — это доступ к качественной медицине без бюрократии и ожидания. Доверьте организацию профессионалам.'/>
+                    <BaseCallBlock
+                        text="Остались вопросы? Позвоните нам — и мы развеем все ваши сомнения лично. Платная госпитализация в Москве — это доступ к качественной медицине без бюрократии и ожидания. Доверьте организацию профессионалам." />
                     <PartnersBlock />
                     <DirectionsBlock directions={directionsList} router={router} />
                     <ServiceBlock services={services} />
