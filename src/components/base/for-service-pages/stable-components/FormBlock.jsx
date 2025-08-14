@@ -77,7 +77,7 @@ export const FormBlock = () => {
             {success && (
                 <BaseModal title="Сообщение отправлено!" open={success} handleClose={handleCloseAnswerMessage}
                            color="var(--blue)">
-                    <DialogContentText id="alert-dialog-description">
+                    <DialogContentText id="alert-dialog-description" sx={{textAlign: 'center'}}>
                         Скоро в Вами свяжется наш специалист
                     </DialogContentText>
                 </BaseModal>
@@ -86,7 +86,7 @@ export const FormBlock = () => {
             {failed && (
                 <BaseModal title="Ошибка сервера!" open={failed} handleClose={handleCloseAnswerMessage}
                            color="var(--red)">
-                    <DialogContentText id="alert-dialog-description">
+                    <DialogContentText id="alert-dialog-description" sx={{textAlign: 'center'}}>
                         Попробуйте позже
                     </DialogContentText>
                 </BaseModal>

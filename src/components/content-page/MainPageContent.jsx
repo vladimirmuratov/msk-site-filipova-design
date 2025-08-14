@@ -20,6 +20,8 @@ import { useScrollPosition } from '@/lib/useScrollPosition ';
 import { Open_Sans } from 'next/font/google';
 import { FearBlock } from '@/components/FearBlock';
 import { BaseCallBlock } from '@/components/base/BaseCallBlock';
+import { FormBlock } from '@/components/base/for-service-pages/stable-components/FormBlock';
+import { Box } from '@mui/material';
 
 const openSans = Open_Sans({ subsets: ['latin', 'cyrillic'] });
 
@@ -44,7 +46,7 @@ export const MainPageContent = () => {
             {typeof isMobile === 'boolean' ? (
                 <main className={openSans.className}>
                     {isMobile ? <Banner4 /> : <VideoBanner />}
-                    <BaseCallBlock text='Ответим на любые вопросы по госпитализации и лечению. Звоните!' />
+                    <BaseCallBlock text="Ответим на любые вопросы по госпитализации и лечению. Звоните!" />
                     <DescriptionBlock />
                     <WhyWeBlock />
                     <FearBlock />
@@ -58,7 +60,19 @@ export const MainPageContent = () => {
                     <DirectionsBlock directions={directionsList} router={router} />
                     <ServiceBlock services={services} />
                     <DiseasesBlock diseases={diseasesList} />
+                    <BaseCallBlock text='Запись на консультацию возможна по телефону или через форму' />
+
+                    <Box
+                        sx={{
+                            paddingY: { xs: '25px', sm: '50px' },
+                            marginX: { xs: '10px', lg: 0 },
+                        }}
+                    >
+                        <FormBlock />
+                    </Box>
+
                     <ReviewsBlock reviews={reviews} isMobile={isMobile} />
+
                 </main>
             ) : (
                 <Loader />

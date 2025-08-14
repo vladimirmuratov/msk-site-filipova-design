@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Link, Typography } from '@mui/material';
 import { BaseH2 } from '@/components/base/BaseH2';
 import { phone } from '@/config/default-values';
 
@@ -40,7 +40,12 @@ export const ContactBlock = () => {
                         fontWeight: 300,
                     }}
                 >
-                    Вы можете получить консультацию специалиста по телефону: {phone}. Мы ответим Вам максимально
+                    Вы можете получить консультацию специалиста по телефону: <Link href={`tel:${phone}`} sx={{
+                    fontWeight: 400,
+                    textDecoration: 'underline!important'
+                }}>
+                    {phone}
+                </Link>. Мы ответим Вам максимально
                     оперативно!
                 </Typography>
             </Box>
