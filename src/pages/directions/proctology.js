@@ -37,7 +37,7 @@ export default function Proctology() {
                 </title>
                 <meta
                     name="description"
-                    content="Боль, кровотечение, обострение? Организуем срочную госпитализацию в проктологию Москвы. Без ОМС, без бюрократии, с санитарным транспортом и круглосуточной поддержкой."
+                    content="Боль, кровотечение, обострение? Организуем срочную госпитализацию в отделение проктологии в Москве. Без ОМС, без бюрократии, с санитарным транспортом и круглосуточной поддержкой."
                 />
                 <meta
                     name="keywords"
@@ -49,7 +49,7 @@ export default function Proctology() {
                 <meta property="og:title"
                       content="Медицинская Сервисная Компания. Проктология в Москве — госпитализация без ОМС и очередей. Звоните! 8 (499) 719-81-00, 24/7" />
                 <meta property="og:description"
-                      content="Боль, кровотечение, обострение? Организуем срочную госпитализацию в проктологию Москвы. Без ОМС, без бюрократии, с санитарным транспортом и круглосуточной поддержкой." />
+                      content="Боль, кровотечение, обострение? Организуем срочную госпитализацию в отделение проктологии в Москве. Без ОМС, без бюрократии, с санитарным транспортом и круглосуточной поддержкой." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://msk-group-hospital.ru/diseases/proctology" />
                 <meta property="og:image" content="https://msk-group-hospital.ru/images/diseases/proctology/proctology1.webp" />
