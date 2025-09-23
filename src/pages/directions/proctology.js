@@ -57,6 +57,7 @@ export default function Proctology() {
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Колопроктология в Москве." />
+                <link rel="canonical" href="https://msk-group-hospital.ru/" />
             </Head>
             <Box component="section">
 

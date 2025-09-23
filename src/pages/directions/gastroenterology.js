@@ -64,6 +64,7 @@ export default function Gastroenterology() {
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Гастроэнтерология в Москве — диагностика и лечение ЖКТ." />
+                <link rel="canonical" href="https://msk-group-hospital.ru/" />
             </Head>
             <Box>
 
