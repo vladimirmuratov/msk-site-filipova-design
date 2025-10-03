@@ -6,7 +6,11 @@ import { sendEmail } from '@/lib/sendEmail';
 import { BaseDatePicker } from '@/components/base/BaseDatePicker';
 
 export const MessageForm = memo(({
-                                     onSuccess, onFailed, handleClose = () => {}}) => {
+                                     onSuccess,
+                                     onFailed,
+                                     onBlock,
+                                     handleClose = () => {},
+                                 }) => {
     const regExpEmail = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
     const regExpPhone = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
     const [fileName, setFileName] = useState('');
@@ -53,6 +57,12 @@ export const MessageForm = memo(({
         } else if (resStatus === 404) {
             handleClose();
             onFailed(true);
+        } else if (resStatus === 501) {
+            reset();
+            handleClose();
+            setChecked(false);
+            onBlock(true);
+            setFileName('');
         }
     };
 

@@ -13,6 +13,7 @@ export const Layout = ({ children }) => {
     const [isOpenForm, setOpenForm] = useState(false);
     const [success, setSuccess] = useState(false);
     const [failed, setFailed] = useState(false);
+    const [blocked, setBlocked] = useState(false);
     const [isMobile, setMobile] = useState(undefined);
 
     useEffect(() => {
@@ -28,7 +29,7 @@ export const Layout = ({ children }) => {
     useEffect(() => {
         let timeout;
 
-        if (success || failed) {
+        if (success || failed || blocked) {
             timeout = setTimeout(() => {
                 handleCloseAnswerMessage();
             }, timeOut);
@@ -36,7 +37,7 @@ export const Layout = ({ children }) => {
         return () => {
             clearTimeout(timeout);
         };
-    }, [success, failed]);
+    }, [success, failed, blocked]);
 
     const handleOpenForm = () => {
         setOpenForm(true);
@@ -49,6 +50,7 @@ export const Layout = ({ children }) => {
     const handleCloseAnswerMessage = () => {
         setSuccess(false);
         setFailed(false);
+        setBlocked(false)
     };
 
     return (
@@ -67,7 +69,7 @@ export const Layout = ({ children }) => {
             </Box>
 
             <BaseModal open={isOpenForm} handleClose={handleCloseForm} title="Связаться с нами">
-                <MessageForm handleClose={handleCloseForm} onSuccess={setSuccess} onFailed={setFailed} />
+                <MessageForm handleClose={handleCloseForm} onSuccess={setSuccess} onFailed={setFailed} onBlock={setBlocked} />
             </BaseModal>
 
             {success && (
@@ -82,8 +84,17 @@ export const Layout = ({ children }) => {
             {failed && (
                 <BaseModal title="Ошибка сервера!" open={failed} handleClose={handleCloseAnswerMessage}
                            color="var(--red)">
-                    <DialogContentText id="alert-dialog-description">
+                    <DialogContentText id="alert-dialog-description" sx={{textAlign: 'center'}}>
                         Попробуйте позже
+                    </DialogContentText>
+                </BaseModal>
+            )}
+
+            {blocked && (
+                <BaseModal title="Ошибка!" open={blocked} handleClose={handleCloseAnswerMessage}
+                           color="var(--red)">
+                    <DialogContentText id="alert-dialog-description" sx={{textAlign: 'center'}}>
+                        Вы заблокированы!
                     </DialogContentText>
                 </BaseModal>
             )}

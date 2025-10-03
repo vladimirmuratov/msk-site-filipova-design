@@ -8,11 +8,12 @@ import { timeOut } from '@/config/default-values';
 export const FormBlock = () => {
     const [success, setSuccess] = useState(false);
     const [failed, setFailed] = useState(false);
+    const [blocked, setBlocked] = useState(false);
 
     useEffect(() => {
         let timeout;
 
-        if (success || failed) {
+        if (success || failed || blocked) {
             timeout = setTimeout(() => {
                 handleCloseAnswerMessage();
             }, timeOut);
@@ -20,15 +21,19 @@ export const FormBlock = () => {
         return () => {
             clearTimeout(timeout);
         };
-    }, [success, failed]);
+    }, [success, failed, blocked]);
 
     const handleCloseAnswerMessage = () => {
         setSuccess(false);
         setFailed(false);
+        setBlocked(false);
     };
 
+    /*
     const onSuccess = () => setSuccess(true);
     const onFailed = () => setFailed(true);
+    const onBlock = () => setBlocked(true);
+    */
 
     return (
         <>
@@ -70,7 +75,7 @@ export const FormBlock = () => {
                     </Typography>
                 </Box>
 
-                <MessageForm onFailed={onFailed} onSuccess={onSuccess} />
+                <MessageForm onFailed={setFailed} onSuccess={setSuccess} onBlock={setBlocked} />
 
             </Box>
 
@@ -88,6 +93,15 @@ export const FormBlock = () => {
                            color="var(--red)">
                     <DialogContentText id="alert-dialog-description" sx={{textAlign: 'center'}}>
                         Попробуйте позже
+                    </DialogContentText>
+                </BaseModal>
+            )}
+
+            {blocked && (
+                <BaseModal title="Ошибка!" open={blocked} handleClose={handleCloseAnswerMessage}
+                           color="var(--red)">
+                    <DialogContentText id="alert-dialog-description" sx={{textAlign: 'center'}}>
+                        Вы заблокированы!
                     </DialogContentText>
                 </BaseModal>
             )}

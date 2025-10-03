@@ -1,5 +1,6 @@
 import nodemailer from 'nodemailer';
 import { Formidable } from 'formidable';
+import { blockList } from '@/config/block-list';
 
 export const config = {
     api: {
@@ -19,110 +20,62 @@ export default async function handler(req, res) {
         });
     });
 
-    const filename = Object.keys(data.files)[0];
-    let file;
-    let filepath;
+    if (blockList.includes(data.fields.phone[0]) || blockList.includes(data.fields.email[0])) {
+        res.status(501).json({
+            error: `Вы заблокированы!`,
+        });
+    } else {
 
-    if (filename) {
-        file = data.files[filename][0];
-        filepath = file.filepath;
-    }
+        const filename = Object.keys(data.files)[0];
+        let file;
+        let filepath;
 
-    //-------- Вариант без FormData ------------------
-    /*const message = {
-          from: process.env.ADDRESS_FROM,
-          to: [process.env.ADDRESS_TO_1, process.env.ADDRESS_TO_2, process.env.ADDRESS_TO_3, process.env.ADDRESS_TO_4],
-          subject: `Поступила заявка на звонок: ${new Date().toLocaleString('ru-RU', {timeZone: 'Europe/Moscow'})}`,
-          html: ` <p>Имя: ${req.body.person}</p>
-                  <p>Дата рождения: ${req.body.dateBirth ?? 'Нет'}</p>
-                  <p>Телефон: ${req.body.phone}</p>
-                  <p>Email: ${req.body.email ?? 'Нет'}</p>
-                  <p>Информация: ${req.body.info ?? 'Нет'}</p>
-                  <p>Сообщение пришло с сайта: msk-group-hospital.ru</p>`,
-      }*/
+        if (filename) {
+            file = data.files[filename][0];
+            filepath = file.filepath;
+        }
 
-    //-------- Вариант с FormData ------------------
+        //-------- Вариант без FormData ------------------
+        /*const message = {
+              from: process.env.ADDRESS_FROM,
+              to: [process.env.ADDRESS_TO_1, process.env.ADDRESS_TO_2, process.env.ADDRESS_TO_3, process.env.ADDRESS_TO_4],
+              subject: `Поступила заявка на звонок: ${new Date().toLocaleString('ru-RU', {timeZone: 'Europe/Moscow'})}`,
+              html: ` <p>Имя: ${req.body.person}</p>
+                      <p>Дата рождения: ${req.body.dateBirth ?? 'Нет'}</p>
+                      <p>Телефон: ${req.body.phone}</p>
+                      <p>Email: ${req.body.email ?? 'Нет'}</p>
+                      <p>Информация: ${req.body.info ?? 'Нет'}</p>
+                      <p>Сообщение пришло с сайта: msk-group-hospital.ru</p>`,
+          }*/
 
-    const message = {
-        from: process.env.ADDRESS_FROM,
-        to: [
-            process.env.ADDRESS_TO_1,
-            process.env.ADDRESS_TO_2,
-            process.env.ADDRESS_TO_3,
-            process.env.ADDRESS_TO_4,
-        ],
-        subject: `Поступила заявка на звонок: ${new Date().toLocaleString('ru-RU', { timeZone: 'Europe/Moscow' })}`,
-        html: ` <p>Имя: ${data.fields.person[0]}</p>
+        //-------- Вариант с FormData ------------------
+
+        const message = {
+            from: process.env.ADDRESS_FROM,
+            to: [
+                process.env.ADDRESS_TO_1,
+                process.env.ADDRESS_TO_2,
+                process.env.ADDRESS_TO_3,
+                process.env.ADDRESS_TO_4,
+            ],
+            subject: `Поступила заявка на звонок: ${new Date().toLocaleString('ru-RU', { timeZone: 'Europe/Moscow' })}`,
+            html: ` <p>Имя: ${data.fields.person[0]}</p>
                 <p>Дата рождения: ${data.fields.dateBirth[0] ?? 'Нет'}</p>
                 <p>Телефон: ${data.fields.phone[0]}</p>
                 <p>Email: ${data.fields.email[0] ?? 'Нет'}</p>
                 <p>Информация: ${data.fields.info[0] ?? 'Нет'}</p>
                 <p>Сообщение пришло с сайта: msk-group-hospital.ru</p>`,
-        attachments: (filename && filepath)
-            ? [
-                {
-                    filename: filename,
-                    path: filepath,
-                },
-            ]
-            : null,
-    };
-
-    let transporter = nodemailer.createTransport({
-        service: 'mail.ru',
-        auth: {
-            user: process.env.ADDRESS_FROM,
-            pass: process.env.PASSWORD,
-        },
-    });
-
-    if (req.method === 'POST') {
-        transporter.sendMail(message, (err, info) => {
-            if (err) {
-                res.status(404).json({
-                    error: `Connection refused at ${err.address}`,
-                });
-            } else {
-                res.status(250).json({
-                    success: `Message delivered to ${info.accepted}`,
-                });
-            }
-        });
-    }
-
-    //-------- Вариант без FormData ------------------
-
-    /*if(req.body.email){
-          const message2 = {
-              from: process.env.ADDRESS_FROM,
-              to: [req.body.email],
-              subject: `Вы оставили заявку на звонок на сайте msk-group-hospital.ru ${new Date().toLocaleString('ru-RU', {timeZone: 'Europe/Moscow'})}`,
-              html: ` <p>Имя: ${req.body.person}</p>
-                      <p>Дата рождения: ${req.body.dateBirth ?? 'Нет'}</p>
-                      <p>Телефон: ${req.body.phone}</p>
-                      <p>Email: ${req.body.email ?? 'Нет'}</p>
-                      <p>Информация: ${req.body.info ?? 'Нет'}</p>`,
-          }
-
-          transporter.sendMail(message2)
-      }*/
-
-    //-------- Вариант с FormData ------------------
-
-    if (data.fields.email[0]) {
-        const message2 = {
-            from: process.env.ADDRESS_FROM,
-            to: [data.fields.email[0]],
-            subject: `Вы оставили заявку на звонок на сайте msk-group-hospital.ru ${new Date().toLocaleString('ru-RU', { timeZone: 'Europe/Moscow' })}`,
-            html: ` <p>Имя: ${data.fields.person[0]}</p>
-                    <p>Дата рождения: ${data.fields.dateBirth[0] ?? 'Нет'}</p>
-                    <p>Телефон: ${data.fields.phone[0]}</p>
-                    <p>Email: ${data.fields.email[0] ?? 'Нет'}</p>
-                    <p>Информация: ${data.fields.info[0] ?? 'Нет'}</p>
-                  `,
+            attachments: (filename && filepath)
+                ? [
+                    {
+                        filename: filename,
+                        path: filepath,
+                    },
+                ]
+                : null,
         };
 
-        let transporter2 = nodemailer.createTransport({
+        let transporter = nodemailer.createTransport({
             service: 'mail.ru',
             auth: {
                 user: process.env.ADDRESS_FROM,
@@ -130,6 +83,62 @@ export default async function handler(req, res) {
             },
         });
 
-        transporter2.sendMail(message2);
+        if (req.method === 'POST') {
+            transporter.sendMail(message, (err, info) => {
+                if (err) {
+                    res.status(404).json({
+                        error: `Connection refused at ${err.address}`,
+                    });
+                } else {
+                    res.status(250).json({
+                        success: `Message delivered to ${info.accepted}`,
+                    });
+                }
+            });
+        }
+
+        //-------- Вариант без FormData ------------------
+
+        /*if(req.body.email){
+              const message2 = {
+                  from: process.env.ADDRESS_FROM,
+                  to: [req.body.email],
+                  subject: `Вы оставили заявку на звонок на сайте msk-group-hospital.ru ${new Date().toLocaleString('ru-RU', {timeZone: 'Europe/Moscow'})}`,
+                  html: ` <p>Имя: ${req.body.person}</p>
+                          <p>Дата рождения: ${req.body.dateBirth ?? 'Нет'}</p>
+                          <p>Телефон: ${req.body.phone}</p>
+                          <p>Email: ${req.body.email ?? 'Нет'}</p>
+                          <p>Информация: ${req.body.info ?? 'Нет'}</p>`,
+              }
+
+              transporter.sendMail(message2)
+          }*/
+
+        //-------- Вариант с FormData ------------------
+
+        if (data.fields.email[0]) {
+            const message2 = {
+                from: process.env.ADDRESS_FROM,
+                to: [data.fields.email[0]],
+                subject: `Вы оставили заявку на звонок на сайте msk-group-hospital.ru ${new Date().toLocaleString('ru-RU', { timeZone: 'Europe/Moscow' })}`,
+                html: ` <p>Имя: ${data.fields.person[0]}</p>
+                    <p>Дата рождения: ${data.fields.dateBirth[0] ?? 'Нет'}</p>
+                    <p>Телефон: ${data.fields.phone[0]}</p>
+                    <p>Email: ${data.fields.email[0] ?? 'Нет'}</p>
+                    <p>Информация: ${data.fields.info[0] ?? 'Нет'}</p>
+                  `,
+            };
+
+            let transporter2 = nodemailer.createTransport({
+                service: 'mail.ru',
+                auth: {
+                    user: process.env.ADDRESS_FROM,
+                    pass: process.env.PASSWORD,
+                },
+            });
+
+            transporter2.sendMail(message2);
+        }
+
     }
 }
