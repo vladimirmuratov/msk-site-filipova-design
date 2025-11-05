@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
 import { BaseH2 } from '@/components/base/BaseH2';
 
-export const WhyWeBlock = React.memo(() => {
+export const WhyWeBlockVer1 = React.memo(() => {
     return (
         <Box
             component="section"

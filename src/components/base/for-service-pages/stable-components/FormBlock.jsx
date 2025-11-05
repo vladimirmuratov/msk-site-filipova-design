@@ -29,12 +29,6 @@ export const FormBlock = () => {
         setBlocked(false);
     };
 
-    /*
-    const onSuccess = () => setSuccess(true);
-    const onFailed = () => setFailed(true);
-    const onBlock = () => setBlocked(true);
-    */
-
     return (
         <>
             <Box

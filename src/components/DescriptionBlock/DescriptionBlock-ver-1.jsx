@@ -1,29 +1,30 @@
-import {Box, Typography} from '@mui/material'
-import React from 'react'
+import React from 'react';
+import { Box, Typography } from '@mui/material';
 
-const DescriptionBlock = () => {
+export const DescriptionBlockVer1 = React.memo(() => {
     return (
         <Box
             component="section"
             sx={{
-                paddingY: {xs: '25px', sm: '50px'},
-                paddingX: {xs: '10px', lg: 0},
+                paddingY: { xs: '25px', sm: '50px' },
+                paddingX: { xs: '10px', lg: 0 },
                 display: 'grid',
-                gridTemplateColumns: {xs: '1fr', sm: '1fr 1fr'},
-                gap: {xs: '10px', sm: '80px'}
+                gridTemplateColumns: { xs: '1fr', sm: '1fr 1fr' },
+                gap: { xs: '10px', sm: '80px' }
             }}
         >
             <Box component="article">
                 <Typography
                     sx={{
                         color: 'var(--blue)',
-                        fontSize: {xs: '18px', sm: '20px'},
+                        fontSize: { xs: '18px', sm: '20px' },
                         fontWeight: 400,
-                        marginBottom: {xs: '5px', sm: '10px'}
+                        marginBottom: { xs: '5px', sm: '10px' }
                     }}
                 >
                     Центр госпитализации и сопровождения пациентов <span
-                    style={{fontWeight: 600, whiteSpace: 'nowrap', color: 'var(--red)'}}>МСК-Групп</span> является официальным и
+                    style={{ fontWeight: 600, whiteSpace: 'nowrap', color: 'var(--red)' }}>МСК-Групп</span> является
+                    официальным и
                     аккредитованным партнером медицинских учреждений
                     Москвы, ведомственных организаций здравоохранения, федеральных медицинских учреждений Управления
                     делами Президента РФ.
@@ -32,14 +33,15 @@ const DescriptionBlock = () => {
                 <Typography
                     sx={{
                         color: 'var(--blue)',
-                        fontSize: {xs: '18px', sm: '20px'},
+                        fontSize: { xs: '18px', sm: '20px' },
                         fontWeight: 400
                     }}
                 >
                     Верность традициям российской клинической медицины и современные технологии, высочайший
                     уровень медицинской помощи и трогательная
                     забота о пациенте по праву определяют больницы, с которыми работает Центр госпитализации и
-                    сопровождения пациентов <span style={{fontWeight: 600, whiteSpace: 'nowrap', color: 'var(--red)'}}>МСК-Групп</span> как
+                    сопровождения пациентов <span
+                    style={{ fontWeight: 600, whiteSpace: 'nowrap', color: 'var(--red)' }}>МСК-Групп</span> как
                     флагманов
                     здравоохранения не только в России, но и за ее
                     пределами.
@@ -49,14 +51,14 @@ const DescriptionBlock = () => {
             <Box
                 component="article"
                 sx={{
-                    margin: {xs: 0, sm: '0 auto'}
+                    margin: { xs: 0, sm: '0 auto' }
                 }}
             >
                 <Typography
-                    variant='h1'
+                    variant="h1"
                     sx={{
                         color: 'var(--red)',
-                        fontSize: {xs: '18px', sm: '32px'},
+                        fontSize: { xs: '18px', sm: '32px' },
                         fontWeight: 300,
                         lineHeight: 1.4,
                         // width: {xs: '100%', sm: '50%'}
@@ -71,7 +73,7 @@ const DescriptionBlock = () => {
                 </Typography>
             </Box>
         </Box>
-    )
-}
+    );
+});
 
-export default React.memo(DescriptionBlock)
+// export default React.memo(DescriptionBlockVer1)
