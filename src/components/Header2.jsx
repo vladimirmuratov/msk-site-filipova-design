@@ -1,6 +1,5 @@
 import { Box, Link, Typography } from '@mui/material';
 import React from 'react';
-import SocialBlock from '@/components/SocialBlock';
 import HeaderServiceBlock from '@/components/HeaderServiceBlock';
 import { address, email, phone } from '@/config/default-values';
 import { useRouter } from 'next/navigation';
@@ -133,7 +132,7 @@ export const Header2 = () => {
                         >{email}</Typography>
                     </Link>
 
-                    <SocialBlock />
+                    {/*<SocialBlock />*/}
 
                 </Box>
             </Box>
