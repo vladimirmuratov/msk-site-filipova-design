@@ -29,6 +29,7 @@ export const BaseBanner = memo(({
                     backgroundSize: 'cover',
                     backgroundPosition: bgPosition,
                     filter: 'brightness(70%)',
+                    pointerEvents: 'none',
                     ...style
                 }}
             />

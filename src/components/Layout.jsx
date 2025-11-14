@@ -57,7 +57,10 @@ export const Layout = ({ children }) => {
         <>
             <Box
                 className="container"
-                sx={{ minHeight: '100vh' }}
+                sx={{
+                    minHeight: '100vh',
+                    // userSelect: 'none',
+            }}
             >
                 <Suspense>
                     <Header2 />
