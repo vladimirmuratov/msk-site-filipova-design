@@ -59,7 +59,7 @@ export const Layout = ({ children }) => {
                 className="container"
                 sx={{
                     minHeight: '100vh',
-                    // userSelect: 'none',
+                    userSelect: 'none', /* ОТКЛЮЧЕНИЕ ВЫДЕЛЕНИЯ ТЕКСТА НА САЙТЕ */
             }}
             >
                 <Suspense>
