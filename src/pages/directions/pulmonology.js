@@ -71,6 +71,7 @@ export default function Pulmonology() {
                 <BaseCallBlock />
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -94,6 +95,7 @@ export default function Pulmonology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -110,6 +112,7 @@ export default function Pulmonology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -127,6 +130,7 @@ export default function Pulmonology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -143,6 +147,7 @@ export default function Pulmonology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },

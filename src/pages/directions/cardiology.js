@@ -61,7 +61,7 @@ export default function Cardiology() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Кардиология в Москве — диагностика и лечение сердца." />
             </Head>
-            <Box>
+            <Box component="section">
 
                 <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
 
@@ -73,6 +73,7 @@ export default function Cardiology() {
                 <BaseCallBlock text="Экстренная госпитализация" />
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -92,6 +93,7 @@ export default function Cardiology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -194,6 +196,7 @@ export default function Cardiology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -284,6 +287,7 @@ export default function Cardiology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -300,6 +304,7 @@ export default function Cardiology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },

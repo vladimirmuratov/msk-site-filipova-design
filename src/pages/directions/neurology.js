@@ -59,7 +59,7 @@ export default function Neurology() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Неврология в Москве." />
             </Head>
-            <Box>
+            <Box component="section">
 
                 <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
 
@@ -68,6 +68,7 @@ export default function Neurology() {
                 <BaseCallBlock />
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -91,6 +92,7 @@ export default function Neurology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -119,6 +121,7 @@ export default function Neurology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -149,6 +152,7 @@ export default function Neurology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -171,6 +175,7 @@ export default function Neurology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -227,6 +232,7 @@ export default function Neurology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -286,6 +292,7 @@ export default function Neurology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },

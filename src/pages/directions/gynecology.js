@@ -69,7 +69,7 @@ export default function Gynecology() {
                       content="Медицинская Сервисная Компания. Гинекология в Москве — диагностика и лечение женских заболеваний." />
                 <link rel="canonical" href="https://msk-group-hospital.ru/" />
             </Head>
-            <Box>
+            <Box component="section">
 
                 <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
 
@@ -78,6 +78,7 @@ export default function Gynecology() {
                 <BaseCallBlock />
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -117,6 +118,7 @@ export default function Gynecology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },

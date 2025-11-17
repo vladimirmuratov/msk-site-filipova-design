@@ -61,7 +61,7 @@ export default function Gastroenterology() {
                       content="Медицинская Сервисная Компания. Гастроэнтерология в Москве — диагностика и лечение ЖКТ." />
                 <link rel="canonical" href="https://msk-group-hospital.ru/" />
             </Head>
-            <Box>
+            <Box component="section">
 
                 <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
 
@@ -73,6 +73,7 @@ export default function Gastroenterology() {
                 <BaseCallBlock />
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -97,6 +98,7 @@ export default function Gastroenterology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -170,6 +172,7 @@ export default function Gastroenterology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -220,6 +223,7 @@ export default function Gastroenterology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -277,6 +281,7 @@ export default function Gastroenterology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -295,6 +300,7 @@ export default function Gastroenterology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },

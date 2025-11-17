@@ -58,7 +58,7 @@ export default function Traumatology() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Травматология в Москве." />
             </Head>
-            <Box>
+            <Box component="section">
 
                 <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
 
@@ -67,6 +67,7 @@ export default function Traumatology() {
                 <BaseCallBlock text="Ответим на любые вопросы по госпитализации и лечению. Звоните!" />
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -92,6 +93,7 @@ export default function Traumatology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -120,6 +122,7 @@ export default function Traumatology() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },

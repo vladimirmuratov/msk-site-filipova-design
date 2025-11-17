@@ -58,7 +58,7 @@ export default function Therapy() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Терапия в Москве." />
             </Head>
-            <Box>
+            <Box component="section">
 
                 <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
 
@@ -67,6 +67,7 @@ export default function Therapy() {
                 <BaseCallBlock text='Ответим на все вопросы. Звоните!' />
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '10px', lg: 0 },
@@ -103,6 +104,7 @@ export default function Therapy() {
                 </Box>
 
                 <Box
+                    component="article"
                     sx={{
                         paddingY: { xs: '25px', sm: '50px' },
                         marginX: { xs: '15px', lg: 0 },
