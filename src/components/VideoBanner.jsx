@@ -8,12 +8,12 @@ export const VideoBanner = React.memo(() => {
             sx={{
                 position: 'relative',
                 paddingY: { xs: '25px', sm: '50px' },
-                pointerEvents: 'none',
             }}
         >
             <video
                 onContextMenu={(event) => event.preventDefault()}
                 className="video-banner"
+                pip="false"
                 autoPlay
                 loop
                 muted
