@@ -1,4 +1,4 @@
-import { Box, List, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Head from 'next/head';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
 import { BaseBanner } from '@/components/base/BaseBanner';
@@ -9,8 +9,6 @@ import Link from 'next/link';
 import { BaseH2 } from '@/components/base/BaseH2';
 import React from 'react';
 import { BaseCallBlock } from '@/components/base/BaseCallBlock';
-import { BaseLi } from '@/components/base/BaseLi';
-import { pulmonologyList2 } from '@/config/directions/pulmonology';
 
 export default function Pulmonology() {
     const breadcrumbs = () => {
