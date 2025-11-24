@@ -31,9 +31,9 @@ export default function Requisites() {
                 }}
             >
                 <Typography sx={{ color: 'var(--blue)', fontWeight: 500 }}>ООО "МСК"</Typography>
-                <Typography>
+                {/*<Typography>
                     <span style={{ color: 'var(--blue)', fontWeight: 500 }}>адрес:</span> {address}
-                </Typography>
+                </Typography>*/}
                 <Link href={`tel:${phone}`}>
                     <Typography
                         sx={{

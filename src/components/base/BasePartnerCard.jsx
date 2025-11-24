@@ -2,6 +2,7 @@ import { Box, Typography } from '@mui/material';
 import { memo } from 'react';
 
 export const BasePartnerCard = memo(({ alt, logo, label, address, license, imgStyle = {} }) => {
+
     return (
         <Box sx={{
             border: '1px solid var(--blue)',
@@ -9,7 +10,9 @@ export const BasePartnerCard = memo(({ alt, logo, label, address, license, imgSt
             padding: '10px',
             minHeight: '223px'
         }}>
-            <img src={logo} alt={alt} style={imgStyle} />
+            <Box sx={{ height: imgStyle.height < 56 ? 66 : imgStyle.height }}>
+                <img src={logo} alt={alt} style={imgStyle} />
+            </Box>
             <Typography component="h3" sx={{
                 fontSize: { xs: '12px', sm: '14px', md: '16px' },
                 fontWeight: 500,
