@@ -48,7 +48,8 @@ export const Header2 = () => {
                         />
                     </Box>
 
-                    <Box>
+                    {/*Лого ОБП*/}
+                    {/*<Box>
                         <Box
                             component="img"
                             src="/images/logo-obp.webp"
@@ -57,7 +58,7 @@ export const Header2 = () => {
                                 width: '100px'
                             }}
                         />
-                    </Box>
+                    </Box>*/}
                 </Link>
 
                 <Box
