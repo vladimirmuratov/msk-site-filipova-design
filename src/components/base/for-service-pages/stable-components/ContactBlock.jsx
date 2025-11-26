@@ -59,8 +59,9 @@ export const ContactBlock = () => {
             >
                 <Box
                     sx={{
+                        display: 'none', // ОТКЛЮЧЕНИЕ КАРТЫ !!!
                         // flex: 1
-                        width: { xs: '100%', sm: '60%' }
+                        width: { xs: '100%', sm: '60%' },
                     }}
                 >
                     <iframe
@@ -93,7 +94,7 @@ export const ContactBlock = () => {
                             1237700147343</Typography>
                     </Box>
 
-                    <Box>
+                    {/*<Box>
                         <Typography sx={{ fontSize: { xs: '12px', sm: '14px' }, fontWeight: 300 }}>
                             Центральный офис
                         </Typography>
@@ -103,7 +104,7 @@ export const ContactBlock = () => {
                             fontWeight: 500,
                             color: 'var(--blue)'
                         }}>г. Москва, Мичуринский проспект, 6</Typography>
-                    </Box>
+                    </Box>*/}
 
                     <Box>
                         <Typography sx={{ fontSize: { xs: '12px', sm: '14px' }, fontWeight: 300 }}>

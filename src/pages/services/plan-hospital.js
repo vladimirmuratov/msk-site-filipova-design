@@ -8,6 +8,7 @@ import { stepsPlanHospitalization } from '@/config/steps';
 import { servicesPlanHospitalInfo } from '@/config/services-info';
 import { Link, Typography } from '@mui/material';
 import { BaseBreadcrumbs } from '@/components/base/BaseBreadcrumbs';
+import { servicePlanHospitalDescriptionText } from '@/config/service-text';
 
 export default function PlanHospital() {
     const breadcrumbs = (router) => {
@@ -31,7 +32,7 @@ export default function PlanHospital() {
     return (
         <>
             <Head>
-                <title>Платная плановая госпитализация 8 (499) 719-81-00, 24/7</title>
+                <title>Платная плановая госпитализация в Москве 8 (499) 719-81-00, 24/7</title>
                 <meta
                     name="description"
                     content="Федеральные, ведомственные и частные медучреждения. 20 клиник-партнеров. Оперативно. Минимум документов. Финансовая прозрачность."
@@ -69,7 +70,7 @@ export default function PlanHospital() {
             <BaseFirstBlock
                 services={servicesPlanHospitalInfo}
                 title="ПЛАТНАЯ ГОСПИТАЛИЗАЦИЯ В МОСКВЕ"
-                description="Организация платной госпитализации в стационар ведущих клиник Москвы в экстренном и плановом порядке"
+                description={servicePlanHospitalDescriptionText}
             />
             <HowToBeHospitalized
                 steps={stepsPlanHospitalization}

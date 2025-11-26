@@ -14,7 +14,7 @@ export const BaseFirstBlock = ({ services = [], title = '', description = '' }) 
         >
             <Box
                 sx={{
-                    marginBottom: { xs: '15px', sm: '30px' },
+                    marginBottom: { xs: '25px', sm: '50px' },
                     display: 'flex',
                     flexDirection: 'column',
                     gap: { xs: '10px', sm: '15px' }
@@ -27,7 +27,7 @@ export const BaseFirstBlock = ({ services = [], title = '', description = '' }) 
                     sx={{
                         color: 'var(--blue)',
                         fontSize: { xs: 18, sm: 20 },
-                        fontWeight: 300,
+                        // fontWeight: 300,
                         whiteSpace: 'pre-wrap'
                     }}
                 >
