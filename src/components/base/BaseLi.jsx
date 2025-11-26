@@ -5,7 +5,7 @@ import React from 'react';
 
 export const BaseLi = React.memo(({ label = '', component = 'h3' }) => (
     <ListItem sx={{ gap: '10px' }}>
-        <ListItemIcon sx={{ minWidth: 0 }}>
+        <ListItemIcon sx={{ minWidth: 0, alignSelf: 'start', marginTop: '14px' }}>
             <LocalHospital fontSize="small" sx={{ color: 'var(--red)' }} />
         </ListItemIcon>
         <ListItemText>
