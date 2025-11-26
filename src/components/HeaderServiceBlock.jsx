@@ -1,7 +1,8 @@
 import React from 'react';
-import { Box, Link } from '@mui/material';
+import { Box } from '@mui/material';
 import { useRouter } from 'next/router';
 import { headerServiceLinks } from '@/config/links';
+import Link from 'next/link';
 
 const HeaderServiceBlock = () => {
     const { pathname } = useRouter();
@@ -18,7 +19,9 @@ const HeaderServiceBlock = () => {
         >
 
             {headerServiceLinks.map(({ id, label, path, sitePage }) => (
-                <Link
+
+                // MUI LINK (перезагружает страницу)
+                /*<Link
                     key={id}
                     href={path}
                     target={sitePage ? '_self' : '_blank'}
@@ -32,7 +35,17 @@ const HeaderServiceBlock = () => {
                             textDecoration: 'underline !important'
                         }
                     }}
-                >{label}</Link>
+                >{label}</Link>*/
+
+                <Link
+                    key={id}
+                    className="service-link"
+                    href={path}
+                    target={sitePage ? '_self' : '_blank'}
+                >
+                    <Box component="span" sx={{textDecoration: path === pathname ? 'underline !important' : 'none'}}>{label}</Box>
+                </Link>
+
             ))}
 
         </Box>
