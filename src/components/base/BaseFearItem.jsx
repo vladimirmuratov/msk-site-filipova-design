@@ -5,6 +5,7 @@ import CheckOutlinedIcon from '@mui/icons-material/CheckOutlined';
 
 export const BaseFearItem = React.memo(({ question, answer }) => (
     <Box
+        className="animation-block"
         sx={{
             display: 'flex',
             flexDirection: 'column',
@@ -39,7 +40,7 @@ export const BaseFearItem = React.memo(({ question, answer }) => (
         >
             <CheckOutlinedIcon fontSize="large" sx={{ color: 'green' }} />
             <Typography
-                sx={{ fontSize: { xs: 20, sm: 24 }, fontWeight: 500, color: 'var(--blue)' }}>Правда:</Typography>
+                sx={{ fontSize: { xs: 20, sm: 24 }, fontWeight: 500, color: 'var(--blue)' }}>Ответ:</Typography>
         </Box>
         <Typography
             sx={{

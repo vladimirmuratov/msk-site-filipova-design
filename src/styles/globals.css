@@ -258,3 +258,15 @@ li {
         white-space: nowrap;
     }
 }
+
+.animation-block {
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.animation-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 2px lightgray;
+}

@@ -34,6 +34,7 @@ export const WhyWeBlockVer2 = React.memo(() => {
             </Box>
 
             <Box component="article"
+                 className="animation-block"
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--red)' }} />
@@ -50,6 +51,7 @@ export const WhyWeBlockVer2 = React.memo(() => {
                 </Typography>
             </Box>
             <Box component="article"
+                 className="animation-block"
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--red)' }} />
@@ -67,6 +69,7 @@ export const WhyWeBlockVer2 = React.memo(() => {
                 </Typography>
             </Box>
             <Box component="article"
+                 className="animation-block"
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--red)' }} />
@@ -82,6 +85,7 @@ export const WhyWeBlockVer2 = React.memo(() => {
                 </Typography>
             </Box>
             <Box component="article"
+                 className="animation-block"
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--red)' }} />
@@ -97,6 +101,7 @@ export const WhyWeBlockVer2 = React.memo(() => {
                 </Typography>
             </Box>
             <Box component="article"
+                 className="animation-block"
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--red)' }} />
@@ -111,6 +116,7 @@ export const WhyWeBlockVer2 = React.memo(() => {
                 </Typography>
             </Box>
             <Box component="article"
+                 className="animation-block"
                  sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--red)' }} />
