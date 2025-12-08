@@ -21,7 +21,7 @@ const SocialBlock = () => {
                     height={30}
                 />
             </Link>
-            <Link target="_blank" href={`https://t.me/${phoneTelegram}`}>
+            <Link target="_blank" href={`tg://${phoneTelegram}`}>
                 <Image
                     src="/images/social/telegram.svg"
                     alt="icon"

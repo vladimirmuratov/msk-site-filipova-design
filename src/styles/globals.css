@@ -86,7 +86,10 @@ nav > ol > li {
     --violet: #7A96CC;
     --light-gray: #D9D9D9;
     --gray: gray;
-    --index: calc(1vh + 1vw)
+    --index: calc(1vh + 1vw);
+    --mail-color: #0F68F9;
+    --whatsapp-color: #35D350;
+    --telegram-color: #35ADEB;
 }
 
 html {

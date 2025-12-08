@@ -5,9 +5,10 @@ import { BaseModal } from '@/components/base/BaseModal';
 import { MessageForm } from '@/components/MessageForm';
 import DialogContentText from '@mui/material/DialogContentText';
 import { Metrika } from '@/Metrika';
-import { FloatBtn } from '@/components/FloatBtn';
+import { FloatBtnMobile } from '@/components/FloatBtnMobile';
 import Header2 from '@/components/Header2';
 import { timeOut } from '@/config/default-values';
+import { FloatBtnDesktop } from '@/components/FloatBtnDesktop';
 
 export const Layout = ({ children }) => {
     const [isOpenForm, setOpenForm] = useState(false);
@@ -50,7 +51,7 @@ export const Layout = ({ children }) => {
     const handleCloseAnswerMessage = () => {
         setSuccess(false);
         setFailed(false);
-        setBlocked(false)
+        setBlocked(false);
     };
 
     return (
@@ -60,25 +61,29 @@ export const Layout = ({ children }) => {
                 sx={{
                     minHeight: '100vh',
                     userSelect: 'none', /* ОТКЛЮЧЕНИЕ ВЫДЕЛЕНИЯ ТЕКСТА НА САЙТЕ */
-            }}
+                }}
             >
                 <Suspense>
                     <Header2 />
                     {children}
                     <Footer onOpenForm={handleOpenForm} />
                 </Suspense>
-                <FloatBtn handleOpen={handleOpenForm} isMobile={isMobile} />
+                {isMobile
+                    ? <FloatBtnMobile />
+                    : <FloatBtnDesktop onOpenForm={handleOpenForm} />
+                }
                 <Metrika />
             </Box>
 
             <BaseModal open={isOpenForm} handleClose={handleCloseForm} title="Связаться с нами">
-                <MessageForm handleClose={handleCloseForm} onSuccess={setSuccess} onFailed={setFailed} onBlock={setBlocked} />
+                <MessageForm handleClose={handleCloseForm} onSuccess={setSuccess} onFailed={setFailed}
+                             onBlock={setBlocked} />
             </BaseModal>
 
             {success && (
                 <BaseModal title="Сообщение отправлено!" open={success} handleClose={handleCloseAnswerMessage}
                            color="var(--blue)">
-                    <DialogContentText id="alert-dialog-description" sx={{textAlign: 'center'}}>
+                    <DialogContentText id="alert-dialog-description" sx={{ textAlign: 'center' }}>
                         Скоро в Вами свяжется наш специалист
                     </DialogContentText>
                 </BaseModal>
@@ -87,7 +92,7 @@ export const Layout = ({ children }) => {
             {failed && (
                 <BaseModal title="Ошибка сервера!" open={failed} handleClose={handleCloseAnswerMessage}
                            color="var(--red)">
-                    <DialogContentText id="alert-dialog-description" sx={{textAlign: 'center'}}>
+                    <DialogContentText id="alert-dialog-description" sx={{ textAlign: 'center' }}>
                         Попробуйте позже
                     </DialogContentText>
                 </BaseModal>
@@ -96,7 +101,7 @@ export const Layout = ({ children }) => {
             {blocked && (
                 <BaseModal title="Ошибка!" open={blocked} handleClose={handleCloseAnswerMessage}
                            color="var(--red)">
-                    <DialogContentText id="alert-dialog-description" sx={{textAlign: 'center'}}>
+                    <DialogContentText id="alert-dialog-description" sx={{ textAlign: 'center' }}>
                         Вы заблокированы!
                     </DialogContentText>
                 </BaseModal>
