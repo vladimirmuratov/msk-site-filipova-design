@@ -7,7 +7,8 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CreateOutlinedIcon from '@mui/icons-material/CreateOutlined';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import { useRouter } from 'next/router';
-import { email, phoneTelegram, phoneWhatsApp } from '@/config/default-values';
+import { email, linkMax, phoneTelegram, phoneWhatsApp } from '@/config/default-values';
+import { MaxIcon } from '@/components/icons/MaxIcon';
 
 export const FloatBtnDesktop = React.memo(({ onOpenForm }) => {
     const [open, setOpen] = React.useState(false);
@@ -47,21 +48,27 @@ export const FloatBtnDesktop = React.memo(({ onOpenForm }) => {
                     Icon={AlternateEmailIcon}
                     bgColor="var(--mail-color)"
                     onClick={() => router.push(`mailto:${email}`)}
-                    delay={0.4}
+                    delay={0.5}
                     isOpen={open}
                 />
                 <BaseSubFab
                     Icon={WhatsAppIcon} bgColor="var(--whatsapp-color)"
                     onClick={() => router.push(`https://wa.me/${phoneWhatsApp}`)}
-                    delay={0.3}
+                    delay={0.4}
                     isOpen={open}
                 />
                 <BaseSubFab
                     Icon={TelegramIcon} bgColor="var(--telegram-color)"
                     onClick={() => router.push(`tg://${phoneTelegram}`)}
-                    delay={0.2}
+                    delay={0.3}
                     isOpen={open}
                 />
+                {/*<BaseSubFab
+                    Icon={MaxIcon} bgColor="#17181C"
+                    onClick={() => router.push(`${linkMax}`)}
+                    delay={0.2}
+                    isOpen={open}
+                />*/}
                 <BaseSubFab
                     Icon={CreateOutlinedIcon}
                     onClick={onOpenForm}

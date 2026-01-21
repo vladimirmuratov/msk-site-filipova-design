@@ -4,7 +4,7 @@ import { useScrollPosition } from '@/lib/useScrollPosition ';
 import { Open_Sans } from 'next/font/google';
 
 import { Banner4 } from '@/components/Banner/Banner4';
-import { VideoBanner } from '@/components/VideoBanner';
+// import { VideoBanner } from '@/components/VideoBanner';
 import { HowToBeHospitalized } from '@/components/for-service-pages/planned-hospital/HowToBeHospitalized';
 import { stepsPlanHospitalization } from '@/config/steps';
 import PartnersBlock from '@/components/PartnersBlock';
@@ -46,7 +46,8 @@ export const MainPageContent = () => {
         <>
             {typeof isMobile === 'boolean' ? (
                 <main className={openSans.className}>
-                    {isMobile ? <Banner4 /> : <VideoBanner />}
+                    {/*{isMobile ? <Banner4 /> : <VideoBanner />}*/}
+                    <Banner4 />
                     <BaseCallBlock text="Ответим на любые вопросы по госпитализации и лечению. Звоните!" />
                     <DescriptionBlockVer2 />
                     <WhyWeBlockVer2 />
