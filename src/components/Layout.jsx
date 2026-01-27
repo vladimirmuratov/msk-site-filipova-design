@@ -9,6 +9,7 @@ import { FloatBtnMobile } from '@/components/FloatBtnMobile';
 import Header2 from '@/components/Header2';
 import { timeOut } from '@/config/default-values';
 import { FloatBtnDesktop } from '@/components/FloatBtnDesktop';
+import { Metrika2 } from '@/Metrika2';
 
 export const Layout = ({ children }) => {
     const [isOpenForm, setOpenForm] = useState(false);
@@ -73,6 +74,7 @@ export const Layout = ({ children }) => {
                     : <FloatBtnDesktop onOpenForm={handleOpenForm} />
                 }
                 <Metrika />
+                <Metrika2 />
             </Box>
 
             <BaseModal open={isOpenForm} handleClose={handleCloseForm} title="Связаться с нами">
