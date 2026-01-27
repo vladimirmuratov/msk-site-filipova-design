@@ -68,13 +68,13 @@ export const Layout = ({ children }) => {
                     <Header2 />
                     {children}
                     <Footer onOpenForm={handleOpenForm} />
+                    <Metrika />
+                    <Metrika2 />
                 </Suspense>
                 {isMobile
                     ? <FloatBtnMobile />
                     : <FloatBtnDesktop onOpenForm={handleOpenForm} />
                 }
-                <Metrika />
-                <Metrika2 />
             </Box>
 
             <BaseModal open={isOpenForm} handleClose={handleCloseForm} title="Связаться с нами">
