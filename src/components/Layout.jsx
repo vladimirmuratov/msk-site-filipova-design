@@ -4,11 +4,11 @@ import { Suspense, useEffect, useState } from 'react';
 import { BaseModal } from '@/components/base/BaseModal';
 import { MessageForm } from '@/components/MessageForm';
 import DialogContentText from '@mui/material/DialogContentText';
-import { Metrika } from '@/Metrika';
 import { FloatBtnMobile } from '@/components/FloatBtnMobile';
 import Header2 from '@/components/Header2';
 import { timeOut } from '@/config/default-values';
 import { FloatBtnDesktop } from '@/components/FloatBtnDesktop';
+import { Metrika } from '@/Metrika';
 import { Metrika2 } from '@/Metrika2';
 
 export const Layout = ({ children }) => {

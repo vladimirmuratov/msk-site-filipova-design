@@ -23,8 +23,8 @@ export default function Home() {
                 <meta property="og:description"
                       content="Организуем госпитализацию в клиники Москвы без полиса ОМС и направлений. Медицинские услуги. Стационар. Перевод из больниц, помощь тяжёлым пациентам, санитарный транспорт, патронаж. Всё под ключ — без очередей и бюрократии." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/" />
-                <meta property="og:image" content="https://msk-group-hospital.ru/images/banner-3.webp" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app" />
+                <meta property="og:image" content="https://msk-group-hospital.vercel.app/images/banner-3.webp" />
                 <meta property="og:image:alt"
                       content="Медицинская Сервисная Компания. Платная госпитализация в Москве. Медицинские услуги. Стационар. Без ОМС — быстро, официально, с сопровождением. 8 (499) 719-81-00, круглосуточно" />
                 <meta property="og:image:type" content="image/webp" />
