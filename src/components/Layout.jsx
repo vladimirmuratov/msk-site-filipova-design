@@ -9,7 +9,6 @@ import Header2 from '@/components/Header2';
 import { timeOut } from '@/config/default-values';
 import { FloatBtnDesktop } from '@/components/FloatBtnDesktop';
 import { Metrika } from '@/Metrika';
-import { Metrika2 } from '@/Metrika2';
 
 export const Layout = ({ children }) => {
     const [isOpenForm, setOpenForm] = useState(false);
@@ -69,7 +68,6 @@ export const Layout = ({ children }) => {
                     {children}
                     <Footer onOpenForm={handleOpenForm} />
                     <Metrika />
-                    <Metrika2 />
                 </Suspense>
                 {isMobile
                     ? <FloatBtnMobile />
