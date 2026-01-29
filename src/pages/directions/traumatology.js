@@ -50,13 +50,15 @@ export default function Traumatology() {
                 <meta property="og:description"
                       content="Госпитализация при травмах любой сложности. Срочно, официально, с комфортом. Перевод из других клиник, приём без ОМС, круглосуточная поддержка." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/directions/traumatology" />
-                <meta property="og:image" content="https://msk-group-hospital.ru/images/banner-3.webp" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/directions/traumatology" />
+                <meta property="og:image" content="https://msk-group-hospital.vercel.app/images/banner-3.webp" />
                 <meta property="og:image:alt"
                       content="Медицинская Сервисная Компания. Травматология в Москве." />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Травматология в Москве." />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/traumatology"/>
             </Head>
             <Box component="section">
 

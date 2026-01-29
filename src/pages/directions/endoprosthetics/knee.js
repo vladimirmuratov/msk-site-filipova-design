@@ -61,14 +61,15 @@ export default function Knee() {
                 <meta property="og:description"
                       content="Платная госпитализация в клинику для эндопротезирования коленного сустава. Без ОМС. Пациентам из регионов и СНГ. Перевод, сопровождение, помощь 24/7." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/directions/endoprosthetics/knee" />
-                <meta property="og:image" content="https://msk-group-hospital.ru/images/endoprosthetics/5.webp" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/directions/endoprosthetics/knee" />
+                <meta property="og:image" content="https://msk-group-hospital.vercel.app/images/endoprosthetics/5.webp" />
                 <meta property="og:image:alt"
                       content="Медицинская Сервисная Компания. Эндопротезирование коленного сустава в Москве." />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Эндопротезирование коленного сустава в Москве." />
-                <link rel="canonical" href="https://msk-group-hospital.ru/" />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/endoprosthetics/knee" />
             </Head>
             <Box component="section">
 

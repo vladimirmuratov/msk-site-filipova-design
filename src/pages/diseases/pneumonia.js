@@ -48,13 +48,15 @@ export default function Pneumonia() {
                 <meta property="og:description"
                       content="Пневмония: основные симптомы, методы диагностики и эффективное лечение. Как распознать воспаление лёгких и когда обращаться к врачу. Современные подходы к терапии. Звоните 8 (499) 719-81-00, 24/7" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/diseases/pneumonia" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/diseases/pneumonia" />
                 <meta property="og:image"
-                      content="https://msk-group-hospital.ru/images/diseases/pneumonia/pneumonia1.webp" />
+                      content="https://msk-group-hospital.vercel.app/images/diseases/pneumonia/pneumonia1.webp" />
                 <meta property="og:image:alt" content="лечение пневмонии. 8 (499) 719-81-00, 24/7" />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Пневмония: симптомы и лечение. 8 (499) 719-81-00, 24/7" />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/pneumonia"/>
             </Head>
             <Box component="section">
 

@@ -49,14 +49,16 @@ export default function Adenoma() {
                 <meta property="og:description"
                       content="Аденома простаты: симптомы, методы диагностики и современное лечение. Запишитесь на приём к опытному урологу в Москве. Консультации, УЗИ, ПСА, малоинвазивные методы, ТУР. Звоните 8 (499) 719-81-00, 24/7" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/diseases/adenoma" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/diseases/adenoma" />
                 <meta property="og:image"
-                      content="https://msk-group-hospital.ru/images/diseases/adenoma/adenoma2.webp" />
+                      content="https://msk-group-hospital.vercel.app/images/diseases/adenoma/adenoma2.webp" />
                 <meta property="og:image:alt"
                       content="Аденома простаты — диагностика и эффективное лечение в Москве. 8 (499) 719-81-00, 24/7" />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Аденома простаты — диагностика и эффективное лечение в Москве. 8 (499) 719-81-00, 24/7" />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/adenoma"/>
             </Head>
             <Box component="section">
 

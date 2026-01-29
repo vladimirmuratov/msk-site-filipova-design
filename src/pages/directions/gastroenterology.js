@@ -52,14 +52,15 @@ export default function Gastroenterology() {
                 <meta property="og:description"
                       content="Диагностика и лечение заболеваний ЖКТ в лучших клиниках Москвы. Госпитализация без ОМС, из регионов и СНГ. Подбор врача и сопровождение." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/directions/gastroenterology" />
-                <meta property="og:image" content="https://msk-group-hospital.ru/images/banner-3.webp" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/directions/gastroenterology" />
+                <meta property="og:image" content="https://msk-group-hospital.vercel.app/images/banner-3.webp" />
                 <meta property="og:image:alt"
                       content="Медицинская Сервисная Компания. Гастроэнтерология в Москве." />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Гастроэнтерология в Москве — диагностика и лечение ЖКТ." />
-                <link rel="canonical" href="https://msk-group-hospital.ru/" />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/gastroenterology" />
             </Head>
             <Box component="section">
 

@@ -48,13 +48,15 @@ export default function Copd() {
                 <meta property="og:description"
                       content="Эффективное лечение ХОБЛ – современный подход к терапии хронической обструктивной болезни лёгких. Диагностика, индивидуальные схемы лечения, поддержка дыхательной функции и улучшение качества жизни пациентов. Звоните 8 (499) 719-81-00, 24/7" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/diseases/copd" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/diseases/copd" />
                 <meta property="og:image"
-                      content="https://msk-group-hospital.ru/images/diseases/copd/copd1.webp" />
+                      content="https://msk-group-hospital.vercel.app/images/diseases/copd/copd1.webp" />
                 <meta property="og:image:alt" content="ХОБЛ лечение. 8 (499) 719-81-00, 24/7" />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. ХОБЛ лечение. 8 (499) 719-81-00, 24/7" />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/copd"/>
             </Head>
             <Box component="section">
 

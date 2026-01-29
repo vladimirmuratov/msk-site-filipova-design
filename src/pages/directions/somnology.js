@@ -51,13 +51,15 @@ export default function Somnology() {
                 <meta property="og:description"
                       content="Платная госпитализация при бессоннице, храпе, апноэ сна. Помощь сомнолога, обследование, лечение в Москве. Принимаем без полиса ОМС, с полным сопровождением." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/directions/somnology" />
-                <meta property="og:image" content="https://msk-group-hospital.ru/images/banner-3.webp" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/directions/somnology" />
+                <meta property="og:image" content="https://msk-group-hospital.vercel.app/images/banner-3.webp" />
                 <meta property="og:image:alt"
                       content="Медицинская Сервисная Компания. Сомнология в Москве." />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Сомнология в Москве." />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/somnology"/>
             </Head>
             <Box component="section">
 

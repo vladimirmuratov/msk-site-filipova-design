@@ -61,13 +61,15 @@ export default function Robot() {
                 <meta property="og:description"
                       content="Платная госпитализация для роботизированного эндопротезирования коленного и тазобедренного суставов в Москве. Без ОМС. Помощь пациентам из РФ и СНГ." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/directions/endoprosthetics/robot" />
-                <meta property="og:image" content="https://msk-group-hospital.ru/images/endoprosthetics/7.webp" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/directions/endoprosthetics/robot" />
+                <meta property="og:image" content="https://msk-group-hospital.vercel.app/images/endoprosthetics/7.webp" />
                 <meta property="og:image:alt"
                       content="Медицинская Сервисная Компания. Роботизированное эндопротезирование суставов в Москве." />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Роботизированное эндопротезирование суставов в Москве." />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/endoprosthetics/robot"/>
             </Head>
             <Box component="section">
 

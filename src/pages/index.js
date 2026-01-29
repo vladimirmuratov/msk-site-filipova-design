@@ -30,6 +30,8 @@ export default function Home() {
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Платная госпитализация в Москве. Медицинские услуги. Стационар. Без ОМС — быстро, официально, с сопровождением. 8 (499) 719-81-00, круглосуточно" />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app"/>
             </Head>
             <MainPageContent />
         </>

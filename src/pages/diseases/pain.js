@@ -49,12 +49,14 @@ export default function Pain() {
                 <meta property="og:description"
                       content="Эффективное лечение хронической боли: диагностика, индивидуальный подход, медикаментозная и восстановительная терапия. Звоните 8 (499) 719-81-00, 24/7" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/diseases/pain" />
-                <meta property="og:image" content="https://msk-group-hospital.ru/images/diseases/pain/pain1.webp" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/diseases/pain" />
+                <meta property="og:image" content="https://msk-group-hospital.vercel.app/images/diseases/pain/pain1.webp" />
                 <meta property="og:image:alt" content="Лечение боли в Москве. 8 (499) 719-81-00, 24/7" />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Лечение боли. 8 (499) 719-81-00, 24/7" />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/pain"/>
             </Head>
             <Box component="section">
 

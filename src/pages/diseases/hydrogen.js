@@ -48,13 +48,15 @@ export default function Copd() {
                 <meta property="og:description"
                       content="Эффективные ингаляции молекулярным водородом в Москве. Помощь при астме, ХОБЛ, постковидном синдроме и хронической усталости. Безопасно, без побочных эффектов. Звоните 8 (499) 719-81-00, 24/7" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/diseases/hydrogen" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/diseases/hydrogen" />
                 <meta property="og:image"
-                      content="https://msk-group-hospital.ru/images/diseases/copd/copd2.webp" />
+                      content="https://msk-group-hospital.vercel.app/images/diseases/copd/copd2.webp" />
                 <meta property="og:image:alt" content="Водородная терапия. 8 (499) 719-81-00, 24/7" />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Ингаляции молекулярным водородом в Москве. 8 (499) 719-81-00, 24/7" />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/hydrogen"/>
             </Head>
             <Box component="section">
 

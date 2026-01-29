@@ -52,13 +52,15 @@ export default function Gerontology() {
                 <meta property="og:description"
                       content="Услуги геронтолога в Москве: лечение пожилых, госпитализация без ОМС, перевод пациентов, патронаж. Помогаем пожилым людям — быстро, профессионально, с заботой." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/directions/gerontology" />
-                <meta property="og:image" content="https://msk-group-hospital.ru/images/gerontology/1.webp" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/directions/gerontology" />
+                <meta property="og:image" content="https://msk-group-hospital.vercel.app/images/gerontology/1.webp" />
                 <meta property="og:image:alt"
                       content="Медицинская Сервисная Компания. Геронтология в Москве." />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Геронтология в Москве." />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/gerontology"/>
             </Head>
             <Box component="section">
 

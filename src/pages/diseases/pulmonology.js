@@ -50,13 +50,15 @@ export default function Pulmonology() {
                 <meta property="og:description"
                       content="Пульмонология в Москве — диагностика и лечение заболеваний дыхательной системы: астма, бронхит, пневмония, ХОБЛ, постковид. Приём пульмонолога, современная диагностика. Звоните 8 (499) 719-81-00, 24/7" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/diseases/pulmonology" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/diseases/pulmonology" />
                 <meta property="og:image"
-                      content="https://msk-group-hospital.ru/images/diseases/pulmonology/pulmonology1.webp" />
+                      content="https://msk-group-hospital.vercel.app/images/diseases/pulmonology/pulmonology1.webp" />
                 <meta property="og:image:alt" content="пульмонология в Москве. 8 (499) 719-81-00, 24/7" />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Пульмонология в Москве. 8 (499) 719-81-00, 24/7" />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/pulmonology"/>
             </Head>
             <Box component="section">
 

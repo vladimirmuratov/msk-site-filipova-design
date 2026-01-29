@@ -49,12 +49,14 @@ export default function Stroke() {
                 <meta property="og:description"
                       content="Комплексная реабилитация после инсульта: восстановление речи, движений, памяти и навыков самообслуживания. Индивидуальные программы, ЛФК, массаж, логопедия, психологическая поддержка. Возвращаем к активной жизни. Звоните 8 (499) 719-81-00, 24/7" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/diseases/stroke" />
-                <meta property="og:image" content="https://msk-group-hospital.ru/images/diseases/stroke/stroke1.webp" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/diseases/stroke" />
+                <meta property="og:image" content="https://msk-group-hospital.vercel.app/images/diseases/stroke/stroke1.webp" />
                 <meta property="og:image:alt" content="реабилитация после инсульта в Москве. 8 (499) 719-81-00, 24/7" />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Реабилитация после инсульта в Москве. 8 (499) 719-81-00, 24/7" />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/stroke"/>
             </Head>
             <Box component="section">
 

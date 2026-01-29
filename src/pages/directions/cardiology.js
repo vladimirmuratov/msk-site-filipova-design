@@ -53,13 +53,15 @@ export default function Cardiology() {
                 <meta property="og:description"
                       content="Организуем кардио лечение в ведущих клиниках Москвы. Госпитализация без ОМС, из регионов и СНГ. Срочные и плановые операции. Полное сопровождение." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/directions/cardiology" />
-                <meta property="og:image" content="https://msk-group-hospital.ru/images/banner-3.webp" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/directions/cardiology" />
+                <meta property="og:image" content="https://msk-group-hospital.vercel.app/images/banner-3.webp" />
                 <meta property="og:image:alt"
                       content="Медицинская Сервисная Компания. Кардиология в Москве." />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Кардиология в Москве — диагностика и лечение сердца." />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/cardiology"/>
             </Head>
             <Box component="section">
 

@@ -49,14 +49,15 @@ export default function Transfer() {
                 <meta property="og:description"
                       content="Перевод пациента в другую больницу. 10 лет опыта. 20 клиник-партнеров. Федеральные, ведомственные и частные клиники. Работаем по всей территории России и СНГ. Оперативно. Финансовая прозрачность." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/services/transfer" />
-                <meta property="og:image" content="https://msk-group-hospital.ru/images/banner-3.webp" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/services/transfer" />
+                <meta property="og:image" content="https://msk-group-hospital.vercel.app/images/banner-3.webp" />
                 <meta property="og:image:alt"
                       content="Медицинская Сервисная Компания. Платная госпитализация 8 (499) 719-81-00, 24/7" />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7" />
-                <link rel="canonical" href="https://msk-group-hospital.ru/" />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/services/transfer" />
             </Head>
 
             <BaseBreadcrumbs breadcrumbs={breadcrumbs} />

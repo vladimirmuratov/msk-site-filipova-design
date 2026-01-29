@@ -48,14 +48,15 @@ export default function Proctology() {
                 <meta property="og:description"
                       content="Боль, кровотечение, обострение? Организуем срочную госпитализацию в отделение проктологии в Москве. Без ОМС, без бюрократии, с санитарным транспортом и круглосуточной поддержкой." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/diseases/proctology" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/diseases/proctology" />
                 <meta property="og:image"
-                      content="https://msk-group-hospital.ru/images/diseases/proctology/proctology1.webp" />
+                      content="https://msk-group-hospital.vercel.app/images/diseases/proctology/proctology1.webp" />
                 <meta property="og:image:alt" content="Медицинская Сервисная Компания. Колопроктология в Москве." />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Колопроктология в Москве." />
-                <link rel="canonical" href="https://msk-group-hospital.ru/" />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/proctology" />
             </Head>
             <Box component="section">
 

@@ -60,14 +60,14 @@ export default function Gynecology() {
                 <meta property="og:description"
                       content="Помощь в экстренной и плановой госпитализации по гинекологии: лечение миомы, кист, эндометриоза, бесплодия. Сопровождение, комфортные условия, лучшие врачи Москвы." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/directions/gynecology" />
-                <meta property="og:image" content="https://msk-group-hospital.ru/images/banner-3.webp" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/directions/gynecology" />
+                <meta property="og:image" content="https://msk-group-hospital.vercel.app/images/banner-3.webp" />
                 <meta property="og:image:alt"
                       content="Медицинская Сервисная Компания. Гинекология в Москве." />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Гинекология в Москве — диагностика и лечение женских заболеваний." />
-                <link rel="canonical" href="https://msk-group-hospital.ru/" />
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/gynecology" />
             </Head>
             <Box component="section">
 

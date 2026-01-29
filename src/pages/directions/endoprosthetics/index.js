@@ -55,13 +55,15 @@ export default function Endoprosthetics() {
                 <meta property="og:description"
                       content="Организуем эндопротезирование суставов в Москве: подбор клиники, госпитализация без ОМС, транспортировка, лечение под ключ. Работаем с регионами и СНГ." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/directions/endoprosthetics" />
-                <meta property="og:image" content="https://msk-group-hospital.ru/images/endoprosthetics/1.webp" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/directions/endoprosthetics" />
+                <meta property="og:image" content="https://msk-group-hospital.vercel.app/images/endoprosthetics/1.webp" />
                 <meta property="og:image:alt"
                       content="Медицинская Сервисная Компания. Эндопротезирование суставов в Москве." />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Эндопротезирование суставов в Москве." />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/endoprosthetics"/>
             </Head>
             <Box component="section">
 

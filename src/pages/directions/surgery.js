@@ -50,14 +50,15 @@ export default function Surgery() {
                 <meta property="og:description"
                       content="Экстренные и плановые хирургические вмешательства: госпитализация в течение 1 дня, ведущие хирурги, современное оборудование, круглосуточное сопровождение. Без ОМС — быстро, безопасно, результативно." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/directions/surgery" />
-                <meta property="og:image" content="https://msk-group-hospital.ru/images/banner-3.webp" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/directions/surgery" />
+                <meta property="og:image" content="https://msk-group-hospital.vercel.app/images/banner-3.webp" />
                 <meta property="og:image:alt"
                       content="Медицинская Сервисная Компания. Хирургия в Москве." />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Хирургия в Москве." />
-                <link rel="canonical" href="https://msk-group-hospital.ru/" />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/surgery" />
             </Head>
             <Box component="section">
 

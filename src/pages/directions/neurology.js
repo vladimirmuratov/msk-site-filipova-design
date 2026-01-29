@@ -51,13 +51,15 @@ export default function Neurology() {
                 <meta property="og:description"
                       content="Срочная консультация невролога в Москве: лечение головных болей, остеохондроза, инсульта, парезов, невралгии. Комплексная диагностика и госпитализация — быстро и надёжно." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.ru/directions/neurology" />
-                <meta property="og:image" content="https://msk-group-hospital.ru/images/banner-3.webp" />
+                <meta property="og:url" content="https://msk-group-hospital.vercel.app/directions/neurology" />
+                <meta property="og:image" content="https://msk-group-hospital.vercel.app/images/banner-3.webp" />
                 <meta property="og:image:alt"
                       content="Медицинская Сервисная Компания. Неврология в Москве." />
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Неврология в Москве." />
+
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/neurology"/>
             </Head>
             <Box component="section">
 
