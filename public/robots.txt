@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-
+Disallow: /*?*
 Sitemap: https://msk-group-hospital.vercel.app/sitemap.xml

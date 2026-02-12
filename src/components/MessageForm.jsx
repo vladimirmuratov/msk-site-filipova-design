@@ -161,8 +161,7 @@ export const MessageForm = memo(({
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
                         <Checkbox checked={checked} onChange={handleChange} sx={{ alignSelf: 'start' }} />
                         <Typography sx={{ fontSize: 12, lineHeight: 1.1 }}>
-                            Я согласен на обработку персональных данных в соответствии
-                            c Политикой конфиденциальности
+                            Я согласен на обработку персональных данных.
                         </Typography>
                     </Box>
 

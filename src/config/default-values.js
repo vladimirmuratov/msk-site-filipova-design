@@ -1,8 +1,8 @@
 export const phone = '+7 (499) 719-81-00';
-export const phone2 = '+7 (926) 388-48-81';
+export const phone2 = '+7 (925) 179-97-86';
 export const phoneWhatsApp = '+79268158505';
-export const phoneTelegram = '+79268158505';
-export const linkMax = 'https://max.ru/u/f9LHodD0cOJrNmsw_oKagaspcG49Rr6XIfXavR45RTQhYw0kIbXHo3FGFSU';
+export const telegramLink = 'https://t.me/MedScompany';
+export const maxLink = 'https://max.ru/u/f9LHodD0cOL8G6-pNFCQ3E-059tyhBQYxknGhq_fIsr3Lge7_i0lYCzTk-Q';
 export const phoneViber = '79268158505';
 // export const address = 'Москва, Мичуринский пр-т, 6.';
 export const address = '';
