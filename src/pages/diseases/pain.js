@@ -56,7 +56,8 @@ export default function Pain() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Лечение боли. 8 (499) 719-81-00, 24/7" />
 
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/pain"/>
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/pain"/>*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/"/>
             </Head>
             <Box component="section">
 

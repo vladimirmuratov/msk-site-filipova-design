@@ -67,7 +67,9 @@ export default function Gynecology() {
                 <meta property="og:image:type" content="image/webp" />
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Гинекология в Москве — диагностика и лечение женских заболеваний." />
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/gynecology" />
+
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/gynecology" />*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/" />
             </Head>
             <Box component="section">
 

@@ -61,7 +61,8 @@ export default function Cardiology() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Кардиология в Москве — диагностика и лечение сердца." />
 
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/cardiology"/>
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/cardiology"/>*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/"/>
             </Head>
             <Box component="section">
 

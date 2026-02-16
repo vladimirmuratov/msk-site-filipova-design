@@ -58,7 +58,8 @@ export default function Therapy() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Терапия в Москве." />
 
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/therapy"/>
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/therapy"/>*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/"/>
             </Head>
             <Box component="section">
 

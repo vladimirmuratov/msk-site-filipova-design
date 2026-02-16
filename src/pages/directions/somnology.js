@@ -59,7 +59,8 @@ export default function Somnology() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Сомнология в Москве." />
 
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/somnology"/>
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/somnology"/>*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/"/>
             </Head>
             <Box component="section">
 

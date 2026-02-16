@@ -58,7 +58,8 @@ export default function Surgery() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Хирургия в Москве." />
 
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/surgery" />
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/surgery" />*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/" />
             </Head>
             <Box component="section">
 

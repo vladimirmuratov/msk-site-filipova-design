@@ -63,7 +63,8 @@ export default function Endoprosthetics() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Эндопротезирование суставов в Москве." />
 
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/endoprosthetics"/>
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/endoprosthetics"/>*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/"/>
             </Head>
             <Box component="section">
 

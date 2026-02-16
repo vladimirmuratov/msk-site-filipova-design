@@ -60,7 +60,8 @@ export default function Gerontology() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Геронтология в Москве." />
 
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/gerontology"/>
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/gerontology"/>*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/"/>
             </Head>
             <Box component="section">
 

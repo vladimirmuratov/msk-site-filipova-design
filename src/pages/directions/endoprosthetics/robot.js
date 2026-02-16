@@ -69,7 +69,8 @@ export default function Robot() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Роботизированное эндопротезирование суставов в Москве." />
 
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/endoprosthetics/robot"/>
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/endoprosthetics/robot"/>*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/"/>
             </Head>
             <Box component="section">
 

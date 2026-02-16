@@ -56,7 +56,8 @@ export default function Pulmonology() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Пульмонология в Москве." />
 
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/pulmonology"/>
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/pulmonology"/>*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/"/>
             </Head>
             <Box component="section">
 

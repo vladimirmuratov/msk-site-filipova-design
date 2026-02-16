@@ -69,7 +69,8 @@ export default function Hip() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Эндопротезирование тазобедренного сустава в Москве." />
 
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/endoprosthetics/hip"/>
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/endoprosthetics/hip"/>*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/"/>
             </Head>
             <Box component="section">
 

@@ -69,7 +69,8 @@ export default function Knee() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Эндопротезирование коленного сустава в Москве." />
 
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/endoprosthetics/knee" />
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/endoprosthetics/knee" />*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/" />
             </Head>
             <Box component="section">
 

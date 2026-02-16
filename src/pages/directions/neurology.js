@@ -59,7 +59,8 @@ export default function Neurology() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Неврология в Москве." />
 
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/neurology"/>
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/neurology"/>*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/"/>
             </Head>
             <Box component="section">
 

@@ -56,7 +56,8 @@ export default function Federal() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7" />
 
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/services/federal" />
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/services/federal" />*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/" />
             </Head>
 
             <BaseBreadcrumbs breadcrumbs={breadcrumbs} />

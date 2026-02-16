@@ -61,7 +61,8 @@ export default function Urology() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Урология в Москве." />
 
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/urology"/>
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/urology"/>*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/"/>
             </Head>
             <Box component="section">
 

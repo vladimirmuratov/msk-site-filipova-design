@@ -56,7 +56,8 @@ export default function Copd() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Ингаляции молекулярным водородом в Москве. 8 (499) 719-81-00, 24/7" />
 
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/hydrogen"/>
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/hydrogen"/>*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/"/>
             </Head>
             <Box component="section">
 

@@ -60,7 +60,8 @@ export default function Gastroenterology() {
                 <meta property="og:site_name"
                       content="Медицинская Сервисная Компания. Гастроэнтерология в Москве — диагностика и лечение ЖКТ." />
 
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/gastroenterology" />
+                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/gastroenterology" />*/}
+                <link rel="canonical" href="https://msk-group-hospital.vercel.app/" />
             </Head>
             <Box component="section">
 
