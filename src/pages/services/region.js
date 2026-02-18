@@ -30,50 +30,60 @@ export default function Region() {
     };
 
     return (
-        <>
-            <Head>
-                <title>Госпитализация из регионов в Москву 8 (499) 719-81-00, 24/7</title>
-                <meta
-                    name="description"
-                    content="Госпитализация в столичный стационар. 20 клиник-партнеров. Федеральные, ведомственные, частные медицинские учреждения. Оперативно. Минимум документов. Финансовая прозрачность."
-                />
-                <meta name="keywords" content="Платная госпитализация из регионов" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-                <meta property="og:locale" content="ru_RU" />
-                <meta property="og:title"
-                      content="Госпитализация из регионов 8 (499) 719-81-00, 24/7" />
-                <meta property="og:description"
-                      content="Госпитализация из регионов. 10 лет опыта. 20 клиник-партнеров. Федеральные, ведомственные и частные клиники. Работаем по всей территории России и СНГ. Оперативно. Финансовая прозрачность." />
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://msk-group-hospital.vercel.app/services/region" />
-                <meta property="og:image" content="https://msk-group-hospital.vercel.app/images/banner-3.webp" />
-                <meta property="og:image:alt"
-                      content="Медицинская Сервисная Компания. Платная госпитализация 8 (499) 719-81-00, 24/7" />
-                <meta property="og:image:type" content="image/webp" />
-                <meta property="og:site_name"
-                      content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7" />
+      <>
+        <Head>
+          <title>
+            Госпитализация из регионов в Москву | Помощь в лечении, платные услуги под ключ
+          </title>
+          <meta
+            name="description"
+            content="Полная организация госпитализации для пациентов из регионов в ведущие клиники Москвы. Платное лечение, сбор документов, трансфер, размещение. Онкология, кардиология, нейрохирургия и др. Запись онлайн и по телефону!"
+          />
+          <meta name="keywords" content="Платная госпитализация из регионов" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+          <meta property="og:locale" content="ru_RU" />
+          <meta property="og:title" content="Госпитализация из регионов 8 (499) 719-81-00, 24/7" />
+          <meta
+            property="og:description"
+            content="Госпитализация из регионов. 10 лет опыта. 20 клиник-партнеров. Федеральные, ведомственные и частные клиники. Работаем по всей территории России и СНГ. Оперативно. Финансовая прозрачность."
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://msk-group-hospital.vercel.app/services/region" />
+          <meta
+            property="og:image"
+            content="https://msk-group-hospital.vercel.app/images/banner-3.webp"
+          />
+          <meta
+            property="og:image:alt"
+            content="Медицинская Сервисная Компания. Платная госпитализация 8 (499) 719-81-00, 24/7"
+          />
+          <meta property="og:image:type" content="image/webp" />
+          <meta
+            property="og:site_name"
+            content="Медицинская Сервисная Компания. Экстренная госпитализация 8 (499) 719-81-00, 24/7"
+          />
 
-                {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/services/region" />*/}
-                <link rel="canonical" href="https://msk-group-hospital.vercel.app/" />
-            </Head>
+          {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/services/region" />*/}
+          <link rel="canonical" href="https://msk-group-hospital.vercel.app/" />
+        </Head>
 
-            <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
+        <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
 
-            <BaseBanner
-                imgPath="/images/services/region.webp"
-                title="Платная госпитализация из регионов"
-                fontColor="var(--red)"
-                fontShadowColor="var(--white)"
-            />
-            <BaseFirstBlock
-                title="госпитализация из регионов"
-                description={servicesRegionDescriptionText}
-                services={servicesRegionInfo}
-            />
-            <HowToBeHospitalized title="как вам надо действовать" steps={stepsPlanHospitalization} />
-            <StableSummaryBlock />
-        </>
+        <BaseBanner
+          imgPath="/images/services/region.webp"
+          title="Платная госпитализация из регионов"
+          fontColor="var(--red)"
+          fontShadowColor="var(--white)"
+        />
+        <BaseFirstBlock
+          title="госпитализация из регионов"
+          description={servicesRegionDescriptionText}
+          services={servicesRegionInfo}
+        />
+        <HowToBeHospitalized title="как вам надо действовать" steps={stepsPlanHospitalization} />
+        <StableSummaryBlock />
+      </>
     );
 }
 
