@@ -62,8 +62,8 @@ export default function Copd() {
             content="Медицинская Сервисная Компания. ХОБЛ лечение. 8 (499) 719-81-00, 24/7"
           />
 
-          {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/copd"/>*/}
-          <link rel="canonical" href="https://msk-group-hospital.vercel.app/" />
+          <link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/copd"/>
+          {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/" />*/}
         </Head>
         <Box component="section">
           <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
