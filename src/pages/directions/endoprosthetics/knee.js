@@ -81,7 +81,7 @@ export default function Knee() {
           />
 
           {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/endoprosthetics/knee" />*/}
-          <link rel="canonical" href="https://msk-group-hospital.vercel.app/" />
+          {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/" />*/}
         </Head>
         <Box component="section">
           <BaseBreadcrumbs breadcrumbs={breadcrumbs} />

@@ -76,7 +76,7 @@ export default function Endoprosthetics() {
           />
 
           {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/endoprosthetics"/>*/}
-          <link rel="canonical" href="https://msk-group-hospital.vercel.app/" />
+          {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/" />*/}
         </Head>
         <Box component="section">
           <BaseBreadcrumbs breadcrumbs={breadcrumbs} />

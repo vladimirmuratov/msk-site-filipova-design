@@ -75,7 +75,7 @@ export default function PlanHospital() {
           />
 
           {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/services/plan-hospital" />*/}
-          <link rel="canonical" href="https://msk-group-hospital.vercel.app/" />
+          {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/" />*/}
         </Head>
 
         <BaseBreadcrumbs breadcrumbs={breadcrumbs} />

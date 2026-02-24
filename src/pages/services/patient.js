@@ -69,7 +69,7 @@ export default function Patient() {
           />
 
           {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/services/patient" />*/}
-          <link rel="canonical" href="https://msk-group-hospital.vercel.app/" />
+          {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/" />*/}
         </Head>
 
         <BaseBreadcrumbs breadcrumbs={breadcrumbs} />

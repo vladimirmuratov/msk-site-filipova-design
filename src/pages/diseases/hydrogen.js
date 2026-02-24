@@ -68,7 +68,7 @@ export default function Copd() {
           />
 
           {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/diseases/hydrogen"/>*/}
-          <link rel="canonical" href="https://msk-group-hospital.vercel.app/" />
+          {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/" />*/}
         </Head>
         <Box component="section">
           <BaseBreadcrumbs breadcrumbs={breadcrumbs} />

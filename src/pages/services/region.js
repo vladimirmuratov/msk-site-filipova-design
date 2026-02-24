@@ -65,7 +65,7 @@ export default function Region() {
           />
 
           {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/services/region" />*/}
-          <link rel="canonical" href="https://msk-group-hospital.vercel.app/" />
+          {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/" />*/}
         </Head>
 
         <BaseBreadcrumbs breadcrumbs={breadcrumbs} />

@@ -72,7 +72,7 @@ export default function Neurology() {
           />
 
           {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/neurology"/>*/}
-          <link rel="canonical" href="https://msk-group-hospital.vercel.app/" />
+          {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/" />*/}
         </Head>
         <Box component="section">
           <BaseBreadcrumbs breadcrumbs={breadcrumbs} />

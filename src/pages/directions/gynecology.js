@@ -82,7 +82,7 @@ export default function Gynecology() {
           />
 
           {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/directions/gynecology" />*/}
-          <link rel="canonical" href="https://msk-group-hospital.vercel.app/" />
+          {/*<link rel="canonical" href="https://msk-group-hospital.vercel.app/" />*/}
         </Head>
         <Box component="section">
           <BaseBreadcrumbs breadcrumbs={breadcrumbs} />
