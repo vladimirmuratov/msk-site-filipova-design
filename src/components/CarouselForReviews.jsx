@@ -1,11 +1,11 @@
+import { memo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { BaseFeedBackCard } from '@/components/base/BaseFeedBackCard';
-import { memo } from 'react';
 
-export const Carousel = memo(({ reviews, isMobile }) => {
+export const CarouselForReviews = memo(({ reviews = [], isMobile }) => {
     const slidesPerView = isMobile ? 1 : 2;
     const centeredSlides = !isMobile;
 

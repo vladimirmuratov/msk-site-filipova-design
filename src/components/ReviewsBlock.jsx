@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel } from '@/components/Carousel';
+import { CarouselForReviews } from '@/components/CarouselForReviews';
 import { Box } from '@mui/material';
 import { BaseH2 } from '@/components/base/BaseH2';
 
@@ -17,7 +17,7 @@ export const ReviewsBlock = React.memo(({ reviews = [], isMobile }) => {
 
             <BaseH2 title="ОТЗЫВЫ" marginBottom={true} />
 
-            <Carousel reviews={reviews} isMobile={isMobile} />
+            <CarouselForReviews reviews={reviews} isMobile={isMobile} />
         </Box>
     );
 });
