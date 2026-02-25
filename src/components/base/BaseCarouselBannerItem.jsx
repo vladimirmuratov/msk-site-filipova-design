@@ -4,6 +4,7 @@ import { Box, Typography } from '@mui/material';
 export const BaseCarouselBannerItem = memo(({ title, subTitle, image }) => {
   return (
     <Box
+      component="figure"
       sx={{
         position: 'relative',
       }}
@@ -13,6 +14,7 @@ export const BaseCarouselBannerItem = memo(({ title, subTitle, image }) => {
         alt={title}
         style={{
           width: '100%',
+          pointerEvents: 'none',
         }}
       />
       <Box
