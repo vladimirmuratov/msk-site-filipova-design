@@ -309,3 +309,7 @@ li {
     }
 
 }
+
+.max-icon-gradient {
+    background: linear-gradient(90deg, rgba(65, 133, 246, 1) 0%, rgba(73, 48, 224, 1) 48%, rgba(150, 75, 218, 1) 98%);
+}

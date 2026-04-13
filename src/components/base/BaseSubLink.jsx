@@ -9,6 +9,7 @@ export const BaseSubLink = React.memo(({
                                          delay = 0,
                                          isOpen = false,
                                          link,
+                                         className = '',
                                        }) => {
   return (
     <Link
@@ -29,6 +30,7 @@ export const BaseSubLink = React.memo(({
           transform: 'scale(1.2)',
         },
       }}
+      className={className}
     >
 
       <Icon />

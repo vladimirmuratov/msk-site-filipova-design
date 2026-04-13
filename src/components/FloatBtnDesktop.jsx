@@ -65,6 +65,7 @@ export const FloatBtnDesktop = React.memo(({ onOpenForm }) => {
           isOpen={open}
         />
         <BaseSubLink
+          className="max-icon-gradient"
           Icon={MaxIcon}
           bgColor="white"
           link={maxLink}
